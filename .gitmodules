@@ -1,0 +1,4 @@
+[submodule "GarminLib"]
+	path = GarminLib
+	url = https://github.com/massimilianoranaldi/GarminLib
+	branch = master
