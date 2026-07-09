@@ -52,7 +52,7 @@ C__GarminProject_GarminLibTest_source_GarminLibTestView_mc_13_40_15_4_stop:
     }
     [ @file = "C:\GarminProject\GarminLibTest\source\GarminLibTestView.mc"; @line = 20; @symbol_functiondef = [onUpdate,20,13,21]; @symbol_param<0> = [dc,20,22,24]; @symbol_param<0>_type<0> = [Dc,20,28,30]; ]
     function onUpdate(dc as Dc) as Void {
-C__GarminProject_GarminLibTest_source_GarminLibTestView_mc_20_40_268_4_start:
+C__GarminProject_GarminLibTest_source_GarminLibTestView_mc_20_40_293_4_start:
 [ "C:\GarminProject\GarminLibTest\source\GarminLibTestView.mc" 47 8 ]
         symbol [ View %tmp.2 47 8 12 ];
         %tmp.2 = getv ? :View;
@@ -61,377 +61,85 @@ C__GarminProject_GarminLibTest_source_GarminLibTestView_mc_20_40_268_4_start:
         %tmp.4 = lgetv %dc;
         symbol [ dc %tmp.4 47 22 24 ];
         invoke %tmp.2 %tmp.3(%tmp.4);
-[ "C:\GarminProject\GarminLibTest\source\GarminLibTestView.mc" 226 4 ]
-        [ "C__GarminProject_GarminLibTest_source_GarminLibTestView_mc_20_40_268_4_start" "C__GarminProject_GarminLibTest_source_GarminLibTestView_mc_20_40_268_4_stop" ]
-        %steps.1 = local;
-        symbol [ steps %steps.1 226 8 13 ];
-        symbol [ ActivityData %tmp.6 226 21 33 ];
-        %tmp.6 = getv ? :ActivityData;
-        symbol [ getSteps %tmp.7 226 34 42 ];
-        %tmp.7 = getv function %tmp.6 :getSteps;
-        %tmp.8 = invoke %tmp.6 %tmp.7();
-        lputv %steps.1 %tmp.8;
-        symbol [ steps %steps.1 226 8 13 ];
-[ "C:\GarminProject\GarminLibTest\source\GarminLibTestView.mc" 227 4 ]
-        [ "C__GarminProject_GarminLibTest_source_GarminLibTestView_mc_20_40_268_4_start" "C__GarminProject_GarminLibTest_source_GarminLibTestView_mc_20_40_268_4_stop" ]
-        %calories.2 = local;
-        symbol [ calories %calories.2 227 8 16 ];
-        symbol [ ActivityData %tmp.10 227 21 33 ];
-        %tmp.10 = getv ? :ActivityData;
-        symbol [ getCalories %tmp.11 227 34 45 ];
-        %tmp.11 = getv function %tmp.10 :getCalories;
-        %tmp.12 = invoke %tmp.10 %tmp.11();
-        lputv %calories.2 %tmp.12;
-        symbol [ calories %calories.2 227 8 16 ];
-[ "C:\GarminProject\GarminLibTest\source\GarminLibTestView.mc" 228 4 ]
-        [ "C__GarminProject_GarminLibTest_source_GarminLibTestView_mc_20_40_268_4_start" "C__GarminProject_GarminLibTest_source_GarminLibTestView_mc_20_40_268_4_stop" ]
-        %distKm.3 = local;
-        symbol [ distKm %distKm.3 228 8 14 ];
-        symbol [ ActivityData %tmp.14 228 21 33 ];
-        %tmp.14 = getv ? :ActivityData;
-        symbol [ getDistanceKm %tmp.15 228 34 47 ];
-        %tmp.15 = getv function %tmp.14 :getDistanceKm;
-        %tmp.16 = invoke %tmp.14 %tmp.15();
-        lputv %distKm.3 %tmp.16;
-        symbol [ distKm %distKm.3 228 8 14 ];
-[ "C:\GarminProject\GarminLibTest\source\GarminLibTestView.mc" 229 4 ]
-        [ "C__GarminProject_GarminLibTest_source_GarminLibTestView_mc_20_40_268_4_start" "C__GarminProject_GarminLibTest_source_GarminLibTestView_mc_20_40_268_4_stop" ]
-        %floors.4 = local;
-        symbol [ floors %floors.4 229 8 14 ];
-        symbol [ ActivityData %tmp.18 229 21 33 ];
-        %tmp.18 = getv ? :ActivityData;
-        symbol [ getFloors %tmp.19 229 34 43 ];
-        %tmp.19 = getv function %tmp.18 :getFloors;
-        %tmp.20 = invoke %tmp.18 %tmp.19();
-        %tmp.21 = as %tmp.20 Lang.Dictionary;
-        symbol [ Lang %tmp.21 229 49 53 ];
-        symbol [ Dictionary %tmp.21 229 54 64 ];
-        lputv %floors.4 %tmp.21;
-        symbol [ floors %floors.4 229 8 14 ];
-[ "C:\GarminProject\GarminLibTest\source\GarminLibTestView.mc" 230 4 ]
-        [ "C__GarminProject_GarminLibTest_source_GarminLibTestView_mc_20_40_268_4_start" "C__GarminProject_GarminLibTest_source_GarminLibTestView_mc_20_40_268_4_stop" ]
-        %bodyBatt.5 = local;
-        symbol [ bodyBatt %bodyBatt.5 230 8 16 ];
-        symbol [ ActivityData %tmp.23 230 21 33 ];
-        %tmp.23 = getv ? :ActivityData;
-        symbol [ getBodyBattery %tmp.24 230 34 48 ];
-        %tmp.24 = getv function %tmp.23 :getBodyBattery;
-        %tmp.25 = invoke %tmp.23 %tmp.24();
-        lputv %bodyBatt.5 %tmp.25;
-        symbol [ bodyBatt %bodyBatt.5 230 8 16 ];
-[ "C:\GarminProject\GarminLibTest\source\GarminLibTestView.mc" 231 4 ]
-        [ "C__GarminProject_GarminLibTest_source_GarminLibTestView_mc_20_40_268_4_start" "C__GarminProject_GarminLibTest_source_GarminLibTestView_mc_20_40_268_4_stop" ]
-        %activeMin.6 = local;
-        symbol [ activeMin %activeMin.6 231 8 17 ];
-        symbol [ ActivityData %tmp.27 231 21 33 ];
-        %tmp.27 = getv ? :ActivityData;
-        symbol [ getActiveMinutes %tmp.28 231 34 50 ];
-        %tmp.28 = getv function %tmp.27 :getActiveMinutes;
-        %tmp.29 = invoke %tmp.27 %tmp.28();
-        lputv %activeMin.6 %tmp.29;
-        symbol [ activeMin %activeMin.6 231 8 17 ];
-[ "C:\GarminProject\GarminLibTest\source\GarminLibTestView.mc" 232 4 ]
-        [ "C__GarminProject_GarminLibTest_source_GarminLibTestView_mc_20_40_268_4_start" "C__GarminProject_GarminLibTest_source_GarminLibTestView_mc_20_40_268_4_stop" ]
-        %activeWeek.7 = local;
-        symbol [ activeWeek %activeWeek.7 232 8 18 ];
-        symbol [ ActivityData %tmp.31 232 21 33 ];
-        %tmp.31 = getv ? :ActivityData;
-        symbol [ getActiveMinutesWeek %tmp.32 232 34 54 ];
-        %tmp.32 = getv function %tmp.31 :getActiveMinutesWeek;
-        %tmp.33 = invoke %tmp.31 %tmp.32();
-        lputv %activeWeek.7 %tmp.33;
-        symbol [ activeWeek %activeWeek.7 232 8 18 ];
-[ "C:\GarminProject\GarminLibTest\source\GarminLibTestView.mc" 233 4 ]
-        [ "C__GarminProject_GarminLibTest_source_GarminLibTestView_mc_20_40_268_4_start" "C__GarminProject_GarminLibTest_source_GarminLibTestView_mc_20_40_268_4_stop" ]
-        %bbMidnight.8 = local;
-        symbol [ bbMidnight %bbMidnight.8 233 8 18 ];
-        symbol [ ActivityData %tmp.35 233 21 33 ];
-        %tmp.35 = getv ? :ActivityData;
-        symbol [ getBodyBatteryMidnight %tmp.36 233 34 56 ];
-        %tmp.36 = getv function %tmp.35 :getBodyBatteryMidnight;
-        %tmp.37 = invoke %tmp.35 %tmp.36();
-        lputv %bbMidnight.8 %tmp.37;
-        symbol [ bbMidnight %bbMidnight.8 233 8 18 ];
-[ "C:\GarminProject\GarminLibTest\source\GarminLibTestView.mc" 235 0 ]
-        %tmp.38 = lgetv %dc;
-        symbol [ dc %tmp.38 235 0 2 ];
-        symbol [ setColor %tmp.39 235 3 11 ];
-        %tmp.39 = getv function %tmp.38 :setColor;
-        symbol [ Graphics %tmp.40 235 12 20 ];
-        %tmp.40 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.41 235 21 32 ];
-        %tmp.41 = getv %tmp.40 :COLOR_WHITE;
-        symbol [ Graphics %tmp.42 235 34 42 ];
-        %tmp.42 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.43 235 43 60 ];
-        %tmp.43 = getv %tmp.42 :COLOR_TRANSPARENT;
-        invoke %tmp.38 %tmp.39(%tmp.41, %tmp.43);
-[ "C:\GarminProject\GarminLibTest\source\GarminLibTestView.mc" 236 0 ]
-        %tmp.44 = lgetv %dc;
-        symbol [ dc %tmp.44 236 0 2 ];
-        symbol [ drawText %tmp.45 236 3 11 ];
-        %tmp.45 = getv function %tmp.44 :drawText;
-        %tmp.46 = 130;
-        %tmp.47 = 60;
-        symbol [ Graphics %tmp.48 236 22 30 ];
-        %tmp.48 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.49 236 31 41 ];
-        %tmp.49 = getv %tmp.48 :FONT_SMALL;
-        %tmp.50 = lgetv %steps.1;
-        symbol [ steps %tmp.50 237 4 9 ];
-        symbol [ format %tmp.51 237 10 16 ];
-        %tmp.51 = getv function %tmp.50 :format;
-        %tmp.52 = "%d";
-        %tmp.53 = invoke %tmp.50 %tmp.51(%tmp.52);
-        %tmp.54 = " passi";
-        %tmp.55 = add %tmp.53 %tmp.54;
-        symbol [ Graphics %tmp.56 238 4 12 ];
-        %tmp.56 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.57 238 13 32 ];
-        %tmp.57 = getv %tmp.56 :TEXT_JUSTIFY_CENTER;
-        symbol [ Graphics %tmp.58 238 35 43 ];
-        %tmp.58 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_VCENTER %tmp.59 238 44 64 ];
-        %tmp.59 = getv %tmp.58 :TEXT_JUSTIFY_VCENTER;
-        %tmp.60 = bitor %tmp.57 %tmp.59;
-        invoke %tmp.44 %tmp.45(%tmp.46, %tmp.47, %tmp.49, %tmp.55, %tmp.60);
-[ "C:\GarminProject\GarminLibTest\source\GarminLibTestView.mc" 240 0 ]
-        %tmp.61 = lgetv %dc;
-        symbol [ dc %tmp.61 240 0 2 ];
-        symbol [ drawText %tmp.62 240 3 11 ];
-        %tmp.62 = getv function %tmp.61 :drawText;
-        %tmp.63 = 130;
-        %tmp.64 = 80;
-        symbol [ Graphics %tmp.65 240 22 30 ];
-        %tmp.65 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.66 240 31 41 ];
-        %tmp.66 = getv %tmp.65 :FONT_SMALL;
-        %tmp.67 = lgetv %calories.2;
-        symbol [ calories %tmp.67 241 4 12 ];
-        symbol [ format %tmp.68 241 13 19 ];
-        %tmp.68 = getv function %tmp.67 :format;
-        %tmp.69 = "%d";
-        %tmp.70 = invoke %tmp.67 %tmp.68(%tmp.69);
-        %tmp.71 = " kcal";
-        %tmp.72 = add %tmp.70 %tmp.71;
-        symbol [ Graphics %tmp.73 242 4 12 ];
-        %tmp.73 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.74 242 13 32 ];
-        %tmp.74 = getv %tmp.73 :TEXT_JUSTIFY_CENTER;
-        symbol [ Graphics %tmp.75 242 35 43 ];
-        %tmp.75 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_VCENTER %tmp.76 242 44 64 ];
-        %tmp.76 = getv %tmp.75 :TEXT_JUSTIFY_VCENTER;
-        %tmp.77 = bitor %tmp.74 %tmp.76;
-        invoke %tmp.61 %tmp.62(%tmp.63, %tmp.64, %tmp.66, %tmp.72, %tmp.77);
-[ "C:\GarminProject\GarminLibTest\source\GarminLibTestView.mc" 244 0 ]
-        %tmp.78 = lgetv %dc;
-        symbol [ dc %tmp.78 244 0 2 ];
-        symbol [ drawText %tmp.79 244 3 11 ];
-        %tmp.79 = getv function %tmp.78 :drawText;
-        %tmp.80 = 130;
-        %tmp.81 = 100;
-        symbol [ Graphics %tmp.82 244 22 30 ];
-        %tmp.82 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.83 244 31 41 ];
-        %tmp.83 = getv %tmp.82 :FONT_SMALL;
-        %tmp.84 = lgetv %distKm.3;
-        symbol [ distKm %tmp.84 245 4 10 ];
-        symbol [ format %tmp.85 245 11 17 ];
-        %tmp.85 = getv function %tmp.84 :format;
-        %tmp.86 = "%.1f";
-        %tmp.87 = invoke %tmp.84 %tmp.85(%tmp.86);
-        %tmp.88 = " km";
-        %tmp.89 = add %tmp.87 %tmp.88;
-        symbol [ Graphics %tmp.90 246 4 12 ];
-        %tmp.90 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.91 246 13 32 ];
-        %tmp.91 = getv %tmp.90 :TEXT_JUSTIFY_CENTER;
-        symbol [ Graphics %tmp.92 246 35 43 ];
-        %tmp.92 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_VCENTER %tmp.93 246 44 64 ];
-        %tmp.93 = getv %tmp.92 :TEXT_JUSTIFY_VCENTER;
-        %tmp.94 = bitor %tmp.91 %tmp.93;
-        invoke %tmp.78 %tmp.79(%tmp.80, %tmp.81, %tmp.83, %tmp.89, %tmp.94);
-[ "C:\GarminProject\GarminLibTest\source\GarminLibTestView.mc" 248 0 ]
-        %tmp.95 = lgetv %dc;
-        symbol [ dc %tmp.95 248 0 2 ];
-        symbol [ drawText %tmp.96 248 3 11 ];
-        %tmp.96 = getv function %tmp.95 :drawText;
-        %tmp.97 = 130;
-        %tmp.98 = 120;
-        symbol [ Graphics %tmp.99 248 22 30 ];
-        %tmp.99 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.100 248 31 41 ];
-        %tmp.100 = getv %tmp.99 :FONT_SMALL;
-        %tmp.101 = lgetv %activeMin.6;
-        symbol [ activeMin %tmp.101 249 4 13 ];
-        symbol [ format %tmp.102 249 14 20 ];
-        %tmp.102 = getv function %tmp.101 :format;
-        %tmp.103 = "%d";
-        %tmp.104 = invoke %tmp.101 %tmp.102(%tmp.103);
-        %tmp.105 = " min attivi";
-        %tmp.106 = add %tmp.104 %tmp.105;
-        symbol [ Graphics %tmp.107 250 4 12 ];
-        %tmp.107 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.108 250 13 32 ];
-        %tmp.108 = getv %tmp.107 :TEXT_JUSTIFY_CENTER;
-        symbol [ Graphics %tmp.109 250 35 43 ];
-        %tmp.109 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_VCENTER %tmp.110 250 44 64 ];
-        %tmp.110 = getv %tmp.109 :TEXT_JUSTIFY_VCENTER;
-        %tmp.111 = bitor %tmp.108 %tmp.110;
-        invoke %tmp.95 %tmp.96(%tmp.97, %tmp.98, %tmp.100, %tmp.106, %tmp.111);
-[ "C:\GarminProject\GarminLibTest\source\GarminLibTestView.mc" 252 0 ]
-        %tmp.112 = lgetv %dc;
-        symbol [ dc %tmp.112 252 0 2 ];
-        symbol [ drawText %tmp.113 252 3 11 ];
-        %tmp.113 = getv function %tmp.112 :drawText;
-        %tmp.114 = 130;
-        %tmp.115 = 140;
-        symbol [ Graphics %tmp.116 252 22 30 ];
-        %tmp.116 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.117 252 31 41 ];
-        %tmp.117 = getv %tmp.116 :FONT_SMALL;
-        %tmp.118 = lgetv %activeWeek.7;
-        symbol [ activeWeek %tmp.118 253 4 14 ];
-        symbol [ format %tmp.119 253 15 21 ];
-        %tmp.119 = getv function %tmp.118 :format;
-        %tmp.120 = "%d";
-        %tmp.121 = invoke %tmp.118 %tmp.119(%tmp.120);
-        %tmp.122 = " min/sett";
-        %tmp.123 = add %tmp.121 %tmp.122;
-        symbol [ Graphics %tmp.124 254 4 12 ];
-        %tmp.124 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.125 254 13 32 ];
-        %tmp.125 = getv %tmp.124 :TEXT_JUSTIFY_CENTER;
-        symbol [ Graphics %tmp.126 254 35 43 ];
-        %tmp.126 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_VCENTER %tmp.127 254 44 64 ];
-        %tmp.127 = getv %tmp.126 :TEXT_JUSTIFY_VCENTER;
-        %tmp.128 = bitor %tmp.125 %tmp.127;
-        invoke %tmp.112 %tmp.113(%tmp.114, %tmp.115, %tmp.117, %tmp.123, %tmp.128);
-[ "C:\GarminProject\GarminLibTest\source\GarminLibTestView.mc" 256 0 ]
-        %tmp.129 = lgetv %dc;
-        symbol [ dc %tmp.129 256 0 2 ];
-        symbol [ drawText %tmp.130 256 3 11 ];
-        %tmp.130 = getv function %tmp.129 :drawText;
-        %tmp.131 = 130;
-        %tmp.132 = 160;
-        symbol [ Graphics %tmp.133 256 22 30 ];
-        %tmp.133 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.134 256 31 41 ];
-        %tmp.134 = getv %tmp.133 :FONT_SMALL;
-        %tmp.135 = "↑";
-        %tmp.136 = lgetv %floors.4;
-        symbol [ floors %tmp.136 257 11 17 ];
-        %tmp.137 = "climbed";
-        %tmp.138 = agetv %tmp.136 %tmp.137;
-        %tmp.139 = as %tmp.138 Lang.Number;
-        symbol [ Lang %tmp.139 257 32 36 ];
-        symbol [ Number %tmp.139 257 37 43 ];
-        symbol [ format %tmp.140 257 45 51 ];
-        %tmp.140 = getv function %tmp.139 :format;
-        %tmp.141 = "%d";
-        %tmp.142 = invoke %tmp.139 %tmp.140(%tmp.141);
-        %tmp.143 = add %tmp.135 %tmp.142;
-        %tmp.144 = "  ↓";
-        %tmp.145 = add %tmp.143 %tmp.144;
-        %tmp.146 = lgetv %floors.4;
-        symbol [ floors %tmp.146 257 69 75 ];
-        %tmp.147 = "descended";
-        %tmp.148 = agetv %tmp.146 %tmp.147;
-        %tmp.149 = as %tmp.148 Lang.Number;
-        symbol [ Lang %tmp.149 257 92 96 ];
-        symbol [ Number %tmp.149 257 97 103 ];
-        symbol [ format %tmp.150 257 105 111 ];
-        %tmp.150 = getv function %tmp.149 :format;
-        %tmp.151 = "%d";
-        %tmp.152 = invoke %tmp.149 %tmp.150(%tmp.151);
-        %tmp.153 = add %tmp.145 %tmp.152;
-        %tmp.154 = " piani";
-        %tmp.155 = add %tmp.153 %tmp.154;
-        symbol [ Graphics %tmp.156 258 4 12 ];
-        %tmp.156 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.157 258 13 32 ];
-        %tmp.157 = getv %tmp.156 :TEXT_JUSTIFY_CENTER;
-        symbol [ Graphics %tmp.158 258 35 43 ];
-        %tmp.158 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_VCENTER %tmp.159 258 44 64 ];
-        %tmp.159 = getv %tmp.158 :TEXT_JUSTIFY_VCENTER;
-        %tmp.160 = bitor %tmp.157 %tmp.159;
-        invoke %tmp.129 %tmp.130(%tmp.131, %tmp.132, %tmp.134, %tmp.155, %tmp.160);
-[ "C:\GarminProject\GarminLibTest\source\GarminLibTestView.mc" 260 0 ]
-        %tmp.161 = lgetv %dc;
-        symbol [ dc %tmp.161 260 0 2 ];
-        symbol [ drawText %tmp.162 260 3 11 ];
-        %tmp.162 = getv function %tmp.161 :drawText;
-        %tmp.163 = 130;
-        %tmp.164 = 180;
-        symbol [ Graphics %tmp.165 260 22 30 ];
-        %tmp.165 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.166 260 31 41 ];
-        %tmp.166 = getv %tmp.165 :FONT_SMALL;
-        %tmp.167 = "BB: ";
-        %tmp.168 = lgetv %bodyBatt.5;
-        symbol [ bodyBatt %tmp.168 261 13 21 ];
-        symbol [ format %tmp.169 261 22 28 ];
-        %tmp.169 = getv function %tmp.168 :format;
-        %tmp.170 = "%d";
-        %tmp.171 = invoke %tmp.168 %tmp.169(%tmp.170);
-        %tmp.172 = add %tmp.167 %tmp.171;
-        %tmp.173 = "%";
-        %tmp.174 = add %tmp.172 %tmp.173;
-        symbol [ Graphics %tmp.175 262 4 12 ];
-        %tmp.175 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.176 262 13 32 ];
-        %tmp.176 = getv %tmp.175 :TEXT_JUSTIFY_CENTER;
-        symbol [ Graphics %tmp.177 262 35 43 ];
-        %tmp.177 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_VCENTER %tmp.178 262 44 64 ];
-        %tmp.178 = getv %tmp.177 :TEXT_JUSTIFY_VCENTER;
-        %tmp.179 = bitor %tmp.176 %tmp.178;
-        invoke %tmp.161 %tmp.162(%tmp.163, %tmp.164, %tmp.166, %tmp.174, %tmp.179);
-[ "C:\GarminProject\GarminLibTest\source\GarminLibTestView.mc" 264 0 ]
-        %tmp.180 = lgetv %dc;
-        symbol [ dc %tmp.180 264 0 2 ];
-        symbol [ drawText %tmp.181 264 3 11 ];
-        %tmp.181 = getv function %tmp.180 :drawText;
-        %tmp.182 = 130;
-        %tmp.183 = 200;
-        symbol [ Graphics %tmp.184 264 22 30 ];
-        %tmp.184 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.185 264 31 41 ];
-        %tmp.185 = getv %tmp.184 :FONT_SMALL;
-        %tmp.186 = "BB mezzanotte: ";
-        %tmp.187 = lgetv %bbMidnight.8;
-        symbol [ bbMidnight %tmp.187 265 24 34 ];
-        symbol [ format %tmp.188 265 35 41 ];
-        %tmp.188 = getv function %tmp.187 :format;
-        %tmp.189 = "%d";
-        %tmp.190 = invoke %tmp.187 %tmp.188(%tmp.189);
-        %tmp.191 = add %tmp.186 %tmp.190;
-        %tmp.192 = "%";
-        %tmp.193 = add %tmp.191 %tmp.192;
-        symbol [ Graphics %tmp.194 266 4 12 ];
-        %tmp.194 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.195 266 13 32 ];
-        %tmp.195 = getv %tmp.194 :TEXT_JUSTIFY_CENTER;
-        symbol [ Graphics %tmp.196 266 35 43 ];
-        %tmp.196 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_VCENTER %tmp.197 266 44 64 ];
-        %tmp.197 = getv %tmp.196 :TEXT_JUSTIFY_VCENTER;
-        %tmp.198 = bitor %tmp.195 %tmp.197;
-        invoke %tmp.180 %tmp.181(%tmp.182, %tmp.183, %tmp.185, %tmp.193, %tmp.198);
-C__GarminProject_GarminLibTest_source_GarminLibTestView_mc_20_40_268_4_stop:
+[ "C:\GarminProject\GarminLibTest\source\GarminLibTestView.mc" 281 4 ]
+        symbol [ RectFill %tmp.6 281 4 12 ];
+        %tmp.6 = getv ? :RectFill;
+        symbol [ draw %tmp.7 281 13 17 ];
+        %tmp.7 = getv function %tmp.6 :draw;
+        %tmp.8 = lgetv %dc;
+        symbol [ dc %tmp.8 281 18 20 ];
+        %tmp.9 = 130;
+        %tmp.10 = 130;
+        %tmp.11 = 100;
+        %tmp.12 = 40;
+        symbol [ Graphics %tmp.13 281 41 49 ];
+        %tmp.13 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLUE %tmp.14 281 50 60 ];
+        %tmp.14 = getv %tmp.13 :COLOR_BLUE;
+        %tmp.15 = 0;
+        invoke %tmp.6 %tmp.7(%tmp.8, %tmp.9, %tmp.10, %tmp.11, %tmp.12, %tmp.14, %tmp.15);
+[ "C:\GarminProject\GarminLibTest\source\GarminLibTestView.mc" 284 4 ]
+        symbol [ RectFill %tmp.17 284 4 12 ];
+        %tmp.17 = getv ? :RectFill;
+        symbol [ draw %tmp.18 284 13 17 ];
+        %tmp.18 = getv function %tmp.17 :draw;
+        %tmp.19 = lgetv %dc;
+        symbol [ dc %tmp.19 284 18 20 ];
+        %tmp.20 = 130;
+        %tmp.21 = 180;
+        %tmp.22 = 100;
+        %tmp.23 = 40;
+        symbol [ Graphics %tmp.24 284 41 49 ];
+        %tmp.24 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLUE %tmp.25 284 50 60 ];
+        %tmp.25 = getv %tmp.24 :COLOR_BLUE;
+        %tmp.26 = 8;
+        invoke %tmp.17 %tmp.18(%tmp.19, %tmp.20, %tmp.21, %tmp.22, %tmp.23, %tmp.25, %tmp.26);
+[ "C:\GarminProject\GarminLibTest\source\GarminLibTestView.mc" 287 4 ]
+        symbol [ Rect %tmp.28 287 4 8 ];
+        %tmp.28 = getv ? :Rect;
+        symbol [ draw %tmp.29 287 9 13 ];
+        %tmp.29 = getv function %tmp.28 :draw;
+        %tmp.30 = lgetv %dc;
+        symbol [ dc %tmp.30 287 14 16 ];
+        %tmp.31 = 130;
+        %tmp.32 = 230;
+        %tmp.33 = 100;
+        %tmp.34 = 40;
+        symbol [ Graphics %tmp.35 287 37 45 ];
+        %tmp.35 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.36 287 46 57 ];
+        %tmp.36 = getv %tmp.35 :COLOR_WHITE;
+        %tmp.37 = 2;
+        %tmp.38 = 0;
+        invoke %tmp.28 %tmp.29(%tmp.30, %tmp.31, %tmp.32, %tmp.33, %tmp.34, %tmp.36, %tmp.37, %tmp.38);
+[ "C:\GarminProject\GarminLibTest\source\GarminLibTestView.mc" 290 4 ]
+        symbol [ Rect %tmp.40 290 4 8 ];
+        %tmp.40 = getv ? :Rect;
+        symbol [ draw %tmp.41 290 9 13 ];
+        %tmp.41 = getv function %tmp.40 :draw;
+        %tmp.42 = lgetv %dc;
+        symbol [ dc %tmp.42 290 14 16 ];
+        %tmp.43 = 130;
+        %tmp.44 = 80;
+        %tmp.45 = 100;
+        %tmp.46 = 40;
+        symbol [ Graphics %tmp.47 290 36 44 ];
+        %tmp.47 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.48 290 45 56 ];
+        %tmp.48 = getv %tmp.47 :COLOR_WHITE;
+        %tmp.49 = 2;
+        %tmp.50 = 20;
+        invoke %tmp.40 %tmp.41(%tmp.42, %tmp.43, %tmp.44, %tmp.45, %tmp.46, %tmp.48, %tmp.49, %tmp.50);
+C__GarminProject_GarminLibTest_source_GarminLibTestView_mc_20_40_293_4_stop:
     }
-    [ @file = "C:\GarminProject\GarminLibTest\source\GarminLibTestView.mc"; @line = 272; @symbol_functiondef = [onHide,272,13,19]; ]
+    [ @file = "C:\GarminProject\GarminLibTest\source\GarminLibTestView.mc"; @line = 297; @symbol_functiondef = [onHide,297,13,19]; ]
     function onHide() as Void {
     }
-    [ @file = "C:\GarminProject\GarminLibTest\source\GarminLibTestView.mc"; @line = 276; @symbol_functiondef = [onExitSleep,276,13,24]; ]
+    [ @file = "C:\GarminProject\GarminLibTest\source\GarminLibTestView.mc"; @line = 301; @symbol_functiondef = [onExitSleep,301,13,24]; ]
     function onExitSleep() as Void {
     }
-    [ @file = "C:\GarminProject\GarminLibTest\source\GarminLibTestView.mc"; @line = 280; @symbol_functiondef = [onEnterSleep,280,13,25]; ]
+    [ @file = "C:\GarminProject\GarminLibTest\source\GarminLibTestView.mc"; @line = 305; @symbol_functiondef = [onEnterSleep,305,13,25]; ]
     function onEnterSleep() as Void {
     }
 }

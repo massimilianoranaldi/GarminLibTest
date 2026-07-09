@@ -223,7 +223,7 @@ class GarminLibTestView extends WatchUi.WatchFace {
 
     //ActivityData
     //-----------------------------------------------
-    var steps      = ActivityData.getSteps();
+    /*var steps      = ActivityData.getSteps();
     var calories   = ActivityData.getCalories();
     var distKm     = ActivityData.getDistanceKm();
     var floors     = ActivityData.getFloors() as Lang.Dictionary;
@@ -232,38 +232,63 @@ class GarminLibTestView extends WatchUi.WatchFace {
     var activeWeek = ActivityData.getActiveMinutesWeek();
     var bbMidnight = ActivityData.getBodyBatteryMidnight();
 
-dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-dc.drawText(130, 60,  Graphics.FONT_SMALL,
-    steps.format("%d") + " passi",
-    Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+    dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+    dc.drawText(130, 60,  Graphics.FONT_SMALL,
+        steps.format("%d") + " passi",
+        Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
 
-dc.drawText(130, 80,  Graphics.FONT_SMALL,
-    calories.format("%d") + " kcal",
-    Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+    dc.drawText(130, 80,  Graphics.FONT_SMALL,
+        calories.format("%d") + " kcal",
+        Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
 
-dc.drawText(130, 100, Graphics.FONT_SMALL,
-    distKm.format("%.1f") + " km",
-    Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+    dc.drawText(130, 100, Graphics.FONT_SMALL,
+        distKm.format("%.1f") + " km",
+        Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
 
-dc.drawText(130, 120, Graphics.FONT_SMALL,
-    activeMin.format("%d") + " min attivi",
-    Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+    dc.drawText(130, 120, Graphics.FONT_SMALL,
+        activeMin.format("%d") + " min attivi",
+        Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
 
-dc.drawText(130, 140, Graphics.FONT_SMALL,
-    activeWeek.format("%d") + " min/sett",
-    Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+    dc.drawText(130, 140, Graphics.FONT_SMALL,
+        activeWeek.format("%d") + " min/sett",
+        Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
 
-dc.drawText(130, 160, Graphics.FONT_SMALL,
-    "↑" + (floors["climbed"] as Lang.Number).format("%d") + "  ↓" + (floors["descended"] as Lang.Number).format("%d") + " piani",
-    Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+    dc.drawText(130, 160, Graphics.FONT_SMALL,
+        "↑" + (floors["climbed"] as Lang.Number).format("%d") + "  ↓" + (floors["descended"] as Lang.Number).format("%d") + " piani",
+        Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
 
-dc.drawText(130, 180, Graphics.FONT_SMALL,
-    "BB: " + bodyBatt.format("%d") + "%",
-    Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+    dc.drawText(130, 180, Graphics.FONT_SMALL,
+        "BB: " + bodyBatt.format("%d") + "%",
+        Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
 
-dc.drawText(130, 200, Graphics.FONT_SMALL,
-    "BB mezzanotte: " + bbMidnight.format("%d") + "%",
-    Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+    dc.drawText(130, 200, Graphics.FONT_SMALL,
+        "BB mezzanotte: " + bbMidnight.format("%d") + "%",
+        Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        */
+
+    //Circle
+    //-----------------------------------------------
+   
+   /* Circle.draw(dc,60,130,50,Graphics.COLOR_WHITE,4);
+  
+   
+    CircleFill.draw(dc,190,130,50,Graphics.COLOR_GREEN);
+    */
+
+    //Rect
+    //-----------------------------------------------
+    // rettangolo pieno normale
+    RectFill.draw(dc, 130, 130, 100, 40, Graphics.COLOR_BLUE, 0);
+
+    // rettangolo pieno stondato
+    RectFill.draw(dc, 130, 180, 100, 40, Graphics.COLOR_BLUE, 8);
+
+    // contorno normale
+    Rect.draw(dc, 130, 230, 100, 40, Graphics.COLOR_WHITE, 2, 0);
+
+    // contorno ovale
+    Rect.draw(dc, 130, 80, 100, 40, Graphics.COLOR_WHITE, 2, 20);
+        
 
     }
 
