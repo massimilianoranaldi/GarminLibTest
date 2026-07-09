@@ -1,0 +1,96 @@
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\MathUtils.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [Lang,2,13,17]; ]
+using Toybox.Lang;
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\MathUtils.mc"; @line = 4; @symbol_classdef = [MathUtils,4,6,15]; ]
+class MathUtils {
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\MathUtils.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\MathUtils.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\MathUtils.mc"; @line = 6; @symbol_functiondef = [calcolaArco,6,20,31]; @symbol_param<0> = [startDeg,6,32,40]; @symbol_param<1> = [endDeg,6,42,48]; @symbol_param<2> = [cw,6,50,52]; ]
+    static
+    function calcolaArco(startDeg, endDeg, cw) {
+C__GarminProject_GarminLibTest_GarminLib_source_utils_MathUtils_mc_6_54_16_4_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\MathUtils.mc" 7 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_utils_MathUtils_mc_6_54_16_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_utils_MathUtils_mc_6_54_16_4_stop" ]
+        %arco.1 = local;
+        symbol [ arco %arco.1 7 12 16 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\MathUtils.mc" 8 8 ]
+C__GarminProject_GarminLibTest_GarminLib_source_utils_MathUtils_mc_8_8_14_8_if_stmt:
+        %tmp.1 = lgetv %cw;
+        symbol [ cw %tmp.1 8 12 14 ];
+        bf %tmp.1 @C__GarminProject_GarminLibTest_GarminLib_source_utils_MathUtils_mc_8_8_14_8_if_else_false;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_MathUtils_mc_8_8_14_8_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_MathUtils_mc_8_16_11_8_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\MathUtils.mc" 9 12 ]
+        %tmp.2 = lgetv %startDeg;
+        symbol [ startDeg %tmp.2 9 19 27 ];
+        %tmp.3 = lgetv %endDeg;
+        symbol [ endDeg %tmp.3 9 30 36 ];
+        %tmp.4 = sub %tmp.2 %tmp.3;
+        lputv %arco.1 %tmp.4;
+        symbol [ arco %arco.1 9 12 16 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\MathUtils.mc" 10 12 ]
+C__GarminProject_GarminLibTest_GarminLib_source_utils_MathUtils_mc_10_12_10_48_if_stmt:
+        %tmp.5 = lgetv %arco.1;
+        symbol [ arco %tmp.5 10 16 20 ];
+        %tmp.6 = 0;
+        %tmp.7 = lte %tmp.5 %tmp.6;
+        bf %tmp.7 @C__GarminProject_GarminLibTest_GarminLib_source_utils_MathUtils_mc_10_12_10_48_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_MathUtils_mc_10_12_10_48_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_MathUtils_mc_10_27_10_48_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\MathUtils.mc" 10 29 ]
+        %tmp.8 = lgetv %arco.1;
+        symbol [ arco %tmp.8 10 36 40 ];
+        %tmp.9 = 360;
+        %tmp.10 = add %tmp.8 %tmp.9;
+        lputv %arco.1 %tmp.10;
+        symbol [ arco %arco.1 10 29 33 ];
+C__GarminProject_GarminLibTest_GarminLib_source_utils_MathUtils_mc_10_27_10_48_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_utils_MathUtils_mc_10_12_10_48_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_MathUtils_mc_10_12_10_48_if_end:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_MathUtils_mc_8_16_11_8_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_utils_MathUtils_mc_8_8_14_8_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_MathUtils_mc_8_8_14_8_if_else_false:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_MathUtils_mc_11_15_14_8_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\MathUtils.mc" 12 12 ]
+        %tmp.11 = lgetv %endDeg;
+        symbol [ endDeg %tmp.11 12 19 25 ];
+        %tmp.12 = lgetv %startDeg;
+        symbol [ startDeg %tmp.12 12 28 36 ];
+        %tmp.13 = sub %tmp.11 %tmp.12;
+        lputv %arco.1 %tmp.13;
+        symbol [ arco %arco.1 12 12 16 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\MathUtils.mc" 13 12 ]
+C__GarminProject_GarminLibTest_GarminLib_source_utils_MathUtils_mc_13_12_13_48_if_stmt:
+        %tmp.14 = lgetv %arco.1;
+        symbol [ arco %tmp.14 13 16 20 ];
+        %tmp.15 = 0;
+        %tmp.16 = lte %tmp.14 %tmp.15;
+        bf %tmp.16 @C__GarminProject_GarminLibTest_GarminLib_source_utils_MathUtils_mc_13_12_13_48_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_MathUtils_mc_13_12_13_48_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_MathUtils_mc_13_27_13_48_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\MathUtils.mc" 13 29 ]
+        %tmp.17 = lgetv %arco.1;
+        symbol [ arco %tmp.17 13 36 40 ];
+        %tmp.18 = 360;
+        %tmp.19 = add %tmp.17 %tmp.18;
+        lputv %arco.1 %tmp.19;
+        symbol [ arco %arco.1 13 29 33 ];
+C__GarminProject_GarminLibTest_GarminLib_source_utils_MathUtils_mc_13_27_13_48_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_utils_MathUtils_mc_13_12_13_48_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_MathUtils_mc_13_12_13_48_if_end:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_MathUtils_mc_11_15_14_8_stop:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_MathUtils_mc_8_8_14_8_if_end:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\MathUtils.mc" 15 8 ]
+        %tmp.20 = lgetv %arco.1;
+        symbol [ arco %tmp.20 15 15 19 ];
+        ret %tmp.20;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_MathUtils_mc_6_54_16_4_stop:
+    }
+}
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\MathUtils.mc"; @line = 2; ]
+<init> {
+}

@@ -1,1 +1,3 @@
 project.manifest = manifest.xml
+base.sourcePath = source;GarminLib/source/utils;GarminLib/source/graphics;GarminLib/source/activity
+

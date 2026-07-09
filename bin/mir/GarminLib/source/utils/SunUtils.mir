@@ -1,0 +1,267 @@
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\SunUtils.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [System,1,13,19]; ]
+using Toybox.System;
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\SunUtils.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [Lang,2,13,17]; ]
+using Toybox.Lang;
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\SunUtils.mc"; @line = 4; @symbol_classdef = [SunUtils,4,6,14]; ]
+class SunUtils {
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\SunUtils.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\SunUtils.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\SunUtils.mc"; @line = 6; @symbol_functiondef = [minutiMancantiEvento,6,20,40]; @symbol_param<0> = [sunrise,6,41,48]; @symbol_param<1> = [sunset,6,50,56]; @symbol_return<0> = [Lang,6,61,65]; @symbol_return<1> = [Dictionary,6,66,76]; ]
+    static
+    function minutiMancantiEvento(sunrise, sunset) as Lang.Dictionary {
+C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_6_77_34_4_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\SunUtils.mc" 7 8 ]
+C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_7_8_9_8_if_stmt:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_7_12_7_41_begin:
+        %tmp.1 = lgetv %sunrise;
+        symbol [ sunrise %tmp.1 7 12 19 ];
+        %tmp.2 = null;
+        %tmp.3 = eq %tmp.1 %tmp.2;
+        bt %tmp.3 @C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_7_8_9_8_if_true;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_7_31_7_41_false:
+        %tmp.4 = lgetv %sunset;
+        symbol [ sunset %tmp.4 7 31 37 ];
+        %tmp.5 = null;
+        %tmp.6 = eq %tmp.4 %tmp.5;
+        push %tmp.6;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_7_31_7_41_end:
+        %tmp.7 = phi [%tmp.3 @C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_7_12_7_41_begin] [%tmp.6 @C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_7_31_7_41_false] [%tmp.7 @C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_7_31_7_41_end];
+        bf %tmp.7 @C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_7_8_9_8_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_7_8_9_8_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_7_47_9_8_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\SunUtils.mc" 8 12 ]
+        %tmp.8 = newd 3;
+        %tmp.9 = "minuti";
+        %tmp.10 = 0;
+        %tmp.11 = dup %tmp.8;
+        %tmp.12 = aputv %tmp.11 %tmp.9 %tmp.10;
+        %tmp.13 = "goal";
+        %tmp.14 = 1440;
+        %tmp.15 = dup %tmp.12;
+        %tmp.16 = aputv %tmp.15 %tmp.13 %tmp.14;
+        %tmp.17 = "evento";
+        %tmp.18 = "n.d.";
+        %tmp.19 = dup %tmp.16;
+        %tmp.20 = aputv %tmp.19 %tmp.17 %tmp.18;
+        ret %tmp.20;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_7_47_9_8_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_7_8_9_8_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_7_8_9_8_if_end:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\SunUtils.mc" 11 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_6_77_34_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_6_77_34_4_stop" ]
+        %minAlba.1 = local;
+        symbol [ minAlba %minAlba.1 11 12 19 ];
+        %tmp.21 = lgetv %sunrise;
+        symbol [ sunrise %tmp.21 11 26 33 ];
+        symbol [ substring %tmp.22 11 34 43 ];
+        %tmp.22 = getv function %tmp.21 :substring;
+        %tmp.23 = 0;
+        %tmp.24 = 2;
+        %tmp.25 = invoke %tmp.21 %tmp.22(%tmp.23, %tmp.24);
+        symbol [ toNumber %tmp.26 11 50 58 ];
+        %tmp.26 = getv function %tmp.25 :toNumber;
+        %tmp.27 = invoke %tmp.25 %tmp.26();
+        %tmp.28 = 60;
+        %tmp.29 = mul %tmp.27 %tmp.28;
+        %tmp.30 = lgetv %sunrise;
+        symbol [ sunrise %tmp.30 11 68 75 ];
+        symbol [ substring %tmp.31 11 76 85 ];
+        %tmp.31 = getv function %tmp.30 :substring;
+        %tmp.32 = 3;
+        %tmp.33 = 5;
+        %tmp.34 = invoke %tmp.30 %tmp.31(%tmp.32, %tmp.33);
+        symbol [ toNumber %tmp.35 11 92 100 ];
+        %tmp.35 = getv function %tmp.34 :toNumber;
+        %tmp.36 = invoke %tmp.34 %tmp.35();
+        %tmp.37 = add %tmp.29 %tmp.36;
+        lputv %minAlba.1 %tmp.37;
+        symbol [ minAlba %minAlba.1 11 12 19 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\SunUtils.mc" 12 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_6_77_34_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_6_77_34_4_stop" ]
+        %minTramonto.2 = local;
+        symbol [ minTramonto %minTramonto.2 12 12 23 ];
+        %tmp.38 = lgetv %sunset;
+        symbol [ sunset %tmp.38 12 26 32 ];
+        symbol [ substring %tmp.39 12 33 42 ];
+        %tmp.39 = getv function %tmp.38 :substring;
+        %tmp.40 = 0;
+        %tmp.41 = 2;
+        %tmp.42 = invoke %tmp.38 %tmp.39(%tmp.40, %tmp.41);
+        symbol [ toNumber %tmp.43 12 49 57 ];
+        %tmp.43 = getv function %tmp.42 :toNumber;
+        %tmp.44 = invoke %tmp.42 %tmp.43();
+        %tmp.45 = 60;
+        %tmp.46 = mul %tmp.44 %tmp.45;
+        %tmp.47 = lgetv %sunset;
+        symbol [ sunset %tmp.47 12 68 74 ];
+        symbol [ substring %tmp.48 12 75 84 ];
+        %tmp.48 = getv function %tmp.47 :substring;
+        %tmp.49 = 3;
+        %tmp.50 = 5;
+        %tmp.51 = invoke %tmp.47 %tmp.48(%tmp.49, %tmp.50);
+        symbol [ toNumber %tmp.52 12 91 99 ];
+        %tmp.52 = getv function %tmp.51 :toNumber;
+        %tmp.53 = invoke %tmp.51 %tmp.52();
+        %tmp.54 = add %tmp.46 %tmp.53;
+        lputv %minTramonto.2 %tmp.54;
+        symbol [ minTramonto %minTramonto.2 12 12 23 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\SunUtils.mc" 13 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_6_77_34_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_6_77_34_4_stop" ]
+        %minCorrente.3 = local;
+        symbol [ minCorrente %minCorrente.3 13 12 23 ];
+        symbol [ System %tmp.55 13 26 32 ];
+        %tmp.55 = getm $.Toybox.System;
+        symbol [ getClockTime %tmp.56 13 33 45 ];
+        %tmp.56 = getv function %tmp.55 :getClockTime;
+        %tmp.57 = invoke %tmp.55 %tmp.56();
+        symbol [ hour %tmp.58 13 48 52 ];
+        %tmp.58 = getv %tmp.57 :hour;
+        %tmp.59 = 60;
+        %tmp.60 = mul %tmp.58 %tmp.59;
+        symbol [ System %tmp.61 13 60 66 ];
+        %tmp.61 = getm $.Toybox.System;
+        symbol [ getClockTime %tmp.62 13 67 79 ];
+        %tmp.62 = getv function %tmp.61 :getClockTime;
+        %tmp.63 = invoke %tmp.61 %tmp.62();
+        symbol [ min %tmp.64 13 82 85 ];
+        %tmp.64 = getv %tmp.63 :min;
+        %tmp.65 = add %tmp.60 %tmp.64;
+        lputv %minCorrente.3 %tmp.65;
+        symbol [ minCorrente %minCorrente.3 13 12 23 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\SunUtils.mc" 15 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_6_77_34_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_6_77_34_4_stop" ]
+        %diff.4 = local;
+        symbol [ diff %diff.4 15 12 16 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\SunUtils.mc" 16 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_6_77_34_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_6_77_34_4_stop" ]
+        %goal.5 = local;
+        symbol [ goal %goal.5 16 12 16 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\SunUtils.mc" 17 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_6_77_34_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_6_77_34_4_stop" ]
+        %evento.6 = local;
+        symbol [ evento %evento.6 17 12 18 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\SunUtils.mc" 19 8 ]
+C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_19_8_31_8_if_stmt:
+        %tmp.66 = lgetv %minCorrente.3;
+        symbol [ minCorrente %tmp.66 19 12 23 ];
+        %tmp.67 = lgetv %minAlba.1;
+        symbol [ minAlba %tmp.67 19 26 33 ];
+        %tmp.68 = lt %tmp.66 %tmp.67;
+        bf %tmp.68 @C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_19_8_31_8_if_false;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_19_8_31_8_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_19_35_23_8_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\SunUtils.mc" 20 12 ]
+        %tmp.69 = lgetv %minAlba.1;
+        symbol [ minAlba %tmp.69 20 21 28 ];
+        %tmp.70 = lgetv %minCorrente.3;
+        symbol [ minCorrente %tmp.70 20 31 42 ];
+        %tmp.71 = sub %tmp.69 %tmp.70;
+        lputv %diff.4 %tmp.71;
+        symbol [ diff %diff.4 20 12 16 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\SunUtils.mc" 21 12 ]
+        %tmp.72 = 1440;
+        %tmp.73 = lgetv %minTramonto.2;
+        symbol [ minTramonto %tmp.73 21 28 39 ];
+        %tmp.74 = sub %tmp.72 %tmp.73;
+        %tmp.75 = lgetv %minAlba.1;
+        symbol [ minAlba %tmp.75 21 42 49 ];
+        %tmp.76 = add %tmp.74 %tmp.75;
+        lputv %goal.5 %tmp.76;
+        symbol [ goal %goal.5 21 12 16 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\SunUtils.mc" 22 12 ]
+        %tmp.77 = "alba";
+        lputv %evento.6 %tmp.77;
+        symbol [ evento %evento.6 22 12 18 ];
+C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_19_35_23_8_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_19_8_31_8_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_19_8_31_8_if_false:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\SunUtils.mc" 23 15 ]
+C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_23_15_31_8_if_stmt:
+        %tmp.78 = lgetv %minCorrente.3;
+        symbol [ minCorrente %tmp.78 23 19 30 ];
+        %tmp.79 = lgetv %minTramonto.2;
+        symbol [ minTramonto %tmp.79 23 33 44 ];
+        %tmp.80 = lt %tmp.78 %tmp.79;
+        bf %tmp.80 @C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_23_15_31_8_if_else_false;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_23_15_31_8_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_23_46_27_8_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\SunUtils.mc" 24 12 ]
+        %tmp.81 = lgetv %minTramonto.2;
+        symbol [ minTramonto %tmp.81 24 21 32 ];
+        %tmp.82 = lgetv %minCorrente.3;
+        symbol [ minCorrente %tmp.82 24 35 46 ];
+        %tmp.83 = sub %tmp.81 %tmp.82;
+        lputv %diff.4 %tmp.83;
+        symbol [ diff %diff.4 24 12 16 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\SunUtils.mc" 25 12 ]
+        %tmp.84 = lgetv %minTramonto.2;
+        symbol [ minTramonto %tmp.84 25 21 32 ];
+        %tmp.85 = lgetv %minAlba.1;
+        symbol [ minAlba %tmp.85 25 35 42 ];
+        %tmp.86 = sub %tmp.84 %tmp.85;
+        lputv %goal.5 %tmp.86;
+        symbol [ goal %goal.5 25 12 16 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\SunUtils.mc" 26 12 ]
+        %tmp.87 = "tramonto";
+        lputv %evento.6 %tmp.87;
+        symbol [ evento %evento.6 26 12 18 ];
+C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_23_46_27_8_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_23_15_31_8_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_23_15_31_8_if_else_false:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_27_15_31_8_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\SunUtils.mc" 28 12 ]
+        %tmp.88 = 1440;
+        %tmp.89 = lgetv %minCorrente.3;
+        symbol [ minCorrente %tmp.89 28 28 39 ];
+        %tmp.90 = sub %tmp.88 %tmp.89;
+        %tmp.91 = lgetv %minAlba.1;
+        symbol [ minAlba %tmp.91 28 42 49 ];
+        %tmp.92 = add %tmp.90 %tmp.91;
+        lputv %diff.4 %tmp.92;
+        symbol [ diff %diff.4 28 12 16 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\SunUtils.mc" 29 12 ]
+        %tmp.93 = 1440;
+        %tmp.94 = lgetv %minTramonto.2;
+        symbol [ minTramonto %tmp.94 29 28 39 ];
+        %tmp.95 = sub %tmp.93 %tmp.94;
+        %tmp.96 = lgetv %minAlba.1;
+        symbol [ minAlba %tmp.96 29 42 49 ];
+        %tmp.97 = add %tmp.95 %tmp.96;
+        lputv %goal.5 %tmp.97;
+        symbol [ goal %goal.5 29 12 16 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\SunUtils.mc" 30 12 ]
+        %tmp.98 = "alba";
+        lputv %evento.6 %tmp.98;
+        symbol [ evento %evento.6 30 12 18 ];
+C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_27_15_31_8_stop:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_23_15_31_8_if_end:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_19_8_31_8_if_end:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\SunUtils.mc" 33 8 ]
+        %tmp.99 = newd 3;
+        %tmp.100 = "minuti";
+        %tmp.101 = lgetv %diff.4;
+        symbol [ diff %tmp.101 33 29 33 ];
+        %tmp.102 = dup %tmp.99;
+        %tmp.103 = aputv %tmp.102 %tmp.100 %tmp.101;
+        %tmp.104 = "goal";
+        %tmp.105 = lgetv %goal.5;
+        symbol [ goal %tmp.105 33 45 49 ];
+        %tmp.106 = dup %tmp.103;
+        %tmp.107 = aputv %tmp.106 %tmp.104 %tmp.105;
+        %tmp.108 = "evento";
+        %tmp.109 = lgetv %evento.6;
+        symbol [ evento %tmp.109 33 63 69 ];
+        %tmp.110 = dup %tmp.107;
+        %tmp.111 = aputv %tmp.110 %tmp.108 %tmp.109;
+        ret %tmp.111;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_SunUtils_mc_6_77_34_4_stop:
+    }
+}
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\SunUtils.mc"; @line = 1; ]
+<init> {
+}

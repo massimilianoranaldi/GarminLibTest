@@ -1,0 +1,503 @@
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [ActivityMonitor,1,13,28]; ]
+using Toybox.ActivityMonitor;
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [SensorHistory,2,13,26]; ]
+using Toybox.SensorHistory;
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [Time,3,13,17]; ]
+using Toybox.Time;
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Lang,4,13,17]; ]
+using Toybox.Lang;
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc"; @line = 6; @symbol_classdef = [ActivityData,6,6,18]; ]
+class ActivityData {
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc"; @line = 6; ]
+    <init> {
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc"; @line = 6; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc"; @line = 8; @symbol_functiondef = [getActiveMinutesWeek,8,20,40]; ]
+    static
+    function getActiveMinutesWeek() {
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_8_43_12_4_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc" 9 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_8_43_12_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_8_43_12_4_stop" ]
+        %info.1 = local;
+        symbol [ info %info.1 9 12 16 ];
+        symbol [ ActivityMonitor %tmp.1 9 25 40 ];
+        %tmp.1 = getm $.Toybox.ActivityMonitor;
+        symbol [ getInfo %tmp.2 9 41 48 ];
+        %tmp.2 = getv function %tmp.1 :getInfo;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %info.1 %tmp.3;
+        symbol [ info %info.1 9 12 16 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc" 10 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_8_43_12_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_8_43_12_4_stop" ]
+        %activeWeek.2 = local;
+        symbol [ activeWeek %activeWeek.2 10 12 22 ];
+        %tmp.4 = lgetv %info.1;
+        symbol [ info %tmp.4 10 25 29 ];
+        symbol [ activeMinutesWeek %tmp.5 10 30 47 ];
+        %tmp.5 = getv %tmp.4 :activeMinutesWeek;
+        lputv %activeWeek.2 %tmp.5;
+        symbol [ activeWeek %activeWeek.2 10 12 22 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc" 11 8 ]
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_11_15_11_55_begin:
+        %tmp.6 = lgetv %activeWeek.2;
+        symbol [ activeWeek %tmp.6 11 15 25 ];
+        %tmp.7 = null;
+        %tmp.8 = ne %tmp.6 %tmp.7;
+        bf %tmp.8 @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_11_15_11_55_else_false;
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_11_15_11_55_true:
+        %tmp.9 = lgetv %activeWeek.2;
+        symbol [ activeWeek %tmp.9 11 36 46 ];
+        %tmp.10 = as %tmp.9 { (!Null) };
+        symbol [ total %tmp.11 11 47 52 ];
+        %tmp.11 = getv %tmp.10 :total;
+        push %tmp.11;
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_11_15_11_55_end;
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_11_15_11_55_else_false:
+        %tmp.12 = 0;
+        push %tmp.12;
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_11_15_11_55_end:
+        %tmp.13 = phi [%tmp.8 @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_11_15_11_55_begin] [%tmp.11 @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_11_15_11_55_true] [%tmp.12 @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_11_15_11_55_else_false] [%tmp.13 @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_11_15_11_55_end];
+        ret %tmp.13;
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_8_43_12_4_stop:
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc"; @line = 14; @symbol_functiondef = [getCalories,14,20,31]; ]
+    static
+    function getCalories() {
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_14_34_17_4_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc" 15 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_14_34_17_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_14_34_17_4_stop" ]
+        %info.1 = local;
+        symbol [ info %info.1 15 12 16 ];
+        symbol [ ActivityMonitor %tmp.1 15 19 34 ];
+        %tmp.1 = getm $.Toybox.ActivityMonitor;
+        symbol [ getInfo %tmp.2 15 35 42 ];
+        %tmp.2 = getv function %tmp.1 :getInfo;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %info.1 %tmp.3;
+        symbol [ info %info.1 15 12 16 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc" 16 8 ]
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_16_15_16_55_begin:
+        %tmp.4 = lgetv %info.1;
+        symbol [ info %tmp.4 16 15 19 ];
+        symbol [ calories %tmp.5 16 20 28 ];
+        %tmp.5 = getv %tmp.4 :calories;
+        %tmp.6 = null;
+        %tmp.7 = ne %tmp.5 %tmp.6;
+        bf %tmp.7 @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_16_15_16_55_else_false;
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_16_15_16_55_true:
+        %tmp.8 = lgetv %info.1;
+        symbol [ info %tmp.8 16 39 43 ];
+        symbol [ calories %tmp.9 16 44 52 ];
+        %tmp.9 = getv %tmp.8 :calories;
+        push %tmp.9;
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_16_15_16_55_end;
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_16_15_16_55_else_false:
+        %tmp.10 = 0;
+        push %tmp.10;
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_16_15_16_55_end:
+        %tmp.11 = phi [%tmp.7 @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_16_15_16_55_begin] [%tmp.9 @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_16_15_16_55_true] [%tmp.10 @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_16_15_16_55_else_false] [%tmp.11 @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_16_15_16_55_end];
+        ret %tmp.11;
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_14_34_17_4_stop:
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc"; @line = 19; @symbol_functiondef = [getActiveMinutes,19,20,36]; ]
+    static
+    function getActiveMinutes() {
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_19_39_24_4_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc" 20 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_19_39_24_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_19_39_24_4_stop" ]
+        %info.1 = local;
+        symbol [ info %info.1 20 12 16 ];
+        symbol [ ActivityMonitor %tmp.1 20 21 36 ];
+        %tmp.1 = getm $.Toybox.ActivityMonitor;
+        symbol [ getInfo %tmp.2 20 37 44 ];
+        %tmp.2 = getv function %tmp.1 :getInfo;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %info.1 %tmp.3;
+        symbol [ info %info.1 20 12 16 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc" 21 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_19_39_24_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_19_39_24_4_stop" ]
+        %active.2 = local;
+        symbol [ active %active.2 21 12 18 ];
+        %tmp.4 = lgetv %info.1;
+        symbol [ info %tmp.4 21 21 25 ];
+        symbol [ activeMinutesDay %tmp.5 21 26 42 ];
+        %tmp.5 = getv %tmp.4 :activeMinutesDay;
+        lputv %active.2 %tmp.5;
+        symbol [ active %active.2 21 12 18 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc" 22 8 ]
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_22_8_22_40_if_stmt:
+        %tmp.6 = lgetv %active.2;
+        symbol [ active %tmp.6 22 12 18 ];
+        %tmp.7 = null;
+        %tmp.8 = eq %tmp.6 %tmp.7;
+        bf %tmp.8 @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_22_8_22_40_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_22_8_22_40_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_22_28_22_40_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc" 22 30 ]
+        %tmp.9 = 0;
+        ret %tmp.9;
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_22_28_22_40_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_22_8_22_40_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_22_8_22_40_if_end:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc" 23 8 ]
+        %tmp.10 = lgetv %active.2;
+        symbol [ active %tmp.10 23 15 21 ];
+        symbol [ total %tmp.11 23 22 27 ];
+        %tmp.11 = getv %tmp.10 :total;
+        ret %tmp.11;
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_19_39_24_4_stop:
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc"; @line = 26; @symbol_functiondef = [getSteps,26,20,28]; ]
+    static
+    function getSteps() {
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_26_31_30_4_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc" 27 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_26_31_30_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_26_31_30_4_stop" ]
+        %info.1 = local;
+        symbol [ info %info.1 27 12 16 ];
+        symbol [ ActivityMonitor %tmp.1 27 20 35 ];
+        %tmp.1 = getm $.Toybox.ActivityMonitor;
+        symbol [ getInfo %tmp.2 27 36 43 ];
+        %tmp.2 = getv function %tmp.1 :getInfo;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %info.1 %tmp.3;
+        symbol [ info %info.1 27 12 16 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc" 28 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_26_31_30_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_26_31_30_4_stop" ]
+        %steps.2 = local;
+        symbol [ steps %steps.2 28 12 17 ];
+        %tmp.4 = lgetv %info.1;
+        symbol [ info %tmp.4 28 20 24 ];
+        symbol [ steps %tmp.5 28 25 30 ];
+        %tmp.5 = getv %tmp.4 :steps;
+        lputv %steps.2 %tmp.5;
+        symbol [ steps %steps.2 28 12 17 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc" 29 8 ]
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_29_15_29_39_begin:
+        %tmp.6 = lgetv %steps.2;
+        symbol [ steps %tmp.6 29 15 20 ];
+        %tmp.7 = null;
+        %tmp.8 = ne %tmp.6 %tmp.7;
+        bf %tmp.8 @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_29_15_29_39_else_false;
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_29_15_29_39_true:
+        %tmp.9 = lgetv %steps.2;
+        symbol [ steps %tmp.9 29 31 36 ];
+        %tmp.10 = as %tmp.9 { (!Null) };
+        push %tmp.10;
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_29_15_29_39_end;
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_29_15_29_39_else_false:
+        %tmp.11 = 0;
+        push %tmp.11;
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_29_15_29_39_end:
+        %tmp.12 = phi [%tmp.8 @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_29_15_29_39_begin] [%tmp.10 @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_29_15_29_39_true] [%tmp.11 @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_29_15_29_39_else_false] [%tmp.12 @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_29_15_29_39_end];
+        ret %tmp.12;
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_26_31_30_4_stop:
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc"; @line = 32; @symbol_functiondef = [getDistanceKm,32,20,33]; ]
+    static
+    function getDistanceKm() {
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_32_36_37_4_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc" 33 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_32_36_37_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_32_36_37_4_stop" ]
+        %info.1 = local;
+        symbol [ info %info.1 33 12 16 ];
+        symbol [ ActivityMonitor %tmp.1 33 19 34 ];
+        %tmp.1 = getm $.Toybox.ActivityMonitor;
+        symbol [ getInfo %tmp.2 33 35 42 ];
+        %tmp.2 = getv function %tmp.1 :getInfo;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %info.1 %tmp.3;
+        symbol [ info %info.1 33 12 16 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc" 34 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_32_36_37_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_32_36_37_4_stop" ]
+        %dist.2 = local;
+        symbol [ dist %dist.2 34 12 16 ];
+        %tmp.4 = lgetv %info.1;
+        symbol [ info %tmp.4 34 19 23 ];
+        symbol [ distance %tmp.5 34 24 32 ];
+        %tmp.5 = getv %tmp.4 :distance;
+        lputv %dist.2 %tmp.5;
+        symbol [ dist %dist.2 34 12 16 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc" 35 8 ]
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_35_8_35_41_if_stmt:
+        %tmp.6 = lgetv %dist.2;
+        symbol [ dist %tmp.6 35 12 16 ];
+        %tmp.7 = null;
+        %tmp.8 = eq %tmp.6 %tmp.7;
+        bf %tmp.8 @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_35_8_35_41_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_35_8_35_41_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_35_26_35_41_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc" 35 28 ]
+        %tmp.9 = 0.0f;
+        ret %tmp.9;
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_35_26_35_41_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_35_8_35_41_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_35_8_35_41_if_end:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc" 36 8 ]
+        %tmp.10 = lgetv %dist.2;
+        symbol [ dist %tmp.10 36 15 19 ];
+        %tmp.11 = 100000.0f;
+        %tmp.12 = div %tmp.10 %tmp.11;
+        ret %tmp.12;
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_32_36_37_4_stop:
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc"; @line = 39; @symbol_functiondef = [getFloors,39,20,29]; @symbol_return<0> = [Lang,39,35,39]; @symbol_return<1> = [Dictionary,39,40,50]; ]
+    static
+    function getFloors() as Lang.Dictionary {
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_39_51_44_4_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc" 40 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_39_51_44_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_39_51_44_4_stop" ]
+        %info.1 = local;
+        symbol [ info %info.1 40 12 16 ];
+        symbol [ ActivityMonitor %tmp.1 40 24 39 ];
+        %tmp.1 = getm $.Toybox.ActivityMonitor;
+        symbol [ getInfo %tmp.2 40 40 47 ];
+        %tmp.2 = getv function %tmp.1 :getInfo;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %info.1 %tmp.3;
+        symbol [ info %info.1 40 12 16 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc" 41 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_39_51_44_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_39_51_44_4_stop" ]
+        %climbed.2 = local;
+        symbol [ climbed %climbed.2 41 12 19 ];
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_41_24_41_78_begin:
+        %tmp.4 = lgetv %info.1;
+        symbol [ info %tmp.4 41 24 28 ];
+        symbol [ floorsClimbed %tmp.5 41 29 42 ];
+        %tmp.5 = getv %tmp.4 :floorsClimbed;
+        %tmp.6 = null;
+        %tmp.7 = ne %tmp.5 %tmp.6;
+        bf %tmp.7 @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_41_24_41_78_else_false;
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_41_24_41_78_true:
+        %tmp.8 = lgetv %info.1;
+        symbol [ info %tmp.8 41 55 59 ];
+        symbol [ floorsClimbed %tmp.9 41 60 73 ];
+        %tmp.9 = getv %tmp.8 :floorsClimbed;
+        push %tmp.9;
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_41_24_41_78_end;
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_41_24_41_78_else_false:
+        %tmp.10 = 0;
+        push %tmp.10;
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_41_24_41_78_end:
+        %tmp.11 = phi [%tmp.7 @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_41_24_41_78_begin] [%tmp.9 @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_41_24_41_78_true] [%tmp.10 @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_41_24_41_78_else_false] [%tmp.11 @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_41_24_41_78_end];
+        lputv %climbed.2 %tmp.11;
+        symbol [ climbed %climbed.2 41 12 19 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc" 42 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_39_51_44_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_39_51_44_4_stop" ]
+        %descended.3 = local;
+        symbol [ descended %descended.3 42 12 21 ];
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_42_24_42_78_begin:
+        %tmp.12 = lgetv %info.1;
+        symbol [ info %tmp.12 42 24 28 ];
+        symbol [ floorsDescended %tmp.13 42 29 44 ];
+        %tmp.13 = getv %tmp.12 :floorsDescended;
+        %tmp.14 = null;
+        %tmp.15 = ne %tmp.13 %tmp.14;
+        bf %tmp.15 @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_42_24_42_78_else_false;
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_42_24_42_78_true:
+        %tmp.16 = lgetv %info.1;
+        symbol [ info %tmp.16 42 55 59 ];
+        symbol [ floorsDescended %tmp.17 42 60 75 ];
+        %tmp.17 = getv %tmp.16 :floorsDescended;
+        push %tmp.17;
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_42_24_42_78_end;
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_42_24_42_78_else_false:
+        %tmp.18 = 0;
+        push %tmp.18;
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_42_24_42_78_end:
+        %tmp.19 = phi [%tmp.15 @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_42_24_42_78_begin] [%tmp.17 @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_42_24_42_78_true] [%tmp.18 @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_42_24_42_78_else_false] [%tmp.19 @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_42_24_42_78_end];
+        lputv %descended.3 %tmp.19;
+        symbol [ descended %descended.3 42 12 21 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc" 43 8 ]
+        %tmp.20 = newd 2;
+        %tmp.21 = "climbed";
+        %tmp.22 = lgetv %climbed.2;
+        symbol [ climbed %tmp.22 43 30 37 ];
+        %tmp.23 = dup %tmp.20;
+        %tmp.24 = aputv %tmp.23 %tmp.21 %tmp.22;
+        %tmp.25 = "descended";
+        %tmp.26 = lgetv %descended.3;
+        symbol [ descended %tmp.26 43 54 63 ];
+        %tmp.27 = dup %tmp.24;
+        %tmp.28 = aputv %tmp.27 %tmp.25 %tmp.26;
+        ret %tmp.28;
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_39_51_44_4_stop:
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc"; @line = 46; @symbol_functiondef = [getBodyBattery,46,20,34]; ]
+    static
+    function getBodyBattery() {
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_46_37_52_4_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc" 47 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_46_37_52_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_46_37_52_4_stop" ]
+        %iter.1 = local;
+        symbol [ iter %iter.1 47 12 16 ];
+        symbol [ SensorHistory %tmp.1 47 21 34 ];
+        %tmp.1 = getm $.Toybox.SensorHistory;
+        symbol [ getBodyBatteryHistory %tmp.2 47 35 56 ];
+        %tmp.2 = getv function %tmp.1 :getBodyBatteryHistory;
+        %tmp.3 = newd 1;
+        %tmp.5 = const :order;
+        symbol [ order %tmp.5 47 60 65 const ];
+        symbol [ SensorHistory %tmp.6 47 69 82 ];
+        %tmp.6 = getm $.Toybox.SensorHistory;
+        symbol [ ORDER_NEWEST_FIRST %tmp.7 47 83 101 ];
+        %tmp.7 = getv %tmp.6 :ORDER_NEWEST_FIRST;
+        %tmp.8 = dup %tmp.3;
+        %tmp.9 = aputv %tmp.8 %tmp.5 %tmp.7;
+        %tmp.10 = invoke %tmp.1 %tmp.2(%tmp.9);
+        lputv %iter.1 %tmp.10;
+        symbol [ iter %iter.1 47 12 16 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc" 48 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_46_37_52_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_46_37_52_4_stop" ]
+        %sample.2 = local;
+        symbol [ sample %sample.2 48 12 18 ];
+        %tmp.11 = lgetv %iter.1;
+        symbol [ iter %tmp.11 48 21 25 ];
+        symbol [ next %tmp.12 48 26 30 ];
+        %tmp.12 = getv function %tmp.11 :next;
+        %tmp.13 = invoke %tmp.11 %tmp.12();
+        lputv %sample.2 %tmp.13;
+        symbol [ sample %sample.2 48 12 18 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc" 49 8 ]
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_49_8_49_40_if_stmt:
+        %tmp.14 = lgetv %sample.2;
+        symbol [ sample %tmp.14 49 12 18 ];
+        %tmp.15 = null;
+        %tmp.16 = eq %tmp.14 %tmp.15;
+        bf %tmp.16 @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_49_8_49_40_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_49_8_49_40_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_49_28_49_40_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc" 49 30 ]
+        %tmp.17 = 0;
+        ret %tmp.17;
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_49_28_49_40_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_49_8_49_40_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_49_8_49_40_if_end:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc" 50 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_46_37_52_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_46_37_52_4_stop" ]
+        %data.3 = local;
+        symbol [ data %data.3 50 12 16 ];
+        %tmp.18 = lgetv %sample.2;
+        symbol [ sample %tmp.18 50 19 25 ];
+        symbol [ data %tmp.19 50 26 30 ];
+        %tmp.19 = getv %tmp.18 :data;
+        lputv %data.3 %tmp.19;
+        symbol [ data %data.3 50 12 16 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc" 51 8 ]
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_51_15_51_37_begin:
+        %tmp.20 = lgetv %data.3;
+        symbol [ data %tmp.20 51 15 19 ];
+        %tmp.21 = null;
+        %tmp.22 = ne %tmp.20 %tmp.21;
+        bf %tmp.22 @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_51_15_51_37_else_false;
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_51_15_51_37_true:
+        %tmp.23 = lgetv %data.3;
+        symbol [ data %tmp.23 51 30 34 ];
+        %tmp.24 = as %tmp.23 { (!Null) };
+        push %tmp.24;
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_51_15_51_37_end;
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_51_15_51_37_else_false:
+        %tmp.25 = 0;
+        push %tmp.25;
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_51_15_51_37_end:
+        %tmp.26 = phi [%tmp.22 @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_51_15_51_37_begin] [%tmp.24 @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_51_15_51_37_true] [%tmp.25 @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_51_15_51_37_else_false] [%tmp.26 @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_51_15_51_37_end];
+        ret %tmp.26;
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_46_37_52_4_stop:
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc"; @line = 54; @symbol_functiondef = [getBodyBatteryMidnight,54,20,42]; ]
+    static
+    function getBodyBatteryMidnight() {
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_54_45_63_4_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc" 55 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_54_45_63_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_54_45_63_4_stop" ]
+        %iter.1 = local;
+        symbol [ iter %iter.1 55 12 16 ];
+        symbol [ SensorHistory %tmp.1 55 19 32 ];
+        %tmp.1 = getm $.Toybox.SensorHistory;
+        symbol [ getBodyBatteryHistory %tmp.2 55 33 54 ];
+        %tmp.2 = getv function %tmp.1 :getBodyBatteryHistory;
+        %tmp.3 = newd 2;
+        %tmp.5 = const :startTime;
+        symbol [ startTime %tmp.5 56 13 22 const ];
+        symbol [ Time %tmp.6 56 26 30 ];
+        %tmp.6 = getm $.Toybox.Time;
+        symbol [ today %tmp.7 56 31 36 ];
+        %tmp.7 = getv function %tmp.6 :today;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        %tmp.9 = dup %tmp.3;
+        %tmp.10 = aputv %tmp.9 %tmp.5 %tmp.8;
+        %tmp.12 = const :order;
+        symbol [ order %tmp.12 57 13 18 const ];
+        symbol [ SensorHistory %tmp.13 57 26 39 ];
+        %tmp.13 = getm $.Toybox.SensorHistory;
+        symbol [ ORDER_OLDEST_FIRST %tmp.14 57 40 58 ];
+        %tmp.14 = getv %tmp.13 :ORDER_OLDEST_FIRST;
+        %tmp.15 = dup %tmp.10;
+        %tmp.16 = aputv %tmp.15 %tmp.12 %tmp.14;
+        %tmp.17 = invoke %tmp.1 %tmp.2(%tmp.16);
+        lputv %iter.1 %tmp.17;
+        symbol [ iter %iter.1 55 12 16 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc" 59 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_54_45_63_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_54_45_63_4_stop" ]
+        %sample.2 = local;
+        symbol [ sample %sample.2 59 12 18 ];
+        %tmp.18 = lgetv %iter.1;
+        symbol [ iter %tmp.18 59 21 25 ];
+        symbol [ next %tmp.19 59 26 30 ];
+        %tmp.19 = getv function %tmp.18 :next;
+        %tmp.20 = invoke %tmp.18 %tmp.19();
+        lputv %sample.2 %tmp.20;
+        symbol [ sample %sample.2 59 12 18 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc" 60 8 ]
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_60_8_60_40_if_stmt:
+        %tmp.21 = lgetv %sample.2;
+        symbol [ sample %tmp.21 60 12 18 ];
+        %tmp.22 = null;
+        %tmp.23 = eq %tmp.21 %tmp.22;
+        bf %tmp.23 @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_60_8_60_40_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_60_8_60_40_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_60_28_60_40_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc" 60 30 ]
+        %tmp.24 = 0;
+        ret %tmp.24;
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_60_28_60_40_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_60_8_60_40_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_60_8_60_40_if_end:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc" 61 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_54_45_63_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_54_45_63_4_stop" ]
+        %data.3 = local;
+        symbol [ data %data.3 61 12 16 ];
+        %tmp.25 = lgetv %sample.2;
+        symbol [ sample %tmp.25 61 19 25 ];
+        symbol [ data %tmp.26 61 26 30 ];
+        %tmp.26 = getv %tmp.25 :data;
+        lputv %data.3 %tmp.26;
+        symbol [ data %data.3 61 12 16 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc" 62 8 ]
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_62_15_62_37_begin:
+        %tmp.27 = lgetv %data.3;
+        symbol [ data %tmp.27 62 15 19 ];
+        %tmp.28 = null;
+        %tmp.29 = ne %tmp.27 %tmp.28;
+        bf %tmp.29 @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_62_15_62_37_else_false;
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_62_15_62_37_true:
+        %tmp.30 = lgetv %data.3;
+        symbol [ data %tmp.30 62 30 34 ];
+        %tmp.31 = as %tmp.30 { (!Null) };
+        push %tmp.31;
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_62_15_62_37_end;
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_62_15_62_37_else_false:
+        %tmp.32 = 0;
+        push %tmp.32;
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_62_15_62_37_end:
+        %tmp.33 = phi [%tmp.29 @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_62_15_62_37_begin] [%tmp.31 @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_62_15_62_37_true] [%tmp.32 @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_62_15_62_37_else_false] [%tmp.33 @C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_62_15_62_37_end];
+        ret %tmp.33;
+C__GarminProject_GarminLibTest_GarminLib_source_activity_ActivityData_mc_54_45_63_4_stop:
+    }
+}
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\activity\ActivityData.mc"; @line = 1; ]
+<init> {
+}

@@ -1,0 +1,503 @@
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRingTick.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [Graphics,1,13,21]; ]
+using Toybox.Graphics;
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRingTick.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [Lang,2,13,17]; ]
+using Toybox.Lang;
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRingTick.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [Math,3,13,17]; ]
+using Toybox.Math;
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRingTick.mc"; @line = 5; @symbol_classdef = [ActivityRingTick,5,6,22]; ]
+class ActivityRingTick {
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRingTick.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRingTick.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRingTick.mc"; @line = 7; @symbol_functiondef = [draw,7,20,24]; @symbol_param<0> = [dc,7,25,27]; @symbol_param<1> = [cx,7,29,31]; @symbol_param<2> = [cy,7,33,35]; @symbol_param<3> = [valore,7,37,43]; @symbol_param<4> = [goal,7,45,49]; @symbol_param<5> = [startDeg,7,51,59]; @symbol_param<6> = [endDeg,7,61,67]; @symbol_param<7> = [cw,7,69,71]; @symbol_param<8> = [cfg,7,73,76]; @symbol_param<8>_type<0> = [Lang,7,80,84]; @symbol_param<8>_type<1> = [Dictionary,7,85,95]; @symbol_param<8>_type<2> = [Lang,7,96,100]; @symbol_param<8>_type<3> = [String,7,101,107]; @symbol_param<8>_type<4> = [Lang,7,109,113]; @symbol_param<8>_type<5> = [Number,7,114,120]; ]
+    static
+    function draw(dc, cx, cy, valore, goal, startDeg, endDeg, cw, cfg as Lang.Dictionary<Lang.String, Lang.Number>) {
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_7_123_51_4_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRingTick.mc" 8 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_7_123_51_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_7_123_51_4_stop" ]
+        %totalDeg.1 = local;
+        symbol [ totalDeg %totalDeg.1 8 12 20 ];
+        symbol [ MathUtils %tmp.2 8 23 32 ];
+        %tmp.2 = getv ? :MathUtils;
+        symbol [ calcolaArco %tmp.3 8 33 44 ];
+        %tmp.3 = getv function %tmp.2 :calcolaArco;
+        %tmp.4 = lgetv %startDeg;
+        symbol [ startDeg %tmp.4 8 45 53 ];
+        %tmp.5 = lgetv %endDeg;
+        symbol [ endDeg %tmp.5 8 55 61 ];
+        %tmp.6 = lgetv %cw;
+        symbol [ cw %tmp.6 8 63 65 ];
+        %tmp.7 = invoke %tmp.2 %tmp.3(%tmp.4, %tmp.5, %tmp.6);
+        lputv %totalDeg.1 %tmp.7;
+        symbol [ totalDeg %totalDeg.1 8 12 20 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRingTick.mc" 9 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_7_123_51_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_7_123_51_4_stop" ]
+        %arcDir.2 = local;
+        symbol [ arcDir %arcDir.2 9 12 18 ];
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_9_23_9_62_begin:
+        %tmp.8 = lgetv %cw;
+        symbol [ cw %tmp.8 9 23 25 ];
+        bf %tmp.8 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_9_23_9_62_else_false;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_9_23_9_62_true:
+        symbol [ Graphics %tmp.9 9 28 36 ];
+        %tmp.9 = getm $.Toybox.Graphics;
+        symbol [ ARC_CLOCKWISE %tmp.10 9 37 50 ];
+        %tmp.10 = getv %tmp.9 :ARC_CLOCKWISE;
+        push %tmp.10;
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_9_23_9_62_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_9_23_9_62_else_false:
+        symbol [ Graphics %tmp.11 9 53 61 ];
+        %tmp.11 = getm $.Toybox.Graphics;
+        symbol [ ARC_COUNTER_CLOCKWISE %tmp.12 9 62 83 ];
+        %tmp.12 = getv %tmp.11 :ARC_COUNTER_CLOCKWISE;
+        push %tmp.12;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_9_23_9_62_end:
+        %tmp.13 = phi [%tmp.8 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_9_23_9_62_begin] [%tmp.10 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_9_23_9_62_true] [%tmp.12 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_9_23_9_62_else_false] [%tmp.13 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_9_23_9_62_end];
+        lputv %arcDir.2 %tmp.13;
+        symbol [ arcDir %arcDir.2 9 12 18 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRingTick.mc" 10 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_7_123_51_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_7_123_51_4_stop" ]
+        %spessore.3 = local;
+        symbol [ spessore %spessore.3 10 12 20 ];
+        %tmp.14 = lgetv %cfg;
+        symbol [ cfg %tmp.14 10 24 27 ];
+        %tmp.15 = "spessore";
+        %tmp.16 = agetv %tmp.14 %tmp.15;
+        lputv %spessore.3 %tmp.16;
+        symbol [ spessore %spessore.3 10 12 20 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRingTick.mc" 11 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_7_123_51_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_7_123_51_4_stop" ]
+        %raggio.4 = local;
+        symbol [ raggio %raggio.4 11 12 18 ];
+        %tmp.17 = lgetv %cfg;
+        symbol [ cfg %tmp.17 11 24 27 ];
+        %tmp.18 = "raggio";
+        %tmp.19 = agetv %tmp.17 %tmp.18;
+        lputv %raggio.4 %tmp.19;
+        symbol [ raggio %raggio.4 11 12 18 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRingTick.mc" 12 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_7_123_51_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_7_123_51_4_stop" ]
+        %nTacche.5 = local;
+        symbol [ nTacche %nTacche.5 12 12 19 ];
+        %tmp.20 = lgetv %cfg;
+        symbol [ cfg %tmp.20 12 24 27 ];
+        %tmp.21 = "segmenti";
+        %tmp.22 = agetv %tmp.20 %tmp.21;
+        lputv %nTacche.5 %tmp.22;
+        symbol [ nTacche %nTacche.5 12 12 19 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRingTick.mc" 13 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_7_123_51_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_7_123_51_4_stop" ]
+        %lunghezza.6 = local;
+        symbol [ lunghezza %lunghezza.6 13 12 21 ];
+        %tmp.23 = lgetv %cfg;
+        symbol [ cfg %tmp.23 13 24 27 ];
+        %tmp.24 = "lunghezza";
+        %tmp.25 = agetv %tmp.23 %tmp.24;
+        lputv %lunghezza.6 %tmp.25;
+        symbol [ lunghezza %lunghezza.6 13 12 21 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRingTick.mc" 15 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_7_123_51_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_7_123_51_4_stop" ]
+        %perc.7 = local;
+        symbol [ perc %perc.7 15 12 16 ];
+        %tmp.26 = lgetv %valore;
+        symbol [ valore %tmp.26 15 19 25 ];
+        symbol [ toFloat %tmp.27 15 26 33 ];
+        %tmp.27 = getv function %tmp.26 :toFloat;
+        %tmp.28 = invoke %tmp.26 %tmp.27();
+        %tmp.29 = lgetv %goal;
+        symbol [ goal %tmp.29 15 38 42 ];
+        symbol [ toFloat %tmp.30 15 43 50 ];
+        %tmp.30 = getv function %tmp.29 :toFloat;
+        %tmp.31 = invoke %tmp.29 %tmp.30();
+        %tmp.32 = div %tmp.28 %tmp.31;
+        lputv %perc.7 %tmp.32;
+        symbol [ perc %perc.7 15 12 16 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRingTick.mc" 16 8 ]
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_16_8_16_40_if_stmt:
+        %tmp.33 = lgetv %perc.7;
+        symbol [ perc %tmp.33 16 12 16 ];
+        %tmp.34 = 1.0f;
+        %tmp.35 = gt %tmp.33 %tmp.34;
+        bf %tmp.35 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_16_8_16_40_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_16_8_16_40_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_16_25_16_40_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRingTick.mc" 16 27 ]
+        %tmp.36 = 1.0f;
+        lputv %perc.7 %tmp.36;
+        symbol [ perc %perc.7 16 27 31 ];
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_16_25_16_40_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_16_8_16_40_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_16_8_16_40_if_end:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRingTick.mc" 17 8 ]
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_17_8_17_40_if_stmt:
+        %tmp.37 = lgetv %perc.7;
+        symbol [ perc %tmp.37 17 12 16 ];
+        %tmp.38 = 0.0f;
+        %tmp.39 = lt %tmp.37 %tmp.38;
+        bf %tmp.39 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_17_8_17_40_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_17_8_17_40_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_17_25_17_40_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRingTick.mc" 17 27 ]
+        %tmp.40 = 0.0f;
+        lputv %perc.7 %tmp.40;
+        symbol [ perc %perc.7 17 27 31 ];
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_17_25_17_40_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_17_8_17_40_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_17_8_17_40_if_end:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRingTick.mc" 19 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_7_123_51_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_7_123_51_4_stop" ]
+        %filledAngle.8 = local;
+        symbol [ filledAngle %filledAngle.8 19 12 23 ];
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_19_26_21_52_begin:
+        %tmp.41 = lgetv %cw;
+        symbol [ cw %tmp.41 19 26 28 ];
+        bf %tmp.41 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_19_26_21_52_else_false;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_19_26_21_52_true:
+        %tmp.42 = lgetv %startDeg;
+        symbol [ startDeg %tmp.42 20 15 23 ];
+        %tmp.43 = lgetv %perc.7;
+        symbol [ perc %tmp.43 20 26 30 ];
+        %tmp.44 = lgetv %totalDeg.1;
+        symbol [ totalDeg %tmp.44 20 33 41 ];
+        %tmp.45 = mul %tmp.43 %tmp.44;
+        %tmp.46 = sub %tmp.42 %tmp.45;
+        symbol [ toNumber %tmp.47 20 43 51 ];
+        %tmp.47 = getv function %tmp.46 :toNumber;
+        %tmp.48 = invoke %tmp.46 %tmp.47();
+        push %tmp.48;
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_19_26_21_52_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_19_26_21_52_else_false:
+        %tmp.49 = lgetv %startDeg;
+        symbol [ startDeg %tmp.49 21 15 23 ];
+        %tmp.50 = lgetv %perc.7;
+        symbol [ perc %tmp.50 21 26 30 ];
+        %tmp.51 = lgetv %totalDeg.1;
+        symbol [ totalDeg %tmp.51 21 33 41 ];
+        %tmp.52 = mul %tmp.50 %tmp.51;
+        %tmp.53 = add %tmp.49 %tmp.52;
+        symbol [ toNumber %tmp.54 21 43 51 ];
+        %tmp.54 = getv function %tmp.53 :toNumber;
+        %tmp.55 = invoke %tmp.53 %tmp.54();
+        push %tmp.55;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_19_26_21_52_end:
+        %tmp.56 = phi [%tmp.41 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_19_26_21_52_begin] [%tmp.48 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_19_26_21_52_true] [%tmp.55 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_19_26_21_52_else_false] [%tmp.56 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_19_26_21_52_end];
+        lputv %filledAngle.8 %tmp.56;
+        symbol [ filledAngle %filledAngle.8 19 12 23 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRingTick.mc" 24 8 ]
+        %tmp.57 = lgetv %dc;
+        symbol [ dc %tmp.57 24 8 10 ];
+        symbol [ setColor %tmp.58 24 11 19 ];
+        %tmp.58 = getv function %tmp.57 :setColor;
+        %tmp.59 = lgetv %cfg;
+        symbol [ cfg %tmp.59 24 20 23 ];
+        %tmp.60 = "sfondo";
+        %tmp.61 = agetv %tmp.59 %tmp.60;
+        symbol [ Graphics %tmp.62 24 35 43 ];
+        %tmp.62 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.63 24 44 61 ];
+        %tmp.63 = getv %tmp.62 :COLOR_TRANSPARENT;
+        invoke %tmp.57 %tmp.58(%tmp.61, %tmp.63);
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRingTick.mc" 25 8 ]
+        %tmp.64 = lgetv %dc;
+        symbol [ dc %tmp.64 25 8 10 ];
+        symbol [ setPenWidth %tmp.65 25 11 22 ];
+        %tmp.65 = getv function %tmp.64 :setPenWidth;
+        %tmp.66 = lgetv %spessore.3;
+        symbol [ spessore %tmp.66 25 23 31 ];
+        invoke %tmp.64 %tmp.65(%tmp.66);
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRingTick.mc" 26 8 ]
+        %tmp.67 = lgetv %dc;
+        symbol [ dc %tmp.67 26 8 10 ];
+        symbol [ drawArc %tmp.68 26 11 18 ];
+        %tmp.68 = getv function %tmp.67 :drawArc;
+        %tmp.69 = lgetv %cx;
+        symbol [ cx %tmp.69 26 19 21 ];
+        %tmp.70 = lgetv %cy;
+        symbol [ cy %tmp.70 26 23 25 ];
+        %tmp.71 = lgetv %raggio.4;
+        symbol [ raggio %tmp.71 26 27 33 ];
+        %tmp.72 = lgetv %arcDir.2;
+        symbol [ arcDir %tmp.72 26 35 41 ];
+        %tmp.73 = lgetv %startDeg;
+        symbol [ startDeg %tmp.73 26 43 51 ];
+        %tmp.74 = lgetv %endDeg;
+        symbol [ endDeg %tmp.74 26 53 59 ];
+        invoke %tmp.67 %tmp.68(%tmp.69, %tmp.70, %tmp.71, %tmp.72, %tmp.73, %tmp.74);
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRingTick.mc" 29 8 ]
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_29_8_32_8_if_stmt:
+        %tmp.75 = lgetv %perc.7;
+        symbol [ perc %tmp.75 29 12 16 ];
+        %tmp.76 = 0.0f;
+        %tmp.77 = gt %tmp.75 %tmp.76;
+        bf %tmp.77 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_29_8_32_8_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_29_8_32_8_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_29_25_32_8_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRingTick.mc" 30 12 ]
+        %tmp.78 = lgetv %dc;
+        symbol [ dc %tmp.78 30 12 14 ];
+        symbol [ setColor %tmp.79 30 15 23 ];
+        %tmp.79 = getv function %tmp.78 :setColor;
+        %tmp.80 = lgetv %cfg;
+        symbol [ cfg %tmp.80 30 24 27 ];
+        %tmp.81 = "fill";
+        %tmp.82 = agetv %tmp.80 %tmp.81;
+        symbol [ Graphics %tmp.83 30 37 45 ];
+        %tmp.83 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.84 30 46 63 ];
+        %tmp.84 = getv %tmp.83 :COLOR_TRANSPARENT;
+        invoke %tmp.78 %tmp.79(%tmp.82, %tmp.84);
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRingTick.mc" 31 12 ]
+        %tmp.85 = lgetv %dc;
+        symbol [ dc %tmp.85 31 12 14 ];
+        symbol [ drawArc %tmp.86 31 15 22 ];
+        %tmp.86 = getv function %tmp.85 :drawArc;
+        %tmp.87 = lgetv %cx;
+        symbol [ cx %tmp.87 31 23 25 ];
+        %tmp.88 = lgetv %cy;
+        symbol [ cy %tmp.88 31 27 29 ];
+        %tmp.89 = lgetv %raggio.4;
+        symbol [ raggio %tmp.89 31 31 37 ];
+        %tmp.90 = lgetv %arcDir.2;
+        symbol [ arcDir %tmp.90 31 39 45 ];
+        %tmp.91 = lgetv %startDeg;
+        symbol [ startDeg %tmp.91 31 47 55 ];
+        %tmp.92 = lgetv %filledAngle.8;
+        symbol [ filledAngle %tmp.92 31 57 68 ];
+        invoke %tmp.85 %tmp.86(%tmp.87, %tmp.88, %tmp.89, %tmp.90, %tmp.91, %tmp.92);
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_29_25_32_8_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_29_8_32_8_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_29_8_32_8_if_end:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRingTick.mc" 33 8 ]
+        %tmp.93 = lgetv %dc;
+        symbol [ dc %tmp.93 33 8 10 ];
+        symbol [ setPenWidth %tmp.94 33 11 22 ];
+        %tmp.94 = getv function %tmp.93 :setPenWidth;
+        %tmp.95 = 1;
+        invoke %tmp.93 %tmp.94(%tmp.95);
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRingTick.mc" 36 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_7_123_51_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_7_123_51_4_stop" ]
+        %stepDeg.9 = local;
+        symbol [ stepDeg %stepDeg.9 36 12 19 ];
+        %tmp.96 = lgetv %totalDeg.1;
+        symbol [ totalDeg %tmp.96 36 22 30 ];
+        symbol [ toFloat %tmp.97 36 31 38 ];
+        %tmp.97 = getv function %tmp.96 :toFloat;
+        %tmp.98 = invoke %tmp.96 %tmp.97();
+        %tmp.99 = lgetv %nTacche.5;
+        symbol [ nTacche %tmp.99 36 43 50 ];
+        %tmp.100 = div %tmp.98 %tmp.99;
+        lputv %stepDeg.9 %tmp.100;
+        symbol [ stepDeg %stepDeg.9 36 12 19 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRingTick.mc" 37 8 ]
+        for @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_37_8_50_8_for_test @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_37_8_50_8_for_incr @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_37_8_50_8_for_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_37_8_50_8_for_init:
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_37_8_50_8_for_begin" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_37_8_50_8_for_end" ]
+        %i.10 = local;
+        symbol [ i %i.10 37 17 18 ];
+        %tmp.101 = 0;
+        lputv %i.10 %tmp.101;
+        symbol [ i %i.10 37 17 18 ];
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_37_8_50_8_for_test:
+        %tmp.102 = lgetv %i.10;
+        symbol [ i %tmp.102 37 24 25 ];
+        %tmp.103 = lgetv %nTacche.5;
+        symbol [ nTacche %tmp.103 37 29 36 ];
+        %tmp.104 = lte %tmp.102 %tmp.103;
+        bf %tmp.104 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_37_8_50_8_for_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_37_8_50_8_for_begin:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_37_43_50_8_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRingTick.mc" 38 12 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_37_43_50_8_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_37_43_50_8_stop" ]
+        %taccaDeg.11 = local;
+        symbol [ taccaDeg %taccaDeg.11 38 16 24 ];
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_38_27_40_52_begin:
+        %tmp.105 = lgetv %cw;
+        symbol [ cw %tmp.105 38 27 29 ];
+        bf %tmp.105 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_38_27_40_52_else_false;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_38_27_40_52_true:
+        %tmp.106 = lgetv %startDeg;
+        symbol [ startDeg %tmp.106 39 19 27 ];
+        %tmp.107 = lgetv %i.10;
+        symbol [ i %tmp.107 39 30 31 ];
+        %tmp.108 = lgetv %stepDeg.9;
+        symbol [ stepDeg %tmp.108 39 34 41 ];
+        %tmp.109 = mul %tmp.107 %tmp.108;
+        %tmp.110 = sub %tmp.106 %tmp.109;
+        symbol [ toNumber %tmp.111 39 43 51 ];
+        %tmp.111 = getv function %tmp.110 :toNumber;
+        %tmp.112 = invoke %tmp.110 %tmp.111();
+        push %tmp.112;
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_38_27_40_52_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_38_27_40_52_else_false:
+        %tmp.113 = lgetv %startDeg;
+        symbol [ startDeg %tmp.113 40 19 27 ];
+        %tmp.114 = lgetv %i.10;
+        symbol [ i %tmp.114 40 30 31 ];
+        %tmp.115 = lgetv %stepDeg.9;
+        symbol [ stepDeg %tmp.115 40 34 41 ];
+        %tmp.116 = mul %tmp.114 %tmp.115;
+        %tmp.117 = add %tmp.113 %tmp.116;
+        symbol [ toNumber %tmp.118 40 43 51 ];
+        %tmp.118 = getv function %tmp.117 :toNumber;
+        %tmp.119 = invoke %tmp.117 %tmp.118();
+        push %tmp.119;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_38_27_40_52_end:
+        %tmp.120 = phi [%tmp.105 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_38_27_40_52_begin] [%tmp.112 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_38_27_40_52_true] [%tmp.119 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_38_27_40_52_else_false] [%tmp.120 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_38_27_40_52_end];
+        lputv %taccaDeg.11 %tmp.120;
+        symbol [ taccaDeg %taccaDeg.11 38 16 24 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRingTick.mc" 41 12 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_37_43_50_8_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_37_43_50_8_stop" ]
+        %rad.12 = local;
+        symbol [ rad %rad.12 41 16 19 ];
+        symbol [ Math %tmp.121 41 23 27 ];
+        %tmp.121 = getm $.Toybox.Math;
+        symbol [ toRadians %tmp.122 41 28 37 ];
+        %tmp.122 = getv function %tmp.121 :toRadians;
+        %tmp.123 = lgetv %taccaDeg.11;
+        symbol [ taccaDeg %tmp.123 41 38 46 ];
+        %tmp.124 = invoke %tmp.121 %tmp.122(%tmp.123);
+        lputv %rad.12 %tmp.124;
+        symbol [ rad %rad.12 41 16 19 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRingTick.mc" 42 12 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_37_43_50_8_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_37_43_50_8_stop" ]
+        %cosA.13 = local;
+        symbol [ cosA %cosA.13 42 16 20 ];
+        symbol [ Math %tmp.125 42 23 27 ];
+        %tmp.125 = getm $.Toybox.Math;
+        symbol [ cos %tmp.126 42 28 31 ];
+        %tmp.126 = getv function %tmp.125 :cos;
+        %tmp.127 = lgetv %rad.12;
+        symbol [ rad %tmp.127 42 32 35 ];
+        %tmp.128 = invoke %tmp.125 %tmp.126(%tmp.127);
+        lputv %cosA.13 %tmp.128;
+        symbol [ cosA %cosA.13 42 16 20 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRingTick.mc" 43 12 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_37_43_50_8_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_37_43_50_8_stop" ]
+        %sinA.14 = local;
+        symbol [ sinA %sinA.14 43 16 20 ];
+        symbol [ Math %tmp.129 43 23 27 ];
+        %tmp.129 = getm $.Toybox.Math;
+        symbol [ sin %tmp.130 43 28 31 ];
+        %tmp.130 = getv function %tmp.129 :sin;
+        %tmp.131 = lgetv %rad.12;
+        symbol [ rad %tmp.131 43 32 35 ];
+        %tmp.132 = invoke %tmp.129 %tmp.130(%tmp.131);
+        lputv %sinA.14 %tmp.132;
+        symbol [ sinA %sinA.14 43 16 20 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRingTick.mc" 44 12 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_37_43_50_8_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_37_43_50_8_stop" ]
+        %r1.15 = local;
+        symbol [ r1 %r1.15 44 16 18 ];
+        %tmp.133 = lgetv %raggio.4;
+        symbol [ raggio %tmp.133 44 23 29 ];
+        %tmp.134 = lgetv %lunghezza.6;
+        symbol [ lunghezza %tmp.134 44 32 41 ];
+        %tmp.135 = 2;
+        %tmp.136 = div %tmp.134 %tmp.135;
+        %tmp.137 = sub %tmp.133 %tmp.136;
+        lputv %r1.15 %tmp.137;
+        symbol [ r1 %r1.15 44 16 18 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRingTick.mc" 45 12 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_37_43_50_8_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_37_43_50_8_stop" ]
+        %r2.16 = local;
+        symbol [ r2 %r2.16 45 16 18 ];
+        %tmp.138 = lgetv %raggio.4;
+        symbol [ raggio %tmp.138 45 23 29 ];
+        %tmp.139 = lgetv %lunghezza.6;
+        symbol [ lunghezza %tmp.139 45 32 41 ];
+        %tmp.140 = 2;
+        %tmp.141 = div %tmp.139 %tmp.140;
+        %tmp.142 = add %tmp.138 %tmp.141;
+        lputv %r2.16 %tmp.142;
+        symbol [ r2 %r2.16 45 16 18 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRingTick.mc" 46 12 ]
+        %tmp.143 = lgetv %dc;
+        symbol [ dc %tmp.143 46 12 14 ];
+        symbol [ setColor %tmp.144 46 15 23 ];
+        %tmp.144 = getv function %tmp.143 :setColor;
+        %tmp.145 = lgetv %cfg;
+        symbol [ cfg %tmp.145 46 24 27 ];
+        %tmp.146 = "colTacca";
+        %tmp.147 = agetv %tmp.145 %tmp.146;
+        symbol [ Graphics %tmp.148 46 41 49 ];
+        %tmp.148 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.149 46 50 67 ];
+        %tmp.149 = getv %tmp.148 :COLOR_TRANSPARENT;
+        invoke %tmp.143 %tmp.144(%tmp.147, %tmp.149);
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRingTick.mc" 47 12 ]
+        %tmp.150 = lgetv %dc;
+        symbol [ dc %tmp.150 47 12 14 ];
+        symbol [ setPenWidth %tmp.151 47 15 26 ];
+        %tmp.151 = getv function %tmp.150 :setPenWidth;
+        %tmp.152 = 1;
+        invoke %tmp.150 %tmp.151(%tmp.152);
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRingTick.mc" 48 12 ]
+        %tmp.153 = lgetv %dc;
+        symbol [ dc %tmp.153 48 12 14 ];
+        symbol [ drawLine %tmp.154 48 15 23 ];
+        %tmp.154 = getv function %tmp.153 :drawLine;
+        %tmp.155 = lgetv %cx;
+        symbol [ cx %tmp.155 48 25 27 ];
+        %tmp.156 = lgetv %r1.15;
+        symbol [ r1 %tmp.156 48 30 32 ];
+        %tmp.157 = lgetv %cosA.13;
+        symbol [ cosA %tmp.157 48 35 39 ];
+        %tmp.158 = mul %tmp.156 %tmp.157;
+        %tmp.159 = add %tmp.155 %tmp.158;
+        symbol [ toNumber %tmp.160 48 41 49 ];
+        %tmp.160 = getv function %tmp.159 :toNumber;
+        %tmp.161 = invoke %tmp.159 %tmp.160();
+        %tmp.162 = lgetv %cy;
+        symbol [ cy %tmp.162 48 54 56 ];
+        %tmp.163 = lgetv %r1.15;
+        symbol [ r1 %tmp.163 48 59 61 ];
+        %tmp.164 = lgetv %sinA.14;
+        symbol [ sinA %tmp.164 48 64 68 ];
+        %tmp.165 = mul %tmp.163 %tmp.164;
+        %tmp.166 = sub %tmp.162 %tmp.165;
+        symbol [ toNumber %tmp.167 48 70 78 ];
+        %tmp.167 = getv function %tmp.166 :toNumber;
+        %tmp.168 = invoke %tmp.166 %tmp.167();
+        %tmp.169 = lgetv %cx;
+        symbol [ cx %tmp.169 49 25 27 ];
+        %tmp.170 = lgetv %r2.16;
+        symbol [ r2 %tmp.170 49 30 32 ];
+        %tmp.171 = lgetv %cosA.13;
+        symbol [ cosA %tmp.171 49 35 39 ];
+        %tmp.172 = mul %tmp.170 %tmp.171;
+        %tmp.173 = add %tmp.169 %tmp.172;
+        symbol [ toNumber %tmp.174 49 41 49 ];
+        %tmp.174 = getv function %tmp.173 :toNumber;
+        %tmp.175 = invoke %tmp.173 %tmp.174();
+        %tmp.176 = lgetv %cy;
+        symbol [ cy %tmp.176 49 54 56 ];
+        %tmp.177 = lgetv %r2.16;
+        symbol [ r2 %tmp.177 49 59 61 ];
+        %tmp.178 = lgetv %sinA.14;
+        symbol [ sinA %tmp.178 49 64 68 ];
+        %tmp.179 = mul %tmp.177 %tmp.178;
+        %tmp.180 = sub %tmp.176 %tmp.179;
+        symbol [ toNumber %tmp.181 49 70 78 ];
+        %tmp.181 = getv function %tmp.180 :toNumber;
+        %tmp.182 = invoke %tmp.180 %tmp.181();
+        invoke %tmp.153 %tmp.154(%tmp.161, %tmp.168, %tmp.175, %tmp.182);
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_37_43_50_8_stop:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_37_8_50_8_for_incr:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRingTick.mc" 37 ]
+        %tmp.185 = lgetv %i.10;
+        symbol [ i %tmp.185 37 38 39 ];
+        %tmp.186 = add %tmp.185 1;
+        lputv %i.10 %tmp.186;
+        symbol [ i %i.10 37 38 39 ];
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_37_8_50_8_for_test;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_37_8_50_8_for_end:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRingTick_mc_7_123_51_4_stop:
+    }
+}
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRingTick.mc"; @line = 1; ]
+<init> {
+}

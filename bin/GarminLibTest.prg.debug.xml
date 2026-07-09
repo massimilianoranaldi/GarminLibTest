@@ -1,0 +1,1166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="C:\GarminProject\GarminLibTest\manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestApp.mc" id="1" lineNum="31" parent="globals" pc="268435460" symbol="getApp"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestApp.mc" id="1" lineNum="32" parent="globals" pc="268435470" symbol="getApp"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestBackground.mc" id="2" lineNum="6" parent="globals/Background" pc="268435486" symbol="&lt;init&gt;"/>
+        <entry filename="c:\\GarminProject\\GarminLibTest\\bin\\gen\\006-B3290-00\\source\\Rez.mcgen" id="3" lineNum="7" parent="globals/Rez" pc="268435505" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestApp.mc" id="4" lineNum="5" parent="globals/GarminLibTestApp" pc="268435529" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestView.mc" id="5" lineNum="7" parent="globals/GarminLibTestView" pc="268435548" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="6" lineNum="32" parent="globals/ActivityData" pc="268435567" symbol="getDistanceKm"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="6" lineNum="33" parent="globals/ActivityData" pc="268435571" symbol="getDistanceKm"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="6" lineNum="34" parent="globals/ActivityData" pc="268435588" symbol="getDistanceKm"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="6" lineNum="35" parent="globals/ActivityData" pc="268435598" symbol="getDistanceKm"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="6" lineNum="35" parent="globals/ActivityData" pc="268435604" symbol="getDistanceKm"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="6" lineNum="36" parent="globals/ActivityData" pc="268435613" symbol="getDistanceKm"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="7" lineNum="14" parent="globals/ActivityData" pc="268435622" symbol="getCalories"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="7" lineNum="15" parent="globals/ActivityData" pc="268435626" symbol="getCalories"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="7" lineNum="16" parent="globals/ActivityData" pc="268435643" symbol="getCalories"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="8" lineNum="39" parent="globals/ActivityData" pc="268435673" symbol="getFloors"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="8" lineNum="40" parent="globals/ActivityData" pc="268435677" symbol="getFloors"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="8" lineNum="41" parent="globals/ActivityData" pc="268435694" symbol="getFloors"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="8" lineNum="42" parent="globals/ActivityData" pc="268435725" symbol="getFloors"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="8" lineNum="43" parent="globals/ActivityData" pc="268435756" symbol="getFloors"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="9" lineNum="54" parent="globals/ActivityData" pc="268435783" symbol="getBodyBatteryMidnight"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="9" lineNum="55" parent="globals/ActivityData" pc="268435787" symbol="getBodyBatteryMidnight"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="9" lineNum="59" parent="globals/ActivityData" pc="268435846" symbol="getBodyBatteryMidnight"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="9" lineNum="60" parent="globals/ActivityData" pc="268435859" symbol="getBodyBatteryMidnight"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="9" lineNum="60" parent="globals/ActivityData" pc="268435865" symbol="getBodyBatteryMidnight"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="9" lineNum="61" parent="globals/ActivityData" pc="268435874" symbol="getBodyBatteryMidnight"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="9" lineNum="62" parent="globals/ActivityData" pc="268435884" symbol="getBodyBatteryMidnight"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="10" lineNum="26" parent="globals/ActivityData" pc="268435902" symbol="getSteps"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="10" lineNum="27" parent="globals/ActivityData" pc="268435906" symbol="getSteps"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="10" lineNum="28" parent="globals/ActivityData" pc="268435923" symbol="getSteps"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="10" lineNum="29" parent="globals/ActivityData" pc="268435933" symbol="getSteps"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="11" lineNum="8" parent="globals/ActivityData" pc="268435951" symbol="getActiveMinutesWeek"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="11" lineNum="9" parent="globals/ActivityData" pc="268435955" symbol="getActiveMinutesWeek"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="11" lineNum="10" parent="globals/ActivityData" pc="268435972" symbol="getActiveMinutesWeek"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="11" lineNum="11" parent="globals/ActivityData" pc="268435982" symbol="getActiveMinutesWeek"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="13" lineNum="46" parent="globals/ActivityData" pc="268436006" symbol="getBodyBattery"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="13" lineNum="47" parent="globals/ActivityData" pc="268436010" symbol="getBodyBattery"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="13" lineNum="48" parent="globals/ActivityData" pc="268436046" symbol="getBodyBattery"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="13" lineNum="49" parent="globals/ActivityData" pc="268436059" symbol="getBodyBattery"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="13" lineNum="49" parent="globals/ActivityData" pc="268436065" symbol="getBodyBattery"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="13" lineNum="50" parent="globals/ActivityData" pc="268436074" symbol="getBodyBattery"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="13" lineNum="51" parent="globals/ActivityData" pc="268436084" symbol="getBodyBattery"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="14" lineNum="19" parent="globals/ActivityData" pc="268436102" symbol="getActiveMinutes"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="14" lineNum="20" parent="globals/ActivityData" pc="268436106" symbol="getActiveMinutes"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="14" lineNum="21" parent="globals/ActivityData" pc="268436123" symbol="getActiveMinutes"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="14" lineNum="22" parent="globals/ActivityData" pc="268436133" symbol="getActiveMinutes"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="14" lineNum="22" parent="globals/ActivityData" pc="268436139" symbol="getActiveMinutes"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\activity\\ActivityData.mc" id="14" lineNum="23" parent="globals/ActivityData" pc="268436148" symbol="getActiveMinutes"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBarDash.mc" id="15" lineNum="41" parent="globals/ProgressBarDash" pc="268436157" symbol="_drawVerticale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBarDash.mc" id="15" lineNum="42" parent="globals/ProgressBarDash" pc="268436161" symbol="_drawVerticale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBarDash.mc" id="15" lineNum="43" parent="globals/ProgressBarDash" pc="268436180" symbol="_drawVerticale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBarDash.mc" id="15" lineNum="44" parent="globals/ProgressBarDash" pc="268436202" symbol="_drawVerticale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBarDash.mc" id="15" lineNum="45" parent="globals/ProgressBarDash" pc="268436224" symbol="_drawVerticale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBarDash.mc" id="15" lineNum="46" parent="globals/ProgressBarDash" pc="268436234" symbol="_drawVerticale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBarDash.mc" id="15" lineNum="47" parent="globals/ProgressBarDash" pc="268436244" symbol="_drawVerticale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBarDash.mc" id="15" lineNum="48" parent="globals/ProgressBarDash" pc="268436260" symbol="_drawVerticale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBarDash.mc" id="15" lineNum="49" parent="globals/ProgressBarDash" pc="268436273" symbol="_drawVerticale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBarDash.mc" id="15" lineNum="51" parent="globals/ProgressBarDash" pc="268436292" symbol="_drawVerticale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBarDash.mc" id="15" lineNum="52" parent="globals/ProgressBarDash" pc="268436307" symbol="_drawVerticale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBarDash.mc" id="15" lineNum="53" parent="globals/ProgressBarDash" pc="268436330" symbol="_drawVerticale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBarDash.mc" id="15" lineNum="54" parent="globals/ProgressBarDash" pc="268436343" symbol="_drawVerticale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBarDash.mc" id="15" lineNum="55" parent="globals/ProgressBarDash" pc="268436372" symbol="_drawVerticale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBarDash.mc" id="15" lineNum="56" parent="globals/ProgressBarDash" pc="268436388" symbol="_drawVerticale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBarDash.mc" id="16" lineNum="22" parent="globals/ProgressBarDash" pc="268436424" symbol="_drawOrizzontale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBarDash.mc" id="16" lineNum="23" parent="globals/ProgressBarDash" pc="268436428" symbol="_drawOrizzontale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBarDash.mc" id="16" lineNum="24" parent="globals/ProgressBarDash" pc="268436447" symbol="_drawOrizzontale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBarDash.mc" id="16" lineNum="25" parent="globals/ProgressBarDash" pc="268436469" symbol="_drawOrizzontale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBarDash.mc" id="16" lineNum="26" parent="globals/ProgressBarDash" pc="268436491" symbol="_drawOrizzontale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBarDash.mc" id="16" lineNum="27" parent="globals/ProgressBarDash" pc="268436501" symbol="_drawOrizzontale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBarDash.mc" id="16" lineNum="28" parent="globals/ProgressBarDash" pc="268436511" symbol="_drawOrizzontale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBarDash.mc" id="16" lineNum="29" parent="globals/ProgressBarDash" pc="268436527" symbol="_drawOrizzontale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBarDash.mc" id="16" lineNum="30" parent="globals/ProgressBarDash" pc="268436540" symbol="_drawOrizzontale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBarDash.mc" id="16" lineNum="32" parent="globals/ProgressBarDash" pc="268436559" symbol="_drawOrizzontale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBarDash.mc" id="16" lineNum="33" parent="globals/ProgressBarDash" pc="268436574" symbol="_drawOrizzontale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBarDash.mc" id="16" lineNum="34" parent="globals/ProgressBarDash" pc="268436597" symbol="_drawOrizzontale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBarDash.mc" id="16" lineNum="35" parent="globals/ProgressBarDash" pc="268436610" symbol="_drawOrizzontale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBarDash.mc" id="16" lineNum="36" parent="globals/ProgressBarDash" pc="268436639" symbol="_drawOrizzontale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBarDash.mc" id="16" lineNum="37" parent="globals/ProgressBarDash" pc="268436655" symbol="_drawOrizzontale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBarDash.mc" id="18" lineNum="6" parent="globals/ProgressBarDash" pc="268436691" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBarDash.mc" id="18" lineNum="8" parent="globals/ProgressBarDash" pc="268436695" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBarDash.mc" id="18" lineNum="9" parent="globals/ProgressBarDash" pc="268436720" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBarDash.mc" id="18" lineNum="9" parent="globals/ProgressBarDash" pc="268436731" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBarDash.mc" id="18" lineNum="10" parent="globals/ProgressBarDash" pc="268436741" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBarDash.mc" id="18" lineNum="10" parent="globals/ProgressBarDash" pc="268436752" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBarDash.mc" id="18" lineNum="12" parent="globals/ProgressBarDash" pc="268436762" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBarDash.mc" id="18" lineNum="13" parent="globals/ProgressBarDash" pc="268436772" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBarDash.mc" id="18" lineNum="15" parent="globals/ProgressBarDash" pc="268436782" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBarDash.mc" id="18" lineNum="16" parent="globals/ProgressBarDash" pc="268436801" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBarDash.mc" id="18" lineNum="18" parent="globals/ProgressBarDash" pc="268436832" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestBackground.mc" id="19" lineNum="8" parent="globals/Background" pc="268436861" symbol="initialize"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestBackground.mc" id="19" lineNum="9" parent="globals/Background" pc="268436865" symbol="initialize"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestBackground.mc" id="19" lineNum="13" parent="globals/Background" pc="268436886" symbol="initialize"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestBackground.mc" id="20" lineNum="16" parent="globals/Background" pc="268436907" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestBackground.mc" id="20" lineNum="18" parent="globals/Background" pc="268436909" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestBackground.mc" id="20" lineNum="19" parent="globals/Background" pc="268436946" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\Battery.mc" id="21" lineNum="7" parent="globals/BatteryRenderer" pc="268436959" symbol="drawBatteria"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\Battery.mc" id="21" lineNum="8" parent="globals/BatteryRenderer" pc="268436963" symbol="drawBatteria"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\Battery.mc" id="21" lineNum="9" parent="globals/BatteryRenderer" pc="268436980" symbol="drawBatteria"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\Battery.mc" id="21" lineNum="10" parent="globals/BatteryRenderer" pc="268436990" symbol="drawBatteria"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\Battery.mc" id="21" lineNum="12" parent="globals/BatteryRenderer" pc="268437014" symbol="drawBatteria"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\Battery.mc" id="21" lineNum="13" parent="globals/BatteryRenderer" pc="268437024" symbol="drawBatteria"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\Battery.mc" id="21" lineNum="13" parent="globals/BatteryRenderer" pc="268437035" symbol="drawBatteria"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\Battery.mc" id="21" lineNum="14" parent="globals/BatteryRenderer" pc="268437048" symbol="drawBatteria"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\Battery.mc" id="21" lineNum="14" parent="globals/BatteryRenderer" pc="268437059" symbol="drawBatteria"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\Battery.mc" id="21" lineNum="16" parent="globals/BatteryRenderer" pc="268437072" symbol="drawBatteria"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\Battery.mc" id="21" lineNum="17" parent="globals/BatteryRenderer" pc="268437091" symbol="drawBatteria"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\Battery.mc" id="21" lineNum="19" parent="globals/BatteryRenderer" pc="268437124" symbol="drawBatteria"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\Battery.mc" id="22" lineNum="43" parent="globals/BatteryRenderer" pc="268437155" symbol="_drawVerticale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\Battery.mc" id="22" lineNum="44" parent="globals/BatteryRenderer" pc="268437159" symbol="_drawVerticale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\Battery.mc" id="22" lineNum="45" parent="globals/BatteryRenderer" pc="268437181" symbol="_drawVerticale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\Battery.mc" id="22" lineNum="47" parent="globals/BatteryRenderer" pc="268437203" symbol="_drawVerticale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\Battery.mc" id="22" lineNum="48" parent="globals/BatteryRenderer" pc="268437225" symbol="_drawVerticale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\Battery.mc" id="22" lineNum="49" parent="globals/BatteryRenderer" pc="268437242" symbol="_drawVerticale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\Battery.mc" id="22" lineNum="50" parent="globals/BatteryRenderer" pc="268437267" symbol="_drawVerticale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\Battery.mc" id="22" lineNum="52" parent="globals/BatteryRenderer" pc="268437334" symbol="_drawVerticale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\Battery.mc" id="22" lineNum="53" parent="globals/BatteryRenderer" pc="268437362" symbol="_drawVerticale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\Battery.mc" id="22" lineNum="54" parent="globals/BatteryRenderer" pc="268437381" symbol="_drawVerticale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\Battery.mc" id="22" lineNum="56" parent="globals/BatteryRenderer" pc="268437430" symbol="_drawVerticale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\Battery.mc" id="22" lineNum="57" parent="globals/BatteryRenderer" pc="268437449" symbol="_drawVerticale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\Battery.mc" id="23" lineNum="23" parent="globals/BatteryRenderer" pc="268437484" symbol="_drawOrizzontale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\Battery.mc" id="23" lineNum="24" parent="globals/BatteryRenderer" pc="268437488" symbol="_drawOrizzontale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\Battery.mc" id="23" lineNum="25" parent="globals/BatteryRenderer" pc="268437505" symbol="_drawOrizzontale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\Battery.mc" id="23" lineNum="26" parent="globals/BatteryRenderer" pc="268437524" symbol="_drawOrizzontale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\Battery.mc" id="23" lineNum="27" parent="globals/BatteryRenderer" pc="268437546" symbol="_drawOrizzontale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\Battery.mc" id="23" lineNum="29" parent="globals/BatteryRenderer" pc="268437568" symbol="_drawOrizzontale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\Battery.mc" id="23" lineNum="30" parent="globals/BatteryRenderer" pc="268437590" symbol="_drawOrizzontale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\Battery.mc" id="23" lineNum="31" parent="globals/BatteryRenderer" pc="268437607" symbol="_drawOrizzontale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\Battery.mc" id="23" lineNum="32" parent="globals/BatteryRenderer" pc="268437632" symbol="_drawOrizzontale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\Battery.mc" id="23" lineNum="34" parent="globals/BatteryRenderer" pc="268437696" symbol="_drawOrizzontale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\Battery.mc" id="23" lineNum="35" parent="globals/BatteryRenderer" pc="268437724" symbol="_drawOrizzontale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\Battery.mc" id="23" lineNum="36" parent="globals/BatteryRenderer" pc="268437743" symbol="_drawOrizzontale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\Battery.mc" id="23" lineNum="38" parent="globals/BatteryRenderer" pc="268437786" symbol="_drawOrizzontale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\Battery.mc" id="23" lineNum="39" parent="globals/BatteryRenderer" pc="268437805" symbol="_drawOrizzontale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\Logger.mc" id="25" lineNum="13" parent="globals/Logger" pc="268437846" symbol="warn"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\Logger.mc" id="25" lineNum="14" parent="globals/Logger" pc="268437848" symbol="warn"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\Logger.mc" id="26" lineNum="7" parent="globals/Logger" pc="268437873" symbol="log"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\Logger.mc" id="26" lineNum="8" parent="globals/Logger" pc="268437877" symbol="log"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\Logger.mc" id="26" lineNum="9" parent="globals/Logger" pc="268437914" symbol="log"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\Logger.mc" id="26" lineNum="10" parent="globals/Logger" pc="268437954" symbol="log"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\Logger.mc" id="28" lineNum="17" parent="globals/Logger" pc="268437997" symbol="error"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\Logger.mc" id="28" lineNum="18" parent="globals/Logger" pc="268437999" symbol="error"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestApp.mc" id="29" lineNum="12" parent="globals/GarminLibTestApp" pc="268438024" symbol="onStart"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestApp.mc" id="30" lineNum="25" parent="globals/GarminLibTestApp" pc="268438027" symbol="onSettingsChanged"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestApp.mc" id="30" lineNum="26" parent="globals/GarminLibTestApp" pc="268438029" symbol="onSettingsChanged"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestApp.mc" id="31" lineNum="20" parent="globals/GarminLibTestApp" pc="268438046" symbol="getInitialView"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestApp.mc" id="31" lineNum="21" parent="globals/GarminLibTestApp" pc="268438048" symbol="getInitialView"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestApp.mc" id="32" lineNum="7" parent="globals/GarminLibTestApp" pc="268438085" symbol="initialize"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestApp.mc" id="32" lineNum="8" parent="globals/GarminLibTestApp" pc="268438087" symbol="initialize"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestApp.mc" id="33" lineNum="16" parent="globals/GarminLibTestApp" pc="268438106" symbol="onStop"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDash.mc" id="35" lineNum="7" parent="globals/ActivityRingDash" pc="268438109" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDash.mc" id="35" lineNum="8" parent="globals/ActivityRingDash" pc="268438113" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDash.mc" id="35" lineNum="9" parent="globals/ActivityRingDash" pc="268438138" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDash.mc" id="35" lineNum="10" parent="globals/ActivityRingDash" pc="268438158" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDash.mc" id="35" lineNum="11" parent="globals/ActivityRingDash" pc="268438168" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDash.mc" id="35" lineNum="12" parent="globals/ActivityRingDash" pc="268438178" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDash.mc" id="35" lineNum="13" parent="globals/ActivityRingDash" pc="268438188" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDash.mc" id="35" lineNum="15" parent="globals/ActivityRingDash" pc="268438198" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDash.mc" id="35" lineNum="17" parent="globals/ActivityRingDash" pc="268438220" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDash.mc" id="35" lineNum="18" parent="globals/ActivityRingDash" pc="268438245" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDash.mc" id="35" lineNum="18" parent="globals/ActivityRingDash" pc="268438256" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDash.mc" id="35" lineNum="19" parent="globals/ActivityRingDash" pc="268438266" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDash.mc" id="35" lineNum="19" parent="globals/ActivityRingDash" pc="268438277" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDash.mc" id="35" lineNum="20" parent="globals/ActivityRingDash" pc="268438287" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDash.mc" id="35" lineNum="22" parent="globals/ActivityRingDash" pc="268438303" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDash.mc" id="35" lineNum="23" parent="globals/ActivityRingDash" pc="268438317" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDash.mc" id="35" lineNum="24" parent="globals/ActivityRingDash" pc="268438332" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDash.mc" id="35" lineNum="27" parent="globals/ActivityRingDash" pc="268438382" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDash.mc" id="35" lineNum="30" parent="globals/ActivityRingDash" pc="268438420" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDash.mc" id="35" lineNum="31" parent="globals/ActivityRingDash" pc="268438449" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDash.mc" id="35" lineNum="32" parent="globals/ActivityRingDash" pc="268438468" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDash.mc" id="35" lineNum="34" parent="globals/ActivityRingDash" pc="268438505" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDot.mc" id="37" lineNum="7" parent="globals/ActivityRingDot" pc="268438523" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDot.mc" id="37" lineNum="8" parent="globals/ActivityRingDot" pc="268438527" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDot.mc" id="37" lineNum="9" parent="globals/ActivityRingDot" pc="268438552" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDot.mc" id="37" lineNum="10" parent="globals/ActivityRingDot" pc="268438562" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDot.mc" id="37" lineNum="11" parent="globals/ActivityRingDot" pc="268438572" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDot.mc" id="37" lineNum="13" parent="globals/ActivityRingDot" pc="268438582" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDot.mc" id="37" lineNum="14" parent="globals/ActivityRingDot" pc="268438607" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDot.mc" id="37" lineNum="14" parent="globals/ActivityRingDot" pc="268438618" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDot.mc" id="37" lineNum="15" parent="globals/ActivityRingDot" pc="268438628" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDot.mc" id="37" lineNum="15" parent="globals/ActivityRingDot" pc="268438639" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDot.mc" id="37" lineNum="16" parent="globals/ActivityRingDot" pc="268438649" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDot.mc" id="37" lineNum="17" parent="globals/ActivityRingDot" pc="268438665" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDot.mc" id="37" lineNum="18" parent="globals/ActivityRingDot" pc="268438687" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDot.mc" id="37" lineNum="20" parent="globals/ActivityRingDot" pc="268438697" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDot.mc" id="37" lineNum="21" parent="globals/ActivityRingDot" pc="268438712" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDot.mc" id="37" lineNum="24" parent="globals/ActivityRingDot" pc="268438762" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDot.mc" id="37" lineNum="25" parent="globals/ActivityRingDot" pc="268438781" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDot.mc" id="37" lineNum="26" parent="globals/ActivityRingDot" pc="268438815" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDot.mc" id="37" lineNum="27" parent="globals/ActivityRingDot" pc="268438849" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDot.mc" id="37" lineNum="28" parent="globals/ActivityRingDot" pc="268438878" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingDot.mc" id="37" lineNum="29" parent="globals/ActivityRingDot" pc="268438894" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestView.mc" id="40" lineNum="13" parent="globals/GarminLibTestView" pc="268438926" symbol="onLayout"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestView.mc" id="40" lineNum="14" parent="globals/GarminLibTestView" pc="268438928" symbol="onLayout"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestView.mc" id="42" lineNum="9" parent="globals/GarminLibTestView" pc="268438970" symbol="initialize"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestView.mc" id="42" lineNum="10" parent="globals/GarminLibTestView" pc="268438972" symbol="initialize"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestView.mc" id="44" lineNum="20" parent="globals/GarminLibTestView" pc="268438991" symbol="onUpdate"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestView.mc" id="44" lineNum="47" parent="globals/GarminLibTestView" pc="268438995" symbol="onUpdate"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestView.mc" id="44" lineNum="226" parent="globals/GarminLibTestView" pc="268439019" symbol="onUpdate"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestView.mc" id="44" lineNum="227" parent="globals/GarminLibTestView" pc="268439038" symbol="onUpdate"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestView.mc" id="44" lineNum="228" parent="globals/GarminLibTestView" pc="268439057" symbol="onUpdate"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestView.mc" id="44" lineNum="229" parent="globals/GarminLibTestView" pc="268439076" symbol="onUpdate"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestView.mc" id="44" lineNum="230" parent="globals/GarminLibTestView" pc="268439095" symbol="onUpdate"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestView.mc" id="44" lineNum="231" parent="globals/GarminLibTestView" pc="268439114" symbol="onUpdate"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestView.mc" id="44" lineNum="232" parent="globals/GarminLibTestView" pc="268439133" symbol="onUpdate"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestView.mc" id="44" lineNum="233" parent="globals/GarminLibTestView" pc="268439152" symbol="onUpdate"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestView.mc" id="44" lineNum="235" parent="globals/GarminLibTestView" pc="268439171" symbol="onUpdate"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestView.mc" id="44" lineNum="236" parent="globals/GarminLibTestView" pc="268439193" symbol="onUpdate"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestView.mc" id="44" lineNum="240" parent="globals/GarminLibTestView" pc="268439247" symbol="onUpdate"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestView.mc" id="44" lineNum="244" parent="globals/GarminLibTestView" pc="268439301" symbol="onUpdate"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestView.mc" id="44" lineNum="248" parent="globals/GarminLibTestView" pc="268439355" symbol="onUpdate"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestView.mc" id="44" lineNum="252" parent="globals/GarminLibTestView" pc="268439409" symbol="onUpdate"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestView.mc" id="44" lineNum="256" parent="globals/GarminLibTestView" pc="268439463" symbol="onUpdate"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestView.mc" id="44" lineNum="260" parent="globals/GarminLibTestView" pc="268439558" symbol="onUpdate"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\source\\GarminLibTestView.mc" id="44" lineNum="264" parent="globals/GarminLibTestView" pc="268439618" symbol="onUpdate"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\SunUtils.mc" id="46" lineNum="6" parent="globals/SunUtils" pc="268439679" symbol="minutiMancantiEvento"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\SunUtils.mc" id="46" lineNum="7" parent="globals/SunUtils" pc="268439683" symbol="minutiMancantiEvento"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\SunUtils.mc" id="46" lineNum="8" parent="globals/SunUtils" pc="268439695" symbol="minutiMancantiEvento"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\SunUtils.mc" id="46" lineNum="11" parent="globals/SunUtils" pc="268439744" symbol="minutiMancantiEvento"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\SunUtils.mc" id="46" lineNum="12" parent="globals/SunUtils" pc="268439813" symbol="minutiMancantiEvento"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\SunUtils.mc" id="46" lineNum="13" parent="globals/SunUtils" pc="268439882" symbol="minutiMancantiEvento"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\SunUtils.mc" id="46" lineNum="19" parent="globals/SunUtils" pc="268439933" symbol="minutiMancantiEvento"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\SunUtils.mc" id="46" lineNum="20" parent="globals/SunUtils" pc="268439941" symbol="minutiMancantiEvento"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\SunUtils.mc" id="46" lineNum="21" parent="globals/SunUtils" pc="268439948" symbol="minutiMancantiEvento"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\SunUtils.mc" id="46" lineNum="22" parent="globals/SunUtils" pc="268439961" symbol="minutiMancantiEvento"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\SunUtils.mc" id="46" lineNum="23" parent="globals/SunUtils" pc="268439971" symbol="minutiMancantiEvento"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\SunUtils.mc" id="46" lineNum="24" parent="globals/SunUtils" pc="268439979" symbol="minutiMancantiEvento"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\SunUtils.mc" id="46" lineNum="25" parent="globals/SunUtils" pc="268439986" symbol="minutiMancantiEvento"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\SunUtils.mc" id="46" lineNum="26" parent="globals/SunUtils" pc="268439993" symbol="minutiMancantiEvento"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\SunUtils.mc" id="46" lineNum="28" parent="globals/SunUtils" pc="268440003" symbol="minutiMancantiEvento"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\SunUtils.mc" id="46" lineNum="29" parent="globals/SunUtils" pc="268440016" symbol="minutiMancantiEvento"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\SunUtils.mc" id="46" lineNum="30" parent="globals/SunUtils" pc="268440029" symbol="minutiMancantiEvento"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\SunUtils.mc" id="46" lineNum="33" parent="globals/SunUtils" pc="268440036" symbol="minutiMancantiEvento"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingTick.mc" id="48" lineNum="7" parent="globals/ActivityRingTick" pc="268440073" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingTick.mc" id="48" lineNum="8" parent="globals/ActivityRingTick" pc="268440077" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingTick.mc" id="48" lineNum="9" parent="globals/ActivityRingTick" pc="268440102" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingTick.mc" id="48" lineNum="10" parent="globals/ActivityRingTick" pc="268440122" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingTick.mc" id="48" lineNum="11" parent="globals/ActivityRingTick" pc="268440132" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingTick.mc" id="48" lineNum="12" parent="globals/ActivityRingTick" pc="268440142" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingTick.mc" id="48" lineNum="13" parent="globals/ActivityRingTick" pc="268440152" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingTick.mc" id="48" lineNum="15" parent="globals/ActivityRingTick" pc="268440162" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingTick.mc" id="48" lineNum="16" parent="globals/ActivityRingTick" pc="268440187" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingTick.mc" id="48" lineNum="16" parent="globals/ActivityRingTick" pc="268440198" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingTick.mc" id="48" lineNum="17" parent="globals/ActivityRingTick" pc="268440208" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingTick.mc" id="48" lineNum="17" parent="globals/ActivityRingTick" pc="268440219" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingTick.mc" id="48" lineNum="19" parent="globals/ActivityRingTick" pc="268440229" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingTick.mc" id="48" lineNum="24" parent="globals/ActivityRingTick" pc="268440273" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingTick.mc" id="48" lineNum="25" parent="globals/ActivityRingTick" pc="268440298" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingTick.mc" id="48" lineNum="26" parent="globals/ActivityRingTick" pc="268440312" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingTick.mc" id="48" lineNum="29" parent="globals/ActivityRingTick" pc="268440336" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingTick.mc" id="48" lineNum="30" parent="globals/ActivityRingTick" pc="268440347" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingTick.mc" id="48" lineNum="31" parent="globals/ActivityRingTick" pc="268440372" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingTick.mc" id="48" lineNum="33" parent="globals/ActivityRingTick" pc="268440399" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingTick.mc" id="48" lineNum="36" parent="globals/ActivityRingTick" pc="268440416" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingTick.mc" id="48" lineNum="37" parent="globals/ActivityRingTick" pc="268440432" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingTick.mc" id="48" lineNum="38" parent="globals/ActivityRingTick" pc="268440447" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingTick.mc" id="48" lineNum="41" parent="globals/ActivityRingTick" pc="268440491" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingTick.mc" id="48" lineNum="42" parent="globals/ActivityRingTick" pc="268440510" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingTick.mc" id="48" lineNum="43" parent="globals/ActivityRingTick" pc="268440529" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingTick.mc" id="48" lineNum="44" parent="globals/ActivityRingTick" pc="268440548" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingTick.mc" id="48" lineNum="45" parent="globals/ActivityRingTick" pc="268440561" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingTick.mc" id="48" lineNum="46" parent="globals/ActivityRingTick" pc="268440574" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingTick.mc" id="48" lineNum="47" parent="globals/ActivityRingTick" pc="268440599" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRingTick.mc" id="48" lineNum="48" parent="globals/ActivityRingTick" pc="268440616" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\TimeManagement.mc" id="50" lineNum="7" parent="globals/TimeManagement" pc="268440710" symbol="getTimeString"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\TimeManagement.mc" id="50" lineNum="8" parent="globals/TimeManagement" pc="268440714" symbol="getTimeString"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\TimeManagement.mc" id="50" lineNum="9" parent="globals/TimeManagement" pc="268440721" symbol="getTimeString"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\TimeManagement.mc" id="50" lineNum="10" parent="globals/TimeManagement" pc="268440738" symbol="getTimeString"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\TimeManagement.mc" id="50" lineNum="12" parent="globals/TimeManagement" pc="268440748" symbol="getTimeString"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\TimeManagement.mc" id="50" lineNum="13" parent="globals/TimeManagement" pc="268440773" symbol="getTimeString"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\TimeManagement.mc" id="50" lineNum="14" parent="globals/TimeManagement" pc="268440784" symbol="getTimeString"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\TimeManagement.mc" id="50" lineNum="17" parent="globals/TimeManagement" pc="268440800" symbol="getTimeString"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\TimeManagement.mc" id="50" lineNum="18" parent="globals/TimeManagement" pc="268440823" symbol="getTimeString"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\TimeManagement.mc" id="50" lineNum="22" parent="globals/TimeManagement" pc="268440833" symbol="getTimeString"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\TimeManagement.mc" id="50" lineNum="23" parent="globals/TimeManagement" pc="268440857" symbol="getTimeString"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\TimeManagement.mc" id="50" lineNum="25" parent="globals/TimeManagement" pc="268440875" symbol="getTimeString"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBar.mc" id="51" lineNum="41" parent="globals/ProgressBar" pc="268440953" symbol="_drawVerticale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBar.mc" id="51" lineNum="42" parent="globals/ProgressBar" pc="268440957" symbol="_drawVerticale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBar.mc" id="51" lineNum="43" parent="globals/ProgressBar" pc="268440979" symbol="_drawVerticale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBar.mc" id="51" lineNum="44" parent="globals/ProgressBar" pc="268441001" symbol="_drawVerticale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBar.mc" id="51" lineNum="45" parent="globals/ProgressBar" pc="268441020" symbol="_drawVerticale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBar.mc" id="51" lineNum="47" parent="globals/ProgressBar" pc="268441036" symbol="_drawVerticale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBar.mc" id="51" lineNum="48" parent="globals/ProgressBar" pc="268441064" symbol="_drawVerticale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBar.mc" id="51" lineNum="50" parent="globals/ProgressBar" pc="268441086" symbol="_drawVerticale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBar.mc" id="51" lineNum="51" parent="globals/ProgressBar" pc="268441097" symbol="_drawVerticale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBar.mc" id="51" lineNum="52" parent="globals/ProgressBar" pc="268441125" symbol="_drawVerticale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBar.mc" id="51" lineNum="53" parent="globals/ProgressBar" pc="268441130" symbol="_drawVerticale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBar.mc" id="51" lineNum="55" parent="globals/ProgressBar" pc="268441161" symbol="_drawVerticale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBar.mc" id="52" lineNum="22" parent="globals/ProgressBar" pc="268441187" symbol="_drawOrizzontale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBar.mc" id="52" lineNum="23" parent="globals/ProgressBar" pc="268441191" symbol="_drawOrizzontale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBar.mc" id="52" lineNum="24" parent="globals/ProgressBar" pc="268441213" symbol="_drawOrizzontale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBar.mc" id="52" lineNum="25" parent="globals/ProgressBar" pc="268441235" symbol="_drawOrizzontale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBar.mc" id="52" lineNum="26" parent="globals/ProgressBar" pc="268441254" symbol="_drawOrizzontale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBar.mc" id="52" lineNum="28" parent="globals/ProgressBar" pc="268441270" symbol="_drawOrizzontale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBar.mc" id="52" lineNum="29" parent="globals/ProgressBar" pc="268441298" symbol="_drawOrizzontale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBar.mc" id="52" lineNum="31" parent="globals/ProgressBar" pc="268441320" symbol="_drawOrizzontale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBar.mc" id="52" lineNum="32" parent="globals/ProgressBar" pc="268441331" symbol="_drawOrizzontale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBar.mc" id="52" lineNum="33" parent="globals/ProgressBar" pc="268441359" symbol="_drawOrizzontale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBar.mc" id="52" lineNum="34" parent="globals/ProgressBar" pc="268441364" symbol="_drawOrizzontale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBar.mc" id="52" lineNum="36" parent="globals/ProgressBar" pc="268441395" symbol="_drawOrizzontale"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBar.mc" id="54" lineNum="6" parent="globals/ProgressBar" pc="268441421" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBar.mc" id="54" lineNum="8" parent="globals/ProgressBar" pc="268441425" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBar.mc" id="54" lineNum="9" parent="globals/ProgressBar" pc="268441450" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBar.mc" id="54" lineNum="9" parent="globals/ProgressBar" pc="268441461" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBar.mc" id="54" lineNum="10" parent="globals/ProgressBar" pc="268441471" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBar.mc" id="54" lineNum="10" parent="globals/ProgressBar" pc="268441482" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBar.mc" id="54" lineNum="12" parent="globals/ProgressBar" pc="268441492" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBar.mc" id="54" lineNum="13" parent="globals/ProgressBar" pc="268441502" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBar.mc" id="54" lineNum="15" parent="globals/ProgressBar" pc="268441512" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBar.mc" id="54" lineNum="16" parent="globals/ProgressBar" pc="268441531" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ProgressBar.mc" id="54" lineNum="18" parent="globals/ProgressBar" pc="268441562" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRing.mc" id="56" lineNum="7" parent="globals/ActivityRing" pc="268441591" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRing.mc" id="56" lineNum="8" parent="globals/ActivityRing" pc="268441595" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRing.mc" id="56" lineNum="9" parent="globals/ActivityRing" pc="268441620" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRing.mc" id="56" lineNum="10" parent="globals/ActivityRing" pc="268441640" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRing.mc" id="56" lineNum="11" parent="globals/ActivityRing" pc="268441650" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRing.mc" id="56" lineNum="12" parent="globals/ActivityRing" pc="268441660" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRing.mc" id="56" lineNum="14" parent="globals/ActivityRing" pc="268441670" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRing.mc" id="56" lineNum="15" parent="globals/ActivityRing" pc="268441698" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRing.mc" id="56" lineNum="15" parent="globals/ActivityRing" pc="268441706" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRing.mc" id="56" lineNum="16" parent="globals/ActivityRing" pc="268441713" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRing.mc" id="56" lineNum="21" parent="globals/ActivityRing" pc="268441751" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRing.mc" id="56" lineNum="22" parent="globals/ActivityRing" pc="268441776" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRing.mc" id="56" lineNum="23" parent="globals/ActivityRing" pc="268441790" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRing.mc" id="56" lineNum="26" parent="globals/ActivityRing" pc="268441814" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRing.mc" id="56" lineNum="27" parent="globals/ActivityRing" pc="268441833" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRing.mc" id="56" lineNum="28" parent="globals/ActivityRing" pc="268441861" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRing.mc" id="56" lineNum="30" parent="globals/ActivityRing" pc="268441939" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRing.mc" id="56" lineNum="31" parent="globals/ActivityRing" pc="268441958" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRing.mc" id="56" lineNum="35" parent="globals/ActivityRing" pc="268442036" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRing.mc" id="56" lineNum="36" parent="globals/ActivityRing" pc="268442047" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRing.mc" id="56" lineNum="37" parent="globals/ActivityRing" pc="268442072" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRing.mc" id="56" lineNum="38" parent="globals/ActivityRing" pc="268442086" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRing.mc" id="56" lineNum="41" parent="globals/ActivityRing" pc="268442110" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRing.mc" id="56" lineNum="42" parent="globals/ActivityRing" pc="268442138" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRing.mc" id="56" lineNum="44" parent="globals/ActivityRing" pc="268442216" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRing.mc" id="56" lineNum="45" parent="globals/ActivityRing" pc="268442235" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\graphics\\ActivityRing.mc" id="56" lineNum="49" parent="globals/ActivityRing" pc="268442316" symbol="draw"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\MathUtils.mc" id="57" lineNum="6" parent="globals/MathUtils" pc="268442334" symbol="calcolaArco"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\MathUtils.mc" id="57" lineNum="8" parent="globals/MathUtils" pc="268442338" symbol="calcolaArco"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\MathUtils.mc" id="57" lineNum="9" parent="globals/MathUtils" pc="268442343" symbol="calcolaArco"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\MathUtils.mc" id="57" lineNum="10" parent="globals/MathUtils" pc="268442350" symbol="calcolaArco"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\MathUtils.mc" id="57" lineNum="10" parent="globals/MathUtils" pc="268442361" symbol="calcolaArco"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\MathUtils.mc" id="57" lineNum="12" parent="globals/MathUtils" pc="268442377" symbol="calcolaArco"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\MathUtils.mc" id="57" lineNum="13" parent="globals/MathUtils" pc="268442384" symbol="calcolaArco"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\MathUtils.mc" id="57" lineNum="13" parent="globals/MathUtils" pc="268442395" symbol="calcolaArco"/>
+        <entry filename="C:\\GarminProject\\GarminLibTest\\GarminLib\\source\\utils\\MathUtils.mc" id="57" lineNum="15" parent="globals/MathUtils" pc="268442408" symbol="calcolaArco"/>
+        <entry filename="c:\\GarminProject\\GarminLibTest\\bin\\gen\\006-B3290-00\\source\\Rez.mcgen" id="59" lineNum="13" parent="globals/Rez/Layouts" pc="268442411" symbol="WatchFace"/>
+        <entry filename="c:\\GarminProject\\GarminLibTest\\bin\\gen\\006-B3290-00\\source\\Rez.mcgen" id="59" lineNum="14" parent="globals/Rez/Layouts" pc="268442423" symbol="WatchFace"/>
+        <entry filename="c:\\GarminProject\\GarminLibTest\\bin\\gen\\006-B3290-00\\source\\Rez.mcgen" id="59" lineNum="16" parent="globals/Rez/Layouts" pc="268442451" symbol="WatchFace"/>
+        <entry filename="c:\\GarminProject\\GarminLibTest\\bin\\gen\\006-B3290-00\\source\\Rez.mcgen" id="59" lineNum="18" parent="globals/Rez/Layouts" pc="268442604" symbol="WatchFace"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry id="10" module="true" symbol="globals/ProgressBar/&lt;statics&gt;"/>
+        <entry id="31" method="true" symbol="getActiveMinutesWeek"/>
+        <entry id="28" object="true" symbol="SunUtils"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="17" module="true" symbol="globals/TimeManagement/&lt;statics&gt;"/>
+        <entry field="true" id="8388731" symbol="startTime"/>
+        <entry id="11" module="true" symbol="globals/ProgressBarDash/&lt;statics&gt;"/>
+        <entry id="8389683" method="true" symbol="onSettingsChanged"/>
+        <entry id="3" module="true" symbol="globals/ActivityRing/&lt;statics&gt;"/>
+        <entry id="30" method="true" symbol="getActiveMinutes"/>
+        <entry field="true" id="53" symbol="ColorRed"/>
+        <entry id="8389043" object="true" symbol="ProgressBar"/>
+        <entry id="42" method="true" symbol="warn"/>
+        <entry id="22" object="true" symbol="ActivityRingTick"/>
+        <entry id="9" module="true" symbol="globals/MathUtils/&lt;statics&gt;"/>
+        <entry id="44" method="true" symbol="getTimeString"/>
+        <entry field="true" id="56" symbol="MilitaryFormatTitle"/>
+        <entry id="8388924" module="true" symbol="Gregorian"/>
+        <entry id="37" method="true" symbol="getSteps"/>
+        <entry id="43" method="true" symbol="minutiMancantiEvento"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry field="true" id="50" symbol="ColorBlue"/>
+        <entry id="19" object="true" symbol="ActivityRing"/>
+        <entry field="true" id="47" symbol="AppName"/>
+        <entry id="8388633" module="true" symbol="ActivityMonitor"/>
+        <entry id="15" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="25" object="true" symbol="GarminLibTestView"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="12" module="true" symbol="globals/Rez"/>
+        <entry id="38" method="true" symbol="_drawOrizzontale"/>
+        <entry id="45" method="true" symbol="calcolaArco"/>
+        <entry id="24" object="true" symbol="GarminLibTestApp"/>
+        <entry id="18" object="true" symbol="ActivityData"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry id="8389375" method="true" object="true" symbol="WatchFace"/>
+        <entry field="true" id="8389065" symbol="locY"/>
+        <entry field="true" id="8389064" symbol="locX"/>
+        <entry id="8389784" object="true" symbol="Logger"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="34" method="true" symbol="getCalories"/>
+        <entry id="8389348" symbol="font"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry field="true" id="51" symbol="ColorDarkGray"/>
+        <entry id="14" module="true" symbol="globals/Rez/Layouts"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry id="8389376" method="true" symbol="onEnterSleep"/>
+        <entry field="true" id="8389063" symbol="identifier"/>
+        <entry id="8389349" symbol="justification"/>
+        <entry id="6" module="true" symbol="globals/ActivityRingTick/&lt;statics&gt;"/>
+        <entry field="true" id="54" symbol="ColorWhite"/>
+        <entry field="true" id="49" symbol="ColorBlack"/>
+        <entry id="8" module="true" symbol="globals/Logger/&lt;statics&gt;"/>
+        <entry id="8388899" method="true" symbol="log"/>
+        <entry id="13" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="8389809" symbol="order"/>
+        <entry id="39" method="true" symbol="_drawVerticale"/>
+        <entry id="32" method="true" symbol="getBodyBattery"/>
+        <entry id="41" method="true" symbol="drawBatteria"/>
+        <entry id="8389377" method="true" symbol="onExitSleep"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry id="29" object="true" symbol="TimeManagement"/>
+        <entry id="8388645" module="true" symbol="Time"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="2" module="true" symbol="globals/ActivityData/&lt;statics&gt;"/>
+        <entry id="16" module="true" symbol="globals/SunUtils/&lt;statics&gt;"/>
+        <entry id="8388718" method="true" symbol="error"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry id="8389068" method="true" symbol="draw"/>
+        <entry id="23" object="true" symbol="BatteryRenderer"/>
+        <entry field="true" id="46" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry id="7" module="true" symbol="globals/BatteryRenderer/&lt;statics&gt;"/>
+        <entry id="36" method="true" symbol="getFloors"/>
+        <entry id="21" object="true" symbol="ActivityRingDot"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry field="true" id="48" symbol="BackgroundColorTitle"/>
+        <entry id="27" object="true" symbol="ProgressBarDash"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="8390146" module="true" object="true" symbol="Background"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry id="8388641" module="true" symbol="Math"/>
+        <entry field="true" id="52" symbol="ColorLightGray"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry field="true" id="8389347" symbol="color"/>
+        <entry id="8389781" module="true" symbol="SensorHistory"/>
+        <entry id="4" module="true" symbol="globals/ActivityRingDash/&lt;statics&gt;"/>
+        <entry id="33" method="true" symbol="getBodyBatteryMidnight"/>
+        <entry field="true" id="55" symbol="ForegroundColorTitle"/>
+        <entry id="40" module="true" symbol="Layouts"/>
+        <entry id="20" object="true" symbol="ActivityRingDash"/>
+        <entry id="26" object="true" symbol="MathUtils"/>
+        <entry id="35" method="true" symbol="getDistanceKm"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+        <entry id="5" module="true" symbol="globals/ActivityRingDot/&lt;statics&gt;"/>
+    </symbolTable>
+    <localVars>
+        <entry endPc="268435621" name="info" stackId="1" startPc="268435571"/>
+        <entry endPc="268435621" name="dist" stackId="2" startPc="268435571"/>
+        <entry endPc="268435672" name="info" stackId="1" startPc="268435626"/>
+        <entry endPc="268435782" name="info" stackId="1" startPc="268435677"/>
+        <entry endPc="268435782" name="climbed" stackId="2" startPc="268435677"/>
+        <entry endPc="268435782" name="descended" stackId="3" startPc="268435677"/>
+        <entry endPc="268435901" name="iter" stackId="1" startPc="268435787"/>
+        <entry endPc="268435901" name="sample" stackId="2" startPc="268435787"/>
+        <entry endPc="268435901" name="data" stackId="3" startPc="268435787"/>
+        <entry endPc="268435950" name="info" stackId="1" startPc="268435906"/>
+        <entry endPc="268435950" name="steps" stackId="2" startPc="268435906"/>
+        <entry endPc="268436005" name="info" stackId="1" startPc="268435955"/>
+        <entry endPc="268436005" name="activeWeek" stackId="2" startPc="268435955"/>
+        <entry endPc="268436101" name="iter" stackId="1" startPc="268436010"/>
+        <entry endPc="268436101" name="sample" stackId="2" startPc="268436010"/>
+        <entry endPc="268436101" name="data" stackId="3" startPc="268436010"/>
+        <entry endPc="268436156" name="info" stackId="1" startPc="268436106"/>
+        <entry endPc="268436156" name="active" stackId="2" startPc="268436106"/>
+        <entry arg="true" endPc="268436423" name="dc" stackId="1" startPc="268436157"/>
+        <entry arg="true" endPc="268436423" name="cx" stackId="2" startPc="268436157"/>
+        <entry arg="true" endPc="268436423" name="cy" stackId="3" startPc="268436157"/>
+        <entry arg="true" endPc="268436423" name="lunghezza" stackId="4" startPc="268436157"/>
+        <entry arg="true" endPc="268436423" name="spessore" stackId="5" startPc="268436157"/>
+        <entry arg="true" endPc="268436423" name="perc" stackId="6" startPc="268436157"/>
+        <entry arg="true" endPc="268436423" name="colori" stackId="7" startPc="268436157"/>
+        <entry arg="true" endPc="268436423" name="rtl" stackId="8" startPc="268436157"/>
+        <entry endPc="268436422" name="raggio" stackId="9" startPc="268436161"/>
+        <entry endPc="268436422" name="x" stackId="10" startPc="268436161"/>
+        <entry endPc="268436422" name="y" stackId="11" startPc="268436161"/>
+        <entry endPc="268436422" name="nTrattini" stackId="12" startPc="268436161"/>
+        <entry endPc="268436422" name="gap" stackId="13" startPc="268436161"/>
+        <entry endPc="268436422" name="filledTrattini" stackId="14" startPc="268436161"/>
+        <entry endPc="268436422" name="totGap" stackId="15" startPc="268436161"/>
+        <entry endPc="268436422" name="trattiniH" stackId="16" startPc="268436161"/>
+        <entry endPc="268436422" name="i" stackId="17" startPc="268436307"/>
+        <entry endPc="268436409" name="idx" stackId="18" startPc="268436307"/>
+        <entry endPc="268436409" name="yTrattino" stackId="19" startPc="268436307"/>
+        <entry endPc="268436409" name="colore" stackId="20" startPc="268436307"/>
+        <entry arg="true" endPc="268436690" name="dc" stackId="1" startPc="268436424"/>
+        <entry arg="true" endPc="268436690" name="cx" stackId="2" startPc="268436424"/>
+        <entry arg="true" endPc="268436690" name="cy" stackId="3" startPc="268436424"/>
+        <entry arg="true" endPc="268436690" name="lunghezza" stackId="4" startPc="268436424"/>
+        <entry arg="true" endPc="268436690" name="spessore" stackId="5" startPc="268436424"/>
+        <entry arg="true" endPc="268436690" name="perc" stackId="6" startPc="268436424"/>
+        <entry arg="true" endPc="268436690" name="colori" stackId="7" startPc="268436424"/>
+        <entry arg="true" endPc="268436690" name="rtl" stackId="8" startPc="268436424"/>
+        <entry endPc="268436689" name="raggio" stackId="9" startPc="268436428"/>
+        <entry endPc="268436689" name="y" stackId="10" startPc="268436428"/>
+        <entry endPc="268436689" name="x" stackId="11" startPc="268436428"/>
+        <entry endPc="268436689" name="nTrattini" stackId="12" startPc="268436428"/>
+        <entry endPc="268436689" name="gap" stackId="13" startPc="268436428"/>
+        <entry endPc="268436689" name="filledTrattini" stackId="14" startPc="268436428"/>
+        <entry endPc="268436689" name="totGap" stackId="15" startPc="268436428"/>
+        <entry endPc="268436689" name="trattiniW" stackId="16" startPc="268436428"/>
+        <entry endPc="268436689" name="i" stackId="17" startPc="268436574"/>
+        <entry endPc="268436676" name="idx" stackId="18" startPc="268436574"/>
+        <entry endPc="268436676" name="xTrattino" stackId="19" startPc="268436574"/>
+        <entry endPc="268436676" name="colore" stackId="20" startPc="268436574"/>
+        <entry arg="true" endPc="268436860" name="dc" stackId="1" startPc="268436691"/>
+        <entry arg="true" endPc="268436860" name="cx" stackId="2" startPc="268436691"/>
+        <entry arg="true" endPc="268436860" name="cy" stackId="3" startPc="268436691"/>
+        <entry arg="true" endPc="268436860" name="lunghezza" stackId="4" startPc="268436691"/>
+        <entry arg="true" endPc="268436860" name="spessore" stackId="5" startPc="268436691"/>
+        <entry arg="true" endPc="268436860" name="valore" stackId="6" startPc="268436691"/>
+        <entry arg="true" endPc="268436860" name="massimo" stackId="7" startPc="268436691"/>
+        <entry arg="true" endPc="268436860" name="colori" stackId="8" startPc="268436691"/>
+        <entry arg="true" endPc="268436860" name="config" stackId="9" startPc="268436691"/>
+        <entry endPc="268436859" name="perc" stackId="10" startPc="268436695"/>
+        <entry endPc="268436859" name="orientamento" stackId="11" startPc="268436695"/>
+        <entry endPc="268436859" name="rtl" stackId="12" startPc="268436695"/>
+        <entry endPc="268436905" name="dictionary" stackId="1" startPc="268436865"/>
+        <entry arg="true" endPc="268436958" name="dc" stackId="1" startPc="268436907"/>
+        <entry arg="true" endPc="268437154" name="dc" stackId="1" startPc="268436959"/>
+        <entry arg="true" endPc="268437154" name="cx" stackId="2" startPc="268436959"/>
+        <entry arg="true" endPc="268437154" name="cy" stackId="3" startPc="268436959"/>
+        <entry arg="true" endPc="268437154" name="batW" stackId="4" startPc="268436959"/>
+        <entry arg="true" endPc="268437154" name="batH" stackId="5" startPc="268436959"/>
+        <entry arg="true" endPc="268437154" name="colors" stackId="6" startPc="268436959"/>
+        <entry arg="true" endPc="268437154" name="font" stackId="7" startPc="268436959"/>
+        <entry arg="true" endPc="268437154" name="orientamento" stackId="8" startPc="268436959"/>
+        <entry endPc="268437153" name="stats" stackId="9" startPc="268436963"/>
+        <entry endPc="268437153" name="level" stackId="10" startPc="268436963"/>
+        <entry endPc="268437153" name="text" stackId="11" startPc="268436963"/>
+        <entry endPc="268437153" name="batColor" stackId="12" startPc="268436963"/>
+        <entry arg="true" endPc="268437483" name="dc" stackId="1" startPc="268437155"/>
+        <entry arg="true" endPc="268437483" name="cx" stackId="2" startPc="268437155"/>
+        <entry arg="true" endPc="268437483" name="cy" stackId="3" startPc="268437155"/>
+        <entry arg="true" endPc="268437483" name="batW" stackId="4" startPc="268437155"/>
+        <entry arg="true" endPc="268437483" name="batH" stackId="5" startPc="268437155"/>
+        <entry arg="true" endPc="268437483" name="batColor" stackId="6" startPc="268437155"/>
+        <entry arg="true" endPc="268437483" name="level" stackId="7" startPc="268437155"/>
+        <entry arg="true" endPc="268437483" name="font" stackId="8" startPc="268437155"/>
+        <entry arg="true" endPc="268437483" name="text" stackId="9" startPc="268437155"/>
+        <entry endPc="268437482" name="batX" stackId="10" startPc="268437159"/>
+        <entry endPc="268437482" name="batY" stackId="11" startPc="268437159"/>
+        <entry endPc="268437482" name="fillH" stackId="12" startPc="268437159"/>
+        <entry arg="true" endPc="268437845" name="dc" stackId="1" startPc="268437484"/>
+        <entry arg="true" endPc="268437845" name="cx" stackId="2" startPc="268437484"/>
+        <entry arg="true" endPc="268437845" name="cy" stackId="3" startPc="268437484"/>
+        <entry arg="true" endPc="268437845" name="batW" stackId="4" startPc="268437484"/>
+        <entry arg="true" endPc="268437845" name="batH" stackId="5" startPc="268437484"/>
+        <entry arg="true" endPc="268437845" name="batColor" stackId="6" startPc="268437484"/>
+        <entry arg="true" endPc="268437845" name="level" stackId="7" startPc="268437484"/>
+        <entry arg="true" endPc="268437845" name="font" stackId="8" startPc="268437484"/>
+        <entry arg="true" endPc="268437845" name="text" stackId="9" startPc="268437484"/>
+        <entry endPc="268437844" name="textW" stackId="10" startPc="268437488"/>
+        <entry endPc="268437844" name="totalW" stackId="11" startPc="268437488"/>
+        <entry endPc="268437844" name="batX" stackId="12" startPc="268437488"/>
+        <entry endPc="268437844" name="batY" stackId="13" startPc="268437488"/>
+        <entry endPc="268437844" name="fillW" stackId="14" startPc="268437488"/>
+        <entry arg="true" endPc="268437872" name="message" stackId="1" startPc="268437846"/>
+        <entry arg="true" endPc="268437996" name="functionName" stackId="1" startPc="268437873"/>
+        <entry arg="true" endPc="268437996" name="message" stackId="2" startPc="268437873"/>
+        <entry endPc="268437995" name="info" stackId="3" startPc="268437877"/>
+        <entry endPc="268437995" name="timestamp" stackId="4" startPc="268437877"/>
+        <entry arg="true" endPc="268438023" name="message" stackId="1" startPc="268437997"/>
+        <entry arg="true" endPc="268438522" name="dc" stackId="1" startPc="268438109"/>
+        <entry arg="true" endPc="268438522" name="cx" stackId="2" startPc="268438109"/>
+        <entry arg="true" endPc="268438522" name="cy" stackId="3" startPc="268438109"/>
+        <entry arg="true" endPc="268438522" name="valore" stackId="4" startPc="268438109"/>
+        <entry arg="true" endPc="268438522" name="goal" stackId="5" startPc="268438109"/>
+        <entry arg="true" endPc="268438522" name="startDeg" stackId="6" startPc="268438109"/>
+        <entry arg="true" endPc="268438522" name="endDeg" stackId="7" startPc="268438109"/>
+        <entry arg="true" endPc="268438522" name="cw" stackId="8" startPc="268438109"/>
+        <entry arg="true" endPc="268438522" name="cfg" stackId="9" startPc="268438109"/>
+        <entry endPc="268438521" name="totalDeg" stackId="10" startPc="268438113"/>
+        <entry endPc="268438521" name="arcDir" stackId="11" startPc="268438113"/>
+        <entry endPc="268438521" name="spessore" stackId="12" startPc="268438113"/>
+        <entry endPc="268438521" name="raggio" stackId="13" startPc="268438113"/>
+        <entry endPc="268438521" name="nSeg" stackId="14" startPc="268438113"/>
+        <entry endPc="268438521" name="gapDeg" stackId="15" startPc="268438113"/>
+        <entry endPc="268438521" name="segDeg" stackId="16" startPc="268438113"/>
+        <entry endPc="268438521" name="perc" stackId="17" startPc="268438113"/>
+        <entry endPc="268438521" name="filledSegs" stackId="18" startPc="268438113"/>
+        <entry endPc="268438504" name="i" stackId="19" startPc="268438332"/>
+        <entry endPc="268438491" name="segStart" stackId="20" startPc="268438332"/>
+        <entry endPc="268438491" name="segEnd" stackId="21" startPc="268438332"/>
+        <entry endPc="268438491" name="colore" stackId="22" startPc="268438332"/>
+        <entry arg="true" endPc="268438925" name="dc" stackId="1" startPc="268438523"/>
+        <entry arg="true" endPc="268438925" name="cx" stackId="2" startPc="268438523"/>
+        <entry arg="true" endPc="268438925" name="cy" stackId="3" startPc="268438523"/>
+        <entry arg="true" endPc="268438925" name="valore" stackId="4" startPc="268438523"/>
+        <entry arg="true" endPc="268438925" name="goal" stackId="5" startPc="268438523"/>
+        <entry arg="true" endPc="268438925" name="startDeg" stackId="6" startPc="268438523"/>
+        <entry arg="true" endPc="268438925" name="endDeg" stackId="7" startPc="268438523"/>
+        <entry arg="true" endPc="268438925" name="cw" stackId="8" startPc="268438523"/>
+        <entry arg="true" endPc="268438925" name="cfg" stackId="9" startPc="268438523"/>
+        <entry endPc="268438924" name="totalDeg" stackId="10" startPc="268438527"/>
+        <entry endPc="268438924" name="nPunti" stackId="11" startPc="268438527"/>
+        <entry endPc="268438924" name="rPunto" stackId="12" startPc="268438527"/>
+        <entry endPc="268438924" name="raggio" stackId="13" startPc="268438527"/>
+        <entry endPc="268438924" name="perc" stackId="14" startPc="268438527"/>
+        <entry endPc="268438924" name="filledPunti" stackId="15" startPc="268438527"/>
+        <entry endPc="268438924" name="stepDeg" stackId="16" startPc="268438527"/>
+        <entry endPc="268438924" name="offset" stackId="17" startPc="268438527"/>
+        <entry endPc="268438924" name="i" stackId="18" startPc="268438712"/>
+        <entry endPc="268438911" name="puntoDeg" stackId="19" startPc="268438712"/>
+        <entry endPc="268438911" name="rad" stackId="20" startPc="268438712"/>
+        <entry endPc="268438911" name="px" stackId="21" startPc="268438712"/>
+        <entry endPc="268438911" name="py" stackId="22" startPc="268438712"/>
+        <entry endPc="268438911" name="colore" stackId="23" startPc="268438712"/>
+        <entry arg="true" endPc="268438969" name="dc" stackId="1" startPc="268438926"/>
+        <entry arg="true" endPc="268439678" name="dc" stackId="1" startPc="268438991"/>
+        <entry endPc="268439677" name="steps" stackId="2" startPc="268438995"/>
+        <entry endPc="268439677" name="calories" stackId="3" startPc="268438995"/>
+        <entry endPc="268439677" name="distKm" stackId="4" startPc="268438995"/>
+        <entry endPc="268439677" name="floors" stackId="5" startPc="268438995"/>
+        <entry endPc="268439677" name="bodyBatt" stackId="6" startPc="268438995"/>
+        <entry endPc="268439677" name="activeMin" stackId="7" startPc="268438995"/>
+        <entry endPc="268439677" name="activeWeek" stackId="8" startPc="268438995"/>
+        <entry endPc="268439677" name="bbMidnight" stackId="9" startPc="268438995"/>
+        <entry arg="true" endPc="268440072" name="sunrise" stackId="1" startPc="268439679"/>
+        <entry arg="true" endPc="268440072" name="sunset" stackId="2" startPc="268439679"/>
+        <entry endPc="268440072" name="minAlba" stackId="3" startPc="268439683"/>
+        <entry endPc="268440072" name="minTramonto" stackId="4" startPc="268439683"/>
+        <entry endPc="268440072" name="minCorrente" stackId="5" startPc="268439683"/>
+        <entry endPc="268440072" name="diff" stackId="6" startPc="268439683"/>
+        <entry endPc="268440072" name="goal" stackId="7" startPc="268439683"/>
+        <entry endPc="268440072" name="evento" stackId="8" startPc="268439683"/>
+        <entry arg="true" endPc="268440709" name="dc" stackId="1" startPc="268440073"/>
+        <entry arg="true" endPc="268440709" name="cx" stackId="2" startPc="268440073"/>
+        <entry arg="true" endPc="268440709" name="cy" stackId="3" startPc="268440073"/>
+        <entry arg="true" endPc="268440709" name="valore" stackId="4" startPc="268440073"/>
+        <entry arg="true" endPc="268440709" name="goal" stackId="5" startPc="268440073"/>
+        <entry arg="true" endPc="268440709" name="startDeg" stackId="6" startPc="268440073"/>
+        <entry arg="true" endPc="268440709" name="endDeg" stackId="7" startPc="268440073"/>
+        <entry arg="true" endPc="268440709" name="cw" stackId="8" startPc="268440073"/>
+        <entry arg="true" endPc="268440709" name="cfg" stackId="9" startPc="268440073"/>
+        <entry endPc="268440708" name="totalDeg" stackId="10" startPc="268440077"/>
+        <entry endPc="268440708" name="arcDir" stackId="11" startPc="268440077"/>
+        <entry endPc="268440708" name="spessore" stackId="12" startPc="268440077"/>
+        <entry endPc="268440708" name="raggio" stackId="13" startPc="268440077"/>
+        <entry endPc="268440708" name="nTacche" stackId="14" startPc="268440077"/>
+        <entry endPc="268440708" name="lunghezza" stackId="15" startPc="268440077"/>
+        <entry endPc="268440708" name="perc" stackId="16" startPc="268440077"/>
+        <entry endPc="268440708" name="filledAngle" stackId="17" startPc="268440077"/>
+        <entry endPc="268440708" name="stepDeg" stackId="18" startPc="268440077"/>
+        <entry endPc="268440708" name="i" stackId="19" startPc="268440447"/>
+        <entry endPc="268440695" name="taccaDeg" stackId="20" startPc="268440447"/>
+        <entry endPc="268440695" name="rad" stackId="21" startPc="268440447"/>
+        <entry endPc="268440695" name="cosA" stackId="22" startPc="268440447"/>
+        <entry endPc="268440695" name="sinA" stackId="23" startPc="268440447"/>
+        <entry endPc="268440695" name="r1" stackId="24" startPc="268440447"/>
+        <entry endPc="268440695" name="r2" stackId="25" startPc="268440447"/>
+        <entry endPc="268440952" name="timeFormat" stackId="1" startPc="268440714"/>
+        <entry endPc="268440952" name="clockTime" stackId="2" startPc="268440714"/>
+        <entry endPc="268440952" name="hours" stackId="3" startPc="268440714"/>
+        <entry endPc="268440952" name="minutiStr" stackId="4" startPc="268440714"/>
+        <entry endPc="268440952" name="oreStr" stackId="5" startPc="268440714"/>
+        <entry arg="true" endPc="268441186" name="dc" stackId="1" startPc="268440953"/>
+        <entry arg="true" endPc="268441186" name="cx" stackId="2" startPc="268440953"/>
+        <entry arg="true" endPc="268441186" name="cy" stackId="3" startPc="268440953"/>
+        <entry arg="true" endPc="268441186" name="lunghezza" stackId="4" startPc="268440953"/>
+        <entry arg="true" endPc="268441186" name="spessore" stackId="5" startPc="268440953"/>
+        <entry arg="true" endPc="268441186" name="perc" stackId="6" startPc="268440953"/>
+        <entry arg="true" endPc="268441186" name="colori" stackId="7" startPc="268440953"/>
+        <entry arg="true" endPc="268441186" name="rtl" stackId="8" startPc="268440953"/>
+        <entry endPc="268441185" name="x" stackId="9" startPc="268440957"/>
+        <entry endPc="268441185" name="y" stackId="10" startPc="268440957"/>
+        <entry endPc="268441185" name="raggio" stackId="11" startPc="268440957"/>
+        <entry endPc="268441185" name="fillH" stackId="12" startPc="268440957"/>
+        <entry arg="true" endPc="268441420" name="dc" stackId="1" startPc="268441187"/>
+        <entry arg="true" endPc="268441420" name="cx" stackId="2" startPc="268441187"/>
+        <entry arg="true" endPc="268441420" name="cy" stackId="3" startPc="268441187"/>
+        <entry arg="true" endPc="268441420" name="lunghezza" stackId="4" startPc="268441187"/>
+        <entry arg="true" endPc="268441420" name="spessore" stackId="5" startPc="268441187"/>
+        <entry arg="true" endPc="268441420" name="perc" stackId="6" startPc="268441187"/>
+        <entry arg="true" endPc="268441420" name="colori" stackId="7" startPc="268441187"/>
+        <entry arg="true" endPc="268441420" name="rtl" stackId="8" startPc="268441187"/>
+        <entry endPc="268441419" name="x" stackId="9" startPc="268441191"/>
+        <entry endPc="268441419" name="y" stackId="10" startPc="268441191"/>
+        <entry endPc="268441419" name="raggio" stackId="11" startPc="268441191"/>
+        <entry endPc="268441419" name="fillW" stackId="12" startPc="268441191"/>
+        <entry arg="true" endPc="268441590" name="dc" stackId="1" startPc="268441421"/>
+        <entry arg="true" endPc="268441590" name="cx" stackId="2" startPc="268441421"/>
+        <entry arg="true" endPc="268441590" name="cy" stackId="3" startPc="268441421"/>
+        <entry arg="true" endPc="268441590" name="lunghezza" stackId="4" startPc="268441421"/>
+        <entry arg="true" endPc="268441590" name="spessore" stackId="5" startPc="268441421"/>
+        <entry arg="true" endPc="268441590" name="valore" stackId="6" startPc="268441421"/>
+        <entry arg="true" endPc="268441590" name="massimo" stackId="7" startPc="268441421"/>
+        <entry arg="true" endPc="268441590" name="colori" stackId="8" startPc="268441421"/>
+        <entry arg="true" endPc="268441590" name="config" stackId="9" startPc="268441421"/>
+        <entry endPc="268441589" name="perc" stackId="10" startPc="268441425"/>
+        <entry endPc="268441589" name="orientamento" stackId="11" startPc="268441425"/>
+        <entry endPc="268441589" name="rtl" stackId="12" startPc="268441425"/>
+        <entry arg="true" endPc="268442333" name="dc" stackId="1" startPc="268441591"/>
+        <entry arg="true" endPc="268442333" name="cx" stackId="2" startPc="268441591"/>
+        <entry arg="true" endPc="268442333" name="cy" stackId="3" startPc="268441591"/>
+        <entry arg="true" endPc="268442333" name="valore" stackId="4" startPc="268441591"/>
+        <entry arg="true" endPc="268442333" name="goal" stackId="5" startPc="268441591"/>
+        <entry arg="true" endPc="268442333" name="startDeg" stackId="6" startPc="268441591"/>
+        <entry arg="true" endPc="268442333" name="endDeg" stackId="7" startPc="268441591"/>
+        <entry arg="true" endPc="268442333" name="cw" stackId="8" startPc="268441591"/>
+        <entry arg="true" endPc="268442333" name="cfg" stackId="9" startPc="268441591"/>
+        <entry endPc="268442332" name="totalDeg" stackId="10" startPc="268441595"/>
+        <entry endPc="268442332" name="arcDir" stackId="11" startPc="268441595"/>
+        <entry endPc="268442332" name="spessore" stackId="12" startPc="268441595"/>
+        <entry endPc="268442332" name="raggio" stackId="13" startPc="268441595"/>
+        <entry endPc="268442332" name="capR" stackId="14" startPc="268441595"/>
+        <entry endPc="268442332" name="filled" stackId="15" startPc="268441595"/>
+        <entry endPc="268442332" name="endAngle" stackId="16" startPc="268441595"/>
+        <entry endPc="268442332" name="radStart" stackId="17" startPc="268441595"/>
+        <entry endPc="268442332" name="radEnd" stackId="18" startPc="268441595"/>
+        <entry endPc="268442312" name="radEndAngle" stackId="19" startPc="268442047"/>
+        <entry arg="true" endPc="268442410" name="startDeg" stackId="1" startPc="268442334"/>
+        <entry arg="true" endPc="268442410" name="endDeg" stackId="2" startPc="268442334"/>
+        <entry arg="true" endPc="268442410" name="cw" stackId="3" startPc="268442334"/>
+        <entry endPc="268442410" name="arco" stackId="4" startPc="268442338"/>
+        <entry arg="true" endPc="268442630" name="dc" stackId="1" startPc="268442411"/>
+        <entry endPc="268442630" name="rez_cmp_local_custom_drawable_11939594661139614796" stackId="2" startPc="268442423"/>
+        <entry endPc="268442630" name="rez_cmp_local_text_TimeLabel" stackId="3" startPc="268442423"/>
+    </localVars>
+    <deviceInfo deviceVersion="45fe3cbb0de8ea0a70e12628d2697915f1272301" partNumber="006-B3290-00"/>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="MilitaryFormatTitle"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="BackgroundColorTitle"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorRed"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorDarkGray"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorWhite"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ForegroundColorTitle"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorLightGray"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorBlue"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorBlack"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="159" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/ActivityData" offset="334" parentId="globals" symbolId="ActivityData" type="class"/>
+        <dataEntry label="globals/ActivityData/&lt;statics&gt;" offset="381" parentId="ActivityData" symbolId="&lt;statics&gt;" type="module"/>
+        <dataEntry label="globals/ProgressBarDash" offset="476" parentId="globals" symbolId="ProgressBarDash" type="class"/>
+        <dataEntry label="globals/ProgressBarDash/&lt;statics&gt;" offset="523" parentId="ProgressBarDash" symbolId="&lt;statics&gt;" type="module"/>
+        <dataEntry label="globals/Background" offset="578" parentId="globals" symbolId="Background" type="class"/>
+        <dataEntry label="globals/Rez" offset="633" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/BatteryRenderer" offset="688" parentId="globals" symbolId="BatteryRenderer" type="class"/>
+        <dataEntry label="globals/BatteryRenderer/&lt;statics&gt;" offset="735" parentId="BatteryRenderer" symbolId="&lt;statics&gt;" type="module"/>
+        <dataEntry label="globals/Logger" offset="790" parentId="globals" symbolId="Logger" type="class"/>
+        <dataEntry label="globals/Logger/&lt;statics&gt;" offset="837" parentId="Logger" symbolId="&lt;statics&gt;" type="module"/>
+        <dataEntry label="globals/GarminLibTestApp" offset="892" parentId="globals" symbolId="GarminLibTestApp" type="class"/>
+        <dataEntry label="globals/ActivityRingDash" offset="971" parentId="globals" symbolId="ActivityRingDash" type="class"/>
+        <dataEntry label="globals/ActivityRingDash/&lt;statics&gt;" offset="1018" parentId="ActivityRingDash" symbolId="&lt;statics&gt;" type="module"/>
+        <dataEntry label="globals/ActivityRingDot" offset="1057" parentId="globals" symbolId="ActivityRingDot" type="class"/>
+        <dataEntry label="globals/ActivityRingDot/&lt;statics&gt;" offset="1104" parentId="ActivityRingDot" symbolId="&lt;statics&gt;" type="module"/>
+        <dataEntry label="globals/GarminLibTestView" offset="1143" parentId="globals" symbolId="GarminLibTestView" type="class"/>
+        <dataEntry label="globals/SunUtils" offset="1238" parentId="globals" symbolId="SunUtils" type="class"/>
+        <dataEntry label="globals/SunUtils/&lt;statics&gt;" offset="1285" parentId="SunUtils" symbolId="&lt;statics&gt;" type="module"/>
+        <dataEntry label="globals/ActivityRingTick" offset="1324" parentId="globals" symbolId="ActivityRingTick" type="class"/>
+        <dataEntry label="globals/ActivityRingTick/&lt;statics&gt;" offset="1371" parentId="ActivityRingTick" symbolId="&lt;statics&gt;" type="module"/>
+        <dataEntry label="globals/TimeManagement" offset="1410" parentId="globals" symbolId="TimeManagement" type="class"/>
+        <dataEntry label="globals/TimeManagement/&lt;statics&gt;" offset="1457" parentId="TimeManagement" symbolId="&lt;statics&gt;" type="module"/>
+        <dataEntry label="globals/ProgressBar" offset="1496" parentId="globals" symbolId="ProgressBar" type="class"/>
+        <dataEntry label="globals/ProgressBar/&lt;statics&gt;" offset="1543" parentId="ProgressBar" symbolId="&lt;statics&gt;" type="module"/>
+        <dataEntry label="globals/ActivityRing" offset="1598" parentId="globals" symbolId="ActivityRing" type="class"/>
+        <dataEntry label="globals/ActivityRing/&lt;statics&gt;" offset="1645" parentId="ActivityRing" symbolId="&lt;statics&gt;" type="module"/>
+        <dataEntry label="globals/MathUtils" offset="1684" parentId="globals" symbolId="MathUtils" type="class"/>
+        <dataEntry label="globals/MathUtils/&lt;statics&gt;" offset="1731" parentId="MathUtils" symbolId="&lt;statics&gt;" type="module"/>
+        <dataEntry label="globals/Rez/Drawables" offset="1770" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="1809" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="1848" parentId="Rez" symbolId="Strings" type="module"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="ActivityData">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="globals/ActivityData">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435485" name="getApp" startPc="268435460">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="ProgressBarDash">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="globals/ProgressBarDash">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435504" name="&lt;init&gt;" parent="Background" startPc="268435486">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435528" name="&lt;init&gt;" parent="Rez" startPc="268435505">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="BatteryRenderer">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="globals/BatteryRenderer">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Logger">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="globals/Logger">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435547" name="&lt;init&gt;" parent="GarminLibTestApp" startPc="268435529">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="ActivityRingDash">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="globals/ActivityRingDash">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="ActivityRingDot">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="globals/ActivityRingDot">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435566" name="&lt;init&gt;" parent="GarminLibTestView" startPc="268435548">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="SunUtils">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="globals/SunUtils">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="ActivityRingTick">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="globals/ActivityRingTick">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="TimeManagement">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="globals/TimeManagement">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="ProgressBar">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="globals/ProgressBar">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="ActivityRing">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="globals/ActivityRing">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="MathUtils">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="globals/MathUtils">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435621" name="getDistanceKm" parent="ActivityData" startPc="268435567">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435672" name="getCalories" parent="ActivityData" startPc="268435622">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435782" name="getFloors" parent="ActivityData" startPc="268435673">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435901" name="getBodyBatteryMidnight" parent="ActivityData" startPc="268435783">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435950" name="getSteps" parent="ActivityData" startPc="268435902">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436005" name="getActiveMinutesWeek" parent="ActivityData" startPc="268435951">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="ActivityData">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436101" name="getBodyBattery" parent="ActivityData" startPc="268436006">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436156" name="getActiveMinutes" parent="ActivityData" startPc="268436102">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436423" name="_drawVerticale" parent="ProgressBarDash" startPc="268436157">
+            <param id="dc"/>
+            <param id="cx"/>
+            <param id="cy"/>
+            <param id="lunghezza"/>
+            <param id="spessore"/>
+            <param id="perc"/>
+            <param id="colori"/>
+            <param id="rtl"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436690" name="_drawOrizzontale" parent="ProgressBarDash" startPc="268436424">
+            <param id="dc"/>
+            <param id="cx"/>
+            <param id="cy"/>
+            <param id="lunghezza"/>
+            <param id="spessore"/>
+            <param id="perc"/>
+            <param id="colori"/>
+            <param id="rtl"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="ProgressBarDash">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436860" name="draw" parent="ProgressBarDash" startPc="268436691">
+            <param id="dc"/>
+            <param id="cx"/>
+            <param id="cy"/>
+            <param id="lunghezza"/>
+            <param id="spessore"/>
+            <param id="valore"/>
+            <param id="massimo"/>
+            <param id="colori"/>
+            <param id="config"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436906" name="initialize" parent="Background" startPc="268436861">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436958" name="draw" parent="Background" startPc="268436907">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437154" name="drawBatteria" parent="BatteryRenderer" startPc="268436959">
+            <param id="dc"/>
+            <param id="cx"/>
+            <param id="cy"/>
+            <param id="batW"/>
+            <param id="batH"/>
+            <param id="colors"/>
+            <param id="font"/>
+            <param id="orientamento"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437483" name="_drawVerticale" parent="BatteryRenderer" startPc="268437155">
+            <param id="dc"/>
+            <param id="cx"/>
+            <param id="cy"/>
+            <param id="batW"/>
+            <param id="batH"/>
+            <param id="batColor"/>
+            <param id="level"/>
+            <param id="font"/>
+            <param id="text"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437845" name="_drawOrizzontale" parent="BatteryRenderer" startPc="268437484">
+            <param id="dc"/>
+            <param id="cx"/>
+            <param id="cy"/>
+            <param id="batW"/>
+            <param id="batH"/>
+            <param id="batColor"/>
+            <param id="level"/>
+            <param id="font"/>
+            <param id="text"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="BatteryRenderer">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437872" name="warn" parent="Logger" startPc="268437846">
+            <param id="message"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437996" name="log" parent="Logger" startPc="268437873">
+            <param id="functionName"/>
+            <param id="message"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="Logger">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438023" name="error" parent="Logger" startPc="268437997">
+            <param id="message"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438026" name="onStart" parent="GarminLibTestApp" startPc="268438024">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438045" name="onSettingsChanged" parent="GarminLibTestApp" startPc="268438027">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438084" name="getInitialView" parent="GarminLibTestApp" startPc="268438046">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438105" name="initialize" parent="GarminLibTestApp" startPc="268438085">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438108" name="onStop" parent="GarminLibTestApp" startPc="268438106">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="ActivityRingDash">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438522" name="draw" parent="ActivityRingDash" startPc="268438109">
+            <param id="dc"/>
+            <param id="cx"/>
+            <param id="cy"/>
+            <param id="valore"/>
+            <param id="goal"/>
+            <param id="startDeg"/>
+            <param id="endDeg"/>
+            <param id="cw"/>
+            <param id="cfg"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="ActivityRingDot">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438925" name="draw" parent="ActivityRingDot" startPc="268438523">
+            <param id="dc"/>
+            <param id="cx"/>
+            <param id="cy"/>
+            <param id="valore"/>
+            <param id="goal"/>
+            <param id="startDeg"/>
+            <param id="endDeg"/>
+            <param id="cw"/>
+            <param id="cfg"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onExitSleep" parent="GarminLibTestView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="GarminLibTestView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438969" name="onLayout" parent="GarminLibTestView" startPc="268438926">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onEnterSleep" parent="GarminLibTestView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438990" name="initialize" parent="GarminLibTestView" startPc="268438970">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="GarminLibTestView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439678" name="onUpdate" parent="GarminLibTestView" startPc="268438991">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="SunUtils">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440072" name="minutiMancantiEvento" parent="SunUtils" startPc="268439679">
+            <param id="sunrise"/>
+            <param id="sunset"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="ActivityRingTick">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440709" name="draw" parent="ActivityRingTick" startPc="268440073">
+            <param id="dc"/>
+            <param id="cx"/>
+            <param id="cy"/>
+            <param id="valore"/>
+            <param id="goal"/>
+            <param id="startDeg"/>
+            <param id="endDeg"/>
+            <param id="cw"/>
+            <param id="cfg"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="TimeManagement">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440952" name="getTimeString" parent="TimeManagement" startPc="268440710">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441186" name="_drawVerticale" parent="ProgressBar" startPc="268440953">
+            <param id="dc"/>
+            <param id="cx"/>
+            <param id="cy"/>
+            <param id="lunghezza"/>
+            <param id="spessore"/>
+            <param id="perc"/>
+            <param id="colori"/>
+            <param id="rtl"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441420" name="_drawOrizzontale" parent="ProgressBar" startPc="268441187">
+            <param id="dc"/>
+            <param id="cx"/>
+            <param id="cy"/>
+            <param id="lunghezza"/>
+            <param id="spessore"/>
+            <param id="perc"/>
+            <param id="colori"/>
+            <param id="rtl"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="ProgressBar">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441590" name="draw" parent="ProgressBar" startPc="268441421">
+            <param id="dc"/>
+            <param id="cx"/>
+            <param id="cy"/>
+            <param id="lunghezza"/>
+            <param id="spessore"/>
+            <param id="valore"/>
+            <param id="massimo"/>
+            <param id="colori"/>
+            <param id="config"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="ActivityRing">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442333" name="draw" parent="ActivityRing" startPc="268441591">
+            <param id="dc"/>
+            <param id="cx"/>
+            <param id="cy"/>
+            <param id="valore"/>
+            <param id="goal"/>
+            <param id="startDeg"/>
+            <param id="endDeg"/>
+            <param id="cw"/>
+            <param id="cfg"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442410" name="calcolaArco" parent="MathUtils" startPc="268442334">
+            <param id="startDeg"/>
+            <param id="endDeg"/>
+            <param id="cw"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="MathUtils">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442630" name="WatchFace" parent="Layouts" startPc="268442411">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

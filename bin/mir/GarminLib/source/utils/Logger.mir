@@ -1,0 +1,121 @@
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Logger.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [System,1,13,19]; ]
+using Toybox.System;
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Logger.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [Time,2,13,17]; ]
+using Toybox.Time;
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Logger.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [Time,3,13,17]; @symbol_usingdef<2> = [Gregorian,3,18,27]; ]
+using Toybox.Time.Gregorian;
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Logger.mc"; @line = 5; @symbol_classdef = [Logger,5,6,12]; ]
+class Logger {
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Logger.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Logger.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Logger.mc"; @line = 7; @symbol_functiondef = [log,7,20,23]; @symbol_param<0> = [functionName,7,24,36]; @symbol_param<1> = [message,7,38,45]; ]
+    static
+    function log(functionName, message) {
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Logger_mc_7_47_11_4_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Logger.mc" 8 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_utils_Logger_mc_7_47_11_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_utils_Logger_mc_7_47_11_4_stop" ]
+        %info.1 = local;
+        symbol [ info %info.1 8 12 16 ];
+        symbol [ Gregorian %tmp.1 8 19 28 ];
+        %tmp.1 = getm $.Toybox.Time.Gregorian;
+        symbol [ info %tmp.2 8 29 33 ];
+        %tmp.2 = getv function %tmp.1 :info;
+        symbol [ Time %tmp.3 8 34 38 ];
+        %tmp.3 = getm $.Toybox.Time;
+        symbol [ now %tmp.4 8 39 42 ];
+        %tmp.4 = getv function %tmp.3 :now;
+        %tmp.5 = invoke %tmp.3 %tmp.4();
+        symbol [ Time %tmp.6 8 46 50 ];
+        %tmp.6 = getm $.Toybox.Time;
+        symbol [ FORMAT_SHORT %tmp.7 8 51 63 ];
+        %tmp.7 = getv %tmp.6 :FORMAT_SHORT;
+        %tmp.8 = invoke %tmp.1 %tmp.2(%tmp.5, %tmp.7);
+        lputv %info.1 %tmp.8;
+        symbol [ info %info.1 8 12 16 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Logger.mc" 9 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_utils_Logger_mc_7_47_11_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_utils_Logger_mc_7_47_11_4_stop" ]
+        %timestamp.2 = local;
+        symbol [ timestamp %timestamp.2 9 12 21 ];
+        %tmp.9 = lgetv %info.1;
+        symbol [ info %tmp.9 9 24 28 ];
+        symbol [ hour %tmp.10 9 29 33 ];
+        %tmp.10 = getv %tmp.9 :hour;
+        %tmp.11 = ":";
+        %tmp.12 = add %tmp.10 %tmp.11;
+        %tmp.13 = lgetv %info.1;
+        symbol [ info %tmp.13 9 42 46 ];
+        symbol [ min %tmp.14 9 47 50 ];
+        %tmp.14 = getv %tmp.13 :min;
+        %tmp.15 = add %tmp.12 %tmp.14;
+        %tmp.16 = ":";
+        %tmp.17 = add %tmp.15 %tmp.16;
+        %tmp.18 = lgetv %info.1;
+        symbol [ info %tmp.18 9 59 63 ];
+        symbol [ sec %tmp.19 9 64 67 ];
+        %tmp.19 = getv %tmp.18 :sec;
+        %tmp.20 = add %tmp.17 %tmp.19;
+        lputv %timestamp.2 %tmp.20;
+        symbol [ timestamp %timestamp.2 9 12 21 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Logger.mc" 10 8 ]
+        symbol [ System %tmp.21 10 8 14 ];
+        %tmp.21 = getm $.Toybox.System;
+        symbol [ println %tmp.22 10 15 22 ];
+        %tmp.22 = getv function %tmp.21 :println;
+        %tmp.23 = "[LOG][";
+        %tmp.24 = lgetv %timestamp.2;
+        symbol [ timestamp %tmp.24 10 34 43 ];
+        %tmp.25 = add %tmp.23 %tmp.24;
+        %tmp.26 = "][";
+        %tmp.27 = add %tmp.25 %tmp.26;
+        %tmp.28 = lgetv %functionName;
+        symbol [ functionName %tmp.28 10 53 65 ];
+        %tmp.29 = add %tmp.27 %tmp.28;
+        %tmp.30 = "] ";
+        %tmp.31 = add %tmp.29 %tmp.30;
+        %tmp.32 = lgetv %message;
+        symbol [ message %tmp.32 10 75 82 ];
+        %tmp.33 = add %tmp.31 %tmp.32;
+        invoke %tmp.21 %tmp.22(%tmp.33);
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Logger_mc_7_47_11_4_stop:
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Logger.mc"; @line = 13; @symbol_functiondef = [warn,13,20,24]; @symbol_param<0> = [message,13,25,32]; ]
+    static
+    function warn(message) {
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Logger_mc_13_34_15_4_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Logger.mc" 14 8 ]
+        symbol [ System %tmp.1 14 8 14 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ println %tmp.2 14 15 22 ];
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "[WARN] ";
+        %tmp.4 = lgetv %message;
+        symbol [ message %tmp.4 14 35 42 ];
+        %tmp.5 = add %tmp.3 %tmp.4;
+        invoke %tmp.1 %tmp.2(%tmp.5);
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Logger_mc_13_34_15_4_stop:
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Logger.mc"; @line = 17; @symbol_functiondef = [error,17,20,25]; @symbol_param<0> = [message,17,26,33]; ]
+    static
+    function error(message) {
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Logger_mc_17_35_19_4_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Logger.mc" 18 8 ]
+        symbol [ System %tmp.1 18 8 14 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ println %tmp.2 18 15 22 ];
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "[ERROR] ";
+        %tmp.4 = lgetv %message;
+        symbol [ message %tmp.4 18 36 43 ];
+        %tmp.5 = add %tmp.3 %tmp.4;
+        invoke %tmp.1 %tmp.2(%tmp.5);
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Logger_mc_17_35_19_4_stop:
+    }
+}
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Logger.mc"; @line = 1; ]
+<init> {
+}
