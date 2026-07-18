@@ -1,49 +1,45 @@
-[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\CIrcleFill.mc"; @line = 4; @symbol_usingdef<0> = [Toybox,4,10,16]; @symbol_usingdef<1> = [Graphics,4,17,25]; ]
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\CircleFill.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [Graphics,1,13,21]; ]
 using Toybox.Graphics;
-[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\CIrcleFill.mc"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [Lang,5,13,17]; ]
-using Toybox.Lang;
-[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\CIrcleFill.mc"; @line = 6; @symbol_usingdef<0> = [Toybox,6,6,12]; @symbol_usingdef<1> = [Math,6,13,17]; ]
-using Toybox.Math;
-[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\CIrcleFill.mc"; @line = 7; @symbol_classdef = [CircleFill,7,10,20]; ]
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\CircleFill.mc"; @line = 3; @symbol_classdef = [CircleFill,3,6,16]; ]
 class CircleFill {
-    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\CIrcleFill.mc"; @line = 7; ]
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\CircleFill.mc"; @line = 3; ]
     <init> {
     }
-    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\CIrcleFill.mc"; @line = 7; ]
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\CircleFill.mc"; @line = 3; ]
     static
     <init> {
     }
-    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\CIrcleFill.mc"; @line = 9; @symbol_functiondef = [draw,9,20,24]; @symbol_param<0> = [dc,9,25,27]; @symbol_param<1> = [x,9,30,31]; @symbol_param<2> = [y,9,34,35]; @symbol_param<3> = [radius,9,37,43]; @symbol_param<4> = [color,9,46,51]; ]
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\CircleFill.mc"; @line = 5; @symbol_functiondef = [draw,5,20,24]; @symbol_param<0> = [dc,5,25,27]; @symbol_param<1> = [x,5,29,30]; @symbol_param<2> = [y,5,32,33]; @symbol_param<3> = [radius,5,35,41]; @symbol_param<4> = [color,5,43,48]; ]
     static
     function draw(dc, x, y, radius, color) as Void {
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_CIrcleFill_mc_9_63_13_4_start:
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\CIrcleFill.mc" 10 8 ]
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_CircleFill_mc_5_58_8_4_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\CircleFill.mc" 6 8 ]
         %tmp.1 = lgetv %dc;
-        symbol [ dc %tmp.1 10 8 10 ];
-        symbol [ setColor %tmp.2 10 11 19 ];
+        symbol [ dc %tmp.1 6 8 10 ];
+        symbol [ setColor %tmp.2 6 11 19 ];
         %tmp.2 = getv function %tmp.1 :setColor;
         %tmp.3 = lgetv %color;
-        symbol [ color %tmp.3 10 20 25 ];
-        symbol [ Graphics %tmp.4 10 27 35 ];
+        symbol [ color %tmp.3 6 20 25 ];
+        symbol [ Graphics %tmp.4 6 27 35 ];
         %tmp.4 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.5 10 36 53 ];
+        symbol [ COLOR_TRANSPARENT %tmp.5 6 36 53 ];
         %tmp.5 = getv %tmp.4 :COLOR_TRANSPARENT;
         invoke %tmp.1 %tmp.2(%tmp.3, %tmp.5);
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\CIrcleFill.mc" 12 9 ]
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\CircleFill.mc" 7 8 ]
         %tmp.6 = lgetv %dc;
-        symbol [ dc %tmp.6 12 9 11 ];
-        symbol [ fillCircle %tmp.7 12 12 22 ];
+        symbol [ dc %tmp.6 7 8 10 ];
+        symbol [ fillCircle %tmp.7 7 11 21 ];
         %tmp.7 = getv function %tmp.6 :fillCircle;
         %tmp.8 = lgetv %x;
-        symbol [ x %tmp.8 12 23 24 ];
+        symbol [ x %tmp.8 7 22 23 ];
         %tmp.9 = lgetv %y;
-        symbol [ y %tmp.9 12 26 27 ];
+        symbol [ y %tmp.9 7 25 26 ];
         %tmp.10 = lgetv %radius;
-        symbol [ radius %tmp.10 12 29 35 ];
+        symbol [ radius %tmp.10 7 28 34 ];
         invoke %tmp.6 %tmp.7(%tmp.8, %tmp.9, %tmp.10);
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_CIrcleFill_mc_9_63_13_4_stop:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_CircleFill_mc_5_58_8_4_stop:
     }
 }
-[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\CIrcleFill.mc"; @line = 4; ]
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\CircleFill.mc"; @line = 1; ]
 <init> {
 }

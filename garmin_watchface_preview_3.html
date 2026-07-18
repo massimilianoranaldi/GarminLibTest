@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Garmin Watchface Color Preview</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: system-ui, sans-serif; background: #1a1a1a; color: #eee; min-height: 100vh; padding: 24px; }
+  h1 { font-size: 18px; font-weight: 500; margin-bottom: 20px; color: #fff; letter-spacing: 0.5px; }
+  .wrap { display: flex; gap: 24px; flex-wrap: wrap; align-items: flex-start; }
+  .watch-col { flex: 0 0 280px; display: flex; flex-direction: column; align-items: center; gap: 16px; }
+  canvas { display: block; border-radius: 50%; box-shadow: 0 0 40px rgba(0,0,0,0.8); }
+  .controls-col { flex: 1; min-width: 320px; max-width: 700px; }
+  .section-title { font-size: 12px; font-weight: 600; color: #aaa; margin: 16px 0 6px; text-transform: uppercase; letter-spacing: 1px; border-bottom: 1px solid #333; padding-bottom: 4px; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 16px; }
+  .ctrl { display: flex; flex-direction: column; gap: 3px; }
+  .ctrl label { font-size: 11px; color: #888; }
+  .ctrl select { font-size: 12px; background: #2a2a2a; color: #eee; border: 1px solid #444; border-radius: 6px; padding: 5px 8px; cursor: pointer; width: 100%; }
+  .ctrl select:hover { border-color: #666; }
+  .ctrl select:focus { outline: none; border-color: #FFFF00; }
+  .ctrl-row { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .ctrl-row label { font-size: 11px; color: #888; flex: 0 0 140px; }
+  .ctrl-row input[type=range] { flex: 1; accent-color: #FFFF00; }
+  .ctrl-row span { font-size: 12px; font-weight: 500; min-width: 40px; text-align: right; color: #eee; }
+  .info { font-size: 12px; color: #555; text-align: center; }
+  .btn-bar { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 20px; }
+  .btn { padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-size: 13px; font-weight: 600; letter-spacing: 0.3px; }
+  .btn-save { background: #FFFF00; color: #000; }
+  .btn-save:hover { background: #e6e600; }
+  .btn-mc { background: #333; color: #eee; border: 1px solid #555; }
+  .btn-mc:hover { background: #444; }
+  .btn-prop { background: #1a3a1a; color: #55FF55; border: 1px solid #33aa33; }
+  .btn-prop:hover { background: #224422; }
+  .btn-import { background: #1a2a3a; color: #55AAFF; border: 1px solid #3366aa; }
+  .btn-import:hover { background: #223344; }
+  .output-box { margin-top: 16px; background: #111; border: 1px solid #333; border-radius: 8px; padding: 14px; font-family: monospace; font-size: 11px; color: #aaa; white-space: pre; overflow-x: auto; max-height: 300px; overflow-y: auto; display: none; }
+  .output-box.visible { display: block; }
+
+  /* Sezione import tema */
+  .import-section { margin-top: 24px; background: #111; border: 1px solid #2a4a2a; border-radius: 10px; padding: 16px; }
+  .import-section h2 { font-size: 13px; font-weight: 600; color: #55AAFF; margin-bottom: 10px; letter-spacing: 0.5px; }
+  .import-section textarea { width: 100%; height: 120px; background: #0a0a0a; color: #aaffaa; border: 1px solid #333; border-radius: 6px; padding: 10px; font-family: monospace; font-size: 11px; resize: vertical; }
+  .import-section textarea:focus { outline: none; border-color: #55AAFF; }
+  .import-msg { margin-top: 8px; font-size: 12px; min-height: 18px; }
+  .import-msg.ok { color: #55FF55; }
+  .import-msg.err { color: #FF5555; }
+</style>
+</head>
+<body>
+
+<h1>Garmin Watchface — Color Preview</h1>
+
+<!-- SEZIONE IMPORT TEMA -->
+<div class="import-section">
+  <h2>📥 Incolla tema (properties.xml)</h2>
+  <textarea id="importArea" placeholder="Incolla qui le righe del tema, es:&#10;BackgroundColor	&lt;property id=&quot;BackgroundColor&quot; type=&quot;number&quot;&gt;0x000000&lt;/property&gt;&#10;cerchioGrandeContorno	&lt;property id=&quot;cerchioGrandeContorno&quot; type=&quot;number&quot;&gt;0xFFFF00&lt;/property&gt;&#10;..."></textarea>
+  <div class="btn-bar" style="margin-top:10px;">
+    <button class="btn btn-import" onclick="applicaTema()">▶ Applica tema al quadrante</button>
+    <button class="btn btn-mc" onclick="document.getElementById('importArea').value=''">🗑 Svuota</button>
+  </div>
+  <div class="import-msg" id="importMsg"></div>
+</div>
+
+<div class="wrap" style="margin-top:24px;">
+  <div class="watch-col">
+    <canvas id="wf" width="260" height="260"></canvas>
+    <div class="info">Quadrante 260×260px — Fenix 6 Pro</div>
+  </div>
+  <div class="controls-col" id="controls"></div>
+</div>
+
+<div class="btn-bar">
+  <button class="btn btn-save" onclick="salvaImpostazioni()">💾 Salva impostazioni</button>
+  <button class="btn btn-mc" onclick="generaMonkeyC()">🐒 Genera Monkey C</button>
+  <button class="btn btn-prop" onclick="generaProperties()">📄 Genera properties.xml</button>
+</div>
+
+<div class="output-box" id="outputBox"></div>
+
+<script>
+const PALETTE = [
+  {name:'bianco1',  hex:'#FFFFFF', tipo:'FILL'},
+  {name:'bianco2',  hex:'#FFF5E6', tipo:'FILL'},
+  {name:'bianco3',  hex:'#F0F4FF', tipo:'FILL'},
+  {name:'grigio1',  hex:'#DDDDDD', tipo:'FILL'},
+  {name:'grigio2',  hex:'#BBBBBB', tipo:'FILL'},
+  {name:'grigio3',  hex:'#AAAAAA', tipo:'FILL'},
+  {name:'grigio4',  hex:'#888888', tipo:'FILL/BACK'},
+  {name:'grigio5',  hex:'#555555', tipo:'BACK'},
+  {name:'grigio6',  hex:'#333333', tipo:'BACK★'},
+  {name:'nero1',    hex:'#111111', tipo:'BACK'},
+  {name:'nero2',    hex:'#000000', tipo:'BACK'},
+  {name:'rosso1',   hex:'#FF9999', tipo:'FILL'},
+  {name:'rosso2',   hex:'#FF5555', tipo:'FILL★'},
+  {name:'rosso3',   hex:'#FF0000', tipo:'FILL'},
+  {name:'rosso4',   hex:'#CC0000', tipo:'FILL/BACK'},
+  {name:'rosso5',   hex:'#AA0000', tipo:'BACK'},
+  {name:'rosso6',   hex:'#550000', tipo:'BACK'},
+  {name:'arancione1',hex:'#FFCC88',tipo:'FILL'},
+  {name:'arancione2',hex:'#FFAA44',tipo:'FILL'},
+  {name:'arancione3',hex:'#FF8800',tipo:'FILL★'},
+  {name:'arancione4',hex:'#FF5500',tipo:'FILL/BACK'},
+  {name:'arancione5',hex:'#AA4400',tipo:'BACK'},
+  {name:'giallo1',  hex:'#FFFF99', tipo:'FILL'},
+  {name:'giallo2',  hex:'#FFFF55', tipo:'FILL'},
+  {name:'giallo3',  hex:'#FFFF00', tipo:'FILL★'},
+  {name:'giallo4',  hex:'#CCCC00', tipo:'FILL/BACK'},
+  {name:'giallo5',  hex:'#888800', tipo:'BACK'},
+  {name:'verde1',   hex:'#AAFFAA', tipo:'FILL'},
+  {name:'verde2',   hex:'#55FF55', tipo:'FILL★'},
+  {name:'verde3',   hex:'#00FF00', tipo:'FILL'},
+  {name:'verde4',   hex:'#00AA00', tipo:'FILL/BACK'},
+  {name:'verde5',   hex:'#005500', tipo:'BACK'},
+  {name:'verde6',   hex:'#002200', tipo:'BACK★'},
+  {name:'ciano1',   hex:'#AAFFFF', tipo:'FILL'},
+  {name:'ciano2',   hex:'#55FFFF', tipo:'FILL★'},
+  {name:'ciano3',   hex:'#00FFFF', tipo:'FILL'},
+  {name:'ciano4',   hex:'#00AAAA', tipo:'FILL/BACK'},
+  {name:'ciano5',   hex:'#005555', tipo:'BACK'},
+  {name:'blu1',     hex:'#AAAAFF', tipo:'FILL'},
+  {name:'blu2',     hex:'#5555FF', tipo:'FILL'},
+  {name:'blu3',     hex:'#0055FF', tipo:'FILL★'},
+  {name:'blu4',     hex:'#0000FF', tipo:'FILL'},
+  {name:'blu5',     hex:'#000055', tipo:'BACK'},
+  {name:'blu6',     hex:'#000022', tipo:'BACK★'},
+  {name:'viola1',   hex:'#DD99FF', tipo:'FILL'},
+  {name:'viola2',   hex:'#BB44FF', tipo:'FILL'},
+  {name:'viola3',   hex:'#AA00FF', tipo:'FILL★'},
+  {name:'viola4',   hex:'#7700AA', tipo:'FILL/BACK'},
+  {name:'viola5',   hex:'#330055', tipo:'BACK'},
+  {name:'rosa1',    hex:'#FFAACC', tipo:'FILL'},
+  {name:'rosa2',    hex:'#FF55AA', tipo:'FILL'},
+  {name:'rosa3',    hex:'#FF0055', tipo:'FILL★'},
+  {name:'rosa4',    hex:'#FF00FF', tipo:'FILL'},
+  {name:'rosa5',    hex:'#AA0055', tipo:'BACK'},
+  {name:'marrone1', hex:'#FFCC99', tipo:'FILL'},
+  {name:'marrone2', hex:'#CC8844', tipo:'FILL'},
+  {name:'marrone3', hex:'#885522', tipo:'FILL/BACK'},
+  {name:'marrone4', hex:'#442211', tipo:'BACK'},
+  {name:'oro1',     hex:'#FFEE88', tipo:'FILL'},
+  {name:'oro2',     hex:'#FFCC00', tipo:'FILL★'},
+  {name:'oro3',     hex:'#CC9900', tipo:'FILL/BACK'},
+  {name:'oro4',     hex:'#886600', tipo:'BACK'},
+  {name:'corallo1', hex:'#FF8877', tipo:'FILL'},
+  {name:'corallo2', hex:'#FF5544', tipo:'FILL'},
+];
+
+function badge(tipo) {
+  if (tipo === 'FILL★') return ' ⭐FILL';
+  if (tipo === 'BACK★') return ' ⭐BACK';
+  if (tipo === 'FILL/BACK') return ' ↕FILL/BACK';
+  if (tipo === 'FILL') return ' →FILL';
+  if (tipo === 'BACK') return ' →BACK';
+  return '';
+}
+
+const CONTROLS = [
+  {section:'Cerchi'},
+  {id:'c3bg', label:'Grande sfondo', def:'grigio6'},
+  {id:'c3bo', label:'Grande contorno', def:'giallo3'},
+  {id:'c1bg', label:'Sx sfondo', def:'grigio6'},
+  {id:'c1bo', label:'Sx contorno', def:'giallo3'},
+  {id:'c2bg', label:'Dx sfondo', def:'grigio6'},
+  {id:'c2bo', label:'Dx contorno', def:'giallo3'},
+  {section:'Rettangoli'},
+  {id:'r1bg', label:'Ore sfondo', def:'grigio6'},
+  {id:'r2bg', label:'Meteo sfondo', def:'grigio6'},
+  {section:'Font'},
+  {id:'fOre', label:'Ore', def:'giallo3'},
+  {id:'fMin', label:'Minuti', def:'bianco1'},
+  {id:'fCal', label:'Calendario', def:'giallo3'},
+  {id:'fMet', label:'Città / meteo', def:'bianco1'},
+  {id:'fArc1', label:'Font arco esterno', def:'bianco1'},
+  {id:'fArc2', label:'Font arco interno', def:'bianco1'},
+  {section:'Arco esterno'},
+  {id:'a1bg', label:'Sfondo', def:'grigio5'},
+  {id:'a1fi', label:'Fill', def:'bianco1'},
+  {section:'Arco interno'},
+  {id:'a2bg', label:'Sfondo', def:'grigio5'},
+  {id:'a2fi', label:'Fill', def:'bianco1'},
+  {section:'Sfondo'},
+  {id:'bgCol', label:'Background', def:'nero2'},
+];
+
+// Mappa property name -> control id
+const PROP_MAP = {
+  c3bg:'cerchioGrandeSfondo', c3bo:'cerchioGrandeContorno',
+  c1bg:'cerchioSxSfondo',     c1bo:'cerchioSxContorno',
+  c2bg:'cerchioDxSfondo',     c2bo:'cerchioDxContorno',
+  r1bg:'retOreSfondo',        r2bg:'retMeteoSfondo',
+  fOre:'coloreOre',           fMin:'coloreMinuti',
+  fCal:'coloreCalendario',    fMet:'coloreCittaMeteo',
+  fArc1:'coloreFontArcoEsterno', fArc2:'coloreFontArcoInterno',
+  a1bg:'coloreSfondoAttivita1',
+  a1fi:'coloreRipienoAttivita1', a2bg:'coloreSfondoAttivita2',
+  a2fi:'coloreRipienoAttivita2', bgCol:'BackgroundColor',
+};
+
+// Mappa inversa: property name -> control id
+const PROP_TO_ID = {};
+Object.entries(PROP_MAP).forEach(([id, prop]) => { PROP_TO_ID[prop] = id; });
+
+function buildSelect(id, def) {
+  const sel = document.createElement('select');
+  sel.id = id;
+  const saved = localStorage.getItem('wf_' + id);
+  PALETTE.forEach(p => {
+    const opt = document.createElement('option');
+    opt.value = p.hex;
+    opt.selected = saved ? p.hex === saved : p.name === def;
+    opt.textContent = p.name + badge(p.tipo) + '  ' + p.hex;
+    sel.appendChild(opt);
+  });
+  sel.addEventListener('change', draw);
+  return sel;
+}
+
+const container = document.getElementById('controls');
+let twoCol = null;
+
+CONTROLS.forEach(c => {
+  if (c.section !== undefined) {
+    twoCol = null;
+    const t = document.createElement('div');
+    t.className = 'section-title';
+    t.textContent = c.section;
+    container.appendChild(t);
+    twoCol = document.createElement('div');
+    twoCol.className = 'two-col';
+    container.appendChild(twoCol);
+  } else {
+    const div = document.createElement('div');
+    div.className = 'ctrl';
+    const lbl = document.createElement('label');
+    lbl.textContent = c.label;
+    div.appendChild(lbl);
+    div.appendChild(buildSelect(c.id, c.def));
+    twoCol.appendChild(div);
+  }
+});
+
+// Slider percentuali
+const pTitle = document.createElement('div');
+pTitle.className = 'section-title';
+pTitle.textContent = 'Percentuale riempimento';
+container.appendChild(pTitle);
+
+function addSlider(id, label, def) {
+  const saved = localStorage.getItem('wf_' + id);
+  const val = saved !== null ? saved : def;
+  const row = document.createElement('div');
+  row.className = 'ctrl-row';
+  const lbl = document.createElement('label');
+  lbl.textContent = label;
+  const inp = document.createElement('input');
+  inp.type = 'range'; inp.min = 0; inp.max = 100; inp.step = 1; inp.value = val; inp.id = id;
+  const span = document.createElement('span');
+  span.textContent = val + '%';
+  inp.addEventListener('input', () => { span.textContent = inp.value + '%'; draw(); });
+  row.appendChild(lbl); row.appendChild(inp); row.appendChild(span);
+  container.appendChild(row);
+}
+addSlider('pct1', 'Arco esterno', 50);
+addSlider('pct2', 'Arco interno', 30);
+
+// ── APPLICA TEMA ──────────────────────────────────────────────
+function applicaTema() {
+  const text = document.getElementById('importArea').value;
+  const msg = document.getElementById('importMsg');
+  
+  if (!text.trim()) {
+    msg.className = 'import-msg err';
+    msg.textContent = '⚠ Nessun testo incollato.';
+    return;
+  }
+
+  // Estrae tutte le occorrenze di id="..." e valore >0x...<
+  // Supporta sia formato "prop\t<property...>" che solo "<property...>"
+  const regex = /id="([^"]+)"[^>]*>([^<]+)</g;
+  let match;
+  let applied = 0;
+  let skipped = [];
+
+  while ((match = regex.exec(text)) !== null) {
+    const propName = match[1];
+    const rawVal = match[2].trim();
+    
+    const controlId = PROP_TO_ID[propName];
+    if (!controlId) { skipped.push(propName); continue; }
+    
+    const el = document.getElementById(controlId);
+    if (!el) { skipped.push(propName); continue; }
+
+    // Converte 0xRRGGBB → #RRGGBB
+    let hex = rawVal;
+    if (hex.startsWith('0x') || hex.startsWith('0X')) {
+      hex = '#' + hex.slice(2).toUpperCase();
+    }
+    
+    // Cerca nella palette
+    const found = PALETTE.find(p => p.hex.toUpperCase() === hex.toUpperCase());
+    if (found) {
+      el.value = found.hex;
+      applied++;
+    } else {
+      // Valore numerico puro (es. coloreIconaAttivita) — skip silenzioso
+      skipped.push(propName + '=' + rawVal);
+    }
+  }
+
+  if (applied === 0) {
+    msg.className = 'import-msg err';
+    msg.textContent = '❌ Nessuna property riconosciuta. Controlla il formato.';
+    return;
+  }
+
+  draw();
+  msg.className = 'import-msg ok';
+  msg.textContent = `✅ Applicate ${applied} properties.` + (skipped.length ? ` Ignorate: ${skipped.slice(0,5).join(', ')}` : '');
+}
+
+// Canvas
+const cv = document.getElementById('wf');
+const ctx = cv.getContext('2d');
+const CX = 130, CY = 130;
+
+function g(id) { return document.getElementById(id).value; }
+function gn(id) { return parseFloat(document.getElementById(id).value); }
+function garminToCanvas(deg) { return (deg - 90) * Math.PI / 180; }
+
+function drawRoundRect(x, y, w, h, r, fill) {
+  const lx = x-w/2, ty = y-h/2;
+  ctx.beginPath();
+  ctx.moveTo(lx+r,ty); ctx.lineTo(lx+w-r,ty);
+  ctx.quadraticCurveTo(lx+w,ty,lx+w,ty+r);
+  ctx.lineTo(lx+w,ty+h-r);
+  ctx.quadraticCurveTo(lx+w,ty+h,lx+w-r,ty+h);
+  ctx.lineTo(lx+r,ty+h);
+  ctx.quadraticCurveTo(lx,ty+h,lx,ty+h-r);
+  ctx.lineTo(lx,ty+r);
+  ctx.quadraticCurveTo(lx,ty,lx+r,ty);
+  ctx.closePath();
+  ctx.fillStyle=fill; ctx.fill();
+}
+
+function drawDotArc(cx, cy, r, startG, endG, colorBg, colorFill, nDots, dotR, pct) {
+  const fillCount = Math.round(nDots * pct / 100);
+  for (let i = 0; i <= nDots; i++) {
+    const a = garminToCanvas(startG + (endG - startG) * i / nDots);
+    const dx = cx + r * Math.cos(a);
+    const dy = cy + r * Math.sin(a);
+    ctx.beginPath();
+    ctx.arc(dx, dy, dotR, 0, Math.PI*2);
+    ctx.fillStyle = i <= fillCount ? colorFill : colorBg;
+    ctx.fill();
+  }
+}
+
+function draw() {
+  ctx.clearRect(0, 0, 260, 260);
+  ctx.save();
+  ctx.beginPath(); ctx.arc(CX,CY,CX,0,Math.PI*2);
+  ctx.fillStyle=g('bgCol'); ctx.fill(); ctx.clip();
+
+  ctx.beginPath(); ctx.arc(130,50,40,0,Math.PI*2); ctx.fillStyle=g('c3bg'); ctx.fill();
+  ctx.beginPath(); ctx.arc(130,50,40,0,Math.PI*2); ctx.strokeStyle=g('c3bo'); ctx.lineWidth=2; ctx.stroke();
+  ctx.beginPath(); ctx.arc(55,75,30,0,Math.PI*2); ctx.fillStyle=g('c1bg'); ctx.fill();
+  ctx.beginPath(); ctx.arc(55,75,30,0,Math.PI*2); ctx.strokeStyle=g('c1bo'); ctx.lineWidth=2; ctx.stroke();
+  ctx.beginPath(); ctx.arc(205,75,30,0,Math.PI*2); ctx.fillStyle=g('c2bg'); ctx.fill();
+  ctx.beginPath(); ctx.arc(205,75,30,0,Math.PI*2); ctx.strokeStyle=g('c2bo'); ctx.lineWidth=2; ctx.stroke();
+
+  drawRoundRect(160,130,150,40,20,g('r1bg'));
+  drawRoundRect(145,170,120,25,12,g('r2bg'));
+
+  drawDotArc(CX,CY,110,190,255,g('a1bg'),g('a1fi'),10,4,gn('pct1'));
+  drawDotArc(CX,CY,80,190,255,g('a2bg'),g('a2fi'),8,4,gn('pct2'));
+
+  ctx.font='bold 28px monospace'; ctx.fillStyle=g('fOre'); ctx.textAlign='left';
+  ctx.fillText('17',100,140);
+  ctx.font='500 20px sans-serif'; ctx.fillStyle=g('fMin');
+  ctx.fillText(':48',132,140);
+  ctx.font='11px sans-serif'; ctx.fillStyle=g('fCal'); ctx.textAlign='center';
+  ctx.fillText('LUG',205,122); ctx.fillText('Ve 17',205,137);
+  ctx.font='11px sans-serif'; ctx.fillStyle=g('fMet'); ctx.textAlign='center';
+  ctx.fillText('Roma 06:30',145,173);
+  ctx.font='12px sans-serif'; ctx.textAlign='left';
+  ctx.fillStyle=g('fArc1'); ctx.fillText('0c',135,210);
+  ctx.fillStyle=g('fArc2'); ctx.fillText('0s',135,230);
+
+  ctx.restore();
+}
+
+function hexToName(hex) {
+  const p = PALETTE.find(p => p.hex.toUpperCase() === hex.toUpperCase());
+  return p ? p.name : hex;
+}
+
+function hexToMonkey(hex) {
+  return '0x' + hex.replace('#','').toUpperCase();
+}
+
+function salvaImpostazioni() {
+  const ids = CONTROLS.filter(c => c.id).map(c => c.id);
+  ids.push('pct1','pct2');
+  ids.forEach(id => {
+    localStorage.setItem('wf_' + id, document.getElementById(id).value);
+  });
+  const box = document.getElementById('outputBox');
+  box.className = 'output-box visible';
+  let out = '✅ Impostazioni salvate!\n\n';
+  ids.forEach(id => {
+    const el = document.getElementById(id);
+    const val = el.value;
+    const name = hexToName(val);
+    const prop = PROP_MAP[id] || id;
+    out += `${prop.padEnd(28)} = ${name.padEnd(16)} ${val}\n`;
+  });
+  box.textContent = out;
+}
+
+function generaMonkeyC() {
+  const ids = CONTROLS.filter(c => c.id).map(c => c.id);
+  let out = '// ── Leggi properties in _getAndSetUpProperties() ──────────\n\n';
+  ids.forEach(id => {
+    const prop = PROP_MAP[id] || id;
+    const val = hexToMonkey(g(id));
+    const name = hexToName(g(id));
+    out += `var ${prop} = Application.Properties.getValue("${prop}") as Lang.Number; // ${name} = ${val}\n`;
+  });
+  const box = document.getElementById('outputBox');
+  box.className = 'output-box visible';
+  box.textContent = out;
+}
+
+function generaProperties() {
+  const ids = CONTROLS.filter(c => c.id).map(c => c.id);
+  let out = '<!-- properties.xml -->\n\n';
+  ids.forEach(id => {
+    const prop = PROP_MAP[id] || id;
+    const val = hexToMonkey(g(id));
+    out += `<property id="${prop}" type="number">${val}</property>\n`;
+  });
+  const box = document.getElementById('outputBox');
+  box.className = 'output-box visible';
+  box.textContent = out;
+}
+
+draw();
+</script>
+</body>
+</html>

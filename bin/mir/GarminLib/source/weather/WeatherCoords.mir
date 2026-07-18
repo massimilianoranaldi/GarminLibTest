@@ -1,0 +1,421 @@
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc"; @line = 16; @symbol_importdef<0> = [Toybox,16,7,13]; @symbol_importdef<1> = [Position,16,14,22]; ]
+import Toybox.Position;
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc"; @line = 17; @symbol_importdef<0> = [Toybox,17,7,13]; @symbol_importdef<1> = [Application,17,14,25]; ]
+import Toybox.Application;
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc"; @line = 18; @symbol_importdef<0> = [Toybox,18,7,13]; @symbol_importdef<1> = [Lang,18,14,18]; ]
+import Toybox.Lang;
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc"; @line = 19; @symbol_importdef<0> = [Toybox,19,7,13]; @symbol_importdef<1> = [System,19,14,20]; ]
+import Toybox.System;
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc"; @line = 22; background = true; @symbol_classdef = [WeatherCoords,22,6,19]; ]
+class WeatherCoords {
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc"; @line = 22; ]
+    <init> {
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc"; @line = 22; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc"; @line = 25; @position = 17; @symbol_constdef = [DEFAULT_LAT,25,17,28]; @symbol_type<0> = [String,25,33,39]; ]
+    static
+    const DEFAULT_LAT as String = "45.46";
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc"; @line = 26; @position = 17; @symbol_constdef = [DEFAULT_LON,26,17,28]; @symbol_type<0> = [String,26,33,39]; ]
+    static
+    const DEFAULT_LON as String = "9.19";
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc"; @line = 29; @position = 17; @symbol_constdef = [FAKE_COORD,29,17,27]; @symbol_type<0> = [String,29,33,39]; ]
+    static
+    const FAKE_COORD as String = "180.00";
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc"; @line = 31; @position = 17; @symbol_constdef = [KEY_LAST_LAT,31,17,29]; @symbol_type<0> = [String,31,33,39]; ]
+    static
+    const KEY_LAST_LAT as String = "lastLat";
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc"; @line = 32; @position = 17; @symbol_constdef = [KEY_LAST_LON,32,17,29]; @symbol_type<0> = [String,32,33,39]; ]
+    static
+    const KEY_LAST_LON as String = "lastLon";
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc"; @line = 33; @position = 17; @symbol_constdef = [KEY_LAT,33,17,24]; @symbol_type<0> = [String,33,33,39]; ]
+    static
+    const KEY_LAT as String = "lat";
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc"; @line = 34; @position = 17; @symbol_constdef = [KEY_LON,34,17,24]; @symbol_type<0> = [String,34,33,39]; ]
+    static
+    const KEY_LON as String = "lon";
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc"; @line = 39; @symbol_functiondef = [getCoords,39,20,29]; @symbol_return<0> = [Array,39,35,40]; @symbol_return<1> = [String,39,41,47]; ]
+    static
+    function getCoords() as Array<String> {
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_39_49_58_4_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc" 43 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_39_49_58_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_39_49_58_4_stop" ]
+        %gps.1 = local;
+        symbol [ gps %gps.1 43 12 15 ];
+        %tmp.1 = self;
+        symbol [ _getCoordsFromGps %tmp.2 43 18 35 ];
+        %tmp.2 = getv function %tmp.1 :_getCoordsFromGps;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %gps.1 %tmp.3;
+        symbol [ gps %gps.1 43 12 15 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc" 44 8 ]
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_44_8_47_8_if_stmt:
+        %tmp.4 = lgetv %gps.1;
+        symbol [ gps %tmp.4 44 12 15 ];
+        %tmp.5 = null;
+        %tmp.6 = ne %tmp.4 %tmp.5;
+        bf %tmp.6 @C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_44_8_47_8_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_44_8_47_8_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_44_25_47_8_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc" 45 12 ]
+        %tmp.7 = self;
+        symbol [ _persistCoords %tmp.8 45 12 26 ];
+        %tmp.8 = getv function %tmp.7 :_persistCoords;
+        %tmp.9 = lgetv %gps.1;
+        symbol [ gps %tmp.9 45 27 30 ];
+        %tmp.10 = as %tmp.9 { (!Null) };
+        %tmp.11 = 0;
+        %tmp.12 = agetv %tmp.10 %tmp.11;
+        %tmp.13 = lgetv %gps.1;
+        symbol [ gps %tmp.13 45 35 38 ];
+        %tmp.14 = as %tmp.13 { (!Null) };
+        %tmp.15 = 1;
+        %tmp.16 = agetv %tmp.14 %tmp.15;
+        invoke %tmp.7 %tmp.8(%tmp.12, %tmp.16);
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc" 46 12 ]
+        %tmp.17 = lgetv %gps.1;
+        symbol [ gps %tmp.17 46 19 22 ];
+        %tmp.18 = as %tmp.17 { (!Null) };
+        ret %tmp.18;
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_44_25_47_8_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_44_8_47_8_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_44_8_47_8_if_end:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc" 50 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_39_49_58_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_39_49_58_4_stop" ]
+        %saved.2 = local;
+        symbol [ saved %saved.2 50 12 17 ];
+        %tmp.19 = self;
+        symbol [ _getCoordsFromStorage %tmp.20 50 20 41 ];
+        %tmp.20 = getv function %tmp.19 :_getCoordsFromStorage;
+        %tmp.21 = invoke %tmp.19 %tmp.20();
+        lputv %saved.2 %tmp.21;
+        symbol [ saved %saved.2 50 12 17 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc" 51 8 ]
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_51_8_53_8_if_stmt:
+        %tmp.22 = lgetv %saved.2;
+        symbol [ saved %tmp.22 51 12 17 ];
+        %tmp.23 = null;
+        %tmp.24 = ne %tmp.22 %tmp.23;
+        bf %tmp.24 @C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_51_8_53_8_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_51_8_53_8_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_51_27_53_8_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc" 52 12 ]
+        %tmp.25 = lgetv %saved.2;
+        symbol [ saved %tmp.25 52 19 24 ];
+        %tmp.26 = as %tmp.25 { (!Null) };
+        ret %tmp.26;
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_51_27_53_8_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_51_8_53_8_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_51_8_53_8_if_end:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc" 57 8 ]
+        %tmp.27 = newa 2 Array<String>;
+        symbol [ Array %tmp.27 57 45 50 ];
+        symbol [ String %tmp.27 57 51 57 ];
+        symbol [ DEFAULT_LAT %tmp.29 57 16 27 ];
+        %tmp.29 = getv ? :DEFAULT_LAT;
+        %tmp.30 = dup %tmp.27;
+        %tmp.31 = aputv %tmp.30 0 %tmp.29;
+        symbol [ DEFAULT_LON %tmp.33 57 29 40 ];
+        %tmp.33 = getv ? :DEFAULT_LON;
+        %tmp.34 = dup %tmp.31;
+        %tmp.35 = aputv %tmp.34 1 %tmp.33;
+        ret %tmp.35;
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_39_49_58_4_stop:
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc"; @line = 66; @symbol_functiondef = [saveCoords,66,20,30]; @symbol_param<0> = [coords,66,31,37]; @symbol_param<0>_type<0> = [Array,66,41,46]; @symbol_param<0>_type<1> = [String,66,47,53]; ]
+    static
+    function saveCoords(coords as Array<String>) as Void {
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_66_64_70_4_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc" 67 8 ]
+        symbol [ Application %tmp.1 67 8 19 ];
+        %tmp.1 = getm $.Toybox.Application;
+        symbol [ Storage %tmp.2 67 20 27 ];
+        %tmp.2 = getv %tmp.1 :Storage;
+        symbol [ setValue %tmp.3 67 28 36 ];
+        %tmp.3 = getv function %tmp.2 :setValue;
+        symbol [ KEY_LAT %tmp.5 67 37 44 ];
+        %tmp.5 = getv ? :KEY_LAT;
+        %tmp.6 = lgetv %coords;
+        symbol [ coords %tmp.6 67 46 52 ];
+        %tmp.7 = 0;
+        %tmp.8 = agetv %tmp.6 %tmp.7;
+        invoke %tmp.2 %tmp.3(%tmp.5, %tmp.8);
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc" 68 8 ]
+        symbol [ Application %tmp.9 68 8 19 ];
+        %tmp.9 = getm $.Toybox.Application;
+        symbol [ Storage %tmp.10 68 20 27 ];
+        %tmp.10 = getv %tmp.9 :Storage;
+        symbol [ setValue %tmp.11 68 28 36 ];
+        %tmp.11 = getv function %tmp.10 :setValue;
+        symbol [ KEY_LON %tmp.13 68 37 44 ];
+        %tmp.13 = getv ? :KEY_LON;
+        %tmp.14 = lgetv %coords;
+        symbol [ coords %tmp.14 68 46 52 ];
+        %tmp.15 = 1;
+        %tmp.16 = agetv %tmp.14 %tmp.15;
+        invoke %tmp.10 %tmp.11(%tmp.13, %tmp.16);
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_66_64_70_4_stop:
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc"; @line = 74; @symbol_functiondef = [_getCoordsFromGps,74,20,37]; @symbol_return<0> = [Array,74,43,48]; @symbol_return<1> = [String,74,49,55]; ]
+    static
+    function _getCoordsFromGps() as Array<String> or Null {
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_74_58_94_4_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc" 75 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_74_58_94_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_74_58_94_4_stop" ]
+        %info.1 = local;
+        symbol [ info %info.1 75 12 16 ];
+        symbol [ Position %tmp.1 75 19 27 ];
+        %tmp.1 = getm $.Toybox.Position;
+        symbol [ getInfo %tmp.2 75 28 35 ];
+        %tmp.2 = getv function %tmp.1 :getInfo;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %info.1 %tmp.3;
+        symbol [ info %info.1 75 12 16 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc" 77 8 ]
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_77_8_81_8_if_stmt:
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_77_12_78_38_begin:
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_77_12_77_45_begin:
+        %tmp.4 = lgetv %info.1;
+        symbol [ info %tmp.4 77 12 16 ];
+        %tmp.5 = null;
+        %tmp.6 = eq %tmp.4 %tmp.5;
+        bt %tmp.6 @C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_77_8_81_8_if_true;
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_77_28_77_45_false:
+        %tmp.7 = lgetv %info.1;
+        symbol [ info %tmp.7 77 28 32 ];
+        %tmp.8 = as %tmp.7 { (!Null) };
+        symbol [ position %tmp.9 77 33 41 ];
+        %tmp.9 = getv %tmp.8 :position;
+        %tmp.10 = null;
+        %tmp.11 = eq %tmp.9 %tmp.10;
+        push %tmp.11;
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_77_28_77_45_end:
+        %tmp.12 = phi [%tmp.6 @C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_77_12_77_45_begin] [%tmp.11 @C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_77_28_77_45_false] [%tmp.12 @C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_77_28_77_45_end];
+        bt %tmp.12 @C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_77_8_81_8_if_true;
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_78_12_78_38_false:
+        %tmp.13 = lgetv %info.1;
+        symbol [ info %tmp.13 78 12 16 ];
+        %tmp.14 = as %tmp.13 { (!Null) };
+        symbol [ accuracy %tmp.15 78 17 25 ];
+        %tmp.15 = getv %tmp.14 :accuracy;
+        symbol [ Position %tmp.16 78 29 37 ];
+        %tmp.16 = getm $.Toybox.Position;
+        symbol [ QUALITY_NOT_AVAILABLE %tmp.17 78 38 59 ];
+        %tmp.17 = getv %tmp.16 :QUALITY_NOT_AVAILABLE;
+        %tmp.18 = eq %tmp.15 %tmp.17;
+        push %tmp.18;
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_78_12_78_38_end:
+        %tmp.19 = phi [%tmp.12 @C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_77_12_78_38_begin] [%tmp.18 @C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_78_12_78_38_false] [%tmp.19 @C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_78_12_78_38_end];
+        bf %tmp.19 @C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_77_8_81_8_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_77_8_81_8_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_78_61_81_8_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc" 80 12 ]
+        %tmp.20 = null;
+        ret %tmp.20;
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_78_61_81_8_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_77_8_81_8_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_77_8_81_8_if_end:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc" 83 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_74_58_94_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_74_58_94_4_stop" ]
+        %deg.2 = local;
+        symbol [ deg %deg.2 83 12 15 ];
+        %tmp.21 = lgetv %info.1;
+        symbol [ info %tmp.21 83 18 22 ];
+        symbol [ position %tmp.22 83 23 31 ];
+        %tmp.22 = getv %tmp.21 :position;
+        symbol [ toDegrees %tmp.23 83 32 41 ];
+        %tmp.23 = getv function %tmp.22 :toDegrees;
+        %tmp.24 = invoke %tmp.22 %tmp.23();
+        %tmp.25 = as %tmp.24 Array<Double>;
+        symbol [ Array %tmp.25 83 47 52 ];
+        symbol [ Double %tmp.25 83 53 59 ];
+        lputv %deg.2 %tmp.25;
+        symbol [ deg %deg.2 83 12 15 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc" 84 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_74_58_94_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_74_58_94_4_stop" ]
+        %lat.3 = local;
+        symbol [ lat %lat.3 84 12 15 ];
+        %tmp.26 = lgetv %deg.2;
+        symbol [ deg %tmp.26 84 18 21 ];
+        %tmp.27 = 0;
+        %tmp.28 = agetv %tmp.26 %tmp.27;
+        symbol [ format %tmp.29 84 25 31 ];
+        %tmp.29 = getv function %tmp.28 :format;
+        %tmp.30 = "%.2f";
+        %tmp.31 = invoke %tmp.28 %tmp.29(%tmp.30);
+        lputv %lat.3 %tmp.31;
+        symbol [ lat %lat.3 84 12 15 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc" 85 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_74_58_94_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_74_58_94_4_stop" ]
+        %lon.4 = local;
+        symbol [ lon %lon.4 85 12 15 ];
+        %tmp.32 = lgetv %deg.2;
+        symbol [ deg %tmp.32 85 18 21 ];
+        %tmp.33 = 1;
+        %tmp.34 = agetv %tmp.32 %tmp.33;
+        symbol [ format %tmp.35 85 25 31 ];
+        %tmp.35 = getv function %tmp.34 :format;
+        %tmp.36 = "%.2f";
+        %tmp.37 = invoke %tmp.34 %tmp.35(%tmp.36);
+        lputv %lon.4 %tmp.37;
+        symbol [ lon %lon.4 85 12 15 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc" 87 8 ]
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_87_8_90_8_if_stmt:
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_87_12_87_59_begin:
+        %tmp.38 = lgetv %lat.3;
+        symbol [ lat %tmp.38 87 12 15 ];
+        symbol [ equals %tmp.39 87 16 22 ];
+        %tmp.39 = getv function %tmp.38 :equals;
+        symbol [ FAKE_COORD %tmp.41 87 23 33 ];
+        %tmp.41 = getv ? :FAKE_COORD;
+        %tmp.42 = invoke %tmp.38 %tmp.39(%tmp.41);
+        bt %tmp.42 @C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_87_8_90_8_if_true;
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_87_38_87_59_false:
+        %tmp.43 = lgetv %lon.4;
+        symbol [ lon %tmp.43 87 38 41 ];
+        symbol [ equals %tmp.44 87 42 48 ];
+        %tmp.44 = getv function %tmp.43 :equals;
+        symbol [ FAKE_COORD %tmp.46 87 49 59 ];
+        %tmp.46 = getv ? :FAKE_COORD;
+        %tmp.47 = invoke %tmp.43 %tmp.44(%tmp.46);
+        push %tmp.47;
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_87_38_87_59_end:
+        %tmp.48 = phi [%tmp.42 @C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_87_12_87_59_begin] [%tmp.47 @C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_87_38_87_59_false] [%tmp.48 @C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_87_38_87_59_end];
+        bf %tmp.48 @C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_87_8_90_8_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_87_8_90_8_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_87_62_90_8_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc" 89 12 ]
+        %tmp.49 = null;
+        ret %tmp.49;
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_87_62_90_8_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_87_8_90_8_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_87_8_90_8_if_end:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc" 93 8 ]
+        %tmp.50 = newa 2 Array<String>;
+        symbol [ Array %tmp.50 93 29 34 ];
+        symbol [ String %tmp.50 93 35 41 ];
+        %tmp.51 = lgetv %lat.3;
+        symbol [ lat %tmp.51 93 16 19 ];
+        %tmp.52 = dup %tmp.50;
+        %tmp.53 = aputv %tmp.52 0 %tmp.51;
+        %tmp.54 = lgetv %lon.4;
+        symbol [ lon %tmp.54 93 21 24 ];
+        %tmp.55 = dup %tmp.53;
+        %tmp.56 = aputv %tmp.55 1 %tmp.54;
+        ret %tmp.56;
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_74_58_94_4_stop:
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc"; @line = 98; @symbol_functiondef = [_getCoordsFromStorage,98,20,41]; @symbol_return<0> = [Array,98,47,52]; @symbol_return<1> = [String,98,53,59]; ]
+    static
+    function _getCoordsFromStorage() as Array<String> or Null {
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_98_62_109_4_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc" 99 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_98_62_109_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_98_62_109_4_stop" ]
+        %lat.1 = local;
+        symbol [ lat %lat.1 99 12 15 ];
+        symbol [ Application %tmp.1 99 18 29 ];
+        %tmp.1 = getm $.Toybox.Application;
+        symbol [ Storage %tmp.2 99 30 37 ];
+        %tmp.2 = getv %tmp.1 :Storage;
+        symbol [ getValue %tmp.3 99 38 46 ];
+        %tmp.3 = getv function %tmp.2 :getValue;
+        symbol [ KEY_LAST_LAT %tmp.5 99 47 59 ];
+        %tmp.5 = getv ? :KEY_LAST_LAT;
+        %tmp.6 = invoke %tmp.2 %tmp.3(%tmp.5);
+        %tmp.7 = as %tmp.6 String or Null;
+        symbol [ String %tmp.7 99 64 70 ];
+        lputv %lat.1 %tmp.7;
+        symbol [ lat %lat.1 99 12 15 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc" 100 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_98_62_109_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_98_62_109_4_stop" ]
+        %lon.2 = local;
+        symbol [ lon %lon.2 100 12 15 ];
+        symbol [ Application %tmp.8 100 18 29 ];
+        %tmp.8 = getm $.Toybox.Application;
+        symbol [ Storage %tmp.9 100 30 37 ];
+        %tmp.9 = getv %tmp.8 :Storage;
+        symbol [ getValue %tmp.10 100 38 46 ];
+        %tmp.10 = getv function %tmp.9 :getValue;
+        symbol [ KEY_LAST_LON %tmp.12 100 47 59 ];
+        %tmp.12 = getv ? :KEY_LAST_LON;
+        %tmp.13 = invoke %tmp.9 %tmp.10(%tmp.12);
+        %tmp.14 = as %tmp.13 String or Null;
+        symbol [ String %tmp.14 100 64 70 ];
+        lputv %lon.2 %tmp.14;
+        symbol [ lon %lon.2 100 12 15 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc" 102 8 ]
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_102_8_105_8_if_stmt:
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_102_12_102_34_begin:
+        %tmp.15 = lgetv %lat.1;
+        symbol [ lat %tmp.15 102 12 15 ];
+        %tmp.16 = null;
+        %tmp.17 = eq %tmp.15 %tmp.16;
+        bt %tmp.17 @C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_102_8_105_8_if_true;
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_102_27_102_34_false:
+        %tmp.18 = lgetv %lon.2;
+        symbol [ lon %tmp.18 102 27 30 ];
+        %tmp.19 = null;
+        %tmp.20 = eq %tmp.18 %tmp.19;
+        push %tmp.20;
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_102_27_102_34_end:
+        %tmp.21 = phi [%tmp.17 @C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_102_12_102_34_begin] [%tmp.20 @C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_102_27_102_34_false] [%tmp.21 @C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_102_27_102_34_end];
+        bf %tmp.21 @C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_102_8_105_8_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_102_8_105_8_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_102_40_105_8_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc" 104 12 ]
+        %tmp.22 = null;
+        ret %tmp.22;
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_102_40_105_8_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_102_8_105_8_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_102_8_105_8_if_end:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc" 108 8 ]
+        %tmp.23 = newa 2 Array<String>;
+        symbol [ Array %tmp.23 108 29 34 ];
+        symbol [ String %tmp.23 108 35 41 ];
+        %tmp.24 = lgetv %lat.1;
+        symbol [ lat %tmp.24 108 16 19 ];
+        %tmp.25 = dup %tmp.23;
+        %tmp.26 = aputv %tmp.25 0 %tmp.24;
+        %tmp.27 = lgetv %lon.2;
+        symbol [ lon %tmp.27 108 21 24 ];
+        %tmp.28 = dup %tmp.26;
+        %tmp.29 = aputv %tmp.28 1 %tmp.27;
+        ret %tmp.29;
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_98_62_109_4_stop:
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc"; @line = 113; @symbol_functiondef = [_persistCoords,113,20,34]; @symbol_param<0> = [lat,113,35,38]; @symbol_param<0>_type<0> = [String,113,42,48]; @symbol_param<1> = [lon,113,50,53]; @symbol_param<1>_type<0> = [String,113,57,63]; ]
+    static
+    function _persistCoords(lat as String, lon as String) as Void {
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_113_73_117_4_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc" 114 8 ]
+        symbol [ Application %tmp.1 114 8 19 ];
+        %tmp.1 = getm $.Toybox.Application;
+        symbol [ Storage %tmp.2 114 20 27 ];
+        %tmp.2 = getv %tmp.1 :Storage;
+        symbol [ setValue %tmp.3 114 28 36 ];
+        %tmp.3 = getv function %tmp.2 :setValue;
+        symbol [ KEY_LAST_LAT %tmp.5 114 37 49 ];
+        %tmp.5 = getv ? :KEY_LAST_LAT;
+        %tmp.6 = lgetv %lat;
+        symbol [ lat %tmp.6 114 51 54 ];
+        invoke %tmp.2 %tmp.3(%tmp.5, %tmp.6);
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc" 115 8 ]
+        symbol [ Application %tmp.7 115 8 19 ];
+        %tmp.7 = getm $.Toybox.Application;
+        symbol [ Storage %tmp.8 115 20 27 ];
+        %tmp.8 = getv %tmp.7 :Storage;
+        symbol [ setValue %tmp.9 115 28 36 ];
+        %tmp.9 = getv function %tmp.8 :setValue;
+        symbol [ KEY_LAST_LON %tmp.11 115 37 49 ];
+        %tmp.11 = getv ? :KEY_LAST_LON;
+        %tmp.12 = lgetv %lon;
+        symbol [ lon %tmp.12 115 51 54 ];
+        invoke %tmp.8 %tmp.9(%tmp.11, %tmp.12);
+C__GarminProject_GarminLibTest_GarminLib_source_weather_WeatherCoords_mc_113_73_117_4_stop:
+    }
+}
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\weather\WeatherCoords.mc"; @line = 16; ]
+<init> {
+}

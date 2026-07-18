@@ -1,25 +1,421 @@
 <settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
 
-    <setting propertyKey="@Properties.BackgroundColor" title="@Strings.BackgroundColorTitle">
-        <settingConfig type="list">
-            <listEntry value="0x000000">@Strings.ColorBlack</listEntry>
-            <listEntry value="0x555555">@Strings.ColorDarkGray</listEntry>
-            <listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>
-            <listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>
-        </settingConfig>
-    </setting>
-
-    <setting propertyKey="@Properties.ForegroundColor" title="@Strings.ForegroundColorTitle">
-        <settingConfig type="list">
-            <listEntry value="0x000000">@Strings.ColorBlack</listEntry>
-            <listEntry value="0x0000FF">@Strings.ColorBlue</listEntry>
-            <listEntry value="0xFF0000">@Strings.ColorRed</listEntry>
-            <listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>
-        </settingConfig>
-    </setting>
-
-    <setting propertyKey="@Properties.UseMilitaryFormat" title="@Strings.MilitaryFormatTitle">
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- FORMATO ORE                                                  -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <setting propertyKey="@Properties.UseMilitaryFormat" title="Formato ore Militare">
         <settingConfig type="boolean" />
     </setting>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- BACKGROUND                                                   -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <group id="GruppoBackground" title="Sfondo Quadrante">
+        <setting propertyKey="@Properties.BackgroundColor" title="Background Color">
+            <settingConfig type="list">
+                <listEntry value="0x000000">@Strings.ColorBlack</listEntry>
+                <listEntry value="0x555555">@Strings.ColorDarkGray</listEntry>
+                <listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>
+                <listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>
+            </settingConfig>
+        </setting>
+    </group>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- TEMI                                                         -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <group id="GruppoTemiQuadrante" title="Temi quadrante">
+        <setting propertyKey="@Properties.temiQuadrante" title="Temi Quadrante">
+            <settingConfig type="list">
+                <listEntry value="0">@Strings.Tema0</listEntry>
+                <listEntry value="1">@Strings.Tema1</listEntry>
+                <listEntry value="2">@Strings.Tema2</listEntry>
+                <listEntry value="3">@Strings.Tema3</listEntry>
+                <listEntry value="4">@Strings.Tema4</listEntry>
+                <listEntry value="5">@Strings.Tema5</listEntry>
+                <listEntry value="6">@Strings.Tema6</listEntry>
+                <listEntry value="7">@Strings.Tema7</listEntry>
+                <listEntry value="8">@Strings.Tema8</listEntry>
+            </settingConfig>
+        </setting>
+    </group>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- GOAL                                                         -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <group id="gruppoGOAL" title="GOAL">
+        <setting propertyKey="@Properties.goalSTEP" title="@Strings.TitoloGoalSTEP">
+            <settingConfig type="numeric" min="0" max="20000" />
+        </setting>
+        <setting propertyKey="@Properties.goalCALORIE" title="@Strings.TitoloGoalCALORIE">
+            <settingConfig type="numeric" min="0" max="3000" />
+        </setting>
+        <setting propertyKey="@Properties.goalSTAIRS" title="@Strings.TitoloGoalSTAIRS">
+            <settingConfig type="numeric" min="0" max="20" />
+        </setting>
+        <setting propertyKey="@Properties.goalMINWEEK" title="@Strings.TitoloGoalMINWEEK">
+            <settingConfig type="numeric" min="0" max="500" />
+        </setting>
+        <setting propertyKey="@Properties.goalMINDAY" title="@Strings.TitoloGoalMINDAY">
+            <settingConfig type="numeric" min="0" max="60" />
+        </setting>
+    </group>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- ATTIVITA 1 — Anello ESTERNO                                  -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <group id="gruppoAttivita1" title="Anello ESTERNO">
+
+        <setting propertyKey="@Properties.monitoringAttivita1" title="Tipologia Attivita 1">
+            <settingConfig type="list">
+                <listEntry value="0">Passi</listEntry>
+                <listEntry value="1">Calorie</listEntry>
+                <listEntry value="2">Piani Saliti</listEntry>
+                <listEntry value="3">Minuti Attivita Settimana</listEntry>
+                <listEntry value="4">Minuti Attivita Giorno</listEntry>
+                <listEntry value="5">Stress</listEntry>
+                <listEntry value="6">Body Battery</listEntry>
+            </settingConfig>
+        </setting>
+
+        <setting propertyKey="@Properties.coloreSfondoAttivita1" title="Colore Sfondo Anello Esterno">
+            <settingConfig type="list">
+                <listEntry value="0x333333">grigio6</listEntry>
+                <listEntry value="0x111111">nero1</listEntry>
+                <listEntry value="0x000000">nero2</listEntry>
+                <listEntry value="0x442211">marrone4</listEntry>
+                <listEntry value="0x005555">ciano5</listEntry>
+                <listEntry value="0x888800">giallo5</listEntry>
+                <listEntry value="0x550000">rosso6</listEntry>
+                <listEntry value="0x002200">verde6</listEntry>
+                <listEntry value="0x000022">blu6</listEntry>
+                <listEntry value="0x330055">viola5</listEntry>
+                <listEntry value="0xFFFFFF">bianco1</listEntry>
+            </settingConfig>
+        </setting>
+
+        <setting propertyKey="@Properties.coloreRipienoAttivita1" title="Colore Ripieno Anello Esterno">
+            <settingConfig type="list">
+                <listEntry value="0xFFFFFF">bianco1</listEntry>
+                <listEntry value="0xFFFF00">giallo3</listEntry>
+                <listEntry value="0xFF8800">arancione3</listEntry>
+                <listEntry value="0x55FFFF">ciano2</listEntry>
+                <listEntry value="0xFF0055">rosa3</listEntry>
+                <listEntry value="0x888888">grigio4</listEntry>
+                <listEntry value="0x000000">nero2</listEntry>
+            </settingConfig>
+        </setting>
+
+        <setting propertyKey="@Properties.coloreFontArcoEsterno" title="Colore Font Anello Esterno">
+            <settingConfig type="list">
+                <listEntry value="0xFFFFFF">bianco1</listEntry>
+                <listEntry value="0xFFFF00">giallo3</listEntry>
+                <listEntry value="0xFF8800">arancione3</listEntry>
+                <listEntry value="0x55FFFF">ciano2</listEntry>
+                <listEntry value="0xFF0055">rosa3</listEntry>
+                <listEntry value="0x888888">grigio4</listEntry>
+                <listEntry value="0x000000">nero2</listEntry>
+            </settingConfig>
+        </setting>
+
+    </group>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- ATTIVITA 2 — Anello INTERNO                                  -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <group id="gruppoAnello2" title="Anello INTERNO">
+
+        <setting propertyKey="@Properties.monitoringAttivita2" title="Tipologia Attivita 2">
+            <settingConfig type="list">
+                <listEntry value="0">Passi</listEntry>
+                <listEntry value="1">Calorie</listEntry>
+                <listEntry value="2">Piani Saliti</listEntry>
+                <listEntry value="3">Minuti Attivita Settimana</listEntry>
+                <listEntry value="4">Minuti Attivita Giorno</listEntry>
+                <listEntry value="5">Stress</listEntry>
+                <listEntry value="6">Body Battery</listEntry>
+            </settingConfig>
+        </setting>
+
+        <setting propertyKey="@Properties.coloreSfondoAttivita2" title="Colore Sfondo Anello Interno">
+            <settingConfig type="list">
+                <listEntry value="0x333333">grigio6</listEntry>
+                <listEntry value="0x111111">nero1</listEntry>
+                <listEntry value="0x000000">nero2</listEntry>
+                <listEntry value="0x442211">marrone4</listEntry>
+                <listEntry value="0x005555">ciano5</listEntry>
+                <listEntry value="0x888800">giallo5</listEntry>
+                <listEntry value="0x550000">rosso6</listEntry>
+                <listEntry value="0x002200">verde6</listEntry>
+                <listEntry value="0x000022">blu6</listEntry>
+                <listEntry value="0x330055">viola5</listEntry>
+                <listEntry value="0xFFFFFF">bianco1</listEntry>
+            </settingConfig>
+        </setting>
+
+        <setting propertyKey="@Properties.coloreRipienoAttivita2" title="Colore Ripieno Anello Interno">
+            <settingConfig type="list">
+                <listEntry value="0xFFFFFF">bianco1</listEntry>
+                <listEntry value="0xFFFF00">giallo3</listEntry>
+                <listEntry value="0xFF8800">arancione3</listEntry>
+                <listEntry value="0x55FFFF">ciano2</listEntry>
+                <listEntry value="0xFF0055">rosa3</listEntry>
+                <listEntry value="0x888888">grigio4</listEntry>
+                <listEntry value="0x000000">nero2</listEntry>
+            </settingConfig>
+        </setting>
+
+        <setting propertyKey="@Properties.coloreFontArcoInterno" title="Colore Font Anello Interno">
+            <settingConfig type="list">
+                <listEntry value="0xFFFFFF">bianco1</listEntry>
+                <listEntry value="0xFFFF00">giallo3</listEntry>
+                <listEntry value="0xFF8800">arancione3</listEntry>
+                <listEntry value="0x55FFFF">ciano2</listEntry>
+                <listEntry value="0xFF0055">rosa3</listEntry>
+                <listEntry value="0x888888">grigio4</listEntry>
+                <listEntry value="0x000000">nero2</listEntry>
+            </settingConfig>
+        </setting>
+
+    </group>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- CERCHIO GRANDE                                               -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <group id="cerchioGrande" title="Cerchio Grande">
+
+        <setting propertyKey="@Properties.cerchioGrandeSfondo" title="Colore Sfondo Cerchio Grande">
+            <settingConfig type="list">
+                <listEntry value="0x333333">grigio6</listEntry>
+                <listEntry value="0x111111">nero1</listEntry>
+                <listEntry value="0x000000">nero2</listEntry>
+                <listEntry value="0x442211">marrone4</listEntry>
+                <listEntry value="0x005555">ciano5</listEntry>
+                <listEntry value="0x888800">giallo5</listEntry>
+                <listEntry value="0x550000">rosso6</listEntry>
+                <listEntry value="0x002200">verde6</listEntry>
+                <listEntry value="0x000022">blu6</listEntry>
+                <listEntry value="0x330055">viola5</listEntry>
+                <listEntry value="0xFFFFFF">bianco1</listEntry>
+            </settingConfig>
+        </setting>
+
+        <setting propertyKey="@Properties.cerchioGrandeContorno" title="Colore Bordo Cerchio Grande">
+            <settingConfig type="list">
+                <listEntry value="0xFFFFFF">bianco1</listEntry>
+                <listEntry value="0xFFFF00">giallo3</listEntry>
+                <listEntry value="0xFF8800">arancione3</listEntry>
+                <listEntry value="0x55FFFF">ciano2</listEntry>
+                <listEntry value="0xFF0055">rosa3</listEntry>
+                <listEntry value="0xFFCC88">arancione1</listEntry>
+                <listEntry value="0xAAAAFF">blu1</listEntry>
+                <listEntry value="0x55FF55">verde2</listEntry>
+                <listEntry value="0xDD99FF">viola1</listEntry>
+                <listEntry value="0xFF55AA">rosa2</listEntry>
+            </settingConfig>
+        </setting>
+
+    </group>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- CERCHIO SINISTRA                                             -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <group id="cerchioSinistra" title="Cerchio Sinistra">
+
+        <setting propertyKey="@Properties.cerchioSxSfondo" title="Colore Sfondo Cerchio Sinistra">
+            <settingConfig type="list">
+                <listEntry value="0x333333">grigio6</listEntry>
+                <listEntry value="0x111111">nero1</listEntry>
+                <listEntry value="0x000000">nero2</listEntry>
+                <listEntry value="0x442211">marrone4</listEntry>
+                <listEntry value="0x005555">ciano5</listEntry>
+                <listEntry value="0x888800">giallo5</listEntry>
+                <listEntry value="0x550000">rosso6</listEntry>
+                <listEntry value="0x002200">verde6</listEntry>
+                <listEntry value="0x000022">blu6</listEntry>
+                <listEntry value="0x330055">viola5</listEntry>
+                <listEntry value="0xFFFFFF">bianco1</listEntry>
+            </settingConfig>
+        </setting>
+
+        <setting propertyKey="@Properties.cerchioSxContorno" title="Colore Bordo Cerchio Sinistra">
+            <settingConfig type="list">
+                <listEntry value="0xFFFFFF">bianco1</listEntry>
+                <listEntry value="0xFFFF00">giallo3</listEntry>
+                <listEntry value="0xFF8800">arancione3</listEntry>
+                <listEntry value="0x55FFFF">ciano2</listEntry>
+                <listEntry value="0xFF0055">rosa3</listEntry>
+                <listEntry value="0xFFCC88">arancione1</listEntry>
+                <listEntry value="0xAAAAFF">blu1</listEntry>
+                <listEntry value="0x55FF55">verde2</listEntry>
+                <listEntry value="0xDD99FF">viola1</listEntry>
+                <listEntry value="0xFF55AA">rosa2</listEntry>
+            </settingConfig>
+        </setting>
+
+    </group>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- CERCHIO DESTRA                                               -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <group id="cerchioDestra" title="Cerchio Destra">
+
+        <setting propertyKey="@Properties.cerchioDxSfondo" title="Colore Sfondo Cerchio Destra">
+            <settingConfig type="list">
+                <listEntry value="0x333333">grigio6</listEntry>
+                <listEntry value="0x111111">nero1</listEntry>
+                <listEntry value="0x000000">nero2</listEntry>
+                <listEntry value="0x442211">marrone4</listEntry>
+                <listEntry value="0x005555">ciano5</listEntry>
+                <listEntry value="0x888800">giallo5</listEntry>
+                <listEntry value="0x550000">rosso6</listEntry>
+                <listEntry value="0x002200">verde6</listEntry>
+                <listEntry value="0x000022">blu6</listEntry>
+                <listEntry value="0x330055">viola5</listEntry>
+                <listEntry value="0xFFFFFF">bianco1</listEntry>
+            </settingConfig>
+        </setting>
+
+        <setting propertyKey="@Properties.cerchioDxContorno" title="Colore Bordo Cerchio Destra">
+            <settingConfig type="list">
+                <listEntry value="0xFFFFFF">bianco1</listEntry>
+                <listEntry value="0xFFFF00">giallo3</listEntry>
+                <listEntry value="0xFF8800">arancione3</listEntry>
+                <listEntry value="0x55FFFF">ciano2</listEntry>
+                <listEntry value="0xFF0055">rosa3</listEntry>
+                <listEntry value="0xFFCC88">arancione1</listEntry>
+                <listEntry value="0xAAAAFF">blu1</listEntry>
+                <listEntry value="0x55FF55">verde2</listEntry>
+                <listEntry value="0xDD99FF">viola1</listEntry>
+                <listEntry value="0xFF55AA">rosa2</listEntry>
+            </settingConfig>
+        </setting>
+
+    </group>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- NOTCH                                                        -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <group id="gruppoNotch" title="Notch">
+
+        <setting propertyKey="@Properties.retMeteoSfondo" title="Notch Colore Sfondo">
+            <settingConfig type="list">
+                <listEntry value="0x333333">grigio6</listEntry>
+                <listEntry value="0x111111">nero1</listEntry>
+                <listEntry value="0x000000">nero2</listEntry>
+                <listEntry value="0x442211">marrone4</listEntry>
+                <listEntry value="0x005555">ciano5</listEntry>
+                <listEntry value="0x888800">giallo5</listEntry>
+                <listEntry value="0x550000">rosso6</listEntry>
+                <listEntry value="0x002200">verde6</listEntry>
+                <listEntry value="0x000022">blu6</listEntry>
+                <listEntry value="0x330055">viola5</listEntry>
+                <listEntry value="0xFFFFFF">bianco1</listEntry>
+            </settingConfig>
+        </setting>
+
+        <setting propertyKey="@Properties.coloreCittaMeteo" title="Notch Colore Font">
+            <settingConfig type="list">
+                <listEntry value="0xFFFFFF">bianco1</listEntry>
+                <listEntry value="0xFFFF00">giallo3</listEntry>
+                <listEntry value="0xFF8800">arancione3</listEntry>
+                <listEntry value="0x55FFFF">ciano2</listEntry>
+                <listEntry value="0xFF0055">rosa3</listEntry>
+                <listEntry value="0x888888">grigio4</listEntry>
+                <listEntry value="0x000000">nero2</listEntry>
+            </settingConfig>
+        </setting>
+
+    </group>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- RETTANGOLO CENTRALE                                          -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <group id="gruppoRettangoloCentrale" title="Rettangolo Centrale">
+
+        <setting propertyKey="@Properties.retOreSfondo" title="Colore Sfondo Rettangolo Centrale">
+            <settingConfig type="list">
+                <listEntry value="0x333333">grigio6</listEntry>
+                <listEntry value="0x111111">nero1</listEntry>
+                <listEntry value="0x000000">nero2</listEntry>
+                <listEntry value="0x442211">marrone4</listEntry>
+                <listEntry value="0x005555">ciano5</listEntry>
+                <listEntry value="0x888800">giallo5</listEntry>
+                <listEntry value="0x550000">rosso6</listEntry>
+                <listEntry value="0x002200">verde6</listEntry>
+                <listEntry value="0x000022">blu6</listEntry>
+                <listEntry value="0x330055">viola5</listEntry>
+                <listEntry value="0xFFFFFF">bianco1</listEntry>
+            </settingConfig>
+        </setting>
+
+        <setting propertyKey="@Properties.coloreOre" title="Colore Font Ore">
+            <settingConfig type="list">
+                <listEntry value="0xFFFFFF">bianco1</listEntry>
+                <listEntry value="0xFFFF00">giallo3</listEntry>
+                <listEntry value="0xFF8800">arancione3</listEntry>
+                <listEntry value="0x55FFFF">ciano2</listEntry>
+                <listEntry value="0xFF0055">rosa3</listEntry>
+                <listEntry value="0x888888">grigio4</listEntry>
+                <listEntry value="0x000000">nero2</listEntry>
+            </settingConfig>
+        </setting>
+
+        <setting propertyKey="@Properties.coloreMinuti" title="Colore Font Minuti">
+            <settingConfig type="list">
+                <listEntry value="0xFFFFFF">bianco1</listEntry>
+                <listEntry value="0xFFFF00">giallo3</listEntry>
+                <listEntry value="0xFF8800">arancione3</listEntry>
+                <listEntry value="0x55FFFF">ciano2</listEntry>
+                <listEntry value="0xFF0055">rosa3</listEntry>
+                <listEntry value="0x888888">grigio4</listEntry>
+                <listEntry value="0x000000">nero2</listEntry>
+            </settingConfig>
+        </setting>
+
+        <setting propertyKey="@Properties.coloreCalendario" title="Colore Font Calendario">
+            <settingConfig type="list">
+                <listEntry value="0xFFFFFF">bianco1</listEntry>
+                <listEntry value="0xFFFF00">giallo3</listEntry>
+                <listEntry value="0xFF8800">arancione3</listEntry>
+                <listEntry value="0x55FFFF">ciano2</listEntry>
+                <listEntry value="0xFF0055">rosa3</listEntry>
+                <listEntry value="0x888888">grigio4</listEntry>
+                <listEntry value="0x000000">nero2</listEntry>
+            </settingConfig>
+        </setting>
+
+    </group>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- COLORE ICONE                                                 -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <group id="gruppoIcone" title="Colore Icone">
+
+        <setting propertyKey="@Properties.coloreIconaAttivita1" title="Colore Icona Arco Esterno">
+            <settingConfig type="list">
+                <listEntry value="0">bianco1</listEntry>
+                <listEntry value="1">giallo3</listEntry>
+                <listEntry value="2">arancione3</listEntry>
+                <listEntry value="3">ciano2</listEntry>
+                <listEntry value="4">rosa3</listEntry>
+                <listEntry value="5">grigio4</listEntry>
+                <listEntry value="6">nero2</listEntry>
+            </settingConfig>
+        </setting>
+
+        <setting propertyKey="@Properties.coloreIconaAttivita2" title="Colore Icona Arco Interno">
+            <settingConfig type="list">
+                <listEntry value="0">bianco1</listEntry>
+                <listEntry value="1">giallo3</listEntry>
+                <listEntry value="2">arancione3</listEntry>
+                <listEntry value="3">ciano2</listEntry>
+                <listEntry value="4">rosa3</listEntry>
+                <listEntry value="5">grigio4</listEntry>
+                <listEntry value="6">nero2</listEntry>
+            </settingConfig>
+        </setting>
+
+    </group>
 
 </settings>

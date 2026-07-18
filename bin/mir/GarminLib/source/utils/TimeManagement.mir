@@ -4,147 +4,155 @@ using Toybox.System;
 using Toybox.Lang;
 [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [Application,3,13,24]; ]
 using Toybox.Application;
-[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc"; @line = 5; @symbol_classdef = [TimeManagement,5,6,20]; ]
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [Time,4,14,18]; ]
+import Toybox.Time;
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc"; @line = 5; @symbol_importdef<0> = [Toybox,5,7,13]; @symbol_importdef<1> = [Time,5,14,18]; @symbol_importdef<2> = [Gregorian,5,19,28]; ]
+import Toybox.Time.Gregorian;
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc"; @line = 6; @symbol_importdef<0> = [Toybox,6,7,13]; @symbol_importdef<1> = [Lang,6,14,18]; ]
+import Toybox.Lang;
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc"; @line = 7; @symbol_importdef<0> = [Toybox,7,7,13]; @symbol_importdef<1> = [System,7,14,20]; ]
+import Toybox.System;
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc"; @line = 9; @symbol_classdef = [TimeManagement,9,6,20]; ]
 class TimeManagement {
-    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc"; @line = 5; ]
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc"; @line = 9; ]
     <init> {
     }
-    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc"; @line = 5; ]
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc"; @line = 9; ]
     static
     <init> {
     }
-    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc"; @line = 7; @symbol_functiondef = [getTimeString,7,20,33]; ]
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc"; @line = 11; @symbol_functiondef = [getTimeString,11,20,33]; ]
     static
     function getTimeString() {
-C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_7_36_30_4_start:
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc" 8 8 ]
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_7_36_30_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_7_36_30_4_stop" ]
+C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_11_36_34_4_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc" 12 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_11_36_34_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_11_36_34_4_stop" ]
         %timeFormat.1 = local;
-        symbol [ timeFormat %timeFormat.1 8 12 22 ];
+        symbol [ timeFormat %timeFormat.1 12 12 22 ];
         %tmp.1 = "$1$:$2$";
         lputv %timeFormat.1 %tmp.1;
-        symbol [ timeFormat %timeFormat.1 8 12 22 ];
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc" 9 8 ]
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_7_36_30_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_7_36_30_4_stop" ]
+        symbol [ timeFormat %timeFormat.1 12 12 22 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc" 13 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_11_36_34_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_11_36_34_4_stop" ]
         %clockTime.2 = local;
-        symbol [ clockTime %clockTime.2 9 12 21 ];
-        symbol [ System %tmp.2 9 24 30 ];
+        symbol [ clockTime %clockTime.2 13 12 21 ];
+        symbol [ System %tmp.2 13 24 30 ];
         %tmp.2 = getm $.Toybox.System;
-        symbol [ getClockTime %tmp.3 9 31 43 ];
+        symbol [ getClockTime %tmp.3 13 31 43 ];
         %tmp.3 = getv function %tmp.2 :getClockTime;
         %tmp.4 = invoke %tmp.2 %tmp.3();
         lputv %clockTime.2 %tmp.4;
-        symbol [ clockTime %clockTime.2 9 12 21 ];
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc" 10 8 ]
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_7_36_30_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_7_36_30_4_stop" ]
+        symbol [ clockTime %clockTime.2 13 12 21 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc" 14 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_11_36_34_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_11_36_34_4_stop" ]
         %hours.3 = local;
-        symbol [ hours %hours.3 10 12 17 ];
+        symbol [ hours %hours.3 14 12 17 ];
         %tmp.5 = lgetv %clockTime.2;
-        symbol [ clockTime %tmp.5 10 20 29 ];
-        symbol [ hour %tmp.6 10 30 34 ];
+        symbol [ clockTime %tmp.5 14 20 29 ];
+        symbol [ hour %tmp.6 14 30 34 ];
         %tmp.6 = getv %tmp.5 :hour;
         lputv %hours.3 %tmp.6;
-        symbol [ hours %hours.3 10 12 17 ];
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc" 12 8 ]
-C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_12_8_20_8_if_stmt:
-        symbol [ System %tmp.7 12 13 19 ];
+        symbol [ hours %hours.3 14 12 17 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc" 16 8 ]
+C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_16_8_24_8_if_stmt:
+        symbol [ System %tmp.7 16 13 19 ];
         %tmp.7 = getm $.Toybox.System;
-        symbol [ getDeviceSettings %tmp.8 12 20 37 ];
+        symbol [ getDeviceSettings %tmp.8 16 20 37 ];
         %tmp.8 = getv function %tmp.7 :getDeviceSettings;
         %tmp.9 = invoke %tmp.7 %tmp.8();
-        symbol [ is24Hour %tmp.10 12 40 48 ];
+        symbol [ is24Hour %tmp.10 16 40 48 ];
         %tmp.10 = getv %tmp.9 :is24Hour;
         %tmp.11 = not %tmp.10;
-        bf %tmp.11 @C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_12_8_20_8_if_else_false;
-C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_12_8_20_8_if_true:
-C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_12_50_16_8_start:
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc" 13 12 ]
-C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_13_12_15_12_if_stmt:
+        bf %tmp.11 @C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_16_8_24_8_if_else_false;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_16_8_24_8_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_16_50_20_8_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc" 17 12 ]
+C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_17_12_19_12_if_stmt:
         %tmp.12 = lgetv %hours.3;
-        symbol [ hours %tmp.12 13 16 21 ];
+        symbol [ hours %tmp.12 17 16 21 ];
         %tmp.13 = 12;
         %tmp.14 = gt %tmp.12 %tmp.13;
-        bf %tmp.14 @C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_13_12_15_12_if_end;
-C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_13_12_15_12_if_true:
-C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_13_28_15_12_start:
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc" 14 16 ]
+        bf %tmp.14 @C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_17_12_19_12_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_17_12_19_12_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_17_28_19_12_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc" 18 16 ]
         %tmp.15 = lgetv %hours.3;
-        symbol [ hours %tmp.15 14 24 29 ];
+        symbol [ hours %tmp.15 18 24 29 ];
         %tmp.16 = 12;
         %tmp.17 = sub %tmp.15 %tmp.16;
         lputv %hours.3 %tmp.17;
-        symbol [ hours %hours.3 14 16 21 ];
-C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_13_28_15_12_stop:
-        goto @C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_13_12_15_12_if_end;
-C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_13_12_15_12_if_end:
-C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_12_50_16_8_stop:
-        goto @C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_12_8_20_8_if_end;
-C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_12_8_20_8_if_else_false:
-C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_16_15_20_8_start:
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc" 17 12 ]
-C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_17_12_19_12_if_stmt:
-        symbol [ Application %tmp.18 17 16 27 ];
+        symbol [ hours %hours.3 18 16 21 ];
+C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_17_28_19_12_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_17_12_19_12_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_17_12_19_12_if_end:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_16_50_20_8_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_16_8_24_8_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_16_8_24_8_if_else_false:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_20_15_24_8_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc" 21 12 ]
+C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_21_12_23_12_if_stmt:
+        symbol [ Application %tmp.18 21 16 27 ];
         %tmp.18 = getm $.Toybox.Application;
-        symbol [ Properties %tmp.19 17 28 38 ];
+        symbol [ Properties %tmp.19 21 28 38 ];
         %tmp.19 = getv %tmp.18 :Properties;
-        symbol [ getValue %tmp.20 17 39 47 ];
+        symbol [ getValue %tmp.20 21 39 47 ];
         %tmp.20 = getv function %tmp.19 :getValue;
         %tmp.21 = "UseMilitaryFormat";
         %tmp.22 = invoke %tmp.19 %tmp.20(%tmp.21);
-        bf %tmp.22 @C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_17_12_19_12_if_end;
-C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_17_12_19_12_if_true:
-C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_17_70_19_12_start:
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc" 18 16 ]
+        bf %tmp.22 @C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_21_12_23_12_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_21_12_23_12_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_21_70_23_12_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc" 22 16 ]
         %tmp.23 = "$1$$2$";
         lputv %timeFormat.1 %tmp.23;
-        symbol [ timeFormat %timeFormat.1 18 16 26 ];
-C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_17_70_19_12_stop:
-        goto @C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_17_12_19_12_if_end;
-C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_17_12_19_12_if_end:
-C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_16_15_20_8_stop:
-C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_12_8_20_8_if_end:
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc" 22 8 ]
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_7_36_30_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_7_36_30_4_stop" ]
+        symbol [ timeFormat %timeFormat.1 22 16 26 ];
+C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_21_70_23_12_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_21_12_23_12_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_21_12_23_12_if_end:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_20_15_24_8_stop:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_16_8_24_8_if_end:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc" 26 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_11_36_34_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_11_36_34_4_stop" ]
         %minutiStr.4 = local;
-        symbol [ minutiStr %minutiStr.4 22 12 21 ];
+        symbol [ minutiStr %minutiStr.4 26 12 21 ];
         %tmp.24 = lgetv %clockTime.2;
-        symbol [ clockTime %tmp.24 22 24 33 ];
-        symbol [ min %tmp.25 22 34 37 ];
+        symbol [ clockTime %tmp.24 26 24 33 ];
+        symbol [ min %tmp.25 26 34 37 ];
         %tmp.25 = getv %tmp.24 :min;
-        symbol [ format %tmp.26 22 38 44 ];
+        symbol [ format %tmp.26 26 38 44 ];
         %tmp.26 = getv function %tmp.25 :format;
         %tmp.27 = "%02d";
         %tmp.28 = invoke %tmp.25 %tmp.26(%tmp.27);
         lputv %minutiStr.4 %tmp.28;
-        symbol [ minutiStr %minutiStr.4 22 12 21 ];
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc" 23 8 ]
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_7_36_30_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_7_36_30_4_stop" ]
+        symbol [ minutiStr %minutiStr.4 26 12 21 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc" 27 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_11_36_34_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_11_36_34_4_stop" ]
         %oreStr.5 = local;
-        symbol [ oreStr %oreStr.5 23 12 18 ];
+        symbol [ oreStr %oreStr.5 27 12 18 ];
         %tmp.29 = lgetv %hours.3;
-        symbol [ hours %tmp.29 23 21 26 ];
-        symbol [ format %tmp.30 23 27 33 ];
+        symbol [ hours %tmp.29 27 21 26 ];
+        symbol [ format %tmp.30 27 27 33 ];
         %tmp.30 = getv function %tmp.29 :format;
         %tmp.31 = "%02d";
         %tmp.32 = invoke %tmp.29 %tmp.30(%tmp.31);
         lputv %oreStr.5 %tmp.32;
-        symbol [ oreStr %oreStr.5 23 12 18 ];
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc" 25 8 ]
+        symbol [ oreStr %oreStr.5 27 12 18 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc" 29 8 ]
         %tmp.33 = newd 3;
         %tmp.34 = "timeString";
-        symbol [ Lang %tmp.35 26 28 32 ];
+        symbol [ Lang %tmp.35 30 28 32 ];
         %tmp.35 = getm $.Toybox.Lang;
-        symbol [ format %tmp.36 26 33 39 ];
+        symbol [ format %tmp.36 30 33 39 ];
         %tmp.36 = getv function %tmp.35 :format;
         %tmp.37 = lgetv %timeFormat.1;
-        symbol [ timeFormat %tmp.37 26 40 50 ];
+        symbol [ timeFormat %tmp.37 30 40 50 ];
         %tmp.38 = newa 2;
         %tmp.39 = lgetv %oreStr.5;
-        symbol [ oreStr %tmp.39 26 53 59 ];
+        symbol [ oreStr %tmp.39 30 53 59 ];
         %tmp.40 = dup %tmp.38;
         %tmp.41 = aputv %tmp.40 0 %tmp.39;
         %tmp.42 = lgetv %minutiStr.4;
-        symbol [ minutiStr %tmp.42 26 61 70 ];
+        symbol [ minutiStr %tmp.42 30 61 70 ];
         %tmp.43 = dup %tmp.41;
         %tmp.44 = aputv %tmp.43 1 %tmp.42;
         %tmp.45 = invoke %tmp.35 %tmp.36(%tmp.37, %tmp.44);
@@ -152,16 +160,255 @@ C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_12_8_20_
         %tmp.47 = aputv %tmp.46 %tmp.34 %tmp.45;
         %tmp.48 = "ore";
         %tmp.49 = lgetv %oreStr.5;
-        symbol [ oreStr %tmp.49 27 28 34 ];
+        symbol [ oreStr %tmp.49 31 28 34 ];
         %tmp.50 = dup %tmp.47;
         %tmp.51 = aputv %tmp.50 %tmp.48 %tmp.49;
         %tmp.52 = "minuti";
         %tmp.53 = lgetv %minutiStr.4;
-        symbol [ minutiStr %tmp.53 28 28 37 ];
+        symbol [ minutiStr %tmp.53 32 28 37 ];
         %tmp.54 = dup %tmp.51;
         %tmp.55 = aputv %tmp.54 %tmp.52 %tmp.53;
         ret %tmp.55;
-C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_7_36_30_4_stop:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_11_36_34_4_stop:
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc"; @line = 36; @symbol_functiondef = [getDateInfo,36,16,27]; @symbol_return<0> = [Lang,36,33,37]; @symbol_return<1> = [Dictionary,36,38,48]; @symbol_return<2> = [Lang,36,49,53]; @symbol_return<3> = [String,36,54,60]; @symbol_return<4> = [Lang,36,62,66]; @symbol_return<5> = [String,36,67,73]; ]
+    static
+    function getDateInfo() as Lang.Dictionary<Lang.String, Lang.String> {
+C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_36_75_62_0_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc" 38 4 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_36_75_62_0_start" "C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_36_75_62_0_stop" ]
+        %now.1 = local;
+        symbol [ now %now.1 38 8 11 ];
+        symbol [ Time %tmp.1 38 15 19 ];
+        %tmp.1 = getm $.Toybox.Time;
+        symbol [ now %tmp.2 38 20 23 ];
+        %tmp.2 = getv function %tmp.1 :now;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %now.1 %tmp.3;
+        symbol [ now %now.1 38 8 11 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc" 39 4 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_36_75_62_0_start" "C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_36_75_62_0_stop" ]
+        %info.2 = local;
+        symbol [ info %info.2 39 8 12 ];
+        symbol [ Gregorian %tmp.4 39 15 24 ];
+        %tmp.4 = getm $.Toybox.Time.Gregorian;
+        symbol [ info %tmp.5 39 25 29 ];
+        %tmp.5 = getv function %tmp.4 :info;
+        %tmp.6 = lgetv %now.1;
+        symbol [ now %tmp.6 39 30 33 ];
+        symbol [ Time %tmp.7 39 35 39 ];
+        %tmp.7 = getm $.Toybox.Time;
+        symbol [ FORMAT_SHORT %tmp.8 39 40 52 ];
+        %tmp.8 = getv %tmp.7 :FORMAT_SHORT;
+        %tmp.9 = invoke %tmp.4 %tmp.5(%tmp.6, %tmp.8);
+        lputv %info.2 %tmp.9;
+        symbol [ info %info.2 39 8 12 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc" 41 4 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_36_75_62_0_start" "C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_36_75_62_0_stop" ]
+        %italianDays.3 = local;
+        symbol [ italianDays %italianDays.3 41 8 19 ];
+        %tmp.10 = newa 7;
+        %tmp.11 = "Dom";
+        %tmp.12 = dup %tmp.10;
+        %tmp.13 = aputv %tmp.12 0 %tmp.11;
+        %tmp.14 = "Lun";
+        %tmp.15 = dup %tmp.13;
+        %tmp.16 = aputv %tmp.15 1 %tmp.14;
+        %tmp.17 = "Mar";
+        %tmp.18 = dup %tmp.16;
+        %tmp.19 = aputv %tmp.18 2 %tmp.17;
+        %tmp.20 = "Mer";
+        %tmp.21 = dup %tmp.19;
+        %tmp.22 = aputv %tmp.21 3 %tmp.20;
+        %tmp.23 = "Gio";
+        %tmp.24 = dup %tmp.22;
+        %tmp.25 = aputv %tmp.24 4 %tmp.23;
+        %tmp.26 = "Ven";
+        %tmp.27 = dup %tmp.25;
+        %tmp.28 = aputv %tmp.27 5 %tmp.26;
+        %tmp.29 = "Sab";
+        %tmp.30 = dup %tmp.28;
+        %tmp.31 = aputv %tmp.30 6 %tmp.29;
+        lputv %italianDays.3 %tmp.31;
+        symbol [ italianDays %italianDays.3 41 8 19 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc" 45 4 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_36_75_62_0_start" "C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_36_75_62_0_stop" ]
+        %italianMonths.4 = local;
+        symbol [ italianMonths %italianMonths.4 45 8 21 ];
+        %tmp.32 = newa 12;
+        %tmp.33 = "Gen";
+        %tmp.34 = dup %tmp.32;
+        %tmp.35 = aputv %tmp.34 0 %tmp.33;
+        %tmp.36 = "Feb";
+        %tmp.37 = dup %tmp.35;
+        %tmp.38 = aputv %tmp.37 1 %tmp.36;
+        %tmp.39 = "Mar";
+        %tmp.40 = dup %tmp.38;
+        %tmp.41 = aputv %tmp.40 2 %tmp.39;
+        %tmp.42 = "Apr";
+        %tmp.43 = dup %tmp.41;
+        %tmp.44 = aputv %tmp.43 3 %tmp.42;
+        %tmp.45 = "Mag";
+        %tmp.46 = dup %tmp.44;
+        %tmp.47 = aputv %tmp.46 4 %tmp.45;
+        %tmp.48 = "Giu";
+        %tmp.49 = dup %tmp.47;
+        %tmp.50 = aputv %tmp.49 5 %tmp.48;
+        %tmp.51 = "Lug";
+        %tmp.52 = dup %tmp.50;
+        %tmp.53 = aputv %tmp.52 6 %tmp.51;
+        %tmp.54 = "Ago";
+        %tmp.55 = dup %tmp.53;
+        %tmp.56 = aputv %tmp.55 7 %tmp.54;
+        %tmp.57 = "Set";
+        %tmp.58 = dup %tmp.56;
+        %tmp.59 = aputv %tmp.58 8 %tmp.57;
+        %tmp.60 = "Ott";
+        %tmp.61 = dup %tmp.59;
+        %tmp.62 = aputv %tmp.61 9 %tmp.60;
+        %tmp.63 = "Nov";
+        %tmp.64 = dup %tmp.62;
+        %tmp.65 = aputv %tmp.64 10 %tmp.63;
+        %tmp.66 = "Dic";
+        %tmp.67 = dup %tmp.65;
+        %tmp.68 = aputv %tmp.67 11 %tmp.66;
+        lputv %italianMonths.4 %tmp.68;
+        symbol [ italianMonths %italianMonths.4 45 8 21 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc" 50 4 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_36_75_62_0_start" "C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_36_75_62_0_stop" ]
+        %dowIndex.5 = local;
+        symbol [ dowIndex %dowIndex.5 50 8 16 ];
+        %tmp.69 = lgetv %info.2;
+        symbol [ info %tmp.69 50 19 23 ];
+        symbol [ day_of_week %tmp.70 50 24 35 ];
+        %tmp.70 = getv %tmp.69 :day_of_week;
+        %tmp.71 = 1;
+        %tmp.72 = sub %tmp.70 %tmp.71;
+        lputv %dowIndex.5 %tmp.72;
+        symbol [ dowIndex %dowIndex.5 50 8 16 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc" 51 4 ]
+C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_51_4_51_54_if_stmt:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_51_8_51_35_begin:
+        %tmp.73 = lgetv %dowIndex.5;
+        symbol [ dowIndex %tmp.73 51 8 16 ];
+        %tmp.74 = 0;
+        %tmp.75 = lt %tmp.73 %tmp.74;
+        bt %tmp.75 @C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_51_4_51_54_if_true;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_51_24_51_35_false:
+        %tmp.76 = lgetv %dowIndex.5;
+        symbol [ dowIndex %tmp.76 51 24 32 ];
+        %tmp.77 = 6;
+        %tmp.78 = gt %tmp.76 %tmp.77;
+        push %tmp.78;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_51_24_51_35_end:
+        %tmp.79 = phi [%tmp.75 @C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_51_8_51_35_begin] [%tmp.78 @C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_51_24_51_35_false] [%tmp.79 @C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_51_24_51_35_end];
+        bf %tmp.79 @C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_51_4_51_54_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_51_4_51_54_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_51_38_51_54_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc" 51 40 ]
+        %tmp.80 = 0;
+        lputv %dowIndex.5 %tmp.80;
+        symbol [ dowIndex %dowIndex.5 51 40 48 ];
+C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_51_38_51_54_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_51_4_51_54_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_51_4_51_54_if_end:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc" 53 4 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_36_75_62_0_start" "C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_36_75_62_0_stop" ]
+        %monIndex.6 = local;
+        symbol [ monIndex %monIndex.6 53 8 16 ];
+        %tmp.81 = lgetv %info.2;
+        symbol [ info %tmp.81 53 19 23 ];
+        symbol [ month %tmp.82 53 24 29 ];
+        %tmp.82 = getv %tmp.81 :month;
+        %tmp.83 = 1;
+        %tmp.84 = sub %tmp.82 %tmp.83;
+        lputv %monIndex.6 %tmp.84;
+        symbol [ monIndex %monIndex.6 53 8 16 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc" 54 4 ]
+C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_54_4_54_55_if_stmt:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_54_8_54_35_begin:
+        %tmp.85 = lgetv %monIndex.6;
+        symbol [ monIndex %tmp.85 54 8 16 ];
+        %tmp.86 = 0;
+        %tmp.87 = lt %tmp.85 %tmp.86;
+        bt %tmp.87 @C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_54_4_54_55_if_true;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_54_24_54_35_false:
+        %tmp.88 = lgetv %monIndex.6;
+        symbol [ monIndex %tmp.88 54 24 32 ];
+        %tmp.89 = 11;
+        %tmp.90 = gt %tmp.88 %tmp.89;
+        push %tmp.90;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_54_24_54_35_end:
+        %tmp.91 = phi [%tmp.87 @C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_54_8_54_35_begin] [%tmp.90 @C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_54_24_54_35_false] [%tmp.91 @C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_54_24_54_35_end];
+        bf %tmp.91 @C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_54_4_54_55_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_54_4_54_55_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_54_39_54_55_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc" 54 41 ]
+        %tmp.92 = 0;
+        lputv %monIndex.6 %tmp.92;
+        symbol [ monIndex %monIndex.6 54 41 49 ];
+C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_54_39_54_55_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_54_4_54_55_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_54_4_54_55_if_end:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc" 56 4 ]
+        %tmp.93 = newd Lang.Dictionary<Lang.String, Lang.String> 4;
+        symbol [ Lang %tmp.93 61 9 13 ];
+        symbol [ Dictionary %tmp.93 61 14 24 ];
+        symbol [ Lang %tmp.93 61 25 29 ];
+        symbol [ String %tmp.93 61 30 36 ];
+        symbol [ Lang %tmp.93 61 38 42 ];
+        symbol [ String %tmp.93 61 43 49 ];
+        %tmp.94 = "giorno";
+        %tmp.95 = lgetv %italianDays.3;
+        symbol [ italianDays %tmp.95 57 23 34 ];
+        %tmp.96 = lgetv %dowIndex.5;
+        symbol [ dowIndex %tmp.96 57 35 43 ];
+        %tmp.97 = agetv %tmp.95 %tmp.96;
+        %tmp.98 = as %tmp.97 Lang.String;
+        symbol [ Lang %tmp.98 57 55 59 ];
+        symbol [ String %tmp.98 57 60 66 ];
+        %tmp.99 = dup %tmp.93;
+        %tmp.100 = aputv %tmp.99 %tmp.94 %tmp.98;
+        %tmp.101 = "numGiorno";
+        %tmp.102 = lgetv %info.2;
+        symbol [ info %tmp.102 58 23 27 ];
+        symbol [ day %tmp.103 58 28 31 ];
+        %tmp.103 = getv %tmp.102 :day;
+        symbol [ format %tmp.104 58 32 38 ];
+        %tmp.104 = getv function %tmp.103 :format;
+        %tmp.105 = "%02d";
+        %tmp.106 = invoke %tmp.103 %tmp.104(%tmp.105);
+        %tmp.107 = as %tmp.106 Lang.String;
+        symbol [ Lang %tmp.107 58 55 59 ];
+        symbol [ String %tmp.107 58 60 66 ];
+        %tmp.108 = dup %tmp.100;
+        %tmp.109 = aputv %tmp.108 %tmp.101 %tmp.107;
+        %tmp.110 = "mese";
+        %tmp.111 = lgetv %italianMonths.4;
+        symbol [ italianMonths %tmp.111 59 23 36 ];
+        %tmp.112 = lgetv %monIndex.6;
+        symbol [ monIndex %tmp.112 59 37 45 ];
+        %tmp.113 = agetv %tmp.111 %tmp.112;
+        %tmp.114 = as %tmp.113 Lang.String;
+        symbol [ Lang %tmp.114 59 55 59 ];
+        symbol [ String %tmp.114 59 60 66 ];
+        %tmp.115 = dup %tmp.109;
+        %tmp.116 = aputv %tmp.115 %tmp.110 %tmp.114;
+        %tmp.117 = "anno";
+        %tmp.118 = lgetv %info.2;
+        symbol [ info %tmp.118 60 23 27 ];
+        symbol [ year %tmp.119 60 28 32 ];
+        %tmp.119 = getv %tmp.118 :year;
+        symbol [ toString %tmp.120 60 33 41 ];
+        %tmp.120 = getv function %tmp.119 :toString;
+        %tmp.121 = invoke %tmp.119 %tmp.120();
+        %tmp.122 = as %tmp.121 Lang.String;
+        symbol [ Lang %tmp.122 60 55 59 ];
+        symbol [ String %tmp.122 60 60 66 ];
+        %tmp.123 = dup %tmp.116;
+        %tmp.124 = aputv %tmp.123 %tmp.117 %tmp.122;
+        ret %tmp.124;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_TimeManagement_mc_36_75_62_0_stop:
     }
 }
 [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\TimeManagement.mc"; @line = 1; ]

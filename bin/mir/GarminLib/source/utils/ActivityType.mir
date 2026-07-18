@@ -1,0 +1,38 @@
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\ActivityType.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [Graphics,1,13,21]; ]
+using Toybox.Graphics;
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\ActivityType.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [Lang,2,13,17]; ]
+using Toybox.Lang;
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\ActivityType.mc"; @line = 4; @symbol_classdef = [ActivityType,4,6,18]; ]
+class ActivityType {
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\ActivityType.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\ActivityType.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\ActivityType.mc"; @line = 6; @position = 17; @symbol_constdef = [ACTIVITY_PASSI,6,17,31]; ]
+    static
+    const ACTIVITY_PASSI = 0;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\ActivityType.mc"; @line = 7; @position = 17; @symbol_constdef = [ACTIVITY_CALORIE,7,17,33]; ]
+    static
+    const ACTIVITY_CALORIE = 1;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\ActivityType.mc"; @line = 8; @position = 17; @symbol_constdef = [ACTIVITY_GRADINI,8,17,33]; ]
+    static
+    const ACTIVITY_GRADINI = 2;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\ActivityType.mc"; @line = 9; @position = 17; @symbol_constdef = [ACTIVITY_MIN_WEEK,9,17,34]; ]
+    static
+    const ACTIVITY_MIN_WEEK = 3;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\ActivityType.mc"; @line = 10; @position = 17; @symbol_constdef = [ACTIVITY_MIN_DAY,10,17,33]; ]
+    static
+    const ACTIVITY_MIN_DAY = 4;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\ActivityType.mc"; @line = 11; @position = 17; @symbol_constdef = [ACTIVITY_STRESS,11,17,32]; ]
+    static
+    const ACTIVITY_STRESS = 5;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\ActivityType.mc"; @line = 12; @position = 17; @symbol_constdef = [ACTIVITY_BODY_BATTERY,12,17,38]; ]
+    static
+    const ACTIVITY_BODY_BATTERY = 6;
+}
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\ActivityType.mc"; @line = 1; ]
+<init> {
+}

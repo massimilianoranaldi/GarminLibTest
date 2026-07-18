@@ -1,7 +1,9 @@
 import Toybox.Application;
 import Toybox.Lang;
 import Toybox.WatchUi;
+import Toybox.System;
 
+(:background)
 class GarminLibTestApp extends Application.AppBase {
 
     function initialize() {
@@ -17,13 +19,27 @@ class GarminLibTestApp extends Application.AppBase {
     }
 
     // Return the initial view of your application here
+    //METEO
     function getInitialView() as [Views] or [Views, InputDelegates] {
         return [ new GarminLibTestView() ];
     }
 
     // New app settings have been received so trigger a UI update
     function onSettingsChanged() as Void {
-        WatchUi.requestUpdate();
+    System.println("onSettingsChanged: inizio");
+    var view = WatchUi.getCurrentView()[0] as GarminLibTestView;
+    System.println("onSettingsChanged: view ottenuta");
+    view._settingsChanged = true;
+    System.println("onSettingsChanged: flag settato");
+    WatchUi.requestUpdate();
+    System.println("onSettingsChanged: fine");
+    }
+
+
+
+     // ** Necessario per registrare il BackgroundService ** <- PASSO 1 (meteo)
+    function getServiceDelegate() as [System.ServiceDelegate] {
+        return [new BackgroundService()];
     }
 
 }

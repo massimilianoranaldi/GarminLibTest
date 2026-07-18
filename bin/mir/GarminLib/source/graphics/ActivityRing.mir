@@ -13,480 +13,596 @@ class ActivityRing {
     static
     <init> {
     }
-    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc"; @line = 7; @symbol_functiondef = [draw,7,20,24]; @symbol_param<0> = [dc,7,25,27]; @symbol_param<1> = [cx,7,29,31]; @symbol_param<2> = [cy,7,33,35]; @symbol_param<3> = [valore,7,37,43]; @symbol_param<4> = [goal,7,45,49]; @symbol_param<5> = [startDeg,7,51,59]; @symbol_param<6> = [endDeg,7,61,67]; @symbol_param<7> = [cw,7,69,71]; @symbol_param<8> = [cfg,7,73,76]; @symbol_param<8>_type<0> = [Lang,7,80,84]; @symbol_param<8>_type<1> = [Dictionary,7,85,95]; @symbol_param<8>_type<2> = [Lang,7,96,100]; @symbol_param<8>_type<3> = [String,7,101,107]; @symbol_param<8>_type<4> = [Lang,7,109,113]; @symbol_param<8>_type<5> = [Number,7,114,120]; ]
-    static
-    function draw(dc, cx, cy, valore, goal, startDeg, endDeg, cw, cfg as Lang.Dictionary<Lang.String, Lang.Number>) {
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_7_123_50_4_start:
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 8 8 ]
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_7_123_50_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_7_123_50_4_stop" ]
-        %totalDeg.1 = local;
-        symbol [ totalDeg %totalDeg.1 8 12 20 ];
-        symbol [ MathUtils %tmp.2 8 23 32 ];
-        %tmp.2 = getv ? :MathUtils;
-        symbol [ calcolaArco %tmp.3 8 33 44 ];
-        %tmp.3 = getv function %tmp.2 :calcolaArco;
-        %tmp.4 = lgetv %startDeg;
-        symbol [ startDeg %tmp.4 8 45 53 ];
-        %tmp.5 = lgetv %endDeg;
-        symbol [ endDeg %tmp.5 8 55 61 ];
-        %tmp.6 = lgetv %cw;
-        symbol [ cw %tmp.6 8 63 65 ];
-        %tmp.7 = invoke %tmp.2 %tmp.3(%tmp.4, %tmp.5, %tmp.6);
-        lputv %totalDeg.1 %tmp.7;
-        symbol [ totalDeg %totalDeg.1 8 12 20 ];
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 9 8 ]
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_7_123_50_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_7_123_50_4_stop" ]
-        %arcDir.2 = local;
-        symbol [ arcDir %arcDir.2 9 12 18 ];
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_9_23_9_62_begin:
-        %tmp.8 = lgetv %cw;
-        symbol [ cw %tmp.8 9 23 25 ];
-        bf %tmp.8 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_9_23_9_62_else_false;
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_9_23_9_62_true:
-        symbol [ Graphics %tmp.9 9 28 36 ];
-        %tmp.9 = getm $.Toybox.Graphics;
-        symbol [ ARC_CLOCKWISE %tmp.10 9 37 50 ];
-        %tmp.10 = getv %tmp.9 :ARC_CLOCKWISE;
-        push %tmp.10;
-        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_9_23_9_62_end;
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_9_23_9_62_else_false:
-        symbol [ Graphics %tmp.11 9 53 61 ];
-        %tmp.11 = getm $.Toybox.Graphics;
-        symbol [ ARC_COUNTER_CLOCKWISE %tmp.12 9 62 83 ];
-        %tmp.12 = getv %tmp.11 :ARC_COUNTER_CLOCKWISE;
-        push %tmp.12;
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_9_23_9_62_end:
-        %tmp.13 = phi [%tmp.8 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_9_23_9_62_begin] [%tmp.10 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_9_23_9_62_true] [%tmp.12 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_9_23_9_62_else_false] [%tmp.13 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_9_23_9_62_end];
-        lputv %arcDir.2 %tmp.13;
-        symbol [ arcDir %arcDir.2 9 12 18 ];
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 10 8 ]
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_7_123_50_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_7_123_50_4_stop" ]
-        %spessore.3 = local;
-        symbol [ spessore %spessore.3 10 12 20 ];
-        %tmp.14 = lgetv %cfg;
-        symbol [ cfg %tmp.14 10 23 26 ];
-        %tmp.15 = "spessore";
-        %tmp.16 = agetv %tmp.14 %tmp.15;
-        lputv %spessore.3 %tmp.16;
-        symbol [ spessore %spessore.3 10 12 20 ];
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 11 8 ]
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_7_123_50_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_7_123_50_4_stop" ]
-        %raggio.4 = local;
-        symbol [ raggio %raggio.4 11 12 18 ];
-        %tmp.17 = lgetv %cfg;
-        symbol [ cfg %tmp.17 11 23 26 ];
-        %tmp.18 = "raggio";
-        %tmp.19 = agetv %tmp.17 %tmp.18;
-        lputv %raggio.4 %tmp.19;
-        symbol [ raggio %raggio.4 11 12 18 ];
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 12 8 ]
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_7_123_50_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_7_123_50_4_stop" ]
-        %capR.5 = local;
-        symbol [ capR %capR.5 12 12 16 ];
-        %tmp.20 = lgetv %spessore.3;
-        symbol [ spessore %tmp.20 12 23 31 ];
-        %tmp.21 = 2;
-        %tmp.22 = div %tmp.20 %tmp.21;
-        lputv %capR.5 %tmp.22;
-        symbol [ capR %capR.5 12 12 16 ];
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 14 8 ]
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_7_123_50_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_7_123_50_4_stop" ]
-        %filled.6 = local;
-        symbol [ filled %filled.6 14 12 18 ];
-        %tmp.23 = lgetv %valore;
-        symbol [ valore %tmp.23 14 21 27 ];
-        symbol [ toFloat %tmp.24 14 28 35 ];
-        %tmp.24 = getv function %tmp.23 :toFloat;
-        %tmp.25 = invoke %tmp.23 %tmp.24();
-        %tmp.26 = lgetv %totalDeg.1;
-        symbol [ totalDeg %tmp.26 14 40 48 ];
-        %tmp.27 = mul %tmp.25 %tmp.26;
-        %tmp.28 = lgetv %goal;
-        symbol [ goal %tmp.28 14 51 55 ];
-        symbol [ toFloat %tmp.29 14 56 63 ];
-        %tmp.29 = getv function %tmp.28 :toFloat;
-        %tmp.30 = invoke %tmp.28 %tmp.29();
-        %tmp.31 = div %tmp.27 %tmp.30;
-        lputv %filled.6 %tmp.31;
-        symbol [ filled %filled.6 14 12 18 ];
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 15 8 ]
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_15_8_15_52_if_stmt:
-        %tmp.32 = lgetv %filled.6;
-        symbol [ filled %tmp.32 15 12 18 ];
-        %tmp.33 = lgetv %totalDeg.1;
-        symbol [ totalDeg %tmp.33 15 21 29 ];
-        %tmp.34 = gt %tmp.32 %tmp.33;
-        bf %tmp.34 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_15_8_15_52_if_end;
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_15_8_15_52_if_true:
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_15_31_15_52_start:
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 15 33 ]
-        %tmp.35 = lgetv %totalDeg.1;
-        symbol [ totalDeg %tmp.35 15 42 50 ];
-        lputv %filled.6 %tmp.35;
-        symbol [ filled %filled.6 15 33 39 ];
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_15_31_15_52_stop:
-        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_15_8_15_52_if_end;
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_15_8_15_52_if_end:
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 16 8 ]
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_7_123_50_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_7_123_50_4_stop" ]
-        %endAngle.7 = local;
-        symbol [ endAngle %endAngle.7 16 12 20 ];
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_16_23_18_43_begin:
-        %tmp.36 = lgetv %cw;
-        symbol [ cw %tmp.36 16 23 25 ];
-        bf %tmp.36 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_16_23_18_43_else_false;
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_16_23_18_43_true:
-        %tmp.37 = lgetv %startDeg;
-        symbol [ startDeg %tmp.37 17 15 23 ];
-        %tmp.38 = lgetv %filled.6;
-        symbol [ filled %tmp.38 17 26 32 ];
-        %tmp.39 = sub %tmp.37 %tmp.38;
-        symbol [ toNumber %tmp.40 17 34 42 ];
-        %tmp.40 = getv function %tmp.39 :toNumber;
-        %tmp.41 = invoke %tmp.39 %tmp.40();
-        push %tmp.41;
-        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_16_23_18_43_end;
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_16_23_18_43_else_false:
-        %tmp.42 = lgetv %startDeg;
-        symbol [ startDeg %tmp.42 18 15 23 ];
-        %tmp.43 = lgetv %filled.6;
-        symbol [ filled %tmp.43 18 26 32 ];
-        %tmp.44 = add %tmp.42 %tmp.43;
-        symbol [ toNumber %tmp.45 18 34 42 ];
-        %tmp.45 = getv function %tmp.44 :toNumber;
-        %tmp.46 = invoke %tmp.44 %tmp.45();
-        push %tmp.46;
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_16_23_18_43_end:
-        %tmp.47 = phi [%tmp.36 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_16_23_18_43_begin] [%tmp.41 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_16_23_18_43_true] [%tmp.46 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_16_23_18_43_else_false] [%tmp.47 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_16_23_18_43_end];
-        lputv %endAngle.7 %tmp.47;
-        symbol [ endAngle %endAngle.7 16 12 20 ];
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc"; @line = 7; @position = 8; @symbol_vardef = [_cx,7,8,11]; @symbol_type<0> = [Lang,7,21,25]; @symbol_type<1> = [Number,7,26,32]; ]
+    var _cx as Lang.Number;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc"; @line = 8; @position = 8; @symbol_vardef = [_cy,8,8,11]; @symbol_type<0> = [Lang,8,21,25]; @symbol_type<1> = [Number,8,26,32]; ]
+    var _cy as Lang.Number;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc"; @line = 9; @position = 8; @symbol_vardef = [_startDeg,9,8,17]; @symbol_type<0> = [Lang,9,21,25]; @symbol_type<1> = [Number,9,26,32]; ]
+    var _startDeg as Lang.Number;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc"; @line = 10; @position = 8; @symbol_vardef = [_endDeg,10,8,15]; @symbol_type<0> = [Lang,10,21,25]; @symbol_type<1> = [Number,10,26,32]; ]
+    var _endDeg as Lang.Number;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc"; @line = 11; @position = 8; @symbol_vardef = [_cw,11,8,11]; @symbol_type<0> = [Lang,11,21,25]; @symbol_type<1> = [Boolean,11,26,33]; ]
+    var _cw as Lang.Boolean;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc"; @line = 12; @position = 8; @symbol_vardef = [_cfg,12,8,12]; @symbol_type<0> = [Lang,12,21,25]; @symbol_type<1> = [Dictionary,12,26,36]; @symbol_type<2> = [Lang,12,37,41]; @symbol_type<3> = [String,12,42,48]; @symbol_type<4> = [Lang,12,50,54]; @symbol_type<5> = [Number,12,55,61]; ]
+    var _cfg as Lang.Dictionary<Lang.String, Lang.Number>;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc"; @line = 13; @position = 8; @symbol_vardef = [_valore,13,8,15]; @symbol_type<0> = [Lang,13,21,25]; @symbol_type<1> = [Number,13,26,32]; ]
+    var _valore as Lang.Number;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc"; @line = 14; @position = 8; @symbol_vardef = [_goal,14,8,13]; @symbol_type<0> = [Lang,14,21,25]; @symbol_type<1> = [Number,14,26,32]; ]
+    var _goal as Lang.Number;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc"; @line = 16; @symbol_functiondef = [initialize,16,13,23]; @symbol_param<0> = [cx,16,24,26]; @symbol_param<1> = [cy,16,28,30]; @symbol_param<2> = [startDeg,16,32,40]; @symbol_param<3> = [endDeg,16,42,48]; @symbol_param<4> = [cw,16,50,52]; @symbol_param<5> = [cfg,16,54,57]; @symbol_param<5>_type<0> = [Lang,16,61,65]; @symbol_param<5>_type<1> = [Dictionary,16,66,76]; @symbol_param<5>_type<2> = [Lang,16,77,81]; @symbol_param<5>_type<3> = [String,16,82,88]; @symbol_param<5>_type<4> = [Lang,16,90,94]; @symbol_param<5>_type<5> = [Number,16,95,101]; ]
+    function initialize(cx, cy, startDeg, endDeg, cw, cfg as Lang.Dictionary<Lang.String, Lang.Number>) as Void {
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_16_104_25_4_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 17 8 ]
+        %tmp.1 = lgetv %cx;
+        symbol [ cx %tmp.1 17 20 22 ];
+        symbol [ _cx ? 17 8 11 ];
+        putv self :_cx %tmp.1;
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 18 8 ]
+        %tmp.2 = lgetv %cy;
+        symbol [ cy %tmp.2 18 20 22 ];
+        symbol [ _cy ? 18 8 11 ];
+        putv self :_cy %tmp.2;
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 19 8 ]
+        %tmp.3 = lgetv %startDeg;
+        symbol [ startDeg %tmp.3 19 20 28 ];
+        symbol [ _startDeg ? 19 8 17 ];
+        putv self :_startDeg %tmp.3;
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 20 8 ]
+        %tmp.4 = lgetv %endDeg;
+        symbol [ endDeg %tmp.4 20 20 26 ];
+        symbol [ _endDeg ? 20 8 15 ];
+        putv self :_endDeg %tmp.4;
 [ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 21 8 ]
-        %tmp.48 = lgetv %dc;
-        symbol [ dc %tmp.48 21 8 10 ];
-        symbol [ setColor %tmp.49 21 11 19 ];
-        %tmp.49 = getv function %tmp.48 :setColor;
-        %tmp.50 = lgetv %cfg;
-        symbol [ cfg %tmp.50 21 20 23 ];
-        %tmp.51 = "sfondo";
-        %tmp.52 = agetv %tmp.50 %tmp.51;
-        symbol [ Graphics %tmp.53 21 35 43 ];
-        %tmp.53 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.54 21 44 61 ];
-        %tmp.54 = getv %tmp.53 :COLOR_TRANSPARENT;
-        invoke %tmp.48 %tmp.49(%tmp.52, %tmp.54);
+        %tmp.5 = lgetv %cw;
+        symbol [ cw %tmp.5 21 20 22 ];
+        symbol [ _cw ? 21 8 11 ];
+        putv self :_cw %tmp.5;
 [ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 22 8 ]
-        %tmp.55 = lgetv %dc;
-        symbol [ dc %tmp.55 22 8 10 ];
-        symbol [ setPenWidth %tmp.56 22 11 22 ];
-        %tmp.56 = getv function %tmp.55 :setPenWidth;
-        %tmp.57 = lgetv %spessore.3;
-        symbol [ spessore %tmp.57 22 23 31 ];
-        invoke %tmp.55 %tmp.56(%tmp.57);
+        %tmp.6 = lgetv %cfg;
+        symbol [ cfg %tmp.6 22 20 23 ];
+        symbol [ _cfg ? 22 8 12 ];
+        putv self :_cfg %tmp.6;
 [ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 23 8 ]
-        %tmp.58 = lgetv %dc;
-        symbol [ dc %tmp.58 23 8 10 ];
-        symbol [ drawArc %tmp.59 23 11 18 ];
-        %tmp.59 = getv function %tmp.58 :drawArc;
-        %tmp.60 = lgetv %cx;
-        symbol [ cx %tmp.60 23 19 21 ];
-        %tmp.61 = lgetv %cy;
-        symbol [ cy %tmp.61 23 23 25 ];
-        %tmp.62 = lgetv %raggio.4;
-        symbol [ raggio %tmp.62 23 27 33 ];
-        %tmp.63 = lgetv %arcDir.2;
-        symbol [ arcDir %tmp.63 23 35 41 ];
-        %tmp.64 = lgetv %startDeg;
-        symbol [ startDeg %tmp.64 23 43 51 ];
-        %tmp.65 = lgetv %endDeg;
-        symbol [ endDeg %tmp.65 23 53 59 ];
-        invoke %tmp.58 %tmp.59(%tmp.60, %tmp.61, %tmp.62, %tmp.63, %tmp.64, %tmp.65);
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 26 8 ]
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_7_123_50_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_7_123_50_4_stop" ]
-        %radStart.8 = local;
-        symbol [ radStart %radStart.8 26 12 20 ];
-        symbol [ Math %tmp.66 26 23 27 ];
-        %tmp.66 = getm $.Toybox.Math;
-        symbol [ toRadians %tmp.67 26 28 37 ];
-        %tmp.67 = getv function %tmp.66 :toRadians;
-        %tmp.68 = lgetv %startDeg;
-        symbol [ startDeg %tmp.68 26 38 46 ];
-        %tmp.69 = invoke %tmp.66 %tmp.67(%tmp.68);
-        lputv %radStart.8 %tmp.69;
-        symbol [ radStart %radStart.8 26 12 20 ];
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 27 8 ]
-        %tmp.70 = lgetv %dc;
-        symbol [ dc %tmp.70 27 8 10 ];
-        symbol [ setColor %tmp.71 27 11 19 ];
-        %tmp.71 = getv function %tmp.70 :setColor;
-        %tmp.72 = lgetv %cfg;
-        symbol [ cfg %tmp.72 27 20 23 ];
-        %tmp.73 = "sfondo";
-        %tmp.74 = agetv %tmp.72 %tmp.73;
-        %tmp.75 = lgetv %cfg;
-        symbol [ cfg %tmp.75 27 35 38 ];
-        %tmp.76 = "sfondo";
-        %tmp.77 = agetv %tmp.75 %tmp.76;
-        invoke %tmp.70 %tmp.71(%tmp.74, %tmp.77);
+        %tmp.7 = 0;
+        symbol [ _valore ? 23 8 15 ];
+        putv self :_valore %tmp.7;
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 24 8 ]
+        %tmp.8 = 1;
+        symbol [ _goal ? 24 8 13 ];
+        putv self :_goal %tmp.8;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_16_104_25_4_stop:
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc"; @line = 27; @symbol_functiondef = [setValori,27,13,22]; @symbol_param<0> = [valore,27,23,29]; @symbol_param<0>_type<0> = [Lang,27,33,37]; @symbol_param<0>_type<1> = [Number,27,38,44]; @symbol_param<1> = [goal,27,46,50]; @symbol_param<1>_type<0> = [Lang,27,54,58]; @symbol_param<1>_type<1> = [Number,27,59,65]; ]
+    function setValori(valore as Lang.Number, goal as Lang.Number) {
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_27_67_30_4_start:
 [ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 28 8 ]
-        %tmp.78 = lgetv %dc;
-        symbol [ dc %tmp.78 28 8 10 ];
-        symbol [ fillCircle %tmp.79 28 11 21 ];
-        %tmp.79 = getv function %tmp.78 :fillCircle;
-        %tmp.80 = lgetv %cx;
-        symbol [ cx %tmp.80 28 23 25 ];
-        %tmp.81 = lgetv %raggio.4;
-        symbol [ raggio %tmp.81 28 28 34 ];
-        symbol [ Math %tmp.82 28 37 41 ];
-        %tmp.82 = getm $.Toybox.Math;
-        symbol [ cos %tmp.83 28 42 45 ];
-        %tmp.83 = getv function %tmp.82 :cos;
-        %tmp.84 = lgetv %radStart.8;
-        symbol [ radStart %tmp.84 28 46 54 ];
-        %tmp.85 = invoke %tmp.82 %tmp.83(%tmp.84);
-        %tmp.86 = mul %tmp.81 %tmp.85;
-        %tmp.87 = add %tmp.80 %tmp.86;
-        symbol [ toNumber %tmp.88 28 57 65 ];
-        %tmp.88 = getv function %tmp.87 :toNumber;
-        %tmp.89 = invoke %tmp.87 %tmp.88();
-        %tmp.90 = lgetv %cy;
-        symbol [ cy %tmp.90 29 23 25 ];
-        %tmp.91 = lgetv %raggio.4;
-        symbol [ raggio %tmp.91 29 28 34 ];
-        symbol [ Math %tmp.92 29 37 41 ];
-        %tmp.92 = getm $.Toybox.Math;
-        symbol [ sin %tmp.93 29 42 45 ];
-        %tmp.93 = getv function %tmp.92 :sin;
-        %tmp.94 = lgetv %radStart.8;
-        symbol [ radStart %tmp.94 29 46 54 ];
-        %tmp.95 = invoke %tmp.92 %tmp.93(%tmp.94);
-        %tmp.96 = mul %tmp.91 %tmp.95;
-        %tmp.97 = sub %tmp.90 %tmp.96;
-        symbol [ toNumber %tmp.98 29 57 65 ];
-        %tmp.98 = getv function %tmp.97 :toNumber;
-        %tmp.99 = invoke %tmp.97 %tmp.98();
-        %tmp.100 = lgetv %capR.5;
-        symbol [ capR %tmp.100 29 69 73 ];
-        invoke %tmp.78 %tmp.79(%tmp.89, %tmp.99, %tmp.100);
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 30 8 ]
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_7_123_50_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_7_123_50_4_stop" ]
+        %tmp.1 = lgetv %valore;
+        symbol [ valore %tmp.1 28 18 24 ];
+        symbol [ _valore ? 28 8 15 ];
+        putv self :_valore %tmp.1;
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 29 8 ]
+        %tmp.2 = lgetv %goal;
+        symbol [ goal %tmp.2 29 18 22 ];
+        symbol [ _goal ? 29 8 13 ];
+        putv self :_goal %tmp.2;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_27_67_30_4_stop:
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc"; @line = 32; @symbol_functiondef = [setColori,32,13,22]; @symbol_param<0> = [fill,32,23,27]; @symbol_param<0>_type<0> = [Lang,32,31,35]; @symbol_param<0>_type<1> = [Number,32,36,42]; @symbol_param<1> = [sfondo,32,44,50]; @symbol_param<1>_type<0> = [Lang,32,54,58]; @symbol_param<1>_type<1> = [Number,32,59,65]; ]
+    function setColori(fill as Lang.Number, sfondo as Lang.Number) {
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_32_67_35_4_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 33 8 ]
+        symbol [ _cfg %tmp.1 33 8 12 ];
+        %tmp.1 = getv self :_cfg;
+        %tmp.2 = lgetv %fill;
+        symbol [ fill %tmp.2 33 25 29 ];
+        %tmp.3 = "fill";
+        aputv %tmp.1 %tmp.3 %tmp.2;
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 34 8 ]
+        symbol [ _cfg %tmp.4 34 8 12 ];
+        %tmp.4 = getv self :_cfg;
+        %tmp.5 = lgetv %sfondo;
+        symbol [ sfondo %tmp.5 34 25 31 ];
+        %tmp.6 = "sfondo";
+        aputv %tmp.4 %tmp.6 %tmp.5;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_32_67_35_4_stop:
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc"; @line = 37; @symbol_functiondef = [draw,37,13,17]; @symbol_param<0> = [dc,37,18,20]; @symbol_param<0>_type<0> = [Graphics,37,24,32]; @symbol_param<0>_type<1> = [Dc,37,33,35]; ]
+    function draw(dc as Graphics.Dc) {
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_37_37_74_4_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 38 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_37_37_74_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_37_37_74_4_stop" ]
+        %totalDeg.1 = local;
+        symbol [ totalDeg %totalDeg.1 38 12 20 ];
+        symbol [ MathUtils %tmp.2 38 23 32 ];
+        %tmp.2 = getv ? :MathUtils;
+        symbol [ calcolaArco %tmp.3 38 33 44 ];
+        %tmp.3 = getv function %tmp.2 :calcolaArco;
+        symbol [ _startDeg %tmp.5 38 45 54 ];
+        %tmp.5 = getv ? :_startDeg;
+        symbol [ _endDeg %tmp.7 38 56 63 ];
+        %tmp.7 = getv ? :_endDeg;
+        symbol [ _cw %tmp.9 38 65 68 ];
+        %tmp.9 = getv ? :_cw;
+        %tmp.10 = invoke %tmp.2 %tmp.3(%tmp.5, %tmp.7, %tmp.9);
+        lputv %totalDeg.1 %tmp.10;
+        symbol [ totalDeg %totalDeg.1 38 12 20 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 39 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_37_37_74_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_37_37_74_4_stop" ]
+        %arcDir.2 = local;
+        symbol [ arcDir %arcDir.2 39 12 18 ];
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_39_23_39_63_begin:
+        symbol [ _cw %tmp.12 39 23 26 ];
+        %tmp.12 = getv ? :_cw;
+        bf %tmp.12 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_39_23_39_63_else_false;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_39_23_39_63_true:
+        symbol [ Graphics %tmp.13 39 29 37 ];
+        %tmp.13 = getm $.Toybox.Graphics;
+        symbol [ ARC_CLOCKWISE %tmp.14 39 38 51 ];
+        %tmp.14 = getv %tmp.13 :ARC_CLOCKWISE;
+        push %tmp.14;
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_39_23_39_63_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_39_23_39_63_else_false:
+        symbol [ Graphics %tmp.15 39 54 62 ];
+        %tmp.15 = getm $.Toybox.Graphics;
+        symbol [ ARC_COUNTER_CLOCKWISE %tmp.16 39 63 84 ];
+        %tmp.16 = getv %tmp.15 :ARC_COUNTER_CLOCKWISE;
+        push %tmp.16;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_39_23_39_63_end:
+        %tmp.17 = phi [%tmp.12 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_39_23_39_63_begin] [%tmp.14 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_39_23_39_63_true] [%tmp.16 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_39_23_39_63_else_false] [%tmp.17 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_39_23_39_63_end];
+        lputv %arcDir.2 %tmp.17;
+        symbol [ arcDir %arcDir.2 39 12 18 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 40 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_37_37_74_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_37_37_74_4_stop" ]
+        %spessore.3 = local;
+        symbol [ spessore %spessore.3 40 12 20 ];
+        symbol [ _cfg %tmp.19 40 23 27 ];
+        %tmp.19 = getv ? :_cfg;
+        %tmp.20 = "spessore";
+        %tmp.21 = agetv %tmp.19 %tmp.20;
+        %tmp.22 = as %tmp.21 Lang.Number;
+        symbol [ Lang %tmp.22 40 43 47 ];
+        symbol [ Number %tmp.22 40 48 54 ];
+        lputv %spessore.3 %tmp.22;
+        symbol [ spessore %spessore.3 40 12 20 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 41 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_37_37_74_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_37_37_74_4_stop" ]
+        %raggio.4 = local;
+        symbol [ raggio %raggio.4 41 12 18 ];
+        symbol [ _cfg %tmp.24 41 23 27 ];
+        %tmp.24 = getv ? :_cfg;
+        %tmp.25 = "raggio";
+        %tmp.26 = agetv %tmp.24 %tmp.25;
+        %tmp.27 = as %tmp.26 Lang.Number;
+        symbol [ Lang %tmp.27 41 43 47 ];
+        symbol [ Number %tmp.27 41 48 54 ];
+        lputv %raggio.4 %tmp.27;
+        symbol [ raggio %raggio.4 41 12 18 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 42 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_37_37_74_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_37_37_74_4_stop" ]
+        %capR.5 = local;
+        symbol [ capR %capR.5 42 12 16 ];
+        %tmp.28 = lgetv %spessore.3;
+        symbol [ spessore %tmp.28 42 23 31 ];
+        %tmp.29 = 2;
+        %tmp.30 = div %tmp.28 %tmp.29;
+        lputv %capR.5 %tmp.30;
+        symbol [ capR %capR.5 42 12 16 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 44 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_37_37_74_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_37_37_74_4_stop" ]
+        %filled.6 = local;
+        symbol [ filled %filled.6 44 12 18 ];
+        symbol [ _valore %tmp.32 44 21 28 ];
+        %tmp.32 = getv ? :_valore;
+        symbol [ toFloat %tmp.33 44 29 36 ];
+        %tmp.33 = getv function %tmp.32 :toFloat;
+        %tmp.34 = invoke %tmp.32 %tmp.33();
+        %tmp.35 = lgetv %totalDeg.1;
+        symbol [ totalDeg %tmp.35 44 41 49 ];
+        %tmp.36 = mul %tmp.34 %tmp.35;
+        symbol [ _goal %tmp.38 44 52 57 ];
+        %tmp.38 = getv ? :_goal;
+        symbol [ toFloat %tmp.39 44 58 65 ];
+        %tmp.39 = getv function %tmp.38 :toFloat;
+        %tmp.40 = invoke %tmp.38 %tmp.39();
+        %tmp.41 = div %tmp.36 %tmp.40;
+        lputv %filled.6 %tmp.41;
+        symbol [ filled %filled.6 44 12 18 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 45 8 ]
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_45_8_45_52_if_stmt:
+        %tmp.42 = lgetv %filled.6;
+        symbol [ filled %tmp.42 45 12 18 ];
+        %tmp.43 = lgetv %totalDeg.1;
+        symbol [ totalDeg %tmp.43 45 21 29 ];
+        %tmp.44 = gt %tmp.42 %tmp.43;
+        bf %tmp.44 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_45_8_45_52_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_45_8_45_52_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_45_31_45_52_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 45 33 ]
+        %tmp.45 = lgetv %totalDeg.1;
+        symbol [ totalDeg %tmp.45 45 42 50 ];
+        lputv %filled.6 %tmp.45;
+        symbol [ filled %filled.6 45 33 39 ];
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_45_31_45_52_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_45_8_45_52_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_45_8_45_52_if_end:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 46 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_37_37_74_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_37_37_74_4_stop" ]
+        %endAngle.7 = local;
+        symbol [ endAngle %endAngle.7 46 12 20 ];
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_46_23_48_44_begin:
+        symbol [ _cw %tmp.47 46 23 26 ];
+        %tmp.47 = getv ? :_cw;
+        bf %tmp.47 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_46_23_48_44_else_false;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_46_23_48_44_true:
+        symbol [ _startDeg %tmp.49 47 15 24 ];
+        %tmp.49 = getv ? :_startDeg;
+        %tmp.50 = lgetv %filled.6;
+        symbol [ filled %tmp.50 47 27 33 ];
+        %tmp.51 = sub %tmp.49 %tmp.50;
+        symbol [ toNumber %tmp.52 47 35 43 ];
+        %tmp.52 = getv function %tmp.51 :toNumber;
+        %tmp.53 = invoke %tmp.51 %tmp.52();
+        push %tmp.53;
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_46_23_48_44_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_46_23_48_44_else_false:
+        symbol [ _startDeg %tmp.55 48 15 24 ];
+        %tmp.55 = getv ? :_startDeg;
+        %tmp.56 = lgetv %filled.6;
+        symbol [ filled %tmp.56 48 27 33 ];
+        %tmp.57 = add %tmp.55 %tmp.56;
+        symbol [ toNumber %tmp.58 48 35 43 ];
+        %tmp.58 = getv function %tmp.57 :toNumber;
+        %tmp.59 = invoke %tmp.57 %tmp.58();
+        push %tmp.59;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_46_23_48_44_end:
+        %tmp.60 = phi [%tmp.47 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_46_23_48_44_begin] [%tmp.53 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_46_23_48_44_true] [%tmp.59 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_46_23_48_44_else_false] [%tmp.60 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_46_23_48_44_end];
+        lputv %endAngle.7 %tmp.60;
+        symbol [ endAngle %endAngle.7 46 12 20 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 50 8 ]
+        %tmp.61 = lgetv %dc;
+        symbol [ dc %tmp.61 50 8 10 ];
+        symbol [ setColor %tmp.62 50 11 19 ];
+        %tmp.62 = getv function %tmp.61 :setColor;
+        symbol [ _cfg %tmp.64 50 20 24 ];
+        %tmp.64 = getv ? :_cfg;
+        %tmp.65 = "sfondo";
+        %tmp.66 = agetv %tmp.64 %tmp.65;
+        %tmp.67 = as %tmp.66 Lang.Number;
+        symbol [ Lang %tmp.67 50 38 42 ];
+        symbol [ Number %tmp.67 50 43 49 ];
+        symbol [ Graphics %tmp.68 50 51 59 ];
+        %tmp.68 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.69 50 60 77 ];
+        %tmp.69 = getv %tmp.68 :COLOR_TRANSPARENT;
+        invoke %tmp.61 %tmp.62(%tmp.67, %tmp.69);
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 51 8 ]
+        %tmp.70 = lgetv %dc;
+        symbol [ dc %tmp.70 51 8 10 ];
+        symbol [ setPenWidth %tmp.71 51 11 22 ];
+        %tmp.71 = getv function %tmp.70 :setPenWidth;
+        %tmp.72 = lgetv %spessore.3;
+        symbol [ spessore %tmp.72 51 23 31 ];
+        invoke %tmp.70 %tmp.71(%tmp.72);
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 52 8 ]
+        %tmp.73 = lgetv %dc;
+        symbol [ dc %tmp.73 52 8 10 ];
+        symbol [ drawArc %tmp.74 52 11 18 ];
+        %tmp.74 = getv function %tmp.73 :drawArc;
+        symbol [ _cx %tmp.76 52 19 22 ];
+        %tmp.76 = getv ? :_cx;
+        symbol [ _cy %tmp.78 52 24 27 ];
+        %tmp.78 = getv ? :_cy;
+        %tmp.79 = lgetv %raggio.4;
+        symbol [ raggio %tmp.79 52 29 35 ];
+        %tmp.80 = lgetv %arcDir.2;
+        symbol [ arcDir %tmp.80 52 37 43 ];
+        symbol [ _startDeg %tmp.82 52 45 54 ];
+        %tmp.82 = getv ? :_startDeg;
+        symbol [ _endDeg %tmp.84 52 56 63 ];
+        %tmp.84 = getv ? :_endDeg;
+        invoke %tmp.73 %tmp.74(%tmp.76, %tmp.78, %tmp.79, %tmp.80, %tmp.82, %tmp.84);
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 54 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_37_37_74_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_37_37_74_4_stop" ]
+        %radStart.8 = local;
+        symbol [ radStart %radStart.8 54 12 20 ];
+        symbol [ Math %tmp.85 54 23 27 ];
+        %tmp.85 = getm $.Toybox.Math;
+        symbol [ toRadians %tmp.86 54 28 37 ];
+        %tmp.86 = getv function %tmp.85 :toRadians;
+        symbol [ _startDeg %tmp.88 54 38 47 ];
+        %tmp.88 = getv ? :_startDeg;
+        %tmp.89 = invoke %tmp.85 %tmp.86(%tmp.88);
+        lputv %radStart.8 %tmp.89;
+        symbol [ radStart %radStart.8 54 12 20 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 55 8 ]
+        %tmp.90 = lgetv %dc;
+        symbol [ dc %tmp.90 55 8 10 ];
+        symbol [ setColor %tmp.91 55 11 19 ];
+        %tmp.91 = getv function %tmp.90 :setColor;
+        symbol [ _cfg %tmp.93 55 20 24 ];
+        %tmp.93 = getv ? :_cfg;
+        %tmp.94 = "sfondo";
+        %tmp.95 = agetv %tmp.93 %tmp.94;
+        %tmp.96 = as %tmp.95 Lang.Number;
+        symbol [ Lang %tmp.96 55 38 42 ];
+        symbol [ Number %tmp.96 55 43 49 ];
+        symbol [ _cfg %tmp.98 55 51 55 ];
+        %tmp.98 = getv ? :_cfg;
+        %tmp.99 = "sfondo";
+        %tmp.100 = agetv %tmp.98 %tmp.99;
+        %tmp.101 = as %tmp.100 Lang.Number;
+        symbol [ Lang %tmp.101 55 69 73 ];
+        symbol [ Number %tmp.101 55 74 80 ];
+        invoke %tmp.90 %tmp.91(%tmp.96, %tmp.101);
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 56 8 ]
+        %tmp.102 = lgetv %dc;
+        symbol [ dc %tmp.102 56 8 10 ];
+        symbol [ fillCircle %tmp.103 56 11 21 ];
+        %tmp.103 = getv function %tmp.102 :fillCircle;
+        symbol [ _cx %tmp.105 56 23 26 ];
+        %tmp.105 = getv ? :_cx;
+        %tmp.106 = lgetv %raggio.4;
+        symbol [ raggio %tmp.106 56 29 35 ];
+        symbol [ Math %tmp.107 56 38 42 ];
+        %tmp.107 = getm $.Toybox.Math;
+        symbol [ cos %tmp.108 56 43 46 ];
+        %tmp.108 = getv function %tmp.107 :cos;
+        %tmp.109 = lgetv %radStart.8;
+        symbol [ radStart %tmp.109 56 47 55 ];
+        %tmp.110 = invoke %tmp.107 %tmp.108(%tmp.109);
+        %tmp.111 = mul %tmp.106 %tmp.110;
+        %tmp.112 = add %tmp.105 %tmp.111;
+        symbol [ toNumber %tmp.113 56 58 66 ];
+        %tmp.113 = getv function %tmp.112 :toNumber;
+        %tmp.114 = invoke %tmp.112 %tmp.113();
+        symbol [ _cy %tmp.116 57 23 26 ];
+        %tmp.116 = getv ? :_cy;
+        %tmp.117 = lgetv %raggio.4;
+        symbol [ raggio %tmp.117 57 29 35 ];
+        symbol [ Math %tmp.118 57 38 42 ];
+        %tmp.118 = getm $.Toybox.Math;
+        symbol [ sin %tmp.119 57 43 46 ];
+        %tmp.119 = getv function %tmp.118 :sin;
+        %tmp.120 = lgetv %radStart.8;
+        symbol [ radStart %tmp.120 57 47 55 ];
+        %tmp.121 = invoke %tmp.118 %tmp.119(%tmp.120);
+        %tmp.122 = mul %tmp.117 %tmp.121;
+        %tmp.123 = sub %tmp.116 %tmp.122;
+        symbol [ toNumber %tmp.124 57 58 66 ];
+        %tmp.124 = getv function %tmp.123 :toNumber;
+        %tmp.125 = invoke %tmp.123 %tmp.124();
+        %tmp.126 = lgetv %capR.5;
+        symbol [ capR %tmp.126 57 70 74 ];
+        invoke %tmp.102 %tmp.103(%tmp.114, %tmp.125, %tmp.126);
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 58 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_37_37_74_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_37_37_74_4_stop" ]
         %radEnd.9 = local;
-        symbol [ radEnd %radEnd.9 30 12 18 ];
-        symbol [ Math %tmp.101 30 21 25 ];
-        %tmp.101 = getm $.Toybox.Math;
-        symbol [ toRadians %tmp.102 30 26 35 ];
-        %tmp.102 = getv function %tmp.101 :toRadians;
-        %tmp.103 = lgetv %endDeg;
-        symbol [ endDeg %tmp.103 30 36 42 ];
-        %tmp.104 = invoke %tmp.101 %tmp.102(%tmp.103);
-        lputv %radEnd.9 %tmp.104;
-        symbol [ radEnd %radEnd.9 30 12 18 ];
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 31 8 ]
-        %tmp.105 = lgetv %dc;
-        symbol [ dc %tmp.105 31 8 10 ];
-        symbol [ fillCircle %tmp.106 31 11 21 ];
-        %tmp.106 = getv function %tmp.105 :fillCircle;
-        %tmp.107 = lgetv %cx;
-        symbol [ cx %tmp.107 31 23 25 ];
-        %tmp.108 = lgetv %raggio.4;
-        symbol [ raggio %tmp.108 31 28 34 ];
-        symbol [ Math %tmp.109 31 37 41 ];
-        %tmp.109 = getm $.Toybox.Math;
-        symbol [ cos %tmp.110 31 42 45 ];
-        %tmp.110 = getv function %tmp.109 :cos;
-        %tmp.111 = lgetv %radEnd.9;
-        symbol [ radEnd %tmp.111 31 46 52 ];
-        %tmp.112 = invoke %tmp.109 %tmp.110(%tmp.111);
-        %tmp.113 = mul %tmp.108 %tmp.112;
-        %tmp.114 = add %tmp.107 %tmp.113;
-        symbol [ toNumber %tmp.115 31 55 63 ];
-        %tmp.115 = getv function %tmp.114 :toNumber;
-        %tmp.116 = invoke %tmp.114 %tmp.115();
-        %tmp.117 = lgetv %cy;
-        symbol [ cy %tmp.117 32 23 25 ];
-        %tmp.118 = lgetv %raggio.4;
-        symbol [ raggio %tmp.118 32 28 34 ];
-        symbol [ Math %tmp.119 32 37 41 ];
-        %tmp.119 = getm $.Toybox.Math;
-        symbol [ sin %tmp.120 32 42 45 ];
-        %tmp.120 = getv function %tmp.119 :sin;
-        %tmp.121 = lgetv %radEnd.9;
-        symbol [ radEnd %tmp.121 32 46 52 ];
-        %tmp.122 = invoke %tmp.119 %tmp.120(%tmp.121);
-        %tmp.123 = mul %tmp.118 %tmp.122;
-        %tmp.124 = sub %tmp.117 %tmp.123;
-        symbol [ toNumber %tmp.125 32 55 63 ];
-        %tmp.125 = getv function %tmp.124 :toNumber;
-        %tmp.126 = invoke %tmp.124 %tmp.125();
-        %tmp.127 = lgetv %capR.5;
-        symbol [ capR %tmp.127 32 67 71 ];
-        invoke %tmp.105 %tmp.106(%tmp.116, %tmp.126, %tmp.127);
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 35 8 ]
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_35_8_47_8_if_stmt:
-        %tmp.128 = lgetv %filled.6;
-        symbol [ filled %tmp.128 35 12 18 ];
-        %tmp.129 = 3;
-        %tmp.130 = gt %tmp.128 %tmp.129;
-        bf %tmp.130 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_35_8_47_8_if_end;
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_35_8_47_8_if_true:
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_35_24_47_8_start:
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 36 12 ]
-        %tmp.131 = lgetv %dc;
-        symbol [ dc %tmp.131 36 12 14 ];
-        symbol [ setColor %tmp.132 36 15 23 ];
-        %tmp.132 = getv function %tmp.131 :setColor;
-        %tmp.133 = lgetv %cfg;
-        symbol [ cfg %tmp.133 36 24 27 ];
-        %tmp.134 = "fill";
-        %tmp.135 = agetv %tmp.133 %tmp.134;
-        symbol [ Graphics %tmp.136 36 37 45 ];
-        %tmp.136 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.137 36 46 63 ];
-        %tmp.137 = getv %tmp.136 :COLOR_TRANSPARENT;
-        invoke %tmp.131 %tmp.132(%tmp.135, %tmp.137);
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 37 12 ]
-        %tmp.138 = lgetv %dc;
-        symbol [ dc %tmp.138 37 12 14 ];
-        symbol [ setPenWidth %tmp.139 37 15 26 ];
-        %tmp.139 = getv function %tmp.138 :setPenWidth;
-        %tmp.140 = lgetv %spessore.3;
-        symbol [ spessore %tmp.140 37 27 35 ];
-        invoke %tmp.138 %tmp.139(%tmp.140);
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 38 12 ]
-        %tmp.141 = lgetv %dc;
-        symbol [ dc %tmp.141 38 12 14 ];
-        symbol [ drawArc %tmp.142 38 15 22 ];
-        %tmp.142 = getv function %tmp.141 :drawArc;
-        %tmp.143 = lgetv %cx;
-        symbol [ cx %tmp.143 38 23 25 ];
-        %tmp.144 = lgetv %cy;
-        symbol [ cy %tmp.144 38 27 29 ];
-        %tmp.145 = lgetv %raggio.4;
-        symbol [ raggio %tmp.145 38 31 37 ];
-        %tmp.146 = lgetv %arcDir.2;
-        symbol [ arcDir %tmp.146 38 39 45 ];
-        %tmp.147 = lgetv %startDeg;
-        symbol [ startDeg %tmp.147 38 47 55 ];
-        %tmp.148 = lgetv %endAngle.7;
-        symbol [ endAngle %tmp.148 38 57 65 ];
-        invoke %tmp.141 %tmp.142(%tmp.143, %tmp.144, %tmp.145, %tmp.146, %tmp.147, %tmp.148);
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 41 12 ]
-        %tmp.149 = lgetv %dc;
-        symbol [ dc %tmp.149 41 12 14 ];
-        symbol [ setColor %tmp.150 41 15 23 ];
-        %tmp.150 = getv function %tmp.149 :setColor;
-        %tmp.151 = lgetv %cfg;
-        symbol [ cfg %tmp.151 41 24 27 ];
-        %tmp.152 = "fill";
-        %tmp.153 = agetv %tmp.151 %tmp.152;
-        %tmp.154 = lgetv %cfg;
-        symbol [ cfg %tmp.154 41 37 40 ];
-        %tmp.155 = "fill";
-        %tmp.156 = agetv %tmp.154 %tmp.155;
-        invoke %tmp.149 %tmp.150(%tmp.153, %tmp.156);
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 42 12 ]
-        %tmp.157 = lgetv %dc;
-        symbol [ dc %tmp.157 42 12 14 ];
-        symbol [ fillCircle %tmp.158 42 15 25 ];
-        %tmp.158 = getv function %tmp.157 :fillCircle;
-        %tmp.159 = lgetv %cx;
-        symbol [ cx %tmp.159 42 27 29 ];
-        %tmp.160 = lgetv %raggio.4;
-        symbol [ raggio %tmp.160 42 32 38 ];
-        symbol [ Math %tmp.161 42 41 45 ];
-        %tmp.161 = getm $.Toybox.Math;
-        symbol [ cos %tmp.162 42 46 49 ];
-        %tmp.162 = getv function %tmp.161 :cos;
-        %tmp.163 = lgetv %radStart.8;
-        symbol [ radStart %tmp.163 42 50 58 ];
-        %tmp.164 = invoke %tmp.161 %tmp.162(%tmp.163);
-        %tmp.165 = mul %tmp.160 %tmp.164;
-        %tmp.166 = add %tmp.159 %tmp.165;
-        symbol [ toNumber %tmp.167 42 61 69 ];
-        %tmp.167 = getv function %tmp.166 :toNumber;
-        %tmp.168 = invoke %tmp.166 %tmp.167();
-        %tmp.169 = lgetv %cy;
-        symbol [ cy %tmp.169 43 27 29 ];
-        %tmp.170 = lgetv %raggio.4;
-        symbol [ raggio %tmp.170 43 32 38 ];
-        symbol [ Math %tmp.171 43 41 45 ];
-        %tmp.171 = getm $.Toybox.Math;
-        symbol [ sin %tmp.172 43 46 49 ];
-        %tmp.172 = getv function %tmp.171 :sin;
-        %tmp.173 = lgetv %radStart.8;
-        symbol [ radStart %tmp.173 43 50 58 ];
-        %tmp.174 = invoke %tmp.171 %tmp.172(%tmp.173);
-        %tmp.175 = mul %tmp.170 %tmp.174;
-        %tmp.176 = sub %tmp.169 %tmp.175;
-        symbol [ toNumber %tmp.177 43 61 69 ];
-        %tmp.177 = getv function %tmp.176 :toNumber;
-        %tmp.178 = invoke %tmp.176 %tmp.177();
-        %tmp.179 = lgetv %capR.5;
-        symbol [ capR %tmp.179 43 73 77 ];
-        invoke %tmp.157 %tmp.158(%tmp.168, %tmp.178, %tmp.179);
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 44 12 ]
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_35_24_47_8_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_35_24_47_8_stop" ]
-        %radEndAngle.10 = local;
-        symbol [ radEndAngle %radEndAngle.10 44 16 27 ];
-        symbol [ Math %tmp.180 44 30 34 ];
-        %tmp.180 = getm $.Toybox.Math;
-        symbol [ toRadians %tmp.181 44 35 44 ];
-        %tmp.181 = getv function %tmp.180 :toRadians;
+        symbol [ radEnd %radEnd.9 58 12 18 ];
+        symbol [ Math %tmp.127 58 21 25 ];
+        %tmp.127 = getm $.Toybox.Math;
+        symbol [ toRadians %tmp.128 58 26 35 ];
+        %tmp.128 = getv function %tmp.127 :toRadians;
+        symbol [ _endDeg %tmp.130 58 36 43 ];
+        %tmp.130 = getv ? :_endDeg;
+        %tmp.131 = invoke %tmp.127 %tmp.128(%tmp.130);
+        lputv %radEnd.9 %tmp.131;
+        symbol [ radEnd %radEnd.9 58 12 18 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 59 8 ]
+        %tmp.132 = lgetv %dc;
+        symbol [ dc %tmp.132 59 8 10 ];
+        symbol [ fillCircle %tmp.133 59 11 21 ];
+        %tmp.133 = getv function %tmp.132 :fillCircle;
+        symbol [ _cx %tmp.135 59 23 26 ];
+        %tmp.135 = getv ? :_cx;
+        %tmp.136 = lgetv %raggio.4;
+        symbol [ raggio %tmp.136 59 29 35 ];
+        symbol [ Math %tmp.137 59 38 42 ];
+        %tmp.137 = getm $.Toybox.Math;
+        symbol [ cos %tmp.138 59 43 46 ];
+        %tmp.138 = getv function %tmp.137 :cos;
+        %tmp.139 = lgetv %radEnd.9;
+        symbol [ radEnd %tmp.139 59 47 53 ];
+        %tmp.140 = invoke %tmp.137 %tmp.138(%tmp.139);
+        %tmp.141 = mul %tmp.136 %tmp.140;
+        %tmp.142 = add %tmp.135 %tmp.141;
+        symbol [ toNumber %tmp.143 59 56 64 ];
+        %tmp.143 = getv function %tmp.142 :toNumber;
+        %tmp.144 = invoke %tmp.142 %tmp.143();
+        symbol [ _cy %tmp.146 60 23 26 ];
+        %tmp.146 = getv ? :_cy;
+        %tmp.147 = lgetv %raggio.4;
+        symbol [ raggio %tmp.147 60 29 35 ];
+        symbol [ Math %tmp.148 60 38 42 ];
+        %tmp.148 = getm $.Toybox.Math;
+        symbol [ sin %tmp.149 60 43 46 ];
+        %tmp.149 = getv function %tmp.148 :sin;
+        %tmp.150 = lgetv %radEnd.9;
+        symbol [ radEnd %tmp.150 60 47 53 ];
+        %tmp.151 = invoke %tmp.148 %tmp.149(%tmp.150);
+        %tmp.152 = mul %tmp.147 %tmp.151;
+        %tmp.153 = sub %tmp.146 %tmp.152;
+        symbol [ toNumber %tmp.154 60 56 64 ];
+        %tmp.154 = getv function %tmp.153 :toNumber;
+        %tmp.155 = invoke %tmp.153 %tmp.154();
+        %tmp.156 = lgetv %capR.5;
+        symbol [ capR %tmp.156 60 68 72 ];
+        invoke %tmp.132 %tmp.133(%tmp.144, %tmp.155, %tmp.156);
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 62 8 ]
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_62_8_72_8_if_stmt:
+        %tmp.157 = lgetv %filled.6;
+        symbol [ filled %tmp.157 62 12 18 ];
+        %tmp.158 = 3;
+        %tmp.159 = gt %tmp.157 %tmp.158;
+        bf %tmp.159 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_62_8_72_8_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_62_8_72_8_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_62_24_72_8_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 63 12 ]
+        %tmp.160 = lgetv %dc;
+        symbol [ dc %tmp.160 63 12 14 ];
+        symbol [ setColor %tmp.161 63 15 23 ];
+        %tmp.161 = getv function %tmp.160 :setColor;
+        symbol [ _cfg %tmp.163 63 24 28 ];
+        %tmp.163 = getv ? :_cfg;
+        %tmp.164 = "fill";
+        %tmp.165 = agetv %tmp.163 %tmp.164;
+        %tmp.166 = as %tmp.165 Lang.Number;
+        symbol [ Lang %tmp.166 63 40 44 ];
+        symbol [ Number %tmp.166 63 45 51 ];
+        symbol [ Graphics %tmp.167 63 53 61 ];
+        %tmp.167 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.168 63 62 79 ];
+        %tmp.168 = getv %tmp.167 :COLOR_TRANSPARENT;
+        invoke %tmp.160 %tmp.161(%tmp.166, %tmp.168);
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 64 12 ]
+        %tmp.169 = lgetv %dc;
+        symbol [ dc %tmp.169 64 12 14 ];
+        symbol [ setPenWidth %tmp.170 64 15 26 ];
+        %tmp.170 = getv function %tmp.169 :setPenWidth;
+        %tmp.171 = lgetv %spessore.3;
+        symbol [ spessore %tmp.171 64 27 35 ];
+        invoke %tmp.169 %tmp.170(%tmp.171);
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 65 12 ]
+        %tmp.172 = lgetv %dc;
+        symbol [ dc %tmp.172 65 12 14 ];
+        symbol [ drawArc %tmp.173 65 15 22 ];
+        %tmp.173 = getv function %tmp.172 :drawArc;
+        symbol [ _cx %tmp.175 65 23 26 ];
+        %tmp.175 = getv ? :_cx;
+        symbol [ _cy %tmp.177 65 28 31 ];
+        %tmp.177 = getv ? :_cy;
+        %tmp.178 = lgetv %raggio.4;
+        symbol [ raggio %tmp.178 65 33 39 ];
+        %tmp.179 = lgetv %arcDir.2;
+        symbol [ arcDir %tmp.179 65 41 47 ];
+        symbol [ _startDeg %tmp.181 65 49 58 ];
+        %tmp.181 = getv ? :_startDeg;
         %tmp.182 = lgetv %endAngle.7;
-        symbol [ endAngle %tmp.182 44 45 53 ];
-        %tmp.183 = invoke %tmp.180 %tmp.181(%tmp.182);
-        lputv %radEndAngle.10 %tmp.183;
-        symbol [ radEndAngle %radEndAngle.10 44 16 27 ];
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 45 12 ]
-        %tmp.184 = lgetv %dc;
-        symbol [ dc %tmp.184 45 12 14 ];
-        symbol [ fillCircle %tmp.185 45 15 25 ];
-        %tmp.185 = getv function %tmp.184 :fillCircle;
-        %tmp.186 = lgetv %cx;
-        symbol [ cx %tmp.186 45 27 29 ];
-        %tmp.187 = lgetv %raggio.4;
-        symbol [ raggio %tmp.187 45 32 38 ];
-        symbol [ Math %tmp.188 45 41 45 ];
-        %tmp.188 = getm $.Toybox.Math;
-        symbol [ cos %tmp.189 45 46 49 ];
-        %tmp.189 = getv function %tmp.188 :cos;
-        %tmp.190 = lgetv %radEndAngle.10;
-        symbol [ radEndAngle %tmp.190 45 50 61 ];
-        %tmp.191 = invoke %tmp.188 %tmp.189(%tmp.190);
-        %tmp.192 = mul %tmp.187 %tmp.191;
-        %tmp.193 = add %tmp.186 %tmp.192;
-        symbol [ toNumber %tmp.194 45 64 72 ];
-        %tmp.194 = getv function %tmp.193 :toNumber;
-        %tmp.195 = invoke %tmp.193 %tmp.194();
-        %tmp.196 = lgetv %cy;
-        symbol [ cy %tmp.196 46 27 29 ];
-        %tmp.197 = lgetv %raggio.4;
-        symbol [ raggio %tmp.197 46 32 38 ];
-        symbol [ Math %tmp.198 46 41 45 ];
-        %tmp.198 = getm $.Toybox.Math;
-        symbol [ sin %tmp.199 46 46 49 ];
-        %tmp.199 = getv function %tmp.198 :sin;
-        %tmp.200 = lgetv %radEndAngle.10;
-        symbol [ radEndAngle %tmp.200 46 50 61 ];
-        %tmp.201 = invoke %tmp.198 %tmp.199(%tmp.200);
-        %tmp.202 = mul %tmp.197 %tmp.201;
-        %tmp.203 = sub %tmp.196 %tmp.202;
-        symbol [ toNumber %tmp.204 46 64 72 ];
-        %tmp.204 = getv function %tmp.203 :toNumber;
-        %tmp.205 = invoke %tmp.203 %tmp.204();
-        %tmp.206 = lgetv %capR.5;
-        symbol [ capR %tmp.206 46 76 80 ];
-        invoke %tmp.184 %tmp.185(%tmp.195, %tmp.205, %tmp.206);
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_35_24_47_8_stop:
-        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_35_8_47_8_if_end;
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_35_8_47_8_if_end:
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 49 8 ]
-        %tmp.207 = lgetv %dc;
-        symbol [ dc %tmp.207 49 8 10 ];
-        symbol [ setPenWidth %tmp.208 49 11 22 ];
-        %tmp.208 = getv function %tmp.207 :setPenWidth;
-        %tmp.209 = 1;
-        invoke %tmp.207 %tmp.208(%tmp.209);
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_7_123_50_4_stop:
+        symbol [ endAngle %tmp.182 65 60 68 ];
+        invoke %tmp.172 %tmp.173(%tmp.175, %tmp.177, %tmp.178, %tmp.179, %tmp.181, %tmp.182);
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 66 12 ]
+        %tmp.183 = lgetv %dc;
+        symbol [ dc %tmp.183 66 12 14 ];
+        symbol [ setColor %tmp.184 66 15 23 ];
+        %tmp.184 = getv function %tmp.183 :setColor;
+        symbol [ _cfg %tmp.186 66 24 28 ];
+        %tmp.186 = getv ? :_cfg;
+        %tmp.187 = "fill";
+        %tmp.188 = agetv %tmp.186 %tmp.187;
+        %tmp.189 = as %tmp.188 Lang.Number;
+        symbol [ Lang %tmp.189 66 40 44 ];
+        symbol [ Number %tmp.189 66 45 51 ];
+        symbol [ _cfg %tmp.191 66 53 57 ];
+        %tmp.191 = getv ? :_cfg;
+        %tmp.192 = "fill";
+        %tmp.193 = agetv %tmp.191 %tmp.192;
+        %tmp.194 = as %tmp.193 Lang.Number;
+        symbol [ Lang %tmp.194 66 69 73 ];
+        symbol [ Number %tmp.194 66 74 80 ];
+        invoke %tmp.183 %tmp.184(%tmp.189, %tmp.194);
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 67 12 ]
+        %tmp.195 = lgetv %dc;
+        symbol [ dc %tmp.195 67 12 14 ];
+        symbol [ fillCircle %tmp.196 67 15 25 ];
+        %tmp.196 = getv function %tmp.195 :fillCircle;
+        symbol [ _cx %tmp.198 67 27 30 ];
+        %tmp.198 = getv ? :_cx;
+        %tmp.199 = lgetv %raggio.4;
+        symbol [ raggio %tmp.199 67 33 39 ];
+        symbol [ Math %tmp.200 67 42 46 ];
+        %tmp.200 = getm $.Toybox.Math;
+        symbol [ cos %tmp.201 67 47 50 ];
+        %tmp.201 = getv function %tmp.200 :cos;
+        %tmp.202 = lgetv %radStart.8;
+        symbol [ radStart %tmp.202 67 51 59 ];
+        %tmp.203 = invoke %tmp.200 %tmp.201(%tmp.202);
+        %tmp.204 = mul %tmp.199 %tmp.203;
+        %tmp.205 = add %tmp.198 %tmp.204;
+        symbol [ toNumber %tmp.206 67 62 70 ];
+        %tmp.206 = getv function %tmp.205 :toNumber;
+        %tmp.207 = invoke %tmp.205 %tmp.206();
+        symbol [ _cy %tmp.209 68 27 30 ];
+        %tmp.209 = getv ? :_cy;
+        %tmp.210 = lgetv %raggio.4;
+        symbol [ raggio %tmp.210 68 33 39 ];
+        symbol [ Math %tmp.211 68 42 46 ];
+        %tmp.211 = getm $.Toybox.Math;
+        symbol [ sin %tmp.212 68 47 50 ];
+        %tmp.212 = getv function %tmp.211 :sin;
+        %tmp.213 = lgetv %radStart.8;
+        symbol [ radStart %tmp.213 68 51 59 ];
+        %tmp.214 = invoke %tmp.211 %tmp.212(%tmp.213);
+        %tmp.215 = mul %tmp.210 %tmp.214;
+        %tmp.216 = sub %tmp.209 %tmp.215;
+        symbol [ toNumber %tmp.217 68 62 70 ];
+        %tmp.217 = getv function %tmp.216 :toNumber;
+        %tmp.218 = invoke %tmp.216 %tmp.217();
+        %tmp.219 = lgetv %capR.5;
+        symbol [ capR %tmp.219 68 74 78 ];
+        invoke %tmp.195 %tmp.196(%tmp.207, %tmp.218, %tmp.219);
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 69 12 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_62_24_72_8_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_62_24_72_8_stop" ]
+        %radEndAngle.10 = local;
+        symbol [ radEndAngle %radEndAngle.10 69 16 27 ];
+        symbol [ Math %tmp.220 69 30 34 ];
+        %tmp.220 = getm $.Toybox.Math;
+        symbol [ toRadians %tmp.221 69 35 44 ];
+        %tmp.221 = getv function %tmp.220 :toRadians;
+        %tmp.222 = lgetv %endAngle.7;
+        symbol [ endAngle %tmp.222 69 45 53 ];
+        %tmp.223 = invoke %tmp.220 %tmp.221(%tmp.222);
+        lputv %radEndAngle.10 %tmp.223;
+        symbol [ radEndAngle %radEndAngle.10 69 16 27 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 70 12 ]
+        %tmp.224 = lgetv %dc;
+        symbol [ dc %tmp.224 70 12 14 ];
+        symbol [ fillCircle %tmp.225 70 15 25 ];
+        %tmp.225 = getv function %tmp.224 :fillCircle;
+        symbol [ _cx %tmp.227 70 27 30 ];
+        %tmp.227 = getv ? :_cx;
+        %tmp.228 = lgetv %raggio.4;
+        symbol [ raggio %tmp.228 70 33 39 ];
+        symbol [ Math %tmp.229 70 42 46 ];
+        %tmp.229 = getm $.Toybox.Math;
+        symbol [ cos %tmp.230 70 47 50 ];
+        %tmp.230 = getv function %tmp.229 :cos;
+        %tmp.231 = lgetv %radEndAngle.10;
+        symbol [ radEndAngle %tmp.231 70 51 62 ];
+        %tmp.232 = invoke %tmp.229 %tmp.230(%tmp.231);
+        %tmp.233 = mul %tmp.228 %tmp.232;
+        %tmp.234 = add %tmp.227 %tmp.233;
+        symbol [ toNumber %tmp.235 70 65 73 ];
+        %tmp.235 = getv function %tmp.234 :toNumber;
+        %tmp.236 = invoke %tmp.234 %tmp.235();
+        symbol [ _cy %tmp.238 71 27 30 ];
+        %tmp.238 = getv ? :_cy;
+        %tmp.239 = lgetv %raggio.4;
+        symbol [ raggio %tmp.239 71 33 39 ];
+        symbol [ Math %tmp.240 71 42 46 ];
+        %tmp.240 = getm $.Toybox.Math;
+        symbol [ sin %tmp.241 71 47 50 ];
+        %tmp.241 = getv function %tmp.240 :sin;
+        %tmp.242 = lgetv %radEndAngle.10;
+        symbol [ radEndAngle %tmp.242 71 51 62 ];
+        %tmp.243 = invoke %tmp.240 %tmp.241(%tmp.242);
+        %tmp.244 = mul %tmp.239 %tmp.243;
+        %tmp.245 = sub %tmp.238 %tmp.244;
+        symbol [ toNumber %tmp.246 71 65 73 ];
+        %tmp.246 = getv function %tmp.245 :toNumber;
+        %tmp.247 = invoke %tmp.245 %tmp.246();
+        %tmp.248 = lgetv %capR.5;
+        symbol [ capR %tmp.248 71 77 81 ];
+        invoke %tmp.224 %tmp.225(%tmp.236, %tmp.247, %tmp.248);
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_62_24_72_8_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_62_8_72_8_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_62_8_72_8_if_end:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc" 73 8 ]
+        %tmp.249 = lgetv %dc;
+        symbol [ dc %tmp.249 73 8 10 ];
+        symbol [ setPenWidth %tmp.250 73 11 22 ];
+        %tmp.250 = getv function %tmp.249 :setPenWidth;
+        %tmp.251 = 1;
+        invoke %tmp.249 %tmp.250(%tmp.251);
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ActivityRing_mc_37_37_74_4_stop:
     }
 }
 [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ActivityRing.mc"; @line = 1; ]

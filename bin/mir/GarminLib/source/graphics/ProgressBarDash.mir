@@ -11,631 +11,719 @@ class ProgressBarDash {
     static
     <init> {
     }
-    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc"; @line = 6; @symbol_functiondef = [draw,6,20,24]; @symbol_param<0> = [dc,6,25,27]; @symbol_param<1> = [cx,6,29,31]; @symbol_param<2> = [cy,6,33,35]; @symbol_param<3> = [lunghezza,6,37,46]; @symbol_param<4> = [spessore,6,48,56]; @symbol_param<5> = [valore,6,58,64]; @symbol_param<6> = [massimo,6,66,73]; @symbol_param<7> = [colori,6,75,81]; @symbol_param<7>_type<0> = [Lang,6,85,89]; @symbol_param<7>_type<1> = [Dictionary,6,90,100]; @symbol_param<7>_type<2> = [Lang,6,101,105]; @symbol_param<7>_type<3> = [String,6,106,112]; @symbol_param<7>_type<4> = [Lang,6,114,118]; @symbol_param<7>_type<5> = [Number,6,119,125]; @symbol_param<8> = [config,6,128,134]; @symbol_param<8>_type<0> = [Lang,6,138,142]; @symbol_param<8>_type<1> = [Dictionary,6,143,153]; @symbol_param<8>_type<2> = [Lang,6,154,158]; @symbol_param<8>_type<3> = [String,6,159,165]; @symbol_param<8>_type<4> = [Lang,6,167,171]; @symbol_param<8>_type<5> = [Object,6,172,178]; ]
-    static
-    function draw(dc, cx, cy, lunghezza, spessore, valore, massimo, colori as Lang.Dictionary<Lang.String, Lang.Number>, config as Lang.Dictionary<Lang.String, Lang.Object>) {
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_6_181_20_4_start:
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 8 8 ]
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_6_181_20_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_6_181_20_4_stop" ]
-        %perc.1 = local;
-        symbol [ perc %perc.1 8 12 16 ];
-        %tmp.1 = lgetv %valore;
-        symbol [ valore %tmp.1 8 19 25 ];
-        symbol [ toFloat %tmp.2 8 26 33 ];
-        %tmp.2 = getv function %tmp.1 :toFloat;
-        %tmp.3 = invoke %tmp.1 %tmp.2();
-        %tmp.4 = lgetv %massimo;
-        symbol [ massimo %tmp.4 8 38 45 ];
-        symbol [ toFloat %tmp.5 8 46 53 ];
-        %tmp.5 = getv function %tmp.4 :toFloat;
-        %tmp.6 = invoke %tmp.4 %tmp.5();
-        %tmp.7 = div %tmp.3 %tmp.6;
-        lputv %perc.1 %tmp.7;
-        symbol [ perc %perc.1 8 12 16 ];
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 9 8 ]
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_9_8_9_40_if_stmt:
-        %tmp.8 = lgetv %perc.1;
-        symbol [ perc %tmp.8 9 12 16 ];
-        %tmp.9 = 1.0f;
-        %tmp.10 = gt %tmp.8 %tmp.9;
-        bf %tmp.10 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_9_8_9_40_if_end;
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_9_8_9_40_if_true:
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_9_25_9_40_start:
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 9 27 ]
-        %tmp.11 = 1.0f;
-        lputv %perc.1 %tmp.11;
-        symbol [ perc %perc.1 9 27 31 ];
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_9_25_9_40_stop:
-        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_9_8_9_40_if_end;
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_9_8_9_40_if_end:
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 10 8 ]
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_10_8_10_40_if_stmt:
-        %tmp.12 = lgetv %perc.1;
-        symbol [ perc %tmp.12 10 12 16 ];
-        %tmp.13 = 0.0f;
-        %tmp.14 = lt %tmp.12 %tmp.13;
-        bf %tmp.14 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_10_8_10_40_if_end;
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_10_8_10_40_if_true:
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_10_25_10_40_start:
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 10 27 ]
-        %tmp.15 = 0.0f;
-        lputv %perc.1 %tmp.15;
-        symbol [ perc %perc.1 10 27 31 ];
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_10_25_10_40_stop:
-        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_10_8_10_40_if_end;
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_10_8_10_40_if_end:
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 12 8 ]
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_6_181_20_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_6_181_20_4_stop" ]
-        %orientamento.2 = local;
-        symbol [ orientamento %orientamento.2 12 12 24 ];
-        %tmp.16 = lgetv %config;
-        symbol [ config %tmp.16 12 27 33 ];
-        %tmp.17 = "orientamento";
-        %tmp.18 = agetv %tmp.16 %tmp.17;
-        lputv %orientamento.2 %tmp.18;
-        symbol [ orientamento %orientamento.2 12 12 24 ];
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 13 8 ]
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_6_181_20_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_6_181_20_4_stop" ]
-        %rtl.3 = local;
-        symbol [ rtl %rtl.3 13 12 15 ];
-        %tmp.19 = lgetv %config;
-        symbol [ config %tmp.19 13 27 33 ];
-        %tmp.20 = "rtl";
-        %tmp.21 = agetv %tmp.19 %tmp.20;
-        lputv %rtl.3 %tmp.21;
-        symbol [ rtl %rtl.3 13 12 15 ];
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 15 8 ]
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_15_8_19_8_if_stmt:
-        %tmp.22 = lgetv %orientamento.2;
-        symbol [ orientamento %tmp.22 15 12 24 ];
-        symbol [ equals %tmp.23 15 25 31 ];
-        %tmp.23 = getv function %tmp.22 :equals;
-        %tmp.24 = "orizzontale";
-        %tmp.25 = invoke %tmp.22 %tmp.23(%tmp.24);
-        bf %tmp.25 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_15_8_19_8_if_else_false;
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_15_8_19_8_if_true:
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_15_48_17_8_start:
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 16 12 ]
-        %tmp.26 = self;
-        symbol [ _drawOrizzontale %tmp.27 16 12 28 ];
-        %tmp.27 = getv function %tmp.26 :_drawOrizzontale;
-        %tmp.28 = lgetv %dc;
-        symbol [ dc %tmp.28 16 29 31 ];
-        %tmp.29 = lgetv %cx;
-        symbol [ cx %tmp.29 16 33 35 ];
-        %tmp.30 = lgetv %cy;
-        symbol [ cy %tmp.30 16 37 39 ];
-        %tmp.31 = lgetv %lunghezza;
-        symbol [ lunghezza %tmp.31 16 41 50 ];
-        %tmp.32 = lgetv %spessore;
-        symbol [ spessore %tmp.32 16 52 60 ];
-        %tmp.33 = lgetv %perc.1;
-        symbol [ perc %tmp.33 16 62 66 ];
-        %tmp.34 = lgetv %colori;
-        symbol [ colori %tmp.34 16 68 74 ];
-        %tmp.35 = lgetv %rtl.3;
-        symbol [ rtl %tmp.35 16 76 79 ];
-        invoke %tmp.26 %tmp.27(%tmp.28, %tmp.29, %tmp.30, %tmp.31, %tmp.32, %tmp.33, %tmp.34, %tmp.35);
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_15_48_17_8_stop:
-        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_15_8_19_8_if_end;
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_15_8_19_8_if_else_false:
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_17_15_19_8_start:
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 18 12 ]
-        %tmp.36 = self;
-        symbol [ _drawVerticale %tmp.37 18 12 26 ];
-        %tmp.37 = getv function %tmp.36 :_drawVerticale;
-        %tmp.38 = lgetv %dc;
-        symbol [ dc %tmp.38 18 27 29 ];
-        %tmp.39 = lgetv %cx;
-        symbol [ cx %tmp.39 18 31 33 ];
-        %tmp.40 = lgetv %cy;
-        symbol [ cy %tmp.40 18 35 37 ];
-        %tmp.41 = lgetv %lunghezza;
-        symbol [ lunghezza %tmp.41 18 39 48 ];
-        %tmp.42 = lgetv %spessore;
-        symbol [ spessore %tmp.42 18 50 58 ];
-        %tmp.43 = lgetv %perc.1;
-        symbol [ perc %tmp.43 18 60 64 ];
-        %tmp.44 = lgetv %colori;
-        symbol [ colori %tmp.44 18 66 72 ];
-        %tmp.45 = lgetv %rtl.3;
-        symbol [ rtl %tmp.45 18 74 77 ];
-        invoke %tmp.36 %tmp.37(%tmp.38, %tmp.39, %tmp.40, %tmp.41, %tmp.42, %tmp.43, %tmp.44, %tmp.45);
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_17_15_19_8_stop:
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_15_8_19_8_if_end:
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_6_181_20_4_stop:
-    }
-    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc"; @line = 22; @symbol_functiondef = [_drawOrizzontale,22,20,36]; @symbol_param<0> = [dc,22,37,39]; @symbol_param<1> = [cx,22,41,43]; @symbol_param<2> = [cy,22,45,47]; @symbol_param<3> = [lunghezza,22,49,58]; @symbol_param<4> = [spessore,22,60,68]; @symbol_param<5> = [perc,22,70,74]; @symbol_param<6> = [colori,22,76,82]; @symbol_param<6>_type<0> = [Lang,22,86,90]; @symbol_param<6>_type<1> = [Dictionary,22,91,101]; @symbol_param<6>_type<2> = [Lang,22,102,106]; @symbol_param<6>_type<3> = [String,22,107,113]; @symbol_param<6>_type<4> = [Lang,22,115,119]; @symbol_param<6>_type<5> = [Number,22,120,126]; @symbol_param<7> = [rtl,22,129,132]; ]
-    static
-    function _drawOrizzontale(dc, cx, cy, lunghezza, spessore, perc, colori as Lang.Dictionary<Lang.String, Lang.Number>, rtl) {
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_22_134_39_4_start:
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc"; @line = 6; @position = 8; @symbol_vardef = [_cx,6,8,11]; @symbol_type<0> = [Lang,6,22,26]; @symbol_type<1> = [Number,6,27,33]; ]
+    var _cx as Lang.Number;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc"; @line = 7; @position = 8; @symbol_vardef = [_cy,7,8,11]; @symbol_type<0> = [Lang,7,22,26]; @symbol_type<1> = [Number,7,27,33]; ]
+    var _cy as Lang.Number;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc"; @line = 8; @position = 8; @symbol_vardef = [_lunghezza,8,8,18]; @symbol_type<0> = [Lang,8,22,26]; @symbol_type<1> = [Number,8,27,33]; ]
+    var _lunghezza as Lang.Number;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc"; @line = 9; @position = 8; @symbol_vardef = [_spessore,9,8,17]; @symbol_type<0> = [Lang,9,22,26]; @symbol_type<1> = [Number,9,27,33]; ]
+    var _spessore as Lang.Number;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc"; @line = 10; @position = 8; @symbol_vardef = [_colori,10,8,15]; @symbol_type<0> = [Lang,10,22,26]; @symbol_type<1> = [Dictionary,10,27,37]; @symbol_type<2> = [Lang,10,38,42]; @symbol_type<3> = [String,10,43,49]; @symbol_type<4> = [Lang,10,51,55]; @symbol_type<5> = [Number,10,56,62]; ]
+    var _colori as Lang.Dictionary<Lang.String, Lang.Number>;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc"; @line = 11; @position = 8; @symbol_vardef = [_config,11,8,15]; @symbol_type<0> = [Lang,11,22,26]; @symbol_type<1> = [Dictionary,11,27,37]; @symbol_type<2> = [Lang,11,38,42]; @symbol_type<3> = [String,11,43,49]; @symbol_type<4> = [Lang,11,51,55]; @symbol_type<5> = [Object,11,56,62]; ]
+    var _config as Lang.Dictionary<Lang.String, Lang.Object>;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc"; @line = 12; @position = 8; @symbol_vardef = [_valore,12,8,15]; @symbol_type<0> = [Lang,12,22,26]; @symbol_type<1> = [Number,12,27,33]; ]
+    var _valore as Lang.Number;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc"; @line = 13; @position = 8; @symbol_vardef = [_massimo,13,8,16]; @symbol_type<0> = [Lang,13,22,26]; @symbol_type<1> = [Number,13,27,33]; ]
+    var _massimo as Lang.Number;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc"; @line = 15; @symbol_functiondef = [initialize,15,13,23]; @symbol_param<0> = [cx,15,24,26]; @symbol_param<1> = [cy,15,28,30]; @symbol_param<2> = [lunghezza,15,32,41]; @symbol_param<3> = [spessore,15,43,51]; @symbol_param<4> = [colori,16,24,30]; @symbol_param<4>_type<0> = [Lang,16,34,38]; @symbol_param<4>_type<1> = [Dictionary,16,39,49]; @symbol_param<4>_type<2> = [Lang,16,50,54]; @symbol_param<4>_type<3> = [String,16,55,61]; @symbol_param<4>_type<4> = [Lang,16,63,67]; @symbol_param<4>_type<5> = [Number,16,68,74]; @symbol_param<5> = [config,17,24,30]; @symbol_param<5>_type<0> = [Lang,17,34,38]; @symbol_param<5>_type<1> = [Dictionary,17,39,49]; @symbol_param<5>_type<2> = [Lang,17,50,54]; @symbol_param<5>_type<3> = [String,17,55,61]; @symbol_param<5>_type<4> = [Lang,17,63,67]; @symbol_param<5>_type<5> = [Object,17,68,74]; ]
+    function initialize(cx, cy, lunghezza, spessore, colori as Lang.Dictionary<Lang.String, Lang.Number>, config as Lang.Dictionary<Lang.String, Lang.Object>) as Void {
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_17_77_26_4_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 18 8 ]
+        %tmp.1 = lgetv %cx;
+        symbol [ cx %tmp.1 18 21 23 ];
+        symbol [ _cx ? 18 8 11 ];
+        putv self :_cx %tmp.1;
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 19 8 ]
+        %tmp.2 = lgetv %cy;
+        symbol [ cy %tmp.2 19 21 23 ];
+        symbol [ _cy ? 19 8 11 ];
+        putv self :_cy %tmp.2;
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 20 8 ]
+        %tmp.3 = lgetv %lunghezza;
+        symbol [ lunghezza %tmp.3 20 21 30 ];
+        symbol [ _lunghezza ? 20 8 18 ];
+        putv self :_lunghezza %tmp.3;
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 21 8 ]
+        %tmp.4 = lgetv %spessore;
+        symbol [ spessore %tmp.4 21 21 29 ];
+        symbol [ _spessore ? 21 8 17 ];
+        putv self :_spessore %tmp.4;
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 22 8 ]
+        %tmp.5 = lgetv %colori;
+        symbol [ colori %tmp.5 22 21 27 ];
+        symbol [ _colori ? 22 8 15 ];
+        putv self :_colori %tmp.5;
 [ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 23 8 ]
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_22_134_39_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_22_134_39_4_stop" ]
-        %raggio.1 = local;
-        symbol [ raggio %raggio.1 23 12 18 ];
-        %tmp.1 = lgetv %spessore;
-        symbol [ spessore %tmp.1 23 30 38 ];
-        %tmp.2 = 2;
-        %tmp.3 = div %tmp.1 %tmp.2;
-        symbol [ toNumber %tmp.4 23 44 52 ];
-        %tmp.4 = getv function %tmp.3 :toNumber;
-        %tmp.5 = invoke %tmp.3 %tmp.4();
-        lputv %raggio.1 %tmp.5;
-        symbol [ raggio %raggio.1 23 12 18 ];
+        %tmp.6 = lgetv %config;
+        symbol [ config %tmp.6 23 21 27 ];
+        symbol [ _config ? 23 8 15 ];
+        putv self :_config %tmp.6;
 [ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 24 8 ]
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_22_134_39_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_22_134_39_4_stop" ]
-        %y.2 = local;
-        symbol [ y %y.2 24 12 13 ];
-        %tmp.6 = lgetv %cy;
-        symbol [ cy %tmp.6 24 29 31 ];
-        %tmp.7 = lgetv %spessore;
-        symbol [ spessore %tmp.7 24 35 43 ];
-        %tmp.8 = 2;
-        %tmp.9 = div %tmp.7 %tmp.8;
-        symbol [ toNumber %tmp.10 24 49 57 ];
-        %tmp.10 = getv function %tmp.9 :toNumber;
-        %tmp.11 = invoke %tmp.9 %tmp.10();
-        %tmp.12 = sub %tmp.6 %tmp.11;
-        lputv %y.2 %tmp.12;
-        symbol [ y %y.2 24 12 13 ];
+        %tmp.7 = 0;
+        symbol [ _valore ? 24 8 15 ];
+        putv self :_valore %tmp.7;
 [ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 25 8 ]
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_22_134_39_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_22_134_39_4_stop" ]
-        %x.3 = local;
-        symbol [ x %x.3 25 12 13 ];
-        %tmp.13 = lgetv %cx;
-        symbol [ cx %tmp.13 25 29 31 ];
-        %tmp.14 = lgetv %lunghezza;
-        symbol [ lunghezza %tmp.14 25 35 44 ];
-        %tmp.15 = 2;
-        %tmp.16 = div %tmp.14 %tmp.15;
-        symbol [ toNumber %tmp.17 25 50 58 ];
-        %tmp.17 = getv function %tmp.16 :toNumber;
-        %tmp.18 = invoke %tmp.16 %tmp.17();
-        %tmp.19 = sub %tmp.13 %tmp.18;
-        lputv %x.3 %tmp.19;
-        symbol [ x %x.3 25 12 13 ];
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 26 8 ]
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_22_134_39_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_22_134_39_4_stop" ]
-        %nTrattini.4 = local;
-        symbol [ nTrattini %nTrattini.4 26 12 21 ];
-        %tmp.20 = lgetv %colori;
-        symbol [ colori %tmp.20 26 29 35 ];
-        %tmp.21 = "segmenti";
-        %tmp.22 = agetv %tmp.20 %tmp.21;
-        %tmp.23 = as %tmp.22 Lang.Number;
-        symbol [ Lang %tmp.23 26 51 55 ];
-        symbol [ Number %tmp.23 26 56 62 ];
-        lputv %nTrattini.4 %tmp.23;
-        symbol [ nTrattini %nTrattini.4 26 12 21 ];
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 27 8 ]
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_22_134_39_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_22_134_39_4_stop" ]
-        %gap.5 = local;
-        symbol [ gap %gap.5 27 12 15 ];
-        %tmp.24 = lgetv %colori;
-        symbol [ colori %tmp.24 27 29 35 ];
-        %tmp.25 = "gap";
-        %tmp.26 = agetv %tmp.24 %tmp.25;
-        %tmp.27 = as %tmp.26 Lang.Number;
-        symbol [ Lang %tmp.27 27 51 55 ];
-        symbol [ Number %tmp.27 27 56 62 ];
-        lputv %gap.5 %tmp.27;
-        symbol [ gap %gap.5 27 12 15 ];
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 28 8 ]
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_22_134_39_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_22_134_39_4_stop" ]
-        %filledTrattini.6 = local;
-        symbol [ filledTrattini %filledTrattini.6 28 12 26 ];
-        %tmp.28 = lgetv %perc;
-        symbol [ perc %tmp.28 28 30 34 ];
-        %tmp.29 = lgetv %nTrattini.4;
-        symbol [ nTrattini %tmp.29 28 37 46 ];
-        %tmp.30 = mul %tmp.28 %tmp.29;
-        symbol [ toNumber %tmp.31 28 48 56 ];
-        %tmp.31 = getv function %tmp.30 :toNumber;
-        %tmp.32 = invoke %tmp.30 %tmp.31();
-        lputv %filledTrattini.6 %tmp.32;
-        symbol [ filledTrattini %filledTrattini.6 28 12 26 ];
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 29 8 ]
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_22_134_39_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_22_134_39_4_stop" ]
-        %totGap.7 = local;
-        symbol [ totGap %totGap.7 29 12 18 ];
-        %tmp.33 = lgetv %gap.5;
-        symbol [ gap %tmp.33 29 29 32 ];
-        %tmp.34 = lgetv %nTrattini.4;
-        symbol [ nTrattini %tmp.34 29 36 45 ];
-        %tmp.35 = 1;
-        %tmp.36 = sub %tmp.34 %tmp.35;
-        %tmp.37 = mul %tmp.33 %tmp.36;
-        lputv %totGap.7 %tmp.37;
-        symbol [ totGap %totGap.7 29 12 18 ];
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 30 8 ]
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_22_134_39_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_22_134_39_4_stop" ]
-        %trattiniW.8 = local;
-        symbol [ trattiniW %trattiniW.8 30 12 21 ];
-        %tmp.38 = lgetv %lunghezza;
-        symbol [ lunghezza %tmp.38 30 31 40 ];
-        %tmp.39 = lgetv %totGap.7;
-        symbol [ totGap %tmp.39 30 43 49 ];
-        %tmp.40 = sub %tmp.38 %tmp.39;
-        %tmp.41 = lgetv %nTrattini.4;
-        symbol [ nTrattini %tmp.41 30 53 62 ];
-        %tmp.42 = div %tmp.40 %tmp.41;
-        symbol [ toNumber %tmp.43 30 64 72 ];
-        %tmp.43 = getv function %tmp.42 :toNumber;
-        %tmp.44 = invoke %tmp.42 %tmp.43();
-        lputv %trattiniW.8 %tmp.44;
-        symbol [ trattiniW %trattiniW.8 30 12 21 ];
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 32 8 ]
-        for @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_32_8_38_8_for_test @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_32_8_38_8_for_incr @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_32_8_38_8_for_end;
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_32_8_38_8_for_init:
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_32_8_38_8_for_begin" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_32_8_38_8_for_end" ]
-        %i.9 = local;
-        symbol [ i %i.9 32 17 18 ];
-        %tmp.45 = 0;
-        lputv %i.9 %tmp.45;
-        symbol [ i %i.9 32 17 18 ];
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_32_8_38_8_for_test:
-        %tmp.46 = lgetv %i.9;
-        symbol [ i %tmp.46 32 24 25 ];
-        %tmp.47 = lgetv %nTrattini.4;
-        symbol [ nTrattini %tmp.47 32 28 37 ];
-        %tmp.48 = lt %tmp.46 %tmp.47;
-        bf %tmp.48 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_32_8_38_8_for_end;
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_32_8_38_8_for_begin:
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_32_44_38_8_start:
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 33 12 ]
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_32_44_38_8_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_32_44_38_8_stop" ]
-        %idx.10 = local;
-        symbol [ idx %idx.10 33 16 19 ];
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_33_28_33_56_begin:
-        %tmp.49 = lgetv %rtl;
-        symbol [ rtl %tmp.49 33 28 31 ];
-        bf %tmp.49 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_33_28_33_56_else_false;
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_33_28_33_56_true:
-        %tmp.50 = lgetv %nTrattini.4;
-        symbol [ nTrattini %tmp.50 33 35 44 ];
-        %tmp.51 = 1;
-        %tmp.52 = sub %tmp.50 %tmp.51;
-        %tmp.53 = lgetv %i.9;
-        symbol [ i %tmp.53 33 51 52 ];
-        %tmp.54 = sub %tmp.52 %tmp.53;
-        push %tmp.54;
-        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_33_28_33_56_end;
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_33_28_33_56_else_false:
-        %tmp.55 = lgetv %i.9;
-        symbol [ i %tmp.55 33 56 57 ];
-        push %tmp.55;
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_33_28_33_56_end:
-        %tmp.56 = phi [%tmp.49 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_33_28_33_56_begin] [%tmp.54 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_33_28_33_56_true] [%tmp.55 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_33_28_33_56_else_false] [%tmp.56 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_33_28_33_56_end];
-        lputv %idx.10 %tmp.56;
-        symbol [ idx %idx.10 33 16 19 ];
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 34 12 ]
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_32_44_38_8_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_32_44_38_8_stop" ]
-        %xTrattino.11 = local;
-        symbol [ xTrattino %xTrattino.11 34 16 25 ];
-        %tmp.57 = lgetv %x.3;
-        symbol [ x %tmp.57 34 28 29 ];
-        %tmp.58 = lgetv %idx.10;
-        symbol [ idx %tmp.58 34 32 35 ];
-        %tmp.59 = lgetv %trattiniW.8;
-        symbol [ trattiniW %tmp.59 34 39 48 ];
-        %tmp.60 = lgetv %gap.5;
-        symbol [ gap %tmp.60 34 51 54 ];
-        %tmp.61 = add %tmp.59 %tmp.60;
-        %tmp.62 = mul %tmp.58 %tmp.61;
-        %tmp.63 = add %tmp.57 %tmp.62;
-        lputv %xTrattino.11 %tmp.63;
-        symbol [ xTrattino %xTrattino.11 34 16 25 ];
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 35 12 ]
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_32_44_38_8_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_32_44_38_8_stop" ]
-        %colore.12 = local;
-        symbol [ colore %colore.12 35 16 22 ];
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_35_28_35_83_begin:
-        %tmp.64 = lgetv %i.9;
-        symbol [ i %tmp.64 35 29 30 ];
-        %tmp.65 = lgetv %filledTrattini.6;
-        symbol [ filledTrattini %tmp.65 35 33 47 ];
-        %tmp.66 = lt %tmp.64 %tmp.65;
-        bf %tmp.66 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_35_28_35_83_else_false;
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_35_28_35_83_true:
-        %tmp.67 = lgetv %colori;
-        symbol [ colori %tmp.67 35 51 57 ];
-        %tmp.68 = "fill";
-        %tmp.69 = agetv %tmp.67 %tmp.68;
-        push %tmp.69;
-        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_35_28_35_83_end;
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_35_28_35_83_else_false:
-        %tmp.70 = lgetv %colori;
-        symbol [ colori %tmp.70 35 68 74 ];
-        %tmp.71 = "sfondo";
-        %tmp.72 = agetv %tmp.70 %tmp.71;
-        push %tmp.72;
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_35_28_35_83_end:
-        %tmp.73 = phi [%tmp.66 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_35_28_35_83_begin] [%tmp.69 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_35_28_35_83_true] [%tmp.72 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_35_28_35_83_else_false] [%tmp.73 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_35_28_35_83_end];
-        lputv %colore.12 %tmp.73;
-        symbol [ colore %colore.12 35 16 22 ];
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 36 12 ]
-        %tmp.74 = lgetv %dc;
-        symbol [ dc %tmp.74 36 12 14 ];
-        symbol [ setColor %tmp.75 36 15 23 ];
-        %tmp.75 = getv function %tmp.74 :setColor;
-        %tmp.76 = lgetv %colore.12;
-        symbol [ colore %tmp.76 36 24 30 ];
-        %tmp.77 = lgetv %colore.12;
-        symbol [ colore %tmp.77 36 32 38 ];
-        invoke %tmp.74 %tmp.75(%tmp.76, %tmp.77);
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 37 12 ]
-        %tmp.78 = lgetv %dc;
-        symbol [ dc %tmp.78 37 12 14 ];
-        symbol [ fillRoundedRectangle %tmp.79 37 15 35 ];
-        %tmp.79 = getv function %tmp.78 :fillRoundedRectangle;
-        %tmp.80 = lgetv %xTrattino.11;
-        symbol [ xTrattino %tmp.80 37 36 45 ];
-        %tmp.81 = lgetv %y.2;
-        symbol [ y %tmp.81 37 47 48 ];
-        %tmp.82 = lgetv %trattiniW.8;
-        symbol [ trattiniW %tmp.82 37 50 59 ];
-        %tmp.83 = lgetv %spessore;
-        symbol [ spessore %tmp.83 37 61 69 ];
-        %tmp.84 = lgetv %raggio.1;
-        symbol [ raggio %tmp.84 37 71 77 ];
-        invoke %tmp.78 %tmp.79(%tmp.80, %tmp.81, %tmp.82, %tmp.83, %tmp.84);
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_32_44_38_8_stop:
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_32_8_38_8_for_incr:
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 32 ]
-        %tmp.87 = lgetv %i.9;
-        symbol [ i %tmp.87 32 39 40 ];
-        %tmp.88 = add %tmp.87 1;
-        lputv %i.9 %tmp.88;
-        symbol [ i %i.9 32 39 40 ];
-        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_32_8_38_8_for_test;
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_32_8_38_8_for_end:
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_22_134_39_4_stop:
+        %tmp.8 = 1;
+        symbol [ _massimo ? 25 8 16 ];
+        putv self :_massimo %tmp.8;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_17_77_26_4_stop:
     }
-    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc"; @line = 41; @symbol_functiondef = [_drawVerticale,41,20,34]; @symbol_param<0> = [dc,41,35,37]; @symbol_param<1> = [cx,41,39,41]; @symbol_param<2> = [cy,41,43,45]; @symbol_param<3> = [lunghezza,41,47,56]; @symbol_param<4> = [spessore,41,58,66]; @symbol_param<5> = [perc,41,68,72]; @symbol_param<6> = [colori,41,74,80]; @symbol_param<6>_type<0> = [Lang,41,84,88]; @symbol_param<6>_type<1> = [Dictionary,41,89,99]; @symbol_param<6>_type<2> = [Lang,41,100,104]; @symbol_param<6>_type<3> = [String,41,105,111]; @symbol_param<6>_type<4> = [Lang,41,113,117]; @symbol_param<6>_type<5> = [Number,41,118,124]; @symbol_param<7> = [rtl,41,127,130]; ]
-    static
-    function _drawVerticale(dc, cx, cy, lunghezza, spessore, perc, colori as Lang.Dictionary<Lang.String, Lang.Number>, rtl) {
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_41_132_58_4_start:
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 42 8 ]
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_41_132_58_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_41_132_58_4_stop" ]
-        %raggio.1 = local;
-        symbol [ raggio %raggio.1 42 12 18 ];
-        %tmp.1 = lgetv %spessore;
-        symbol [ spessore %tmp.1 42 30 38 ];
-        %tmp.2 = 2;
-        %tmp.3 = div %tmp.1 %tmp.2;
-        symbol [ toNumber %tmp.4 42 44 52 ];
-        %tmp.4 = getv function %tmp.3 :toNumber;
-        %tmp.5 = invoke %tmp.3 %tmp.4();
-        lputv %raggio.1 %tmp.5;
-        symbol [ raggio %raggio.1 42 12 18 ];
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc"; @line = 28; @symbol_functiondef = [setValori,28,13,22]; @symbol_param<0> = [valore,28,23,29]; @symbol_param<0>_type<0> = [Lang,28,33,37]; @symbol_param<0>_type<1> = [Number,28,38,44]; @symbol_param<1> = [massimo,28,46,53]; @symbol_param<1>_type<0> = [Lang,28,57,61]; @symbol_param<1>_type<1> = [Number,28,62,68]; ]
+    function setValori(valore as Lang.Number, massimo as Lang.Number) {
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_28_70_31_4_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 29 8 ]
+        %tmp.1 = lgetv %valore;
+        symbol [ valore %tmp.1 29 19 25 ];
+        symbol [ _valore ? 29 8 15 ];
+        putv self :_valore %tmp.1;
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 30 8 ]
+        %tmp.2 = lgetv %massimo;
+        symbol [ massimo %tmp.2 30 19 26 ];
+        symbol [ _massimo ? 30 8 16 ];
+        putv self :_massimo %tmp.2;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_28_70_31_4_stop:
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc"; @line = 33; @symbol_functiondef = [setColori,33,13,22]; @symbol_param<0> = [fill,33,23,27]; @symbol_param<0>_type<0> = [Lang,33,31,35]; @symbol_param<0>_type<1> = [Number,33,36,42]; @symbol_param<1> = [sfondo,33,44,50]; @symbol_param<1>_type<0> = [Lang,33,54,58]; @symbol_param<1>_type<1> = [Number,33,59,65]; ]
+    function setColori(fill as Lang.Number, sfondo as Lang.Number) {
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_33_67_36_4_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 34 8 ]
+        symbol [ _colori %tmp.1 34 8 15 ];
+        %tmp.1 = getv self :_colori;
+        %tmp.2 = lgetv %fill;
+        symbol [ fill %tmp.2 34 28 32 ];
+        %tmp.3 = "fill";
+        aputv %tmp.1 %tmp.3 %tmp.2;
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 35 8 ]
+        symbol [ _colori %tmp.4 35 8 15 ];
+        %tmp.4 = getv self :_colori;
+        %tmp.5 = lgetv %sfondo;
+        symbol [ sfondo %tmp.5 35 28 34 ];
+        %tmp.6 = "sfondo";
+        aputv %tmp.4 %tmp.6 %tmp.5;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_33_67_36_4_stop:
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc"; @line = 38; @symbol_functiondef = [draw,38,13,17]; @symbol_param<0> = [dc,38,18,20]; @symbol_param<0>_type<0> = [Graphics,38,24,32]; @symbol_param<0>_type<1> = [Dc,38,33,35]; ]
+    function draw(dc as Graphics.Dc) {
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_38_37_51_4_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 39 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_38_37_51_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_38_37_51_4_stop" ]
+        %perc.1 = local;
+        symbol [ perc %perc.1 39 12 16 ];
+        symbol [ _valore %tmp.2 39 19 26 ];
+        %tmp.2 = getv ? :_valore;
+        symbol [ toFloat %tmp.3 39 27 34 ];
+        %tmp.3 = getv function %tmp.2 :toFloat;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        symbol [ _massimo %tmp.6 39 39 47 ];
+        %tmp.6 = getv ? :_massimo;
+        symbol [ toFloat %tmp.7 39 48 55 ];
+        %tmp.7 = getv function %tmp.6 :toFloat;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        %tmp.9 = div %tmp.4 %tmp.8;
+        lputv %perc.1 %tmp.9;
+        symbol [ perc %perc.1 39 12 16 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 40 8 ]
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_40_8_40_40_if_stmt:
+        %tmp.10 = lgetv %perc.1;
+        symbol [ perc %tmp.10 40 12 16 ];
+        %tmp.11 = 1.0f;
+        %tmp.12 = gt %tmp.10 %tmp.11;
+        bf %tmp.12 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_40_8_40_40_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_40_8_40_40_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_40_25_40_40_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 40 27 ]
+        %tmp.13 = 1.0f;
+        lputv %perc.1 %tmp.13;
+        symbol [ perc %perc.1 40 27 31 ];
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_40_25_40_40_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_40_8_40_40_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_40_8_40_40_if_end:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 41 8 ]
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_41_8_41_40_if_stmt:
+        %tmp.14 = lgetv %perc.1;
+        symbol [ perc %tmp.14 41 12 16 ];
+        %tmp.15 = 0.0f;
+        %tmp.16 = lt %tmp.14 %tmp.15;
+        bf %tmp.16 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_41_8_41_40_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_41_8_41_40_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_41_25_41_40_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 41 27 ]
+        %tmp.17 = 0.0f;
+        lputv %perc.1 %tmp.17;
+        symbol [ perc %perc.1 41 27 31 ];
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_41_25_41_40_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_41_8_41_40_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_41_8_41_40_if_end:
 [ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 43 8 ]
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_41_132_58_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_41_132_58_4_stop" ]
-        %x.2 = local;
-        symbol [ x %x.2 43 12 13 ];
-        %tmp.6 = lgetv %cx;
-        symbol [ cx %tmp.6 43 29 31 ];
-        %tmp.7 = lgetv %spessore;
-        symbol [ spessore %tmp.7 43 35 43 ];
-        %tmp.8 = 2;
-        %tmp.9 = div %tmp.7 %tmp.8;
-        symbol [ toNumber %tmp.10 43 49 57 ];
-        %tmp.10 = getv function %tmp.9 :toNumber;
-        %tmp.11 = invoke %tmp.9 %tmp.10();
-        %tmp.12 = sub %tmp.6 %tmp.11;
-        lputv %x.2 %tmp.12;
-        symbol [ x %x.2 43 12 13 ];
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_38_37_51_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_38_37_51_4_stop" ]
+        %orientamento.2 = local;
+        symbol [ orientamento %orientamento.2 43 12 24 ];
+        symbol [ _config %tmp.19 43 27 34 ];
+        %tmp.19 = getv ? :_config;
+        %tmp.20 = "orientamento";
+        %tmp.21 = agetv %tmp.19 %tmp.20;
+        %tmp.22 = as %tmp.21 Lang.String;
+        symbol [ Lang %tmp.22 43 54 58 ];
+        symbol [ String %tmp.22 43 59 65 ];
+        lputv %orientamento.2 %tmp.22;
+        symbol [ orientamento %orientamento.2 43 12 24 ];
 [ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 44 8 ]
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_41_132_58_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_41_132_58_4_stop" ]
-        %y.3 = local;
-        symbol [ y %y.3 44 12 13 ];
-        %tmp.13 = lgetv %cy;
-        symbol [ cy %tmp.13 44 29 31 ];
-        %tmp.14 = lgetv %lunghezza;
-        symbol [ lunghezza %tmp.14 44 35 44 ];
-        %tmp.15 = 2;
-        %tmp.16 = div %tmp.14 %tmp.15;
-        symbol [ toNumber %tmp.17 44 50 58 ];
-        %tmp.17 = getv function %tmp.16 :toNumber;
-        %tmp.18 = invoke %tmp.16 %tmp.17();
-        %tmp.19 = sub %tmp.13 %tmp.18;
-        lputv %y.3 %tmp.19;
-        symbol [ y %y.3 44 12 13 ];
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 45 8 ]
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_41_132_58_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_41_132_58_4_stop" ]
-        %nTrattini.4 = local;
-        symbol [ nTrattini %nTrattini.4 45 12 21 ];
-        %tmp.20 = lgetv %colori;
-        symbol [ colori %tmp.20 45 29 35 ];
-        %tmp.21 = "segmenti";
-        %tmp.22 = agetv %tmp.20 %tmp.21;
-        %tmp.23 = as %tmp.22 Lang.Number;
-        symbol [ Lang %tmp.23 45 51 55 ];
-        symbol [ Number %tmp.23 45 56 62 ];
-        lputv %nTrattini.4 %tmp.23;
-        symbol [ nTrattini %nTrattini.4 45 12 21 ];
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 46 8 ]
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_41_132_58_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_41_132_58_4_stop" ]
-        %gap.5 = local;
-        symbol [ gap %gap.5 46 12 15 ];
-        %tmp.24 = lgetv %colori;
-        symbol [ colori %tmp.24 46 29 35 ];
-        %tmp.25 = "gap";
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_38_37_51_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_38_37_51_4_stop" ]
+        %rtl.3 = local;
+        symbol [ rtl %rtl.3 44 12 15 ];
+        symbol [ _config %tmp.24 44 27 34 ];
+        %tmp.24 = getv ? :_config;
+        %tmp.25 = "rtl";
         %tmp.26 = agetv %tmp.24 %tmp.25;
-        %tmp.27 = as %tmp.26 Lang.Number;
-        symbol [ Lang %tmp.27 46 51 55 ];
-        symbol [ Number %tmp.27 46 56 62 ];
-        lputv %gap.5 %tmp.27;
-        symbol [ gap %gap.5 46 12 15 ];
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 47 8 ]
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_41_132_58_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_41_132_58_4_stop" ]
+        %tmp.27 = as %tmp.26 Lang.Boolean;
+        symbol [ Lang %tmp.27 44 54 58 ];
+        symbol [ Boolean %tmp.27 44 59 66 ];
+        lputv %rtl.3 %tmp.27;
+        symbol [ rtl %rtl.3 44 12 15 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 46 8 ]
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_46_8_50_8_if_stmt:
+        %tmp.28 = lgetv %orientamento.2;
+        symbol [ orientamento %tmp.28 46 12 24 ];
+        symbol [ equals %tmp.29 46 25 31 ];
+        %tmp.29 = getv function %tmp.28 :equals;
+        %tmp.30 = "orizzontale";
+        %tmp.31 = invoke %tmp.28 %tmp.29(%tmp.30);
+        bf %tmp.31 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_46_8_50_8_if_else_false;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_46_8_50_8_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_46_48_48_8_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 47 12 ]
+        %tmp.32 = self;
+        symbol [ _drawOrizzontale %tmp.33 47 12 28 ];
+        %tmp.33 = getv function %tmp.32 :_drawOrizzontale;
+        %tmp.34 = lgetv %dc;
+        symbol [ dc %tmp.34 47 29 31 ];
+        %tmp.35 = lgetv %perc.1;
+        symbol [ perc %tmp.35 47 33 37 ];
+        %tmp.36 = lgetv %rtl.3;
+        symbol [ rtl %tmp.36 47 39 42 ];
+        invoke %tmp.32 %tmp.33(%tmp.34, %tmp.35, %tmp.36);
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_46_48_48_8_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_46_8_50_8_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_46_8_50_8_if_else_false:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_48_15_50_8_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 49 12 ]
+        %tmp.37 = self;
+        symbol [ _drawVerticale %tmp.38 49 12 26 ];
+        %tmp.38 = getv function %tmp.37 :_drawVerticale;
+        %tmp.39 = lgetv %dc;
+        symbol [ dc %tmp.39 49 27 29 ];
+        %tmp.40 = lgetv %perc.1;
+        symbol [ perc %tmp.40 49 31 35 ];
+        %tmp.41 = lgetv %rtl.3;
+        symbol [ rtl %tmp.41 49 37 40 ];
+        invoke %tmp.37 %tmp.38(%tmp.39, %tmp.40, %tmp.41);
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_48_15_50_8_stop:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_46_8_50_8_if_end:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_38_37_51_4_stop:
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc"; @line = 53; @symbol_functiondef = [_drawOrizzontale,53,13,29]; @symbol_param<0> = [dc,53,30,32]; @symbol_param<0>_type<0> = [Graphics,53,36,44]; @symbol_param<0>_type<1> = [Dc,53,45,47]; @symbol_param<1> = [perc,53,49,53]; @symbol_param<1>_type<0> = [Lang,53,57,61]; @symbol_param<1>_type<1> = [Float,53,62,67]; @symbol_param<2> = [rtl,53,69,72]; @symbol_param<2>_type<0> = [Lang,53,76,80]; @symbol_param<2>_type<1> = [Boolean,53,81,88]; ]
+    function _drawOrizzontale(dc as Graphics.Dc, perc as Lang.Float, rtl as Lang.Boolean) {
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_53_90_70_4_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 54 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_53_90_70_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_53_90_70_4_stop" ]
+        %raggio.1 = local;
+        symbol [ raggio %raggio.1 54 12 18 ];
+        symbol [ _spessore %tmp.2 54 30 39 ];
+        %tmp.2 = getv ? :_spessore;
+        %tmp.3 = 2;
+        %tmp.4 = div %tmp.2 %tmp.3;
+        symbol [ toNumber %tmp.5 54 45 53 ];
+        %tmp.5 = getv function %tmp.4 :toNumber;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        lputv %raggio.1 %tmp.6;
+        symbol [ raggio %raggio.1 54 12 18 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 55 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_53_90_70_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_53_90_70_4_stop" ]
+        %y.2 = local;
+        symbol [ y %y.2 55 12 13 ];
+        symbol [ _cy %tmp.8 55 29 32 ];
+        %tmp.8 = getv ? :_cy;
+        symbol [ _spessore %tmp.10 55 36 45 ];
+        %tmp.10 = getv ? :_spessore;
+        %tmp.11 = 2;
+        %tmp.12 = div %tmp.10 %tmp.11;
+        symbol [ toNumber %tmp.13 55 51 59 ];
+        %tmp.13 = getv function %tmp.12 :toNumber;
+        %tmp.14 = invoke %tmp.12 %tmp.13();
+        %tmp.15 = sub %tmp.8 %tmp.14;
+        lputv %y.2 %tmp.15;
+        symbol [ y %y.2 55 12 13 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 56 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_53_90_70_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_53_90_70_4_stop" ]
+        %x.3 = local;
+        symbol [ x %x.3 56 12 13 ];
+        symbol [ _cx %tmp.17 56 29 32 ];
+        %tmp.17 = getv ? :_cx;
+        symbol [ _lunghezza %tmp.19 56 36 46 ];
+        %tmp.19 = getv ? :_lunghezza;
+        %tmp.20 = 2;
+        %tmp.21 = div %tmp.19 %tmp.20;
+        symbol [ toNumber %tmp.22 56 52 60 ];
+        %tmp.22 = getv function %tmp.21 :toNumber;
+        %tmp.23 = invoke %tmp.21 %tmp.22();
+        %tmp.24 = sub %tmp.17 %tmp.23;
+        lputv %x.3 %tmp.24;
+        symbol [ x %x.3 56 12 13 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 57 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_53_90_70_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_53_90_70_4_stop" ]
+        %nTrattini.4 = local;
+        symbol [ nTrattini %nTrattini.4 57 12 21 ];
+        symbol [ _colori %tmp.26 57 29 36 ];
+        %tmp.26 = getv ? :_colori;
+        %tmp.27 = "segmenti";
+        %tmp.28 = agetv %tmp.26 %tmp.27;
+        %tmp.29 = as %tmp.28 Lang.Number;
+        symbol [ Lang %tmp.29 57 52 56 ];
+        symbol [ Number %tmp.29 57 57 63 ];
+        lputv %nTrattini.4 %tmp.29;
+        symbol [ nTrattini %nTrattini.4 57 12 21 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 58 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_53_90_70_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_53_90_70_4_stop" ]
+        %gap.5 = local;
+        symbol [ gap %gap.5 58 12 15 ];
+        symbol [ _colori %tmp.31 58 29 36 ];
+        %tmp.31 = getv ? :_colori;
+        %tmp.32 = "gap";
+        %tmp.33 = agetv %tmp.31 %tmp.32;
+        %tmp.34 = as %tmp.33 Lang.Number;
+        symbol [ Lang %tmp.34 58 52 56 ];
+        symbol [ Number %tmp.34 58 57 63 ];
+        lputv %gap.5 %tmp.34;
+        symbol [ gap %gap.5 58 12 15 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 59 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_53_90_70_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_53_90_70_4_stop" ]
         %filledTrattini.6 = local;
-        symbol [ filledTrattini %filledTrattini.6 47 12 26 ];
-        %tmp.28 = lgetv %perc;
-        symbol [ perc %tmp.28 47 30 34 ];
-        %tmp.29 = lgetv %nTrattini.4;
-        symbol [ nTrattini %tmp.29 47 37 46 ];
-        %tmp.30 = mul %tmp.28 %tmp.29;
-        symbol [ toNumber %tmp.31 47 48 56 ];
-        %tmp.31 = getv function %tmp.30 :toNumber;
-        %tmp.32 = invoke %tmp.30 %tmp.31();
-        lputv %filledTrattini.6 %tmp.32;
-        symbol [ filledTrattini %filledTrattini.6 47 12 26 ];
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 48 8 ]
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_41_132_58_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_41_132_58_4_stop" ]
+        symbol [ filledTrattini %filledTrattini.6 59 12 26 ];
+        %tmp.35 = lgetv %perc;
+        symbol [ perc %tmp.35 59 30 34 ];
+        %tmp.36 = lgetv %nTrattini.4;
+        symbol [ nTrattini %tmp.36 59 37 46 ];
+        %tmp.37 = mul %tmp.35 %tmp.36;
+        symbol [ toNumber %tmp.38 59 48 56 ];
+        %tmp.38 = getv function %tmp.37 :toNumber;
+        %tmp.39 = invoke %tmp.37 %tmp.38();
+        lputv %filledTrattini.6 %tmp.39;
+        symbol [ filledTrattini %filledTrattini.6 59 12 26 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 60 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_53_90_70_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_53_90_70_4_stop" ]
         %totGap.7 = local;
-        symbol [ totGap %totGap.7 48 12 18 ];
-        %tmp.33 = lgetv %gap.5;
-        symbol [ gap %tmp.33 48 29 32 ];
-        %tmp.34 = lgetv %nTrattini.4;
-        symbol [ nTrattini %tmp.34 48 36 45 ];
-        %tmp.35 = 1;
-        %tmp.36 = sub %tmp.34 %tmp.35;
-        %tmp.37 = mul %tmp.33 %tmp.36;
-        lputv %totGap.7 %tmp.37;
-        symbol [ totGap %totGap.7 48 12 18 ];
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 49 8 ]
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_41_132_58_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_41_132_58_4_stop" ]
-        %trattiniH.8 = local;
-        symbol [ trattiniH %trattiniH.8 49 12 21 ];
-        %tmp.38 = lgetv %lunghezza;
-        symbol [ lunghezza %tmp.38 49 31 40 ];
-        %tmp.39 = lgetv %totGap.7;
-        symbol [ totGap %tmp.39 49 43 49 ];
-        %tmp.40 = sub %tmp.38 %tmp.39;
+        symbol [ totGap %totGap.7 60 12 18 ];
+        %tmp.40 = lgetv %gap.5;
+        symbol [ gap %tmp.40 60 29 32 ];
         %tmp.41 = lgetv %nTrattini.4;
-        symbol [ nTrattini %tmp.41 49 53 62 ];
-        %tmp.42 = div %tmp.40 %tmp.41;
-        symbol [ toNumber %tmp.43 49 64 72 ];
-        %tmp.43 = getv function %tmp.42 :toNumber;
-        %tmp.44 = invoke %tmp.42 %tmp.43();
-        lputv %trattiniH.8 %tmp.44;
-        symbol [ trattiniH %trattiniH.8 49 12 21 ];
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 51 8 ]
-        for @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_51_8_57_8_for_test @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_51_8_57_8_for_incr @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_51_8_57_8_for_end;
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_51_8_57_8_for_init:
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_51_8_57_8_for_begin" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_51_8_57_8_for_end" ]
+        symbol [ nTrattini %tmp.41 60 36 45 ];
+        %tmp.42 = 1;
+        %tmp.43 = sub %tmp.41 %tmp.42;
+        %tmp.44 = mul %tmp.40 %tmp.43;
+        lputv %totGap.7 %tmp.44;
+        symbol [ totGap %totGap.7 60 12 18 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 61 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_53_90_70_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_53_90_70_4_stop" ]
+        %trattiniW.8 = local;
+        symbol [ trattiniW %trattiniW.8 61 12 21 ];
+        symbol [ _lunghezza %tmp.46 61 31 41 ];
+        %tmp.46 = getv ? :_lunghezza;
+        %tmp.47 = lgetv %totGap.7;
+        symbol [ totGap %tmp.47 61 44 50 ];
+        %tmp.48 = sub %tmp.46 %tmp.47;
+        %tmp.49 = lgetv %nTrattini.4;
+        symbol [ nTrattini %tmp.49 61 54 63 ];
+        %tmp.50 = div %tmp.48 %tmp.49;
+        symbol [ toNumber %tmp.51 61 65 73 ];
+        %tmp.51 = getv function %tmp.50 :toNumber;
+        %tmp.52 = invoke %tmp.50 %tmp.51();
+        lputv %trattiniW.8 %tmp.52;
+        symbol [ trattiniW %trattiniW.8 61 12 21 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 63 8 ]
+        for @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_63_8_69_8_for_test @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_63_8_69_8_for_incr @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_63_8_69_8_for_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_63_8_69_8_for_init:
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_63_8_69_8_for_begin" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_63_8_69_8_for_end" ]
         %i.9 = local;
-        symbol [ i %i.9 51 17 18 ];
-        %tmp.45 = 0;
-        lputv %i.9 %tmp.45;
-        symbol [ i %i.9 51 17 18 ];
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_51_8_57_8_for_test:
-        %tmp.46 = lgetv %i.9;
-        symbol [ i %tmp.46 51 24 25 ];
-        %tmp.47 = lgetv %nTrattini.4;
-        symbol [ nTrattini %tmp.47 51 28 37 ];
-        %tmp.48 = lt %tmp.46 %tmp.47;
-        bf %tmp.48 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_51_8_57_8_for_end;
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_51_8_57_8_for_begin:
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_51_44_57_8_start:
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 52 12 ]
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_51_44_57_8_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_51_44_57_8_stop" ]
+        symbol [ i %i.9 63 17 18 ];
+        %tmp.53 = 0;
+        lputv %i.9 %tmp.53;
+        symbol [ i %i.9 63 17 18 ];
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_63_8_69_8_for_test:
+        %tmp.54 = lgetv %i.9;
+        symbol [ i %tmp.54 63 24 25 ];
+        %tmp.55 = lgetv %nTrattini.4;
+        symbol [ nTrattini %tmp.55 63 28 37 ];
+        %tmp.56 = lt %tmp.54 %tmp.55;
+        bf %tmp.56 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_63_8_69_8_for_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_63_8_69_8_for_begin:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_63_44_69_8_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 64 12 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_63_44_69_8_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_63_44_69_8_stop" ]
         %idx.10 = local;
-        symbol [ idx %idx.10 52 16 19 ];
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_52_28_52_56_begin:
-        %tmp.49 = lgetv %rtl;
-        symbol [ rtl %tmp.49 52 28 31 ];
-        bf %tmp.49 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_52_28_52_56_else_false;
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_52_28_52_56_true:
-        %tmp.50 = lgetv %nTrattini.4;
-        symbol [ nTrattini %tmp.50 52 35 44 ];
-        %tmp.51 = 1;
-        %tmp.52 = sub %tmp.50 %tmp.51;
-        %tmp.53 = lgetv %i.9;
-        symbol [ i %tmp.53 52 51 52 ];
-        %tmp.54 = sub %tmp.52 %tmp.53;
-        push %tmp.54;
-        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_52_28_52_56_end;
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_52_28_52_56_else_false:
-        %tmp.55 = lgetv %i.9;
-        symbol [ i %tmp.55 52 56 57 ];
-        push %tmp.55;
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_52_28_52_56_end:
-        %tmp.56 = phi [%tmp.49 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_52_28_52_56_begin] [%tmp.54 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_52_28_52_56_true] [%tmp.55 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_52_28_52_56_else_false] [%tmp.56 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_52_28_52_56_end];
-        lputv %idx.10 %tmp.56;
-        symbol [ idx %idx.10 52 16 19 ];
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 53 12 ]
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_51_44_57_8_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_51_44_57_8_stop" ]
-        %yTrattino.11 = local;
-        symbol [ yTrattino %yTrattino.11 53 16 25 ];
-        %tmp.57 = lgetv %y.3;
-        symbol [ y %tmp.57 53 28 29 ];
-        %tmp.58 = lgetv %idx.10;
-        symbol [ idx %tmp.58 53 32 35 ];
-        %tmp.59 = lgetv %trattiniH.8;
-        symbol [ trattiniH %tmp.59 53 39 48 ];
-        %tmp.60 = lgetv %gap.5;
-        symbol [ gap %tmp.60 53 51 54 ];
-        %tmp.61 = add %tmp.59 %tmp.60;
-        %tmp.62 = mul %tmp.58 %tmp.61;
-        %tmp.63 = add %tmp.57 %tmp.62;
-        lputv %yTrattino.11 %tmp.63;
-        symbol [ yTrattino %yTrattino.11 53 16 25 ];
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 54 12 ]
-        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_51_44_57_8_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_51_44_57_8_stop" ]
+        symbol [ idx %idx.10 64 16 19 ];
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_64_28_64_56_begin:
+        %tmp.57 = lgetv %rtl;
+        symbol [ rtl %tmp.57 64 28 31 ];
+        bf %tmp.57 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_64_28_64_56_else_false;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_64_28_64_56_true:
+        %tmp.58 = lgetv %nTrattini.4;
+        symbol [ nTrattini %tmp.58 64 35 44 ];
+        %tmp.59 = 1;
+        %tmp.60 = sub %tmp.58 %tmp.59;
+        %tmp.61 = lgetv %i.9;
+        symbol [ i %tmp.61 64 51 52 ];
+        %tmp.62 = sub %tmp.60 %tmp.61;
+        push %tmp.62;
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_64_28_64_56_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_64_28_64_56_else_false:
+        %tmp.63 = lgetv %i.9;
+        symbol [ i %tmp.63 64 56 57 ];
+        push %tmp.63;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_64_28_64_56_end:
+        %tmp.64 = phi [%tmp.57 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_64_28_64_56_begin] [%tmp.62 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_64_28_64_56_true] [%tmp.63 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_64_28_64_56_else_false] [%tmp.64 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_64_28_64_56_end];
+        lputv %idx.10 %tmp.64;
+        symbol [ idx %idx.10 64 16 19 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 65 12 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_63_44_69_8_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_63_44_69_8_stop" ]
+        %xTrattino.11 = local;
+        symbol [ xTrattino %xTrattino.11 65 16 25 ];
+        %tmp.65 = lgetv %x.3;
+        symbol [ x %tmp.65 65 28 29 ];
+        %tmp.66 = lgetv %idx.10;
+        symbol [ idx %tmp.66 65 32 35 ];
+        %tmp.67 = lgetv %trattiniW.8;
+        symbol [ trattiniW %tmp.67 65 39 48 ];
+        %tmp.68 = lgetv %gap.5;
+        symbol [ gap %tmp.68 65 51 54 ];
+        %tmp.69 = add %tmp.67 %tmp.68;
+        %tmp.70 = mul %tmp.66 %tmp.69;
+        %tmp.71 = add %tmp.65 %tmp.70;
+        lputv %xTrattino.11 %tmp.71;
+        symbol [ xTrattino %xTrattino.11 65 16 25 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 66 12 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_63_44_69_8_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_63_44_69_8_stop" ]
         %colore.12 = local;
-        symbol [ colore %colore.12 54 16 22 ];
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_54_28_54_83_begin:
-        %tmp.64 = lgetv %i.9;
-        symbol [ i %tmp.64 54 29 30 ];
-        %tmp.65 = lgetv %filledTrattini.6;
-        symbol [ filledTrattini %tmp.65 54 33 47 ];
-        %tmp.66 = lt %tmp.64 %tmp.65;
-        bf %tmp.66 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_54_28_54_83_else_false;
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_54_28_54_83_true:
-        %tmp.67 = lgetv %colori;
-        symbol [ colori %tmp.67 54 51 57 ];
-        %tmp.68 = "fill";
-        %tmp.69 = agetv %tmp.67 %tmp.68;
-        push %tmp.69;
-        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_54_28_54_83_end;
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_54_28_54_83_else_false:
-        %tmp.70 = lgetv %colori;
-        symbol [ colori %tmp.70 54 68 74 ];
-        %tmp.71 = "sfondo";
-        %tmp.72 = agetv %tmp.70 %tmp.71;
-        push %tmp.72;
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_54_28_54_83_end:
-        %tmp.73 = phi [%tmp.66 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_54_28_54_83_begin] [%tmp.69 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_54_28_54_83_true] [%tmp.72 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_54_28_54_83_else_false] [%tmp.73 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_54_28_54_83_end];
-        lputv %colore.12 %tmp.73;
-        symbol [ colore %colore.12 54 16 22 ];
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 55 12 ]
-        %tmp.74 = lgetv %dc;
-        symbol [ dc %tmp.74 55 12 14 ];
-        symbol [ setColor %tmp.75 55 15 23 ];
-        %tmp.75 = getv function %tmp.74 :setColor;
-        %tmp.76 = lgetv %colore.12;
-        symbol [ colore %tmp.76 55 24 30 ];
-        %tmp.77 = lgetv %colore.12;
-        symbol [ colore %tmp.77 55 32 38 ];
-        invoke %tmp.74 %tmp.75(%tmp.76, %tmp.77);
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 56 12 ]
-        %tmp.78 = lgetv %dc;
-        symbol [ dc %tmp.78 56 12 14 ];
-        symbol [ fillRoundedRectangle %tmp.79 56 15 35 ];
-        %tmp.79 = getv function %tmp.78 :fillRoundedRectangle;
-        %tmp.80 = lgetv %x.2;
-        symbol [ x %tmp.80 56 36 37 ];
-        %tmp.81 = lgetv %yTrattino.11;
-        symbol [ yTrattino %tmp.81 56 39 48 ];
-        %tmp.82 = lgetv %spessore;
-        symbol [ spessore %tmp.82 56 50 58 ];
-        %tmp.83 = lgetv %trattiniH.8;
-        symbol [ trattiniH %tmp.83 56 60 69 ];
-        %tmp.84 = lgetv %raggio.1;
-        symbol [ raggio %tmp.84 56 71 77 ];
-        invoke %tmp.78 %tmp.79(%tmp.80, %tmp.81, %tmp.82, %tmp.83, %tmp.84);
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_51_44_57_8_stop:
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_51_8_57_8_for_incr:
-[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 51 ]
-        %tmp.87 = lgetv %i.9;
-        symbol [ i %tmp.87 51 39 40 ];
-        %tmp.88 = add %tmp.87 1;
-        lputv %i.9 %tmp.88;
-        symbol [ i %i.9 51 39 40 ];
-        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_51_8_57_8_for_test;
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_51_8_57_8_for_end:
-C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_41_132_58_4_stop:
+        symbol [ colore %colore.12 66 16 22 ];
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_66_28_66_110_begin:
+        %tmp.72 = lgetv %i.9;
+        symbol [ i %tmp.72 66 29 30 ];
+        %tmp.73 = lgetv %filledTrattini.6;
+        symbol [ filledTrattini %tmp.73 66 33 47 ];
+        %tmp.74 = lt %tmp.72 %tmp.73;
+        bf %tmp.74 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_66_28_66_110_else_false;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_66_28_66_110_true:
+        symbol [ _colori %tmp.76 66 51 58 ];
+        %tmp.76 = getv ? :_colori;
+        %tmp.77 = "fill";
+        %tmp.78 = agetv %tmp.76 %tmp.77;
+        %tmp.79 = as %tmp.78 Lang.Number;
+        symbol [ Lang %tmp.79 66 70 74 ];
+        symbol [ Number %tmp.79 66 75 81 ];
+        push %tmp.79;
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_66_28_66_110_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_66_28_66_110_else_false:
+        symbol [ _colori %tmp.81 66 84 91 ];
+        %tmp.81 = getv ? :_colori;
+        %tmp.82 = "sfondo";
+        %tmp.83 = agetv %tmp.81 %tmp.82;
+        %tmp.84 = as %tmp.83 Lang.Number;
+        symbol [ Lang %tmp.84 66 105 109 ];
+        symbol [ Number %tmp.84 66 110 116 ];
+        push %tmp.84;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_66_28_66_110_end:
+        %tmp.85 = phi [%tmp.74 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_66_28_66_110_begin] [%tmp.79 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_66_28_66_110_true] [%tmp.84 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_66_28_66_110_else_false] [%tmp.85 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_66_28_66_110_end];
+        lputv %colore.12 %tmp.85;
+        symbol [ colore %colore.12 66 16 22 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 67 12 ]
+        %tmp.86 = lgetv %dc;
+        symbol [ dc %tmp.86 67 12 14 ];
+        symbol [ setColor %tmp.87 67 15 23 ];
+        %tmp.87 = getv function %tmp.86 :setColor;
+        %tmp.88 = lgetv %colore.12;
+        symbol [ colore %tmp.88 67 24 30 ];
+        %tmp.89 = lgetv %colore.12;
+        symbol [ colore %tmp.89 67 32 38 ];
+        invoke %tmp.86 %tmp.87(%tmp.88, %tmp.89);
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 68 12 ]
+        %tmp.90 = lgetv %dc;
+        symbol [ dc %tmp.90 68 12 14 ];
+        symbol [ fillRoundedRectangle %tmp.91 68 15 35 ];
+        %tmp.91 = getv function %tmp.90 :fillRoundedRectangle;
+        %tmp.92 = lgetv %xTrattino.11;
+        symbol [ xTrattino %tmp.92 68 36 45 ];
+        %tmp.93 = lgetv %y.2;
+        symbol [ y %tmp.93 68 47 48 ];
+        %tmp.94 = lgetv %trattiniW.8;
+        symbol [ trattiniW %tmp.94 68 50 59 ];
+        symbol [ _spessore %tmp.96 68 61 70 ];
+        %tmp.96 = getv ? :_spessore;
+        %tmp.97 = lgetv %raggio.1;
+        symbol [ raggio %tmp.97 68 72 78 ];
+        invoke %tmp.90 %tmp.91(%tmp.92, %tmp.93, %tmp.94, %tmp.96, %tmp.97);
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_63_44_69_8_stop:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_63_8_69_8_for_incr:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 63 ]
+        %tmp.100 = lgetv %i.9;
+        symbol [ i %tmp.100 63 39 40 ];
+        %tmp.101 = add %tmp.100 1;
+        lputv %i.9 %tmp.101;
+        symbol [ i %i.9 63 39 40 ];
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_63_8_69_8_for_test;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_63_8_69_8_for_end:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_53_90_70_4_stop:
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc"; @line = 72; @symbol_functiondef = [_drawVerticale,72,13,27]; @symbol_param<0> = [dc,72,28,30]; @symbol_param<0>_type<0> = [Graphics,72,34,42]; @symbol_param<0>_type<1> = [Dc,72,43,45]; @symbol_param<1> = [perc,72,47,51]; @symbol_param<1>_type<0> = [Lang,72,55,59]; @symbol_param<1>_type<1> = [Float,72,60,65]; @symbol_param<2> = [rtl,72,67,70]; @symbol_param<2>_type<0> = [Lang,72,74,78]; @symbol_param<2>_type<1> = [Boolean,72,79,86]; ]
+    function _drawVerticale(dc as Graphics.Dc, perc as Lang.Float, rtl as Lang.Boolean) {
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_72_88_89_4_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 73 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_72_88_89_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_72_88_89_4_stop" ]
+        %raggio.1 = local;
+        symbol [ raggio %raggio.1 73 12 18 ];
+        symbol [ _spessore %tmp.2 73 30 39 ];
+        %tmp.2 = getv ? :_spessore;
+        %tmp.3 = 2;
+        %tmp.4 = div %tmp.2 %tmp.3;
+        symbol [ toNumber %tmp.5 73 45 53 ];
+        %tmp.5 = getv function %tmp.4 :toNumber;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        lputv %raggio.1 %tmp.6;
+        symbol [ raggio %raggio.1 73 12 18 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 74 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_72_88_89_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_72_88_89_4_stop" ]
+        %x.2 = local;
+        symbol [ x %x.2 74 12 13 ];
+        symbol [ _cx %tmp.8 74 29 32 ];
+        %tmp.8 = getv ? :_cx;
+        symbol [ _spessore %tmp.10 74 36 45 ];
+        %tmp.10 = getv ? :_spessore;
+        %tmp.11 = 2;
+        %tmp.12 = div %tmp.10 %tmp.11;
+        symbol [ toNumber %tmp.13 74 51 59 ];
+        %tmp.13 = getv function %tmp.12 :toNumber;
+        %tmp.14 = invoke %tmp.12 %tmp.13();
+        %tmp.15 = sub %tmp.8 %tmp.14;
+        lputv %x.2 %tmp.15;
+        symbol [ x %x.2 74 12 13 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 75 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_72_88_89_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_72_88_89_4_stop" ]
+        %y.3 = local;
+        symbol [ y %y.3 75 12 13 ];
+        symbol [ _cy %tmp.17 75 29 32 ];
+        %tmp.17 = getv ? :_cy;
+        symbol [ _lunghezza %tmp.19 75 36 46 ];
+        %tmp.19 = getv ? :_lunghezza;
+        %tmp.20 = 2;
+        %tmp.21 = div %tmp.19 %tmp.20;
+        symbol [ toNumber %tmp.22 75 52 60 ];
+        %tmp.22 = getv function %tmp.21 :toNumber;
+        %tmp.23 = invoke %tmp.21 %tmp.22();
+        %tmp.24 = sub %tmp.17 %tmp.23;
+        lputv %y.3 %tmp.24;
+        symbol [ y %y.3 75 12 13 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 76 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_72_88_89_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_72_88_89_4_stop" ]
+        %nTrattini.4 = local;
+        symbol [ nTrattini %nTrattini.4 76 12 21 ];
+        symbol [ _colori %tmp.26 76 29 36 ];
+        %tmp.26 = getv ? :_colori;
+        %tmp.27 = "segmenti";
+        %tmp.28 = agetv %tmp.26 %tmp.27;
+        %tmp.29 = as %tmp.28 Lang.Number;
+        symbol [ Lang %tmp.29 76 52 56 ];
+        symbol [ Number %tmp.29 76 57 63 ];
+        lputv %nTrattini.4 %tmp.29;
+        symbol [ nTrattini %nTrattini.4 76 12 21 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 77 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_72_88_89_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_72_88_89_4_stop" ]
+        %gap.5 = local;
+        symbol [ gap %gap.5 77 12 15 ];
+        symbol [ _colori %tmp.31 77 29 36 ];
+        %tmp.31 = getv ? :_colori;
+        %tmp.32 = "gap";
+        %tmp.33 = agetv %tmp.31 %tmp.32;
+        %tmp.34 = as %tmp.33 Lang.Number;
+        symbol [ Lang %tmp.34 77 52 56 ];
+        symbol [ Number %tmp.34 77 57 63 ];
+        lputv %gap.5 %tmp.34;
+        symbol [ gap %gap.5 77 12 15 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 78 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_72_88_89_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_72_88_89_4_stop" ]
+        %filledTrattini.6 = local;
+        symbol [ filledTrattini %filledTrattini.6 78 12 26 ];
+        %tmp.35 = lgetv %perc;
+        symbol [ perc %tmp.35 78 30 34 ];
+        %tmp.36 = lgetv %nTrattini.4;
+        symbol [ nTrattini %tmp.36 78 37 46 ];
+        %tmp.37 = mul %tmp.35 %tmp.36;
+        symbol [ toNumber %tmp.38 78 48 56 ];
+        %tmp.38 = getv function %tmp.37 :toNumber;
+        %tmp.39 = invoke %tmp.37 %tmp.38();
+        lputv %filledTrattini.6 %tmp.39;
+        symbol [ filledTrattini %filledTrattini.6 78 12 26 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 79 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_72_88_89_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_72_88_89_4_stop" ]
+        %totGap.7 = local;
+        symbol [ totGap %totGap.7 79 12 18 ];
+        %tmp.40 = lgetv %gap.5;
+        symbol [ gap %tmp.40 79 29 32 ];
+        %tmp.41 = lgetv %nTrattini.4;
+        symbol [ nTrattini %tmp.41 79 36 45 ];
+        %tmp.42 = 1;
+        %tmp.43 = sub %tmp.41 %tmp.42;
+        %tmp.44 = mul %tmp.40 %tmp.43;
+        lputv %totGap.7 %tmp.44;
+        symbol [ totGap %totGap.7 79 12 18 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 80 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_72_88_89_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_72_88_89_4_stop" ]
+        %trattiniH.8 = local;
+        symbol [ trattiniH %trattiniH.8 80 12 21 ];
+        symbol [ _lunghezza %tmp.46 80 31 41 ];
+        %tmp.46 = getv ? :_lunghezza;
+        %tmp.47 = lgetv %totGap.7;
+        symbol [ totGap %tmp.47 80 44 50 ];
+        %tmp.48 = sub %tmp.46 %tmp.47;
+        %tmp.49 = lgetv %nTrattini.4;
+        symbol [ nTrattini %tmp.49 80 54 63 ];
+        %tmp.50 = div %tmp.48 %tmp.49;
+        symbol [ toNumber %tmp.51 80 65 73 ];
+        %tmp.51 = getv function %tmp.50 :toNumber;
+        %tmp.52 = invoke %tmp.50 %tmp.51();
+        lputv %trattiniH.8 %tmp.52;
+        symbol [ trattiniH %trattiniH.8 80 12 21 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 82 8 ]
+        for @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_82_8_88_8_for_test @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_82_8_88_8_for_incr @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_82_8_88_8_for_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_82_8_88_8_for_init:
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_82_8_88_8_for_begin" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_82_8_88_8_for_end" ]
+        %i.9 = local;
+        symbol [ i %i.9 82 17 18 ];
+        %tmp.53 = 0;
+        lputv %i.9 %tmp.53;
+        symbol [ i %i.9 82 17 18 ];
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_82_8_88_8_for_test:
+        %tmp.54 = lgetv %i.9;
+        symbol [ i %tmp.54 82 24 25 ];
+        %tmp.55 = lgetv %nTrattini.4;
+        symbol [ nTrattini %tmp.55 82 28 37 ];
+        %tmp.56 = lt %tmp.54 %tmp.55;
+        bf %tmp.56 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_82_8_88_8_for_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_82_8_88_8_for_begin:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_82_44_88_8_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 83 12 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_82_44_88_8_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_82_44_88_8_stop" ]
+        %idx.10 = local;
+        symbol [ idx %idx.10 83 16 19 ];
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_83_28_83_56_begin:
+        %tmp.57 = lgetv %rtl;
+        symbol [ rtl %tmp.57 83 28 31 ];
+        bf %tmp.57 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_83_28_83_56_else_false;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_83_28_83_56_true:
+        %tmp.58 = lgetv %nTrattini.4;
+        symbol [ nTrattini %tmp.58 83 35 44 ];
+        %tmp.59 = 1;
+        %tmp.60 = sub %tmp.58 %tmp.59;
+        %tmp.61 = lgetv %i.9;
+        symbol [ i %tmp.61 83 51 52 ];
+        %tmp.62 = sub %tmp.60 %tmp.61;
+        push %tmp.62;
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_83_28_83_56_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_83_28_83_56_else_false:
+        %tmp.63 = lgetv %i.9;
+        symbol [ i %tmp.63 83 56 57 ];
+        push %tmp.63;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_83_28_83_56_end:
+        %tmp.64 = phi [%tmp.57 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_83_28_83_56_begin] [%tmp.62 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_83_28_83_56_true] [%tmp.63 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_83_28_83_56_else_false] [%tmp.64 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_83_28_83_56_end];
+        lputv %idx.10 %tmp.64;
+        symbol [ idx %idx.10 83 16 19 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 84 12 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_82_44_88_8_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_82_44_88_8_stop" ]
+        %yTrattino.11 = local;
+        symbol [ yTrattino %yTrattino.11 84 16 25 ];
+        %tmp.65 = lgetv %y.3;
+        symbol [ y %tmp.65 84 28 29 ];
+        %tmp.66 = lgetv %idx.10;
+        symbol [ idx %tmp.66 84 32 35 ];
+        %tmp.67 = lgetv %trattiniH.8;
+        symbol [ trattiniH %tmp.67 84 39 48 ];
+        %tmp.68 = lgetv %gap.5;
+        symbol [ gap %tmp.68 84 51 54 ];
+        %tmp.69 = add %tmp.67 %tmp.68;
+        %tmp.70 = mul %tmp.66 %tmp.69;
+        %tmp.71 = add %tmp.65 %tmp.70;
+        lputv %yTrattino.11 %tmp.71;
+        symbol [ yTrattino %yTrattino.11 84 16 25 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 85 12 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_82_44_88_8_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_82_44_88_8_stop" ]
+        %colore.12 = local;
+        symbol [ colore %colore.12 85 16 22 ];
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_85_28_85_110_begin:
+        %tmp.72 = lgetv %i.9;
+        symbol [ i %tmp.72 85 29 30 ];
+        %tmp.73 = lgetv %filledTrattini.6;
+        symbol [ filledTrattini %tmp.73 85 33 47 ];
+        %tmp.74 = lt %tmp.72 %tmp.73;
+        bf %tmp.74 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_85_28_85_110_else_false;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_85_28_85_110_true:
+        symbol [ _colori %tmp.76 85 51 58 ];
+        %tmp.76 = getv ? :_colori;
+        %tmp.77 = "fill";
+        %tmp.78 = agetv %tmp.76 %tmp.77;
+        %tmp.79 = as %tmp.78 Lang.Number;
+        symbol [ Lang %tmp.79 85 70 74 ];
+        symbol [ Number %tmp.79 85 75 81 ];
+        push %tmp.79;
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_85_28_85_110_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_85_28_85_110_else_false:
+        symbol [ _colori %tmp.81 85 84 91 ];
+        %tmp.81 = getv ? :_colori;
+        %tmp.82 = "sfondo";
+        %tmp.83 = agetv %tmp.81 %tmp.82;
+        %tmp.84 = as %tmp.83 Lang.Number;
+        symbol [ Lang %tmp.84 85 105 109 ];
+        symbol [ Number %tmp.84 85 110 116 ];
+        push %tmp.84;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_85_28_85_110_end:
+        %tmp.85 = phi [%tmp.74 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_85_28_85_110_begin] [%tmp.79 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_85_28_85_110_true] [%tmp.84 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_85_28_85_110_else_false] [%tmp.85 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_85_28_85_110_end];
+        lputv %colore.12 %tmp.85;
+        symbol [ colore %colore.12 85 16 22 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 86 12 ]
+        %tmp.86 = lgetv %dc;
+        symbol [ dc %tmp.86 86 12 14 ];
+        symbol [ setColor %tmp.87 86 15 23 ];
+        %tmp.87 = getv function %tmp.86 :setColor;
+        %tmp.88 = lgetv %colore.12;
+        symbol [ colore %tmp.88 86 24 30 ];
+        %tmp.89 = lgetv %colore.12;
+        symbol [ colore %tmp.89 86 32 38 ];
+        invoke %tmp.86 %tmp.87(%tmp.88, %tmp.89);
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 87 12 ]
+        %tmp.90 = lgetv %dc;
+        symbol [ dc %tmp.90 87 12 14 ];
+        symbol [ fillRoundedRectangle %tmp.91 87 15 35 ];
+        %tmp.91 = getv function %tmp.90 :fillRoundedRectangle;
+        %tmp.92 = lgetv %x.2;
+        symbol [ x %tmp.92 87 36 37 ];
+        %tmp.93 = lgetv %yTrattino.11;
+        symbol [ yTrattino %tmp.93 87 39 48 ];
+        symbol [ _spessore %tmp.95 87 50 59 ];
+        %tmp.95 = getv ? :_spessore;
+        %tmp.96 = lgetv %trattiniH.8;
+        symbol [ trattiniH %tmp.96 87 61 70 ];
+        %tmp.97 = lgetv %raggio.1;
+        symbol [ raggio %tmp.97 87 72 78 ];
+        invoke %tmp.90 %tmp.91(%tmp.92, %tmp.93, %tmp.95, %tmp.96, %tmp.97);
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_82_44_88_8_stop:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_82_8_88_8_for_incr:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc" 82 ]
+        %tmp.100 = lgetv %i.9;
+        symbol [ i %tmp.100 82 39 40 ];
+        %tmp.101 = add %tmp.100 1;
+        lputv %i.9 %tmp.101;
+        symbol [ i %i.9 82 39 40 ];
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_82_8_88_8_for_test;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_82_8_88_8_for_end:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_ProgressBarDash_mc_72_88_89_4_stop:
     }
 }
 [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\ProgressBarDash.mc"; @line = 1; ]

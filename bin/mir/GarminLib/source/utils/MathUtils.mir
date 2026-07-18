@@ -90,6 +90,57 @@ C__GarminProject_GarminLibTest_GarminLib_source_utils_MathUtils_mc_8_8_14_8_if_e
         ret %tmp.20;
 C__GarminProject_GarminLibTest_GarminLib_source_utils_MathUtils_mc_6_54_16_4_stop:
     }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\MathUtils.mc"; @line = 23; @symbol_functiondef = [formatNumberCompact,23,16,35]; @symbol_param<0> = [valore,23,36,42]; @symbol_param<0>_type<0> = [Lang,23,46,50]; @symbol_param<0>_type<1> = [Number,23,51,57]; @symbol_return<0> = [Lang,23,62,66]; @symbol_return<1> = [String,23,67,73]; ]
+    static
+    function formatNumberCompact(valore as Lang.Number) as Lang.String {
+C__GarminProject_GarminLibTest_GarminLib_source_utils_MathUtils_mc_23_74_29_0_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\MathUtils.mc" 24 4 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_utils_MathUtils_mc_23_74_29_0_start" "C__GarminProject_GarminLibTest_GarminLib_source_utils_MathUtils_mc_23_74_29_0_stop" ]
+        %v.1 = local;
+        symbol [ v %v.1 24 8 9 ];
+        %tmp.1 = lgetv %valore;
+        symbol [ valore %tmp.1 24 12 18 ];
+        symbol [ toFloat %tmp.2 24 19 26 ];
+        %tmp.2 = getv function %tmp.1 :toFloat;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %v.1 %tmp.3;
+        symbol [ v %v.1 24 8 9 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\MathUtils.mc" 25 4 ]
+C__GarminProject_GarminLibTest_GarminLib_source_utils_MathUtils_mc_25_4_27_4_if_stmt:
+        %tmp.4 = lgetv %v.1;
+        symbol [ v %tmp.4 25 8 9 ];
+        %tmp.5 = 1000.0f;
+        %tmp.6 = lt %tmp.4 %tmp.5;
+        bf %tmp.6 @C__GarminProject_GarminLibTest_GarminLib_source_utils_MathUtils_mc_25_4_27_4_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_MathUtils_mc_25_4_27_4_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_MathUtils_mc_25_21_27_4_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\MathUtils.mc" 26 8 ]
+        %tmp.7 = lgetv %valore;
+        symbol [ valore %tmp.7 26 15 21 ];
+        symbol [ toNumber %tmp.8 26 22 30 ];
+        %tmp.8 = getv function %tmp.7 :toNumber;
+        %tmp.9 = invoke %tmp.7 %tmp.8();
+        symbol [ toString %tmp.10 26 33 41 ];
+        %tmp.10 = getv function %tmp.9 :toString;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        ret %tmp.11;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_MathUtils_mc_25_21_27_4_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_utils_MathUtils_mc_25_4_27_4_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_MathUtils_mc_25_4_27_4_if_end:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\MathUtils.mc" 28 4 ]
+        %tmp.12 = lgetv %v.1;
+        symbol [ v %tmp.12 28 12 13 ];
+        %tmp.13 = 1000.0f;
+        %tmp.14 = div %tmp.12 %tmp.13;
+        symbol [ format %tmp.15 28 25 31 ];
+        %tmp.15 = getv function %tmp.14 :format;
+        %tmp.16 = "%.1f";
+        %tmp.17 = invoke %tmp.14 %tmp.15(%tmp.16);
+        %tmp.18 = "K";
+        %tmp.19 = add %tmp.17 %tmp.18;
+        ret %tmp.19;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_MathUtils_mc_23_74_29_0_stop:
+    }
 }
 [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\MathUtils.mc"; @line = 2; ]
 <init> {

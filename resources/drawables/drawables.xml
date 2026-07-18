@@ -1,3 +1,69 @@
 <drawables xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
     <bitmap id="LauncherIcon" filename="launcher_icon.png" dithering="none" />
+
+
+    <!-- icone activity bianche default-->
+    <bitmap id="iconCalorie"     filename="icons_activity/CALORIE.png"       dithering="none" />
+    <bitmap id="iconMinDay"      filename="icons_activity/MIN_DAY.png"       dithering="none" />
+    <bitmap id="iconMinWeek"     filename="icons_activity/MIN_WEEK.png"      dithering="none" />
+    <bitmap id="iconPassi"       filename="icons_activity/PASSI.png"         dithering="none" />
+    <bitmap id="iconPianiSaliti" filename="icons_activity/PIANI_SALITI.png"  dithering="none" />
+    <bitmap id="iconStress"      filename="icons_activity/STRESS.png"        dithering="none" />
+    <bitmap id="iconBodyBattery" filename="icons_activity/BODY_BATTERY.png"  dithering="none" />
+ 
+    <!-- giallo3 -->
+    <bitmap id="iconCalorieGiallo3" filename="icons_activity/CALORIE_giallo3.png" dithering="none" />
+    <bitmap id="iconMinDayGiallo3" filename="icons_activity/MIN_DAY_giallo3.png" dithering="none" />
+    <bitmap id="iconMinWeekGiallo3" filename="icons_activity/MIN_WEEK_giallo3.png" dithering="none" />
+    <bitmap id="iconPassiGiallo3" filename="icons_activity/PASSI_giallo3.png" dithering="none" />
+    <bitmap id="iconPianiSalitiGiallo3" filename="icons_activity/PIANI_SALITI_giallo3.png" dithering="none" />
+    <bitmap id="iconStressGiallo3" filename="icons_activity/STRESS_giallo3.png" dithering="none" />
+    <bitmap id="iconBodyBatteryGiallo3" filename="icons_activity/BODY_BATTERY_giallo3.png" dithering="none" />
+
+    <!-- arancione3 -->
+    <bitmap id="iconCalorieArancione3" filename="icons_activity/CALORIE_arancione3.png" dithering="none" />
+    <bitmap id="iconMinDayArancione3" filename="icons_activity/MIN_DAY_arancione3.png" dithering="none" />
+    <bitmap id="iconMinWeekArancione3" filename="icons_activity/MIN_WEEK_arancione3.png" dithering="none" />
+    <bitmap id="iconPassiArancione3" filename="icons_activity/PASSI_arancione3.png" dithering="none" />
+    <bitmap id="iconPianiSalitiArancione3" filename="icons_activity/PIANI_SALITI_arancione3.png" dithering="none" />
+    <bitmap id="iconStressArancione3" filename="icons_activity/STRESS_arancione3.png" dithering="none" />
+    <bitmap id="iconBodyBatteryArancione3" filename="icons_activity/BODY_BATTERY_arancione3.png" dithering="none" />
+
+    <!-- ciano2 -->
+    <bitmap id="iconCalorieCiano2" filename="icons_activity/CALORIE_ciano2.png" dithering="none" />
+    <bitmap id="iconMinDayCiano2" filename="icons_activity/MIN_DAY_ciano2.png" dithering="none" />
+    <bitmap id="iconMinWeekCiano2" filename="icons_activity/MIN_WEEK_ciano2.png" dithering="none" />
+    <bitmap id="iconPassiCiano2" filename="icons_activity/PASSI_ciano2.png" dithering="none" />
+    <bitmap id="iconPianiSalitiCiano2" filename="icons_activity/PIANI_SALITI_ciano2.png" dithering="none" />
+    <bitmap id="iconStressCiano2" filename="icons_activity/STRESS_ciano2.png" dithering="none" />
+    <bitmap id="iconBodyBatteryCiano2" filename="icons_activity/BODY_BATTERY_ciano2.png" dithering="none" />
+
+    <!-- rosa3 -->
+    <bitmap id="iconCalorieRosa3" filename="icons_activity/CALORIE_rosa3.png" dithering="none" />
+    <bitmap id="iconMinDayRosa3" filename="icons_activity/MIN_DAY_rosa3.png" dithering="none" />
+    <bitmap id="iconMinWeekRosa3" filename="icons_activity/MIN_WEEK_rosa3.png" dithering="none" />
+    <bitmap id="iconPassiRosa3" filename="icons_activity/PASSI_rosa3.png" dithering="none" />
+    <bitmap id="iconPianiSalitiRosa3" filename="icons_activity/PIANI_SALITI_rosa3.png" dithering="none" />
+    <bitmap id="iconStressRosa3" filename="icons_activity/STRESS_rosa3.png" dithering="none" />
+    <bitmap id="iconBodyBatteryRosa3" filename="icons_activity/BODY_BATTERY_rosa3.png" dithering="none" />
+
+
+    <!-- nero2 -->
+    <bitmap id="iconBodyBatteryNero2"      filename="icons_activity/BODY_BATTERY_nero2.png"      dithering="none" />
+    <bitmap id="iconCalorieNero2"          filename="icons_activity/CALORIE_nero2.png"            dithering="none" />
+    <bitmap id="iconMinDayNero2"           filename="icons_activity/MIN_DAY_nero2.png"            dithering="none" />
+    <bitmap id="iconMinWeekNero2"          filename="icons_activity/MIN_WEEK_nero2.png"           dithering="none" />
+    <bitmap id="iconPassiNero2"            filename="icons_activity/PASSI_nero2.png"              dithering="none" />
+    <bitmap id="iconPianiSalitiNero2"      filename="icons_activity/PIANI_SALITI_nero2.png"       dithering="none" />
+    <bitmap id="iconStressNero2"           filename="icons_activity/STRESS_nero2.png"             dithering="none" />
+
+    <!-- grigio4 -->
+    <bitmap id="iconBodyBatteryGrigio4"    filename="icons_activity/BODY_BATTERY_grigio4.png"    dithering="none" />
+    <bitmap id="iconCalorieGrigio4"        filename="icons_activity/CALORIE_grigio4.png"          dithering="none" />
+    <bitmap id="iconMinDayGrigio4"         filename="icons_activity/MIN_DAY_grigio4.png"          dithering="none" />
+    <bitmap id="iconMinWeekGrigio4"        filename="icons_activity/MIN_WEEK_grigio4.png"         dithering="none" />
+    <bitmap id="iconPassiGrigio4"          filename="icons_activity/PASSI_grigio4.png"            dithering="none" />
+    <bitmap id="iconPianiSalitiGrigio4"    filename="icons_activity/PIANI_SALITI_grigio4.png"     dithering="none" />
+    <bitmap id="iconStressGrigio4"         filename="icons_activity/STRESS_grigio4.png"           dithering="none" />
+
 </drawables>

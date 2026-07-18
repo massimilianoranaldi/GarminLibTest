@@ -1,8 +1,71 @@
 <properties xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
 
+
+    <!-- FORMATO ORE >>>>>>>>>>>>>>>>>     OK  -->
+    <property id="UseMilitaryFormat" type="boolean">false</property>    
+
+    <!-- BACKGROUND >>>>>>>>>>>>>>>>>     OK  -->
     <property id="BackgroundColor" type="number">0x000000</property>
-    <property id="ForegroundColor" type="number">0xFF0000</property>
-    <property id="UseMilitaryFormat" type="boolean">false</property>
+    
+
+    <!-- TEMI >>>>>>>>>>>>>>>>>     OK -->
+    <property id="temiQuadrante" type="number">1</property>
+    
+
+    <!-- GOAL >>>>>>>>>>>>>>>>>     OK -->
+    <property id="goalSTEP" type="number">10000</property>
+    <property id="goalCALORIE" type="number">2000</property>
+    <property id="goalSTAIRS" type="number">10</property>
+    <property id="goalMINWEEK" type="number">400</property>
+    <property id="goalMINDAY" type="number">40</property>
+    
+    <!-- ATTIVITA 1 >>>>>>>>>>>>>>>>>     OK -->
+    
+    <property id="monitoringAttivita1" type="number">0</property> <!--activity1-->
+
+    <property id="coloreFontArcoEsterno" type="number">0xFFFFFF</property> <!--activity1-->
+    <property id="coloreSfondoAttivita1" type="number">0x555555</property> <!--activity1-->
+    <property id="coloreRipienoAttivita1" type="number">0x55FFFF</property> <!--activity1-->
+
+    <!-- ATTIVITA 2 >>>>>>>>>>>>>>>>>     OK -->
+
+    <property id="monitoringAttivita2" type="number">1</property> <!--activity2-->
+
+    <property id="coloreFontArcoInterno" type="number">0xFFFFFF</property> <!--activity2-->
+    <property id="coloreSfondoAttivita2" type="number">0x555555</property> <!--activity2-->
+    <property id="coloreRipienoAttivita2" type="number">0x55FFFF</property> <!--activity2-->
+
+    <!-- CERCHIO GRANDE >>>>>>>>>>>>>>>>>     OK -->
+    <property id="cerchioGrandeSfondo" type="number">0x333333</property> <!--_circleCntrl-->
+    <property id="cerchioGrandeContorno" type="number">0x55FFFF</property> <!--_circleCntrl-->
+
+    <!-- CERCHIO SINISTRA >>>>>>>>>>>>>>>>>     OK -->
+    <property id="cerchioSxSfondo" type="number">0x333333</property> <!--_circleSx-->
+    <property id="cerchioSxContorno" type="number">0x55FFFF</property> <!--_circleSx-->
+
+    <!-- CERCHIO DESTRA >>>>>>>>>>>>>>>>>     OK -->
+    <property id="cerchioDxSfondo" type="number">0x333333</property> <!--_circleDx-->
+    <property id="cerchioDxContorno" type="number">0x55FFFF</property> <!--_circleDx-->
+
+    <!-- NOTCH >>>>>>>>>>>>>>>>>     OK -->
+    <property id="coloreCittaMeteo" type="number">0xFFFFFF</property> <!--_rectNotch-->
+    <property id="retMeteoSfondo" type="number">0x333333</property> <!--_rectNotch-->
+    
+    <!-- RETTANGOLO CENTRALE >>>>>>>>>>>>>>>>>     OK -->
+    <property id="retOreSfondo" type="number">0x333333</property> <!--_rectCalendar-->
+    <property id="coloreOre" type="number">0x55FFFF</property><!--_rectCalendar-->
+    <property id="coloreMinuti" type="number">0xFFFFFF</property><!--_rectCalendar-->
+    <property id="coloreCalendario" type="number">0x55FFFF</property><!--_rectCalendar-->
+    
+
+    <property id="coloreIconaAttivita1" type="number">0</property>
+    <property id="coloreIconaAttivita2" type="number">0</property>
+
+    
+
+    
+    
+
     
 
 </properties>

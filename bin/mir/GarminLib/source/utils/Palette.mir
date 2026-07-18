@@ -1,0 +1,910 @@
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [Graphics,1,13,21]; ]
+using Toybox.Graphics;
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [Lang,2,13,17]; ]
+using Toybox.Lang;
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 4; @symbol_classdef = [Palette,4,6,13]; ]
+class Palette {
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 7; @position = 15; @symbol_vardef = [bianco1,7,15,22]; ]
+    static
+    var bianco1 = 0xFFFFFF;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 8; @position = 15; @symbol_vardef = [bianco2,8,15,22]; ]
+    static
+    var bianco2 = 0xFFF5E6;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 9; @position = 15; @symbol_vardef = [bianco3,9,15,22]; ]
+    static
+    var bianco3 = 0xF0F4FF;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 12; @position = 15; @symbol_vardef = [grigio1,12,15,22]; ]
+    static
+    var grigio1 = 0xDDDDDD;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 13; @position = 15; @symbol_vardef = [grigio2,13,15,22]; ]
+    static
+    var grigio2 = 0xBBBBBB;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 14; @position = 15; @symbol_vardef = [grigio3,14,15,22]; ]
+    static
+    var grigio3 = 0xAAAAAA;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 15; @position = 15; @symbol_vardef = [grigio4,15,15,22]; ]
+    static
+    var grigio4 = 0x888888;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 16; @position = 15; @symbol_vardef = [grigio5,16,15,22]; ]
+    static
+    var grigio5 = 0x555555;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 17; @position = 15; @symbol_vardef = [grigio6,17,15,22]; ]
+    static
+    var grigio6 = 0x333333;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 20; @position = 15; @symbol_vardef = [nero1,20,15,20]; ]
+    static
+    var nero1 = 0x111111;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 21; @position = 15; @symbol_vardef = [nero2,21,15,20]; ]
+    static
+    var nero2 = 0x000000;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 24; @position = 15; @symbol_vardef = [rosso1,24,15,21]; ]
+    static
+    var rosso1 = 0xFF9999;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 25; @position = 15; @symbol_vardef = [rosso2,25,15,21]; ]
+    static
+    var rosso2 = 0xFF5555;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 26; @position = 15; @symbol_vardef = [rosso3,26,15,21]; ]
+    static
+    var rosso3 = 0xFF0000;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 27; @position = 15; @symbol_vardef = [rosso4,27,15,21]; ]
+    static
+    var rosso4 = 0xCC0000;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 28; @position = 15; @symbol_vardef = [rosso5,28,15,21]; ]
+    static
+    var rosso5 = 0xAA0000;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 29; @position = 15; @symbol_vardef = [rosso6,29,15,21]; ]
+    static
+    var rosso6 = 0x550000;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 32; @position = 15; @symbol_vardef = [arancione1,32,15,25]; ]
+    static
+    var arancione1 = 0xFFCC88;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 33; @position = 15; @symbol_vardef = [arancione2,33,15,25]; ]
+    static
+    var arancione2 = 0xFFAA44;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 34; @position = 15; @symbol_vardef = [arancione3,34,15,25]; ]
+    static
+    var arancione3 = 0xFF8800;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 35; @position = 15; @symbol_vardef = [arancione4,35,15,25]; ]
+    static
+    var arancione4 = 0xFF5500;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 36; @position = 15; @symbol_vardef = [arancione5,36,15,25]; ]
+    static
+    var arancione5 = 0xAA4400;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 39; @position = 15; @symbol_vardef = [giallo1,39,15,22]; ]
+    static
+    var giallo1 = 0xFFFF99;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 40; @position = 15; @symbol_vardef = [giallo2,40,15,22]; ]
+    static
+    var giallo2 = 0xFFFF55;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 41; @position = 15; @symbol_vardef = [giallo3,41,15,22]; ]
+    static
+    var giallo3 = 0xFFFF00;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 42; @position = 15; @symbol_vardef = [giallo4,42,15,22]; ]
+    static
+    var giallo4 = 0xCCCC00;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 43; @position = 15; @symbol_vardef = [giallo5,43,15,22]; ]
+    static
+    var giallo5 = 0x888800;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 46; @position = 15; @symbol_vardef = [verde1,46,15,21]; ]
+    static
+    var verde1 = 0xAAFFAA;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 47; @position = 15; @symbol_vardef = [verde2,47,15,21]; ]
+    static
+    var verde2 = 0x55FF55;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 48; @position = 15; @symbol_vardef = [verde3,48,15,21]; ]
+    static
+    var verde3 = 0x00FF00;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 49; @position = 15; @symbol_vardef = [verde4,49,15,21]; ]
+    static
+    var verde4 = 0x00AA00;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 50; @position = 15; @symbol_vardef = [verde5,50,15,21]; ]
+    static
+    var verde5 = 0x005500;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 51; @position = 15; @symbol_vardef = [verde6,51,15,21]; ]
+    static
+    var verde6 = 0x002200;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 54; @position = 15; @symbol_vardef = [ciano1,54,15,21]; ]
+    static
+    var ciano1 = 0xAAFFFF;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 55; @position = 15; @symbol_vardef = [ciano2,55,15,21]; ]
+    static
+    var ciano2 = 0x55FFFF;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 56; @position = 15; @symbol_vardef = [ciano3,56,15,21]; ]
+    static
+    var ciano3 = 0x00FFFF;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 57; @position = 15; @symbol_vardef = [ciano4,57,15,21]; ]
+    static
+    var ciano4 = 0x00AAAA;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 58; @position = 15; @symbol_vardef = [ciano5,58,15,21]; ]
+    static
+    var ciano5 = 0x005555;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 61; @position = 15; @symbol_vardef = [blu1,61,15,19]; ]
+    static
+    var blu1 = 0xAAAAFF;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 62; @position = 15; @symbol_vardef = [blu2,62,15,19]; ]
+    static
+    var blu2 = 0x5555FF;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 63; @position = 15; @symbol_vardef = [blu3,63,15,19]; ]
+    static
+    var blu3 = 0x0055FF;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 64; @position = 15; @symbol_vardef = [blu4,64,15,19]; ]
+    static
+    var blu4 = 0x0000FF;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 65; @position = 15; @symbol_vardef = [blu5,65,15,19]; ]
+    static
+    var blu5 = 0x000055;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 66; @position = 15; @symbol_vardef = [blu6,66,15,19]; ]
+    static
+    var blu6 = 0x000022;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 69; @position = 15; @symbol_vardef = [viola1,69,15,21]; ]
+    static
+    var viola1 = 0xDD99FF;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 70; @position = 15; @symbol_vardef = [viola2,70,15,21]; ]
+    static
+    var viola2 = 0xBB44FF;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 71; @position = 15; @symbol_vardef = [viola3,71,15,21]; ]
+    static
+    var viola3 = 0xAA00FF;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 72; @position = 15; @symbol_vardef = [viola4,72,15,21]; ]
+    static
+    var viola4 = 0x7700AA;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 73; @position = 15; @symbol_vardef = [viola5,73,15,21]; ]
+    static
+    var viola5 = 0x330055;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 76; @position = 15; @symbol_vardef = [rosa1,76,15,20]; ]
+    static
+    var rosa1 = 0xFFAACC;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 77; @position = 15; @symbol_vardef = [rosa2,77,15,20]; ]
+    static
+    var rosa2 = 0xFF55AA;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 78; @position = 15; @symbol_vardef = [rosa3,78,15,20]; ]
+    static
+    var rosa3 = 0xFF0055;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 79; @position = 15; @symbol_vardef = [rosa4,79,15,20]; ]
+    static
+    var rosa4 = 0xFF00FF;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 80; @position = 15; @symbol_vardef = [rosa5,80,15,20]; ]
+    static
+    var rosa5 = 0xAA0055;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 83; @position = 15; @symbol_vardef = [marrone1,83,15,23]; ]
+    static
+    var marrone1 = 0xFFCC99;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 84; @position = 15; @symbol_vardef = [marrone2,84,15,23]; ]
+    static
+    var marrone2 = 0xCC8844;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 85; @position = 15; @symbol_vardef = [marrone3,85,15,23]; ]
+    static
+    var marrone3 = 0x885522;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 86; @position = 15; @symbol_vardef = [marrone4,86,15,23]; ]
+    static
+    var marrone4 = 0x442211;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 89; @position = 15; @symbol_vardef = [oro1,89,15,19]; ]
+    static
+    var oro1 = 0xFFEE88;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 90; @position = 15; @symbol_vardef = [oro2,90,15,19]; ]
+    static
+    var oro2 = 0xFFCC00;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 91; @position = 15; @symbol_vardef = [oro3,91,15,19]; ]
+    static
+    var oro3 = 0xCC9900;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 92; @position = 15; @symbol_vardef = [oro4,92,15,19]; ]
+    static
+    var oro4 = 0x886600;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 95; @position = 15; @symbol_vardef = [corallo1,95,15,23]; ]
+    static
+    var corallo1 = 0xFF8877;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 96; @position = 15; @symbol_vardef = [corallo2,96,15,23]; ]
+    static
+    var corallo2 = 0xFF5544;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 100; @symbol_functiondef = [getFamiglia,100,20,31]; @symbol_param<0> = [famiglia,100,32,40]; @symbol_return<0> = [Lang,100,45,49]; @symbol_return<1> = [Array,100,50,55]; @symbol_return<2> = [Lang,100,56,60]; @symbol_return<3> = [Number,100,61,67]; ]
+    static
+    function getFamiglia(famiglia) as Lang.Array<Lang.Number> {
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_100_69_116_4_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc" 101 8 ]
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_101_8_114_78_if_stmt:
+        %tmp.1 = lgetv %famiglia;
+        symbol [ famiglia %tmp.1 101 17 25 ];
+        symbol [ equals %tmp.2 101 26 32 ];
+        %tmp.2 = getv function %tmp.1 :equals;
+        %tmp.3 = "bianco";
+        %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
+        bf %tmp.4 @C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_101_8_114_78_if_false;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_101_8_114_78_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_101_47_101_85_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc" 101 49 ]
+        %tmp.5 = newa 3;
+        symbol [ bianco1 %tmp.7 101 57 64 ];
+        %tmp.7 = getv ? :bianco1;
+        %tmp.8 = dup %tmp.5;
+        %tmp.9 = aputv %tmp.8 0 %tmp.7;
+        symbol [ bianco2 %tmp.11 101 66 73 ];
+        %tmp.11 = getv ? :bianco2;
+        %tmp.12 = dup %tmp.9;
+        %tmp.13 = aputv %tmp.12 1 %tmp.11;
+        symbol [ bianco3 %tmp.15 101 75 82 ];
+        %tmp.15 = getv ? :bianco3;
+        %tmp.16 = dup %tmp.13;
+        %tmp.17 = aputv %tmp.16 2 %tmp.15;
+        ret %tmp.17;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_101_47_101_85_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_101_8_114_78_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_101_8_114_78_if_false:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc" 102 13 ]
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_102_13_114_78_if_stmt:
+        %tmp.18 = lgetv %famiglia;
+        symbol [ famiglia %tmp.18 102 17 25 ];
+        symbol [ equals %tmp.19 102 26 32 ];
+        %tmp.19 = getv function %tmp.18 :equals;
+        %tmp.20 = "grigio";
+        %tmp.21 = invoke %tmp.18 %tmp.19(%tmp.20);
+        bf %tmp.21 @C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_102_13_114_78_if_false;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_102_13_114_78_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_102_47_102_112_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc" 102 49 ]
+        %tmp.22 = newa 6;
+        symbol [ grigio1 %tmp.24 102 57 64 ];
+        %tmp.24 = getv ? :grigio1;
+        %tmp.25 = dup %tmp.22;
+        %tmp.26 = aputv %tmp.25 0 %tmp.24;
+        symbol [ grigio2 %tmp.28 102 66 73 ];
+        %tmp.28 = getv ? :grigio2;
+        %tmp.29 = dup %tmp.26;
+        %tmp.30 = aputv %tmp.29 1 %tmp.28;
+        symbol [ grigio3 %tmp.32 102 75 82 ];
+        %tmp.32 = getv ? :grigio3;
+        %tmp.33 = dup %tmp.30;
+        %tmp.34 = aputv %tmp.33 2 %tmp.32;
+        symbol [ grigio4 %tmp.36 102 84 91 ];
+        %tmp.36 = getv ? :grigio4;
+        %tmp.37 = dup %tmp.34;
+        %tmp.38 = aputv %tmp.37 3 %tmp.36;
+        symbol [ grigio5 %tmp.40 102 93 100 ];
+        %tmp.40 = getv ? :grigio5;
+        %tmp.41 = dup %tmp.38;
+        %tmp.42 = aputv %tmp.41 4 %tmp.40;
+        symbol [ grigio6 %tmp.44 102 102 109 ];
+        %tmp.44 = getv ? :grigio6;
+        %tmp.45 = dup %tmp.42;
+        %tmp.46 = aputv %tmp.45 5 %tmp.44;
+        ret %tmp.46;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_102_47_102_112_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_102_13_114_78_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_102_13_114_78_if_false:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc" 103 13 ]
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_103_13_114_78_if_stmt:
+        %tmp.47 = lgetv %famiglia;
+        symbol [ famiglia %tmp.47 103 17 25 ];
+        symbol [ equals %tmp.48 103 26 32 ];
+        %tmp.48 = getv function %tmp.47 :equals;
+        %tmp.49 = "nero";
+        %tmp.50 = invoke %tmp.47 %tmp.48(%tmp.49);
+        bf %tmp.50 @C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_103_13_114_78_if_false;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_103_13_114_78_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_103_47_103_72_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc" 103 49 ]
+        %tmp.51 = newa 2;
+        symbol [ nero1 %tmp.53 103 57 62 ];
+        %tmp.53 = getv ? :nero1;
+        %tmp.54 = dup %tmp.51;
+        %tmp.55 = aputv %tmp.54 0 %tmp.53;
+        symbol [ nero2 %tmp.57 103 64 69 ];
+        %tmp.57 = getv ? :nero2;
+        %tmp.58 = dup %tmp.55;
+        %tmp.59 = aputv %tmp.58 1 %tmp.57;
+        ret %tmp.59;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_103_47_103_72_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_103_13_114_78_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_103_13_114_78_if_false:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc" 104 13 ]
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_104_13_114_78_if_stmt:
+        %tmp.60 = lgetv %famiglia;
+        symbol [ famiglia %tmp.60 104 17 25 ];
+        symbol [ equals %tmp.61 104 26 32 ];
+        %tmp.61 = getv function %tmp.60 :equals;
+        %tmp.62 = "rosso";
+        %tmp.63 = invoke %tmp.60 %tmp.61(%tmp.62);
+        bf %tmp.63 @C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_104_13_114_78_if_false;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_104_13_114_78_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_104_47_104_106_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc" 104 49 ]
+        %tmp.64 = newa 6;
+        symbol [ rosso1 %tmp.66 104 57 63 ];
+        %tmp.66 = getv ? :rosso1;
+        %tmp.67 = dup %tmp.64;
+        %tmp.68 = aputv %tmp.67 0 %tmp.66;
+        symbol [ rosso2 %tmp.70 104 65 71 ];
+        %tmp.70 = getv ? :rosso2;
+        %tmp.71 = dup %tmp.68;
+        %tmp.72 = aputv %tmp.71 1 %tmp.70;
+        symbol [ rosso3 %tmp.74 104 73 79 ];
+        %tmp.74 = getv ? :rosso3;
+        %tmp.75 = dup %tmp.72;
+        %tmp.76 = aputv %tmp.75 2 %tmp.74;
+        symbol [ rosso4 %tmp.78 104 81 87 ];
+        %tmp.78 = getv ? :rosso4;
+        %tmp.79 = dup %tmp.76;
+        %tmp.80 = aputv %tmp.79 3 %tmp.78;
+        symbol [ rosso5 %tmp.82 104 89 95 ];
+        %tmp.82 = getv ? :rosso5;
+        %tmp.83 = dup %tmp.80;
+        %tmp.84 = aputv %tmp.83 4 %tmp.82;
+        symbol [ rosso6 %tmp.86 104 97 103 ];
+        %tmp.86 = getv ? :rosso6;
+        %tmp.87 = dup %tmp.84;
+        %tmp.88 = aputv %tmp.87 5 %tmp.86;
+        ret %tmp.88;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_104_47_104_106_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_104_13_114_78_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_104_13_114_78_if_false:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc" 105 13 ]
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_105_13_114_78_if_stmt:
+        %tmp.89 = lgetv %famiglia;
+        symbol [ famiglia %tmp.89 105 17 25 ];
+        symbol [ equals %tmp.90 105 26 32 ];
+        %tmp.90 = getv function %tmp.89 :equals;
+        %tmp.91 = "arancione";
+        %tmp.92 = invoke %tmp.89 %tmp.90(%tmp.91);
+        bf %tmp.92 @C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_105_13_114_78_if_false;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_105_13_114_78_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_105_47_105_118_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc" 105 49 ]
+        %tmp.93 = newa 5;
+        symbol [ arancione1 %tmp.95 105 57 67 ];
+        %tmp.95 = getv ? :arancione1;
+        %tmp.96 = dup %tmp.93;
+        %tmp.97 = aputv %tmp.96 0 %tmp.95;
+        symbol [ arancione2 %tmp.99 105 69 79 ];
+        %tmp.99 = getv ? :arancione2;
+        %tmp.100 = dup %tmp.97;
+        %tmp.101 = aputv %tmp.100 1 %tmp.99;
+        symbol [ arancione3 %tmp.103 105 81 91 ];
+        %tmp.103 = getv ? :arancione3;
+        %tmp.104 = dup %tmp.101;
+        %tmp.105 = aputv %tmp.104 2 %tmp.103;
+        symbol [ arancione4 %tmp.107 105 93 103 ];
+        %tmp.107 = getv ? :arancione4;
+        %tmp.108 = dup %tmp.105;
+        %tmp.109 = aputv %tmp.108 3 %tmp.107;
+        symbol [ arancione5 %tmp.111 105 105 115 ];
+        %tmp.111 = getv ? :arancione5;
+        %tmp.112 = dup %tmp.109;
+        %tmp.113 = aputv %tmp.112 4 %tmp.111;
+        ret %tmp.113;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_105_47_105_118_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_105_13_114_78_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_105_13_114_78_if_false:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc" 106 13 ]
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_106_13_114_78_if_stmt:
+        %tmp.114 = lgetv %famiglia;
+        symbol [ famiglia %tmp.114 106 17 25 ];
+        symbol [ equals %tmp.115 106 26 32 ];
+        %tmp.115 = getv function %tmp.114 :equals;
+        %tmp.116 = "giallo";
+        %tmp.117 = invoke %tmp.114 %tmp.115(%tmp.116);
+        bf %tmp.117 @C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_106_13_114_78_if_false;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_106_13_114_78_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_106_47_106_103_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc" 106 49 ]
+        %tmp.118 = newa 5;
+        symbol [ giallo1 %tmp.120 106 57 64 ];
+        %tmp.120 = getv ? :giallo1;
+        %tmp.121 = dup %tmp.118;
+        %tmp.122 = aputv %tmp.121 0 %tmp.120;
+        symbol [ giallo2 %tmp.124 106 66 73 ];
+        %tmp.124 = getv ? :giallo2;
+        %tmp.125 = dup %tmp.122;
+        %tmp.126 = aputv %tmp.125 1 %tmp.124;
+        symbol [ giallo3 %tmp.128 106 75 82 ];
+        %tmp.128 = getv ? :giallo3;
+        %tmp.129 = dup %tmp.126;
+        %tmp.130 = aputv %tmp.129 2 %tmp.128;
+        symbol [ giallo4 %tmp.132 106 84 91 ];
+        %tmp.132 = getv ? :giallo4;
+        %tmp.133 = dup %tmp.130;
+        %tmp.134 = aputv %tmp.133 3 %tmp.132;
+        symbol [ giallo5 %tmp.136 106 93 100 ];
+        %tmp.136 = getv ? :giallo5;
+        %tmp.137 = dup %tmp.134;
+        %tmp.138 = aputv %tmp.137 4 %tmp.136;
+        ret %tmp.138;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_106_47_106_103_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_106_13_114_78_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_106_13_114_78_if_false:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc" 107 13 ]
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_107_13_114_78_if_stmt:
+        %tmp.139 = lgetv %famiglia;
+        symbol [ famiglia %tmp.139 107 17 25 ];
+        symbol [ equals %tmp.140 107 26 32 ];
+        %tmp.140 = getv function %tmp.139 :equals;
+        %tmp.141 = "verde";
+        %tmp.142 = invoke %tmp.139 %tmp.140(%tmp.141);
+        bf %tmp.142 @C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_107_13_114_78_if_false;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_107_13_114_78_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_107_47_107_106_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc" 107 49 ]
+        %tmp.143 = newa 6;
+        symbol [ verde1 %tmp.145 107 57 63 ];
+        %tmp.145 = getv ? :verde1;
+        %tmp.146 = dup %tmp.143;
+        %tmp.147 = aputv %tmp.146 0 %tmp.145;
+        symbol [ verde2 %tmp.149 107 65 71 ];
+        %tmp.149 = getv ? :verde2;
+        %tmp.150 = dup %tmp.147;
+        %tmp.151 = aputv %tmp.150 1 %tmp.149;
+        symbol [ verde3 %tmp.153 107 73 79 ];
+        %tmp.153 = getv ? :verde3;
+        %tmp.154 = dup %tmp.151;
+        %tmp.155 = aputv %tmp.154 2 %tmp.153;
+        symbol [ verde4 %tmp.157 107 81 87 ];
+        %tmp.157 = getv ? :verde4;
+        %tmp.158 = dup %tmp.155;
+        %tmp.159 = aputv %tmp.158 3 %tmp.157;
+        symbol [ verde5 %tmp.161 107 89 95 ];
+        %tmp.161 = getv ? :verde5;
+        %tmp.162 = dup %tmp.159;
+        %tmp.163 = aputv %tmp.162 4 %tmp.161;
+        symbol [ verde6 %tmp.165 107 97 103 ];
+        %tmp.165 = getv ? :verde6;
+        %tmp.166 = dup %tmp.163;
+        %tmp.167 = aputv %tmp.166 5 %tmp.165;
+        ret %tmp.167;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_107_47_107_106_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_107_13_114_78_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_107_13_114_78_if_false:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc" 108 13 ]
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_108_13_114_78_if_stmt:
+        %tmp.168 = lgetv %famiglia;
+        symbol [ famiglia %tmp.168 108 17 25 ];
+        symbol [ equals %tmp.169 108 26 32 ];
+        %tmp.169 = getv function %tmp.168 :equals;
+        %tmp.170 = "ciano";
+        %tmp.171 = invoke %tmp.168 %tmp.169(%tmp.170);
+        bf %tmp.171 @C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_108_13_114_78_if_false;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_108_13_114_78_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_108_47_108_98_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc" 108 49 ]
+        %tmp.172 = newa 5;
+        symbol [ ciano1 %tmp.174 108 57 63 ];
+        %tmp.174 = getv ? :ciano1;
+        %tmp.175 = dup %tmp.172;
+        %tmp.176 = aputv %tmp.175 0 %tmp.174;
+        symbol [ ciano2 %tmp.178 108 65 71 ];
+        %tmp.178 = getv ? :ciano2;
+        %tmp.179 = dup %tmp.176;
+        %tmp.180 = aputv %tmp.179 1 %tmp.178;
+        symbol [ ciano3 %tmp.182 108 73 79 ];
+        %tmp.182 = getv ? :ciano3;
+        %tmp.183 = dup %tmp.180;
+        %tmp.184 = aputv %tmp.183 2 %tmp.182;
+        symbol [ ciano4 %tmp.186 108 81 87 ];
+        %tmp.186 = getv ? :ciano4;
+        %tmp.187 = dup %tmp.184;
+        %tmp.188 = aputv %tmp.187 3 %tmp.186;
+        symbol [ ciano5 %tmp.190 108 89 95 ];
+        %tmp.190 = getv ? :ciano5;
+        %tmp.191 = dup %tmp.188;
+        %tmp.192 = aputv %tmp.191 4 %tmp.190;
+        ret %tmp.192;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_108_47_108_98_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_108_13_114_78_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_108_13_114_78_if_false:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc" 109 13 ]
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_109_13_114_78_if_stmt:
+        %tmp.193 = lgetv %famiglia;
+        symbol [ famiglia %tmp.193 109 17 25 ];
+        symbol [ equals %tmp.194 109 26 32 ];
+        %tmp.194 = getv function %tmp.193 :equals;
+        %tmp.195 = "blu";
+        %tmp.196 = invoke %tmp.193 %tmp.194(%tmp.195);
+        bf %tmp.196 @C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_109_13_114_78_if_false;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_109_13_114_78_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_109_47_109_94_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc" 109 49 ]
+        %tmp.197 = newa 6;
+        symbol [ blu1 %tmp.199 109 57 61 ];
+        %tmp.199 = getv ? :blu1;
+        %tmp.200 = dup %tmp.197;
+        %tmp.201 = aputv %tmp.200 0 %tmp.199;
+        symbol [ blu2 %tmp.203 109 63 67 ];
+        %tmp.203 = getv ? :blu2;
+        %tmp.204 = dup %tmp.201;
+        %tmp.205 = aputv %tmp.204 1 %tmp.203;
+        symbol [ blu3 %tmp.207 109 69 73 ];
+        %tmp.207 = getv ? :blu3;
+        %tmp.208 = dup %tmp.205;
+        %tmp.209 = aputv %tmp.208 2 %tmp.207;
+        symbol [ blu4 %tmp.211 109 75 79 ];
+        %tmp.211 = getv ? :blu4;
+        %tmp.212 = dup %tmp.209;
+        %tmp.213 = aputv %tmp.212 3 %tmp.211;
+        symbol [ blu5 %tmp.215 109 81 85 ];
+        %tmp.215 = getv ? :blu5;
+        %tmp.216 = dup %tmp.213;
+        %tmp.217 = aputv %tmp.216 4 %tmp.215;
+        symbol [ blu6 %tmp.219 109 87 91 ];
+        %tmp.219 = getv ? :blu6;
+        %tmp.220 = dup %tmp.217;
+        %tmp.221 = aputv %tmp.220 5 %tmp.219;
+        ret %tmp.221;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_109_47_109_94_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_109_13_114_78_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_109_13_114_78_if_false:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc" 110 13 ]
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_110_13_114_78_if_stmt:
+        %tmp.222 = lgetv %famiglia;
+        symbol [ famiglia %tmp.222 110 17 25 ];
+        symbol [ equals %tmp.223 110 26 32 ];
+        %tmp.223 = getv function %tmp.222 :equals;
+        %tmp.224 = "viola";
+        %tmp.225 = invoke %tmp.222 %tmp.223(%tmp.224);
+        bf %tmp.225 @C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_110_13_114_78_if_false;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_110_13_114_78_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_110_47_110_98_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc" 110 49 ]
+        %tmp.226 = newa 5;
+        symbol [ viola1 %tmp.228 110 57 63 ];
+        %tmp.228 = getv ? :viola1;
+        %tmp.229 = dup %tmp.226;
+        %tmp.230 = aputv %tmp.229 0 %tmp.228;
+        symbol [ viola2 %tmp.232 110 65 71 ];
+        %tmp.232 = getv ? :viola2;
+        %tmp.233 = dup %tmp.230;
+        %tmp.234 = aputv %tmp.233 1 %tmp.232;
+        symbol [ viola3 %tmp.236 110 73 79 ];
+        %tmp.236 = getv ? :viola3;
+        %tmp.237 = dup %tmp.234;
+        %tmp.238 = aputv %tmp.237 2 %tmp.236;
+        symbol [ viola4 %tmp.240 110 81 87 ];
+        %tmp.240 = getv ? :viola4;
+        %tmp.241 = dup %tmp.238;
+        %tmp.242 = aputv %tmp.241 3 %tmp.240;
+        symbol [ viola5 %tmp.244 110 89 95 ];
+        %tmp.244 = getv ? :viola5;
+        %tmp.245 = dup %tmp.242;
+        %tmp.246 = aputv %tmp.245 4 %tmp.244;
+        ret %tmp.246;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_110_47_110_98_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_110_13_114_78_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_110_13_114_78_if_false:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc" 111 13 ]
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_111_13_114_78_if_stmt:
+        %tmp.247 = lgetv %famiglia;
+        symbol [ famiglia %tmp.247 111 17 25 ];
+        symbol [ equals %tmp.248 111 26 32 ];
+        %tmp.248 = getv function %tmp.247 :equals;
+        %tmp.249 = "rosa";
+        %tmp.250 = invoke %tmp.247 %tmp.248(%tmp.249);
+        bf %tmp.250 @C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_111_13_114_78_if_false;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_111_13_114_78_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_111_47_111_93_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc" 111 49 ]
+        %tmp.251 = newa 5;
+        symbol [ rosa1 %tmp.253 111 57 62 ];
+        %tmp.253 = getv ? :rosa1;
+        %tmp.254 = dup %tmp.251;
+        %tmp.255 = aputv %tmp.254 0 %tmp.253;
+        symbol [ rosa2 %tmp.257 111 64 69 ];
+        %tmp.257 = getv ? :rosa2;
+        %tmp.258 = dup %tmp.255;
+        %tmp.259 = aputv %tmp.258 1 %tmp.257;
+        symbol [ rosa3 %tmp.261 111 71 76 ];
+        %tmp.261 = getv ? :rosa3;
+        %tmp.262 = dup %tmp.259;
+        %tmp.263 = aputv %tmp.262 2 %tmp.261;
+        symbol [ rosa4 %tmp.265 111 78 83 ];
+        %tmp.265 = getv ? :rosa4;
+        %tmp.266 = dup %tmp.263;
+        %tmp.267 = aputv %tmp.266 3 %tmp.265;
+        symbol [ rosa5 %tmp.269 111 85 90 ];
+        %tmp.269 = getv ? :rosa5;
+        %tmp.270 = dup %tmp.267;
+        %tmp.271 = aputv %tmp.270 4 %tmp.269;
+        ret %tmp.271;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_111_47_111_93_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_111_13_114_78_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_111_13_114_78_if_false:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc" 112 13 ]
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_112_13_114_78_if_stmt:
+        %tmp.272 = lgetv %famiglia;
+        symbol [ famiglia %tmp.272 112 17 25 ];
+        symbol [ equals %tmp.273 112 26 32 ];
+        %tmp.273 = getv function %tmp.272 :equals;
+        %tmp.274 = "marrone";
+        %tmp.275 = invoke %tmp.272 %tmp.273(%tmp.274);
+        bf %tmp.275 @C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_112_13_114_78_if_false;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_112_13_114_78_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_112_47_112_98_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc" 112 49 ]
+        %tmp.276 = newa 4;
+        symbol [ marrone1 %tmp.278 112 57 65 ];
+        %tmp.278 = getv ? :marrone1;
+        %tmp.279 = dup %tmp.276;
+        %tmp.280 = aputv %tmp.279 0 %tmp.278;
+        symbol [ marrone2 %tmp.282 112 67 75 ];
+        %tmp.282 = getv ? :marrone2;
+        %tmp.283 = dup %tmp.280;
+        %tmp.284 = aputv %tmp.283 1 %tmp.282;
+        symbol [ marrone3 %tmp.286 112 77 85 ];
+        %tmp.286 = getv ? :marrone3;
+        %tmp.287 = dup %tmp.284;
+        %tmp.288 = aputv %tmp.287 2 %tmp.286;
+        symbol [ marrone4 %tmp.290 112 87 95 ];
+        %tmp.290 = getv ? :marrone4;
+        %tmp.291 = dup %tmp.288;
+        %tmp.292 = aputv %tmp.291 3 %tmp.290;
+        ret %tmp.292;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_112_47_112_98_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_112_13_114_78_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_112_13_114_78_if_false:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc" 113 13 ]
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_113_13_114_78_if_stmt:
+        %tmp.293 = lgetv %famiglia;
+        symbol [ famiglia %tmp.293 113 17 25 ];
+        symbol [ equals %tmp.294 113 26 32 ];
+        %tmp.294 = getv function %tmp.293 :equals;
+        %tmp.295 = "oro";
+        %tmp.296 = invoke %tmp.293 %tmp.294(%tmp.295);
+        bf %tmp.296 @C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_113_13_114_78_if_false;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_113_13_114_78_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_113_47_113_82_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc" 113 49 ]
+        %tmp.297 = newa 4;
+        symbol [ oro1 %tmp.299 113 57 61 ];
+        %tmp.299 = getv ? :oro1;
+        %tmp.300 = dup %tmp.297;
+        %tmp.301 = aputv %tmp.300 0 %tmp.299;
+        symbol [ oro2 %tmp.303 113 63 67 ];
+        %tmp.303 = getv ? :oro2;
+        %tmp.304 = dup %tmp.301;
+        %tmp.305 = aputv %tmp.304 1 %tmp.303;
+        symbol [ oro3 %tmp.307 113 69 73 ];
+        %tmp.307 = getv ? :oro3;
+        %tmp.308 = dup %tmp.305;
+        %tmp.309 = aputv %tmp.308 2 %tmp.307;
+        symbol [ oro4 %tmp.311 113 75 79 ];
+        %tmp.311 = getv ? :oro4;
+        %tmp.312 = dup %tmp.309;
+        %tmp.313 = aputv %tmp.312 3 %tmp.311;
+        ret %tmp.313;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_113_47_113_82_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_113_13_114_78_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_113_13_114_78_if_false:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc" 114 13 ]
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_114_13_114_78_if_stmt:
+        %tmp.314 = lgetv %famiglia;
+        symbol [ famiglia %tmp.314 114 17 25 ];
+        symbol [ equals %tmp.315 114 26 32 ];
+        %tmp.315 = getv function %tmp.314 :equals;
+        %tmp.316 = "corallo";
+        %tmp.317 = invoke %tmp.314 %tmp.315(%tmp.316);
+        bf %tmp.317 @C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_114_13_114_78_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_114_13_114_78_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_114_47_114_78_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc" 114 49 ]
+        %tmp.318 = newa 2;
+        symbol [ corallo1 %tmp.320 114 57 65 ];
+        %tmp.320 = getv ? :corallo1;
+        %tmp.321 = dup %tmp.318;
+        %tmp.322 = aputv %tmp.321 0 %tmp.320;
+        symbol [ corallo2 %tmp.324 114 67 75 ];
+        %tmp.324 = getv ? :corallo2;
+        %tmp.325 = dup %tmp.322;
+        %tmp.326 = aputv %tmp.325 1 %tmp.324;
+        ret %tmp.326;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_114_47_114_78_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_114_13_114_78_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_114_13_114_78_if_end:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_113_13_114_78_if_end:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_112_13_114_78_if_end:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_111_13_114_78_if_end:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_110_13_114_78_if_end:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_109_13_114_78_if_end:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_108_13_114_78_if_end:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_107_13_114_78_if_end:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_106_13_114_78_if_end:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_105_13_114_78_if_end:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_104_13_114_78_if_end:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_103_13_114_78_if_end:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_102_13_114_78_if_end:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_101_8_114_78_if_end:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc" 115 8 ]
+        %tmp.327 = newa 0 Lang.Array<Lang.Number>;
+        symbol [ Lang %tmp.327 115 21 25 ];
+        symbol [ Array %tmp.327 115 26 31 ];
+        symbol [ Lang %tmp.327 115 32 36 ];
+        symbol [ Number %tmp.327 115 37 43 ];
+        ret %tmp.327;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_100_69_116_4_stop:
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 118; @symbol_functiondef = [stampaPalette,118,20,33]; @symbol_param<0> = [dc,118,34,36]; @symbol_param<1> = [famiglia,118,38,46]; @symbol_param<2> = [xStart,118,48,54]; @symbol_param<3> = [cy,118,56,58]; @symbol_param<4> = [w,118,60,61]; @symbol_param<5> = [h,118,63,64]; @symbol_param<6> = [gap,118,66,69]; ]
+    static
+    function stampaPalette(dc, famiglia, xStart, cy, w, h, gap) {
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_118_71_124_4_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc" 119 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_118_71_124_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_118_71_124_4_stop" ]
+        %colori.1 = local;
+        symbol [ colori %colori.1 119 12 18 ];
+        %tmp.1 = self;
+        symbol [ getFamiglia %tmp.2 119 21 32 ];
+        %tmp.2 = getv function %tmp.1 :getFamiglia;
+        %tmp.3 = lgetv %famiglia;
+        symbol [ famiglia %tmp.3 119 33 41 ];
+        %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
+        lputv %colori.1 %tmp.4;
+        symbol [ colori %colori.1 119 12 18 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc" 120 8 ]
+        for @C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_120_8_123_8_for_test @C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_120_8_123_8_for_incr @C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_120_8_123_8_for_end;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_120_8_123_8_for_init:
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_120_8_123_8_for_begin" "C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_120_8_123_8_for_end" ]
+        %i.2 = local;
+        symbol [ i %i.2 120 17 18 ];
+        %tmp.5 = 0;
+        lputv %i.2 %tmp.5;
+        symbol [ i %i.2 120 17 18 ];
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_120_8_123_8_for_test:
+        %tmp.6 = lgetv %i.2;
+        symbol [ i %tmp.6 120 24 25 ];
+        %tmp.7 = lgetv %colori.1;
+        symbol [ colori %tmp.7 120 28 34 ];
+        symbol [ size %tmp.8 120 35 39 ];
+        %tmp.8 = getv function %tmp.7 :size;
+        %tmp.9 = invoke %tmp.7 %tmp.8();
+        %tmp.10 = lt %tmp.6 %tmp.9;
+        bf %tmp.10 @C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_120_8_123_8_for_end;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_120_8_123_8_for_begin:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_120_48_123_8_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc" 121 12 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_120_48_123_8_start" "C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_120_48_123_8_stop" ]
+        %cx.3 = local;
+        symbol [ cx %cx.3 121 16 18 ];
+        %tmp.11 = lgetv %xStart;
+        symbol [ xStart %tmp.11 121 21 27 ];
+        %tmp.12 = lgetv %w;
+        symbol [ w %tmp.12 121 31 32 ];
+        %tmp.13 = 2;
+        %tmp.14 = div %tmp.12 %tmp.13;
+        symbol [ toNumber %tmp.15 121 38 46 ];
+        %tmp.15 = getv function %tmp.14 :toNumber;
+        %tmp.16 = invoke %tmp.14 %tmp.15();
+        %tmp.17 = add %tmp.11 %tmp.16;
+        %tmp.18 = lgetv %i.2;
+        symbol [ i %tmp.18 121 51 52 ];
+        %tmp.19 = lgetv %w;
+        symbol [ w %tmp.19 121 56 57 ];
+        %tmp.20 = lgetv %gap;
+        symbol [ gap %tmp.20 121 60 63 ];
+        %tmp.21 = add %tmp.19 %tmp.20;
+        %tmp.22 = mul %tmp.18 %tmp.21;
+        %tmp.23 = add %tmp.17 %tmp.22;
+        lputv %cx.3 %tmp.23;
+        symbol [ cx %cx.3 121 16 18 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc" 122 12 ]
+        symbol [ RectFill %tmp.25 122 12 20 ];
+        %tmp.25 = getv ? :RectFill;
+        symbol [ draw %tmp.26 122 21 25 ];
+        %tmp.26 = getv function %tmp.25 :draw;
+        %tmp.27 = lgetv %dc;
+        symbol [ dc %tmp.27 122 26 28 ];
+        %tmp.28 = lgetv %cx.3;
+        symbol [ cx %tmp.28 122 30 32 ];
+        %tmp.29 = lgetv %cy;
+        symbol [ cy %tmp.29 122 34 36 ];
+        %tmp.30 = lgetv %w;
+        symbol [ w %tmp.30 122 38 39 ];
+        %tmp.31 = lgetv %h;
+        symbol [ h %tmp.31 122 41 42 ];
+        %tmp.32 = lgetv %colori.1;
+        symbol [ colori %tmp.32 122 44 50 ];
+        %tmp.33 = lgetv %i.2;
+        symbol [ i %tmp.33 122 51 52 ];
+        %tmp.34 = agetv %tmp.32 %tmp.33;
+        %tmp.35 = as %tmp.34 Lang.Number;
+        symbol [ Lang %tmp.35 122 57 61 ];
+        symbol [ Number %tmp.35 122 62 68 ];
+        %tmp.36 = 0;
+        invoke %tmp.25 %tmp.26(%tmp.27, %tmp.28, %tmp.29, %tmp.30, %tmp.31, %tmp.35, %tmp.36);
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_120_48_123_8_stop:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_120_8_123_8_for_incr:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc" 120 ]
+        %tmp.39 = lgetv %i.2;
+        symbol [ i %tmp.39 120 43 44 ];
+        %tmp.40 = add %tmp.39 1;
+        lputv %i.2 %tmp.40;
+        symbol [ i %i.2 120 43 44 ];
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_120_8_123_8_for_test;
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_120_8_123_8_for_end:
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_118_71_124_4_stop:
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 126; @symbol_functiondef = [stampaPaletteCentrata,126,20,41]; @symbol_param<0> = [dc,126,42,44]; @symbol_param<1> = [famiglia,126,46,54]; @symbol_param<2> = [cy,126,56,58]; @symbol_param<3> = [w,126,60,61]; @symbol_param<4> = [h,126,63,64]; @symbol_param<5> = [gap,126,66,69]; ]
+    static
+    function stampaPaletteCentrata(dc, famiglia, cy, w, h, gap) {
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_126_71_132_4_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc" 127 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_126_71_132_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_126_71_132_4_stop" ]
+        %colori.1 = local;
+        symbol [ colori %colori.1 127 12 18 ];
+        %tmp.1 = self;
+        symbol [ getFamiglia %tmp.2 127 22 33 ];
+        %tmp.2 = getv function %tmp.1 :getFamiglia;
+        %tmp.3 = lgetv %famiglia;
+        symbol [ famiglia %tmp.3 127 34 42 ];
+        %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
+        lputv %colori.1 %tmp.4;
+        symbol [ colori %colori.1 127 12 18 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc" 128 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_126_71_132_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_126_71_132_4_stop" ]
+        %n.2 = local;
+        symbol [ n %n.2 128 12 13 ];
+        %tmp.5 = lgetv %colori.1;
+        symbol [ colori %tmp.5 128 22 28 ];
+        symbol [ size %tmp.6 128 29 33 ];
+        %tmp.6 = getv function %tmp.5 :size;
+        %tmp.7 = invoke %tmp.5 %tmp.6();
+        lputv %n.2 %tmp.7;
+        symbol [ n %n.2 128 12 13 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc" 129 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_126_71_132_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_126_71_132_4_stop" ]
+        %totale.3 = local;
+        symbol [ totale %totale.3 129 12 18 ];
+        %tmp.8 = lgetv %n.2;
+        symbol [ n %tmp.8 129 22 23 ];
+        %tmp.9 = lgetv %w;
+        symbol [ w %tmp.9 129 26 27 ];
+        %tmp.10 = mul %tmp.8 %tmp.9;
+        %tmp.11 = lgetv %n.2;
+        symbol [ n %tmp.11 129 31 32 ];
+        %tmp.12 = 1;
+        %tmp.13 = sub %tmp.11 %tmp.12;
+        %tmp.14 = lgetv %gap;
+        symbol [ gap %tmp.14 129 40 43 ];
+        %tmp.15 = mul %tmp.13 %tmp.14;
+        %tmp.16 = add %tmp.10 %tmp.15;
+        lputv %totale.3 %tmp.16;
+        symbol [ totale %totale.3 129 12 18 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc" 130 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_126_71_132_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_126_71_132_4_stop" ]
+        %xStart.4 = local;
+        symbol [ xStart %xStart.4 130 12 18 ];
+        %tmp.17 = 260;
+        %tmp.18 = lgetv %totale.3;
+        symbol [ totale %tmp.18 130 30 36 ];
+        %tmp.19 = sub %tmp.17 %tmp.18;
+        %tmp.20 = 2;
+        %tmp.21 = div %tmp.19 %tmp.20;
+        symbol [ toNumber %tmp.22 130 43 51 ];
+        %tmp.22 = getv function %tmp.21 :toNumber;
+        %tmp.23 = invoke %tmp.21 %tmp.22();
+        lputv %xStart.4 %tmp.23;
+        symbol [ xStart %xStart.4 130 12 18 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc" 131 8 ]
+        %tmp.24 = self;
+        symbol [ stampaPalette %tmp.25 131 8 21 ];
+        %tmp.25 = getv function %tmp.24 :stampaPalette;
+        %tmp.26 = lgetv %dc;
+        symbol [ dc %tmp.26 131 22 24 ];
+        %tmp.27 = lgetv %famiglia;
+        symbol [ famiglia %tmp.27 131 26 34 ];
+        %tmp.28 = lgetv %xStart.4;
+        symbol [ xStart %tmp.28 131 36 42 ];
+        %tmp.29 = lgetv %cy;
+        symbol [ cy %tmp.29 131 44 46 ];
+        %tmp.30 = lgetv %w;
+        symbol [ w %tmp.30 131 48 49 ];
+        %tmp.31 = lgetv %h;
+        symbol [ h %tmp.31 131 51 52 ];
+        %tmp.32 = lgetv %gap;
+        symbol [ gap %tmp.32 131 54 57 ];
+        invoke %tmp.24 %tmp.25(%tmp.26, %tmp.27, %tmp.28, %tmp.29, %tmp.30, %tmp.31, %tmp.32);
+C__GarminProject_GarminLibTest_GarminLib_source_utils_Palette_mc_126_71_132_4_stop:
+    }
+}
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\utils\Palette.mc"; @line = 1; ]
+<init> {
+}

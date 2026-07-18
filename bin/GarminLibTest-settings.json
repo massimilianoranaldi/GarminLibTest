@@ -1,63 +1,9 @@
 {
   "settings" : [ {
-    "key" : "BackgroundColor",
-    "valueType" : "number",
-    "defaultValue" : 0,
-    "configTitle" : "BackgroundColorTitle",
-    "configPrompt" : null,
-    "configType" : "list",
-    "configError" : null,
-    "configHelpUrl" : null,
-    "configReadonly" : false,
-    "configRequired" : false,
-    "configOptions" : [ {
-      "display" : "ColorBlack",
-      "value" : 0
-    }, {
-      "display" : "ColorDarkGray",
-      "value" : 5592405
-    }, {
-      "display" : "ColorLightGray",
-      "value" : 11184810
-    }, {
-      "display" : "ColorWhite",
-      "value" : 16777215
-    } ],
-    "configMin" : null,
-    "configMax" : null,
-    "configMaxLength" : null
-  }, {
-    "key" : "ForegroundColor",
-    "valueType" : "number",
-    "defaultValue" : 16711680,
-    "configTitle" : "ForegroundColorTitle",
-    "configPrompt" : null,
-    "configType" : "list",
-    "configError" : null,
-    "configHelpUrl" : null,
-    "configReadonly" : false,
-    "configRequired" : false,
-    "configOptions" : [ {
-      "display" : "ColorBlack",
-      "value" : 0
-    }, {
-      "display" : "ColorBlue",
-      "value" : 255
-    }, {
-      "display" : "ColorRed",
-      "value" : 16711680
-    }, {
-      "display" : "ColorWhite",
-      "value" : 16777215
-    } ],
-    "configMin" : null,
-    "configMax" : null,
-    "configMaxLength" : null
-  }, {
     "key" : "UseMilitaryFormat",
     "valueType" : "boolean",
     "defaultValue" : false,
-    "configTitle" : "MilitaryFormatTitle",
+    "configTitle" : "$literal0$",
     "configPrompt" : null,
     "configType" : "boolean",
     "configError" : null,
@@ -68,20 +14,1228 @@
     "configMin" : null,
     "configMax" : null,
     "configMaxLength" : null
+  }, {
+    "group" : {
+      "id" : "GruppoBackground",
+      "title" : "$literal1$",
+      "description" : null,
+      "enableWhenTrue" : null,
+      "entries" : [ {
+        "key" : "BackgroundColor",
+        "valueType" : "number",
+        "defaultValue" : 0,
+        "configTitle" : "$literal2$",
+        "configPrompt" : null,
+        "configType" : "list",
+        "configError" : null,
+        "configHelpUrl" : null,
+        "configReadonly" : false,
+        "configRequired" : false,
+        "configOptions" : [ {
+          "display" : "ColorBlack",
+          "value" : 0
+        }, {
+          "display" : "ColorDarkGray",
+          "value" : 5592405
+        }, {
+          "display" : "ColorLightGray",
+          "value" : 11184810
+        }, {
+          "display" : "ColorWhite",
+          "value" : 16777215
+        } ],
+        "configMin" : null,
+        "configMax" : null,
+        "configMaxLength" : null
+      } ]
+    }
+  }, {
+    "group" : {
+      "id" : "GruppoTemiQuadrante",
+      "title" : "$literal3$",
+      "description" : null,
+      "enableWhenTrue" : null,
+      "entries" : [ {
+        "key" : "temiQuadrante",
+        "valueType" : "number",
+        "defaultValue" : 1,
+        "configTitle" : "$literal4$",
+        "configPrompt" : null,
+        "configType" : "list",
+        "configError" : null,
+        "configHelpUrl" : null,
+        "configReadonly" : false,
+        "configRequired" : false,
+        "configOptions" : [ {
+          "display" : "Tema0",
+          "value" : 0
+        }, {
+          "display" : "Tema1",
+          "value" : 1
+        }, {
+          "display" : "Tema2",
+          "value" : 2
+        }, {
+          "display" : "Tema3",
+          "value" : 3
+        }, {
+          "display" : "Tema4",
+          "value" : 4
+        }, {
+          "display" : "Tema5",
+          "value" : 5
+        }, {
+          "display" : "Tema6",
+          "value" : 6
+        }, {
+          "display" : "Tema7",
+          "value" : 7
+        }, {
+          "display" : "Tema8",
+          "value" : 8
+        } ],
+        "configMin" : null,
+        "configMax" : null,
+        "configMaxLength" : null
+      } ]
+    }
+  }, {
+    "group" : {
+      "id" : "gruppoGOAL",
+      "title" : "$literal5$",
+      "description" : null,
+      "enableWhenTrue" : null,
+      "entries" : [ {
+        "key" : "goalSTEP",
+        "valueType" : "number",
+        "defaultValue" : 10000,
+        "configTitle" : "TitoloGoalSTEP",
+        "configPrompt" : null,
+        "configType" : "numeric",
+        "configError" : null,
+        "configHelpUrl" : null,
+        "configReadonly" : false,
+        "configRequired" : false,
+        "configOptions" : null,
+        "configMin" : 0,
+        "configMax" : 20000,
+        "configMaxLength" : null
+      }, {
+        "key" : "goalCALORIE",
+        "valueType" : "number",
+        "defaultValue" : 2000,
+        "configTitle" : "TitoloGoalCALORIE",
+        "configPrompt" : null,
+        "configType" : "numeric",
+        "configError" : null,
+        "configHelpUrl" : null,
+        "configReadonly" : false,
+        "configRequired" : false,
+        "configOptions" : null,
+        "configMin" : 0,
+        "configMax" : 3000,
+        "configMaxLength" : null
+      }, {
+        "key" : "goalSTAIRS",
+        "valueType" : "number",
+        "defaultValue" : 10,
+        "configTitle" : "TitoloGoalSTAIRS",
+        "configPrompt" : null,
+        "configType" : "numeric",
+        "configError" : null,
+        "configHelpUrl" : null,
+        "configReadonly" : false,
+        "configRequired" : false,
+        "configOptions" : null,
+        "configMin" : 0,
+        "configMax" : 20,
+        "configMaxLength" : null
+      }, {
+        "key" : "goalMINWEEK",
+        "valueType" : "number",
+        "defaultValue" : 400,
+        "configTitle" : "TitoloGoalMINWEEK",
+        "configPrompt" : null,
+        "configType" : "numeric",
+        "configError" : null,
+        "configHelpUrl" : null,
+        "configReadonly" : false,
+        "configRequired" : false,
+        "configOptions" : null,
+        "configMin" : 0,
+        "configMax" : 500,
+        "configMaxLength" : null
+      }, {
+        "key" : "goalMINDAY",
+        "valueType" : "number",
+        "defaultValue" : 40,
+        "configTitle" : "TitoloGoalMINDAY",
+        "configPrompt" : null,
+        "configType" : "numeric",
+        "configError" : null,
+        "configHelpUrl" : null,
+        "configReadonly" : false,
+        "configRequired" : false,
+        "configOptions" : null,
+        "configMin" : 0,
+        "configMax" : 60,
+        "configMaxLength" : null
+      } ]
+    }
+  }, {
+    "group" : {
+      "id" : "gruppoAttivita1",
+      "title" : "$literal6$",
+      "description" : null,
+      "enableWhenTrue" : null,
+      "entries" : [ {
+        "key" : "monitoringAttivita1",
+        "valueType" : "number",
+        "defaultValue" : 0,
+        "configTitle" : "$literal7$",
+        "configPrompt" : null,
+        "configType" : "list",
+        "configError" : null,
+        "configHelpUrl" : null,
+        "configReadonly" : false,
+        "configRequired" : false,
+        "configOptions" : [ {
+          "display" : "$literal8$",
+          "value" : 0
+        }, {
+          "display" : "$literal9$",
+          "value" : 1
+        }, {
+          "display" : "$literal10$",
+          "value" : 2
+        }, {
+          "display" : "$literal11$",
+          "value" : 3
+        }, {
+          "display" : "$literal12$",
+          "value" : 4
+        }, {
+          "display" : "$literal13$",
+          "value" : 5
+        }, {
+          "display" : "$literal14$",
+          "value" : 6
+        } ],
+        "configMin" : null,
+        "configMax" : null,
+        "configMaxLength" : null
+      }, {
+        "key" : "coloreSfondoAttivita1",
+        "valueType" : "number",
+        "defaultValue" : 5592405,
+        "configTitle" : "$literal15$",
+        "configPrompt" : null,
+        "configType" : "list",
+        "configError" : null,
+        "configHelpUrl" : null,
+        "configReadonly" : false,
+        "configRequired" : false,
+        "configOptions" : [ {
+          "display" : "$literal16$",
+          "value" : 3355443
+        }, {
+          "display" : "$literal17$",
+          "value" : 1118481
+        }, {
+          "display" : "$literal18$",
+          "value" : 0
+        }, {
+          "display" : "$literal19$",
+          "value" : 4465169
+        }, {
+          "display" : "$literal20$",
+          "value" : 21845
+        }, {
+          "display" : "$literal21$",
+          "value" : 8947712
+        }, {
+          "display" : "$literal22$",
+          "value" : 5570560
+        }, {
+          "display" : "$literal23$",
+          "value" : 8704
+        }, {
+          "display" : "$literal24$",
+          "value" : 34
+        }, {
+          "display" : "$literal25$",
+          "value" : 3342421
+        }, {
+          "display" : "$literal26$",
+          "value" : 16777215
+        } ],
+        "configMin" : null,
+        "configMax" : null,
+        "configMaxLength" : null
+      }, {
+        "key" : "coloreRipienoAttivita1",
+        "valueType" : "number",
+        "defaultValue" : 5636095,
+        "configTitle" : "$literal27$",
+        "configPrompt" : null,
+        "configType" : "list",
+        "configError" : null,
+        "configHelpUrl" : null,
+        "configReadonly" : false,
+        "configRequired" : false,
+        "configOptions" : [ {
+          "display" : "$literal26$",
+          "value" : 16777215
+        }, {
+          "display" : "$literal28$",
+          "value" : 16776960
+        }, {
+          "display" : "$literal29$",
+          "value" : 16746496
+        }, {
+          "display" : "$literal30$",
+          "value" : 5636095
+        }, {
+          "display" : "$literal31$",
+          "value" : 16711765
+        }, {
+          "display" : "$literal32$",
+          "value" : 8947848
+        }, {
+          "display" : "$literal18$",
+          "value" : 0
+        } ],
+        "configMin" : null,
+        "configMax" : null,
+        "configMaxLength" : null
+      }, {
+        "key" : "coloreFontArcoEsterno",
+        "valueType" : "number",
+        "defaultValue" : 16777215,
+        "configTitle" : "$literal33$",
+        "configPrompt" : null,
+        "configType" : "list",
+        "configError" : null,
+        "configHelpUrl" : null,
+        "configReadonly" : false,
+        "configRequired" : false,
+        "configOptions" : [ {
+          "display" : "$literal26$",
+          "value" : 16777215
+        }, {
+          "display" : "$literal28$",
+          "value" : 16776960
+        }, {
+          "display" : "$literal29$",
+          "value" : 16746496
+        }, {
+          "display" : "$literal30$",
+          "value" : 5636095
+        }, {
+          "display" : "$literal31$",
+          "value" : 16711765
+        }, {
+          "display" : "$literal32$",
+          "value" : 8947848
+        }, {
+          "display" : "$literal18$",
+          "value" : 0
+        } ],
+        "configMin" : null,
+        "configMax" : null,
+        "configMaxLength" : null
+      } ]
+    }
+  }, {
+    "group" : {
+      "id" : "gruppoAnello2",
+      "title" : "$literal34$",
+      "description" : null,
+      "enableWhenTrue" : null,
+      "entries" : [ {
+        "key" : "monitoringAttivita2",
+        "valueType" : "number",
+        "defaultValue" : 1,
+        "configTitle" : "$literal35$",
+        "configPrompt" : null,
+        "configType" : "list",
+        "configError" : null,
+        "configHelpUrl" : null,
+        "configReadonly" : false,
+        "configRequired" : false,
+        "configOptions" : [ {
+          "display" : "$literal8$",
+          "value" : 0
+        }, {
+          "display" : "$literal9$",
+          "value" : 1
+        }, {
+          "display" : "$literal10$",
+          "value" : 2
+        }, {
+          "display" : "$literal11$",
+          "value" : 3
+        }, {
+          "display" : "$literal12$",
+          "value" : 4
+        }, {
+          "display" : "$literal13$",
+          "value" : 5
+        }, {
+          "display" : "$literal14$",
+          "value" : 6
+        } ],
+        "configMin" : null,
+        "configMax" : null,
+        "configMaxLength" : null
+      }, {
+        "key" : "coloreSfondoAttivita2",
+        "valueType" : "number",
+        "defaultValue" : 5592405,
+        "configTitle" : "$literal36$",
+        "configPrompt" : null,
+        "configType" : "list",
+        "configError" : null,
+        "configHelpUrl" : null,
+        "configReadonly" : false,
+        "configRequired" : false,
+        "configOptions" : [ {
+          "display" : "$literal16$",
+          "value" : 3355443
+        }, {
+          "display" : "$literal17$",
+          "value" : 1118481
+        }, {
+          "display" : "$literal18$",
+          "value" : 0
+        }, {
+          "display" : "$literal19$",
+          "value" : 4465169
+        }, {
+          "display" : "$literal20$",
+          "value" : 21845
+        }, {
+          "display" : "$literal21$",
+          "value" : 8947712
+        }, {
+          "display" : "$literal22$",
+          "value" : 5570560
+        }, {
+          "display" : "$literal23$",
+          "value" : 8704
+        }, {
+          "display" : "$literal24$",
+          "value" : 34
+        }, {
+          "display" : "$literal25$",
+          "value" : 3342421
+        }, {
+          "display" : "$literal26$",
+          "value" : 16777215
+        } ],
+        "configMin" : null,
+        "configMax" : null,
+        "configMaxLength" : null
+      }, {
+        "key" : "coloreRipienoAttivita2",
+        "valueType" : "number",
+        "defaultValue" : 5636095,
+        "configTitle" : "$literal37$",
+        "configPrompt" : null,
+        "configType" : "list",
+        "configError" : null,
+        "configHelpUrl" : null,
+        "configReadonly" : false,
+        "configRequired" : false,
+        "configOptions" : [ {
+          "display" : "$literal26$",
+          "value" : 16777215
+        }, {
+          "display" : "$literal28$",
+          "value" : 16776960
+        }, {
+          "display" : "$literal29$",
+          "value" : 16746496
+        }, {
+          "display" : "$literal30$",
+          "value" : 5636095
+        }, {
+          "display" : "$literal31$",
+          "value" : 16711765
+        }, {
+          "display" : "$literal32$",
+          "value" : 8947848
+        }, {
+          "display" : "$literal18$",
+          "value" : 0
+        } ],
+        "configMin" : null,
+        "configMax" : null,
+        "configMaxLength" : null
+      }, {
+        "key" : "coloreFontArcoInterno",
+        "valueType" : "number",
+        "defaultValue" : 16777215,
+        "configTitle" : "$literal38$",
+        "configPrompt" : null,
+        "configType" : "list",
+        "configError" : null,
+        "configHelpUrl" : null,
+        "configReadonly" : false,
+        "configRequired" : false,
+        "configOptions" : [ {
+          "display" : "$literal26$",
+          "value" : 16777215
+        }, {
+          "display" : "$literal28$",
+          "value" : 16776960
+        }, {
+          "display" : "$literal29$",
+          "value" : 16746496
+        }, {
+          "display" : "$literal30$",
+          "value" : 5636095
+        }, {
+          "display" : "$literal31$",
+          "value" : 16711765
+        }, {
+          "display" : "$literal32$",
+          "value" : 8947848
+        }, {
+          "display" : "$literal18$",
+          "value" : 0
+        } ],
+        "configMin" : null,
+        "configMax" : null,
+        "configMaxLength" : null
+      } ]
+    }
+  }, {
+    "group" : {
+      "id" : "cerchioGrande",
+      "title" : "$literal39$",
+      "description" : null,
+      "enableWhenTrue" : null,
+      "entries" : [ {
+        "key" : "cerchioGrandeSfondo",
+        "valueType" : "number",
+        "defaultValue" : 3355443,
+        "configTitle" : "$literal40$",
+        "configPrompt" : null,
+        "configType" : "list",
+        "configError" : null,
+        "configHelpUrl" : null,
+        "configReadonly" : false,
+        "configRequired" : false,
+        "configOptions" : [ {
+          "display" : "$literal16$",
+          "value" : 3355443
+        }, {
+          "display" : "$literal17$",
+          "value" : 1118481
+        }, {
+          "display" : "$literal18$",
+          "value" : 0
+        }, {
+          "display" : "$literal19$",
+          "value" : 4465169
+        }, {
+          "display" : "$literal20$",
+          "value" : 21845
+        }, {
+          "display" : "$literal21$",
+          "value" : 8947712
+        }, {
+          "display" : "$literal22$",
+          "value" : 5570560
+        }, {
+          "display" : "$literal23$",
+          "value" : 8704
+        }, {
+          "display" : "$literal24$",
+          "value" : 34
+        }, {
+          "display" : "$literal25$",
+          "value" : 3342421
+        }, {
+          "display" : "$literal26$",
+          "value" : 16777215
+        } ],
+        "configMin" : null,
+        "configMax" : null,
+        "configMaxLength" : null
+      }, {
+        "key" : "cerchioGrandeContorno",
+        "valueType" : "number",
+        "defaultValue" : 5636095,
+        "configTitle" : "$literal41$",
+        "configPrompt" : null,
+        "configType" : "list",
+        "configError" : null,
+        "configHelpUrl" : null,
+        "configReadonly" : false,
+        "configRequired" : false,
+        "configOptions" : [ {
+          "display" : "$literal26$",
+          "value" : 16777215
+        }, {
+          "display" : "$literal28$",
+          "value" : 16776960
+        }, {
+          "display" : "$literal29$",
+          "value" : 16746496
+        }, {
+          "display" : "$literal30$",
+          "value" : 5636095
+        }, {
+          "display" : "$literal31$",
+          "value" : 16711765
+        }, {
+          "display" : "$literal42$",
+          "value" : 16764040
+        }, {
+          "display" : "$literal43$",
+          "value" : 11184895
+        }, {
+          "display" : "$literal44$",
+          "value" : 5635925
+        }, {
+          "display" : "$literal45$",
+          "value" : 14522879
+        }, {
+          "display" : "$literal46$",
+          "value" : 16733610
+        } ],
+        "configMin" : null,
+        "configMax" : null,
+        "configMaxLength" : null
+      } ]
+    }
+  }, {
+    "group" : {
+      "id" : "cerchioSinistra",
+      "title" : "$literal47$",
+      "description" : null,
+      "enableWhenTrue" : null,
+      "entries" : [ {
+        "key" : "cerchioSxSfondo",
+        "valueType" : "number",
+        "defaultValue" : 3355443,
+        "configTitle" : "$literal48$",
+        "configPrompt" : null,
+        "configType" : "list",
+        "configError" : null,
+        "configHelpUrl" : null,
+        "configReadonly" : false,
+        "configRequired" : false,
+        "configOptions" : [ {
+          "display" : "$literal16$",
+          "value" : 3355443
+        }, {
+          "display" : "$literal17$",
+          "value" : 1118481
+        }, {
+          "display" : "$literal18$",
+          "value" : 0
+        }, {
+          "display" : "$literal19$",
+          "value" : 4465169
+        }, {
+          "display" : "$literal20$",
+          "value" : 21845
+        }, {
+          "display" : "$literal21$",
+          "value" : 8947712
+        }, {
+          "display" : "$literal22$",
+          "value" : 5570560
+        }, {
+          "display" : "$literal23$",
+          "value" : 8704
+        }, {
+          "display" : "$literal24$",
+          "value" : 34
+        }, {
+          "display" : "$literal25$",
+          "value" : 3342421
+        }, {
+          "display" : "$literal26$",
+          "value" : 16777215
+        } ],
+        "configMin" : null,
+        "configMax" : null,
+        "configMaxLength" : null
+      }, {
+        "key" : "cerchioSxContorno",
+        "valueType" : "number",
+        "defaultValue" : 5636095,
+        "configTitle" : "$literal49$",
+        "configPrompt" : null,
+        "configType" : "list",
+        "configError" : null,
+        "configHelpUrl" : null,
+        "configReadonly" : false,
+        "configRequired" : false,
+        "configOptions" : [ {
+          "display" : "$literal26$",
+          "value" : 16777215
+        }, {
+          "display" : "$literal28$",
+          "value" : 16776960
+        }, {
+          "display" : "$literal29$",
+          "value" : 16746496
+        }, {
+          "display" : "$literal30$",
+          "value" : 5636095
+        }, {
+          "display" : "$literal31$",
+          "value" : 16711765
+        }, {
+          "display" : "$literal42$",
+          "value" : 16764040
+        }, {
+          "display" : "$literal43$",
+          "value" : 11184895
+        }, {
+          "display" : "$literal44$",
+          "value" : 5635925
+        }, {
+          "display" : "$literal45$",
+          "value" : 14522879
+        }, {
+          "display" : "$literal46$",
+          "value" : 16733610
+        } ],
+        "configMin" : null,
+        "configMax" : null,
+        "configMaxLength" : null
+      } ]
+    }
+  }, {
+    "group" : {
+      "id" : "cerchioDestra",
+      "title" : "$literal50$",
+      "description" : null,
+      "enableWhenTrue" : null,
+      "entries" : [ {
+        "key" : "cerchioDxSfondo",
+        "valueType" : "number",
+        "defaultValue" : 3355443,
+        "configTitle" : "$literal51$",
+        "configPrompt" : null,
+        "configType" : "list",
+        "configError" : null,
+        "configHelpUrl" : null,
+        "configReadonly" : false,
+        "configRequired" : false,
+        "configOptions" : [ {
+          "display" : "$literal16$",
+          "value" : 3355443
+        }, {
+          "display" : "$literal17$",
+          "value" : 1118481
+        }, {
+          "display" : "$literal18$",
+          "value" : 0
+        }, {
+          "display" : "$literal19$",
+          "value" : 4465169
+        }, {
+          "display" : "$literal20$",
+          "value" : 21845
+        }, {
+          "display" : "$literal21$",
+          "value" : 8947712
+        }, {
+          "display" : "$literal22$",
+          "value" : 5570560
+        }, {
+          "display" : "$literal23$",
+          "value" : 8704
+        }, {
+          "display" : "$literal24$",
+          "value" : 34
+        }, {
+          "display" : "$literal25$",
+          "value" : 3342421
+        }, {
+          "display" : "$literal26$",
+          "value" : 16777215
+        } ],
+        "configMin" : null,
+        "configMax" : null,
+        "configMaxLength" : null
+      }, {
+        "key" : "cerchioDxContorno",
+        "valueType" : "number",
+        "defaultValue" : 5636095,
+        "configTitle" : "$literal52$",
+        "configPrompt" : null,
+        "configType" : "list",
+        "configError" : null,
+        "configHelpUrl" : null,
+        "configReadonly" : false,
+        "configRequired" : false,
+        "configOptions" : [ {
+          "display" : "$literal26$",
+          "value" : 16777215
+        }, {
+          "display" : "$literal28$",
+          "value" : 16776960
+        }, {
+          "display" : "$literal29$",
+          "value" : 16746496
+        }, {
+          "display" : "$literal30$",
+          "value" : 5636095
+        }, {
+          "display" : "$literal31$",
+          "value" : 16711765
+        }, {
+          "display" : "$literal42$",
+          "value" : 16764040
+        }, {
+          "display" : "$literal43$",
+          "value" : 11184895
+        }, {
+          "display" : "$literal44$",
+          "value" : 5635925
+        }, {
+          "display" : "$literal45$",
+          "value" : 14522879
+        }, {
+          "display" : "$literal46$",
+          "value" : 16733610
+        } ],
+        "configMin" : null,
+        "configMax" : null,
+        "configMaxLength" : null
+      } ]
+    }
+  }, {
+    "group" : {
+      "id" : "gruppoNotch",
+      "title" : "$literal53$",
+      "description" : null,
+      "enableWhenTrue" : null,
+      "entries" : [ {
+        "key" : "retMeteoSfondo",
+        "valueType" : "number",
+        "defaultValue" : 3355443,
+        "configTitle" : "$literal54$",
+        "configPrompt" : null,
+        "configType" : "list",
+        "configError" : null,
+        "configHelpUrl" : null,
+        "configReadonly" : false,
+        "configRequired" : false,
+        "configOptions" : [ {
+          "display" : "$literal16$",
+          "value" : 3355443
+        }, {
+          "display" : "$literal17$",
+          "value" : 1118481
+        }, {
+          "display" : "$literal18$",
+          "value" : 0
+        }, {
+          "display" : "$literal19$",
+          "value" : 4465169
+        }, {
+          "display" : "$literal20$",
+          "value" : 21845
+        }, {
+          "display" : "$literal21$",
+          "value" : 8947712
+        }, {
+          "display" : "$literal22$",
+          "value" : 5570560
+        }, {
+          "display" : "$literal23$",
+          "value" : 8704
+        }, {
+          "display" : "$literal24$",
+          "value" : 34
+        }, {
+          "display" : "$literal25$",
+          "value" : 3342421
+        }, {
+          "display" : "$literal26$",
+          "value" : 16777215
+        } ],
+        "configMin" : null,
+        "configMax" : null,
+        "configMaxLength" : null
+      }, {
+        "key" : "coloreCittaMeteo",
+        "valueType" : "number",
+        "defaultValue" : 16777215,
+        "configTitle" : "$literal55$",
+        "configPrompt" : null,
+        "configType" : "list",
+        "configError" : null,
+        "configHelpUrl" : null,
+        "configReadonly" : false,
+        "configRequired" : false,
+        "configOptions" : [ {
+          "display" : "$literal26$",
+          "value" : 16777215
+        }, {
+          "display" : "$literal28$",
+          "value" : 16776960
+        }, {
+          "display" : "$literal29$",
+          "value" : 16746496
+        }, {
+          "display" : "$literal30$",
+          "value" : 5636095
+        }, {
+          "display" : "$literal31$",
+          "value" : 16711765
+        }, {
+          "display" : "$literal32$",
+          "value" : 8947848
+        }, {
+          "display" : "$literal18$",
+          "value" : 0
+        } ],
+        "configMin" : null,
+        "configMax" : null,
+        "configMaxLength" : null
+      } ]
+    }
+  }, {
+    "group" : {
+      "id" : "gruppoRettangoloCentrale",
+      "title" : "$literal56$",
+      "description" : null,
+      "enableWhenTrue" : null,
+      "entries" : [ {
+        "key" : "retOreSfondo",
+        "valueType" : "number",
+        "defaultValue" : 3355443,
+        "configTitle" : "$literal57$",
+        "configPrompt" : null,
+        "configType" : "list",
+        "configError" : null,
+        "configHelpUrl" : null,
+        "configReadonly" : false,
+        "configRequired" : false,
+        "configOptions" : [ {
+          "display" : "$literal16$",
+          "value" : 3355443
+        }, {
+          "display" : "$literal17$",
+          "value" : 1118481
+        }, {
+          "display" : "$literal18$",
+          "value" : 0
+        }, {
+          "display" : "$literal19$",
+          "value" : 4465169
+        }, {
+          "display" : "$literal20$",
+          "value" : 21845
+        }, {
+          "display" : "$literal21$",
+          "value" : 8947712
+        }, {
+          "display" : "$literal22$",
+          "value" : 5570560
+        }, {
+          "display" : "$literal23$",
+          "value" : 8704
+        }, {
+          "display" : "$literal24$",
+          "value" : 34
+        }, {
+          "display" : "$literal25$",
+          "value" : 3342421
+        }, {
+          "display" : "$literal26$",
+          "value" : 16777215
+        } ],
+        "configMin" : null,
+        "configMax" : null,
+        "configMaxLength" : null
+      }, {
+        "key" : "coloreOre",
+        "valueType" : "number",
+        "defaultValue" : 5636095,
+        "configTitle" : "$literal58$",
+        "configPrompt" : null,
+        "configType" : "list",
+        "configError" : null,
+        "configHelpUrl" : null,
+        "configReadonly" : false,
+        "configRequired" : false,
+        "configOptions" : [ {
+          "display" : "$literal26$",
+          "value" : 16777215
+        }, {
+          "display" : "$literal28$",
+          "value" : 16776960
+        }, {
+          "display" : "$literal29$",
+          "value" : 16746496
+        }, {
+          "display" : "$literal30$",
+          "value" : 5636095
+        }, {
+          "display" : "$literal31$",
+          "value" : 16711765
+        }, {
+          "display" : "$literal32$",
+          "value" : 8947848
+        }, {
+          "display" : "$literal18$",
+          "value" : 0
+        } ],
+        "configMin" : null,
+        "configMax" : null,
+        "configMaxLength" : null
+      }, {
+        "key" : "coloreMinuti",
+        "valueType" : "number",
+        "defaultValue" : 16777215,
+        "configTitle" : "$literal59$",
+        "configPrompt" : null,
+        "configType" : "list",
+        "configError" : null,
+        "configHelpUrl" : null,
+        "configReadonly" : false,
+        "configRequired" : false,
+        "configOptions" : [ {
+          "display" : "$literal26$",
+          "value" : 16777215
+        }, {
+          "display" : "$literal28$",
+          "value" : 16776960
+        }, {
+          "display" : "$literal29$",
+          "value" : 16746496
+        }, {
+          "display" : "$literal30$",
+          "value" : 5636095
+        }, {
+          "display" : "$literal31$",
+          "value" : 16711765
+        }, {
+          "display" : "$literal32$",
+          "value" : 8947848
+        }, {
+          "display" : "$literal18$",
+          "value" : 0
+        } ],
+        "configMin" : null,
+        "configMax" : null,
+        "configMaxLength" : null
+      }, {
+        "key" : "coloreCalendario",
+        "valueType" : "number",
+        "defaultValue" : 5636095,
+        "configTitle" : "$literal60$",
+        "configPrompt" : null,
+        "configType" : "list",
+        "configError" : null,
+        "configHelpUrl" : null,
+        "configReadonly" : false,
+        "configRequired" : false,
+        "configOptions" : [ {
+          "display" : "$literal26$",
+          "value" : 16777215
+        }, {
+          "display" : "$literal28$",
+          "value" : 16776960
+        }, {
+          "display" : "$literal29$",
+          "value" : 16746496
+        }, {
+          "display" : "$literal30$",
+          "value" : 5636095
+        }, {
+          "display" : "$literal31$",
+          "value" : 16711765
+        }, {
+          "display" : "$literal32$",
+          "value" : 8947848
+        }, {
+          "display" : "$literal18$",
+          "value" : 0
+        } ],
+        "configMin" : null,
+        "configMax" : null,
+        "configMaxLength" : null
+      } ]
+    }
+  }, {
+    "group" : {
+      "id" : "gruppoIcone",
+      "title" : "$literal61$",
+      "description" : null,
+      "enableWhenTrue" : null,
+      "entries" : [ {
+        "key" : "coloreIconaAttivita1",
+        "valueType" : "number",
+        "defaultValue" : 0,
+        "configTitle" : "$literal62$",
+        "configPrompt" : null,
+        "configType" : "list",
+        "configError" : null,
+        "configHelpUrl" : null,
+        "configReadonly" : false,
+        "configRequired" : false,
+        "configOptions" : [ {
+          "display" : "$literal26$",
+          "value" : 0
+        }, {
+          "display" : "$literal28$",
+          "value" : 1
+        }, {
+          "display" : "$literal29$",
+          "value" : 2
+        }, {
+          "display" : "$literal30$",
+          "value" : 3
+        }, {
+          "display" : "$literal31$",
+          "value" : 4
+        }, {
+          "display" : "$literal32$",
+          "value" : 5
+        }, {
+          "display" : "$literal18$",
+          "value" : 6
+        } ],
+        "configMin" : null,
+        "configMax" : null,
+        "configMaxLength" : null
+      }, {
+        "key" : "coloreIconaAttivita2",
+        "valueType" : "number",
+        "defaultValue" : 0,
+        "configTitle" : "$literal63$",
+        "configPrompt" : null,
+        "configType" : "list",
+        "configError" : null,
+        "configHelpUrl" : null,
+        "configReadonly" : false,
+        "configRequired" : false,
+        "configOptions" : [ {
+          "display" : "$literal26$",
+          "value" : 0
+        }, {
+          "display" : "$literal28$",
+          "value" : 1
+        }, {
+          "display" : "$literal29$",
+          "value" : 2
+        }, {
+          "display" : "$literal30$",
+          "value" : 3
+        }, {
+          "display" : "$literal31$",
+          "value" : 4
+        }, {
+          "display" : "$literal32$",
+          "value" : 5
+        }, {
+          "display" : "$literal18$",
+          "value" : 6
+        } ],
+        "configMin" : null,
+        "configMax" : null,
+        "configMaxLength" : null
+      } ]
+    }
   } ],
   "supportsLiveValidation" : false,
   "languages" : {
     "valyrian" : {
-      "ColorLightGray" : "Light Gray",
-      "ColorBlue" : "Blue",
-      "ColorRed" : "Red",
-      "ForegroundColorTitle" : "Foreground Color",
-      "BackgroundColorTitle" : "Background Color",
-      "ColorDarkGray" : "Dark Gray",
-      "MilitaryFormatTitle" : "Military Format for 24 Hour Time",
-      "ColorBlack" : "Black",
+      "TitoloGoalMINWEEK" : "Minuti settimanali",
+      "TitoloGoalCALORIE" : "Totale Calorie",
+      "$literal48$" : "Colore Sfondo Cerchio Sinistra",
+      "$literal0$" : "Formato ore Militare",
+      "$literal16$" : "grigio6",
+      "$literal24$" : "blu6",
+      "$literal36$" : "Colore Sfondo Anello Interno",
+      "$literal4$" : "Temi Quadrante",
+      "$literal28$" : "giallo3",
+      "$literal40$" : "Colore Sfondo Cerchio Grande",
+      "$literal8$" : "Passi",
+      "$literal52$" : "Colore Bordo Cerchio Destra",
+      "$literal60$" : "Colore Font Calendario",
       "ColorWhite" : "White",
-      "AppName" : "GarminLibTest"
+      "$literal44$" : "verde2",
+      "$literal12$" : "Minuti Attivita Giorno",
+      "$literal56$" : "Rettangolo Centrale",
+      "$literal20$" : "ciano5",
+      "$literal32$" : "grigio4",
+      "Tema4" : "Tema Love",
+      "Tema3" : "Tema Ice",
+      "Tema2" : "Tema Forest",
+      "Tema1" : "Tema Fire",
+      "Tema0" : "Tema 0 (default)",
+      "$literal15$" : "Colore Sfondo Anello Esterno",
+      "$literal59$" : "Colore Font Minuti",
+      "$literal27$" : "Colore Ripieno Anello Esterno",
+      "$literal3$" : "Temi quadrante",
+      "$literal35$" : "Tipologia Attivita 2",
+      "$literal47$" : "Cerchio Sinistra",
+      "$literal19$" : "marrone4",
+      "$literal7$" : "Tipologia Attivita 1",
+      "$literal39$" : "Cerchio Grande",
+      "$literal51$" : "Colore Sfondo Cerchio Destra",
+      "$literal63$" : "Colore Icona Arco Interno",
+      "Tema8" : "Tema Alex",
+      "$literal11$" : "Minuti Attivita Settimana",
+      "$literal55$" : "Notch Colore Font",
+      "Tema7" : "Tema Giada",
+      "$literal23$" : "verde6",
+      "Tema6" : "Tema Max",
+      "$literal31$" : "rosa3",
+      "Tema5" : "Tema Military",
+      "$literal43$" : "blu1",
+      "TitoloGoalMINDAY" : "Minuti giornalieri",
+      "AppName" : "GarminLibTest",
+      "$literal26$" : "bianco1",
+      "$literal38$" : "Colore Font Anello Interno",
+      "$literal46$" : "rosa2",
+      "$literal2$" : "Background Color",
+      "$literal14$" : "Body Battery",
+      "$literal58$" : "Colore Font Ore",
+      "$literal6$" : "Anello ESTERNO",
+      "$literal18$" : "nero2",
+      "$literal62$" : "Colore Icona Arco Esterno",
+      "$literal30$" : "ciano2",
+      "$literal50$" : "Cerchio Destra",
+      "$literal22$" : "rosso6",
+      "$literal34$" : "Anello INTERNO",
+      "$literal42$" : "arancione1",
+      "$literal10$" : "Piani Saliti",
+      "$literal54$" : "Notch Colore Sfondo",
+      "ColorLightGray" : "Light Gray",
+      "ColorDarkGray" : "Dark Gray",
+      "ColorBlack" : "Black",
+      "TitoloGoalSTEP" : "Numero Passi",
+      "$literal1$" : "Sfondo Quadrante",
+      "$literal37$" : "Colore Ripieno Anello Interno",
+      "$literal49$" : "Colore Bordo Cerchio Sinistra",
+      "$literal13$" : "Stress",
+      "$literal57$" : "Colore Sfondo Rettangolo Centrale",
+      "TitoloGoalSTAIRS" : "NUmero piani saliti",
+      "$literal25$" : "viola5",
+      "$literal5$" : "GOAL",
+      "$literal17$" : "nero1",
+      "$literal29$" : "arancione3",
+      "$literal9$" : "Calorie",
+      "$literal41$" : "Colore Bordo Cerchio Grande",
+      "$literal61$" : "Colore Icone",
+      "$literal33$" : "Colore Font Anello Esterno",
+      "$literal45$" : "viola1",
+      "$literal53$" : "Notch",
+      "$literal21$" : "giallo5"
     }
   }
 }

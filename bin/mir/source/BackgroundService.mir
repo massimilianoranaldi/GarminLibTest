@@ -1,0 +1,61 @@
+[ @file = "C:\GarminProject\GarminLibTest\source\BackgroundService.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Background,3,14,24]; ]
+import Toybox.Background;
+[ @file = "C:\GarminProject\GarminLibTest\source\BackgroundService.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [Lang,4,14,18]; ]
+import Toybox.Lang;
+[ @file = "C:\GarminProject\GarminLibTest\source\BackgroundService.mc"; @line = 5; @symbol_importdef<0> = [Toybox,5,7,13]; @symbol_importdef<1> = [System,5,14,20]; ]
+import Toybox.System;
+[ @file = "C:\GarminProject\GarminLibTest\source\BackgroundService.mc"; @line = 8; background = true; @symbol_classdef = [BackgroundService,8,6,23]; @symbol_extends<0> = [System,8,32,38]; @symbol_extends<1> = [ServiceDelegate,8,39,54]; ]
+class BackgroundService extends System.ServiceDelegate {
+    [ @file = "C:\GarminProject\GarminLibTest\source\BackgroundService.mc"; @line = 8; ]
+    <init> {
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\source\BackgroundService.mc"; @line = 8; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\source\BackgroundService.mc"; @line = 10; @position = 17; @symbol_constdef = [URL,10,17,20]; @symbol_type<0> = [String,10,24,30]; ]
+    static
+    const URL as String = "https://meteo-garmin-worker.massimiliano-ranaldi.workers.dev";
+    [ @file = "C:\GarminProject\GarminLibTest\source\BackgroundService.mc"; @line = 13; @position = 8; @symbol_vardef = [_weatherService,13,8,23]; ]
+    var _weatherService;
+    [ @file = "C:\GarminProject\GarminLibTest\source\BackgroundService.mc"; @line = 15; @symbol_functiondef = [initialize,15,13,23]; ]
+    function initialize() as Void {
+C__GarminProject_GarminLibTest_source_BackgroundService_mc_15_26_18_4_start:
+[ "C:\GarminProject\GarminLibTest\source\BackgroundService.mc" 16 8 ]
+        symbol [ ServiceDelegate %tmp.2 16 8 23 ];
+        %tmp.2 = getv ? :ServiceDelegate;
+        symbol [ initialize %tmp.3 16 24 34 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "C:\GarminProject\GarminLibTest\source\BackgroundService.mc" 17 8 ]
+        symbol [ WeatherService %tmp.7 17 30 44 ];
+        %tmp.7 = getv ? :WeatherService;
+        %tmp.4 = newc %tmp.7 ();
+        symbol [ _weatherService ? 17 8 23 ];
+        putv self :_weatherService %tmp.4;
+C__GarminProject_GarminLibTest_source_BackgroundService_mc_15_26_18_4_stop:
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\source\BackgroundService.mc"; @line = 20; @symbol_functiondef = [onTemporalEvent,20,13,28]; ]
+    function onTemporalEvent() as Void {
+C__GarminProject_GarminLibTest_source_BackgroundService_mc_20_39_23_4_start:
+[ "C:\GarminProject\GarminLibTest\source\BackgroundService.mc" 21 8 ]
+        symbol [ System %tmp.1 21 8 14 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ println %tmp.2 21 15 22 ];
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "BackgroundService.onTemporalEvent";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "C:\GarminProject\GarminLibTest\source\BackgroundService.mc" 22 8 ]
+        symbol [ _weatherService %tmp.5 22 8 23 ];
+        %tmp.5 = getv ? :_weatherService;
+        symbol [ fetchMeteo %tmp.6 22 24 34 ];
+        %tmp.6 = getv function %tmp.5 :fetchMeteo;
+        symbol [ URL %tmp.8 22 35 38 ];
+        %tmp.8 = getv ? :URL;
+        invoke %tmp.5 %tmp.6(%tmp.8);
+C__GarminProject_GarminLibTest_source_BackgroundService_mc_20_39_23_4_stop:
+    }
+}
+[ @file = "C:\GarminProject\GarminLibTest\source\BackgroundService.mc"; @line = 3; ]
+<init> {
+}

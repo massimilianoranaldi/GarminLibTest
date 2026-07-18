@@ -6,6 +6,55 @@ using Toybox.Graphics as Gfx;
 
 module Rez {
     module Drawables {
+        (:initialized) var iconCalorie as ResourceId;
+        (:initialized) var iconMinDay as ResourceId;
+        (:initialized) var iconMinWeek as ResourceId;
+        (:initialized) var iconPassi as ResourceId;
+        (:initialized) var iconPianiSaliti as ResourceId;
+        (:initialized) var iconStress as ResourceId;
+        (:initialized) var iconBodyBattery as ResourceId;
+        (:initialized) var iconCalorieGiallo3 as ResourceId;
+        (:initialized) var iconMinDayGiallo3 as ResourceId;
+        (:initialized) var iconMinWeekGiallo3 as ResourceId;
+        (:initialized) var iconPassiGiallo3 as ResourceId;
+        (:initialized) var iconPianiSalitiGiallo3 as ResourceId;
+        (:initialized) var iconStressGiallo3 as ResourceId;
+        (:initialized) var iconBodyBatteryGiallo3 as ResourceId;
+        (:initialized) var iconCalorieArancione3 as ResourceId;
+        (:initialized) var iconMinDayArancione3 as ResourceId;
+        (:initialized) var iconMinWeekArancione3 as ResourceId;
+        (:initialized) var iconPassiArancione3 as ResourceId;
+        (:initialized) var iconPianiSalitiArancione3 as ResourceId;
+        (:initialized) var iconStressArancione3 as ResourceId;
+        (:initialized) var iconBodyBatteryArancione3 as ResourceId;
+        (:initialized) var iconCalorieCiano2 as ResourceId;
+        (:initialized) var iconMinDayCiano2 as ResourceId;
+        (:initialized) var iconMinWeekCiano2 as ResourceId;
+        (:initialized) var iconPassiCiano2 as ResourceId;
+        (:initialized) var iconPianiSalitiCiano2 as ResourceId;
+        (:initialized) var iconStressCiano2 as ResourceId;
+        (:initialized) var iconBodyBatteryCiano2 as ResourceId;
+        (:initialized) var iconCalorieRosa3 as ResourceId;
+        (:initialized) var iconMinDayRosa3 as ResourceId;
+        (:initialized) var iconMinWeekRosa3 as ResourceId;
+        (:initialized) var iconPassiRosa3 as ResourceId;
+        (:initialized) var iconPianiSalitiRosa3 as ResourceId;
+        (:initialized) var iconStressRosa3 as ResourceId;
+        (:initialized) var iconBodyBatteryRosa3 as ResourceId;
+        (:initialized) var iconBodyBatteryNero2 as ResourceId;
+        (:initialized) var iconCalorieNero2 as ResourceId;
+        (:initialized) var iconMinDayNero2 as ResourceId;
+        (:initialized) var iconMinWeekNero2 as ResourceId;
+        (:initialized) var iconPassiNero2 as ResourceId;
+        (:initialized) var iconPianiSalitiNero2 as ResourceId;
+        (:initialized) var iconStressNero2 as ResourceId;
+        (:initialized) var iconBodyBatteryGrigio4 as ResourceId;
+        (:initialized) var iconCalorieGrigio4 as ResourceId;
+        (:initialized) var iconMinDayGrigio4 as ResourceId;
+        (:initialized) var iconMinWeekGrigio4 as ResourceId;
+        (:initialized) var iconPassiGrigio4 as ResourceId;
+        (:initialized) var iconPianiSalitiGrigio4 as ResourceId;
+        (:initialized) var iconStressGrigio4 as ResourceId;
         (:initialized) var LauncherIcon as ResourceId;
     } // Drawables
 
@@ -21,15 +70,24 @@ module Rez {
 
     module Strings {
         (:initialized) var ColorLightGray as ResourceId;
-        (:initialized) var ColorBlue as ResourceId;
-        (:initialized) var ColorRed as ResourceId;
-        (:initialized) var ForegroundColorTitle as ResourceId;
-        (:initialized) var BackgroundColorTitle as ResourceId;
+        (:initialized) var Tema4 as ResourceId;
+        (:initialized) var TitoloGoalMINDAY as ResourceId;
+        (:initialized) var Tema3 as ResourceId;
+        (:initialized) var Tema2 as ResourceId;
+        (:initialized) var Tema1 as ResourceId;
         (:initialized) var ColorDarkGray as ResourceId;
-        (:initialized) var MilitaryFormatTitle as ResourceId;
+        (:initialized) var Tema0 as ResourceId;
         (:initialized) var ColorBlack as ResourceId;
-        (:initialized) var ColorWhite as ResourceId;
+        (:initialized) var TitoloGoalSTEP as ResourceId;
+        (:initialized) var TitoloGoalMINWEEK as ResourceId;
         (:initialized) var AppName as ResourceId;
+        (:initialized) var TitoloGoalCALORIE as ResourceId;
+        (:initialized) var TitoloGoalSTAIRS as ResourceId;
+        (:initialized) var ColorWhite as ResourceId;
+        (:initialized) var Tema8 as ResourceId;
+        (:initialized) var Tema7 as ResourceId;
+        (:initialized) var Tema6 as ResourceId;
+        (:initialized) var Tema5 as ResourceId;
     } // Strings
 
     module Styles {
