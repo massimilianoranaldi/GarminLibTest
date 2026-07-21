@@ -576,8 +576,9 @@ class GarminLibTestView extends WatchUi.WatchFace {
                         {
                 if(lato == CERCHIO_SX)
                 {fontColor=Palette.nero1;}
-                else 
-                {fontColor=Palette.rosa3;}
+                else  
+                {fontColor=Palette.bianco1;}
+
             
             
             break;}
@@ -1419,7 +1420,16 @@ class GarminLibTestView extends WatchUi.WatchFace {
         var testoY = cy - testoH / 2;
 
         dc.drawBitmap(startX, iconaY, icona);
+        var colore;
 
+            switch (_tema) {
+                case 4:  colore= Palette.rosa3; break;  // Love
+                case 5:  colore= Palette.arancione3; break;  // Military
+                
+                default: colore = Palette.bianco1;    break;
+            }
+
+        dc.setColor(colore, Graphics.COLOR_TRANSPARENT);
         dc.drawText(
             startX + iconaW + gap,
             testoY,
@@ -1456,7 +1466,8 @@ class GarminLibTestView extends WatchUi.WatchFace {
                             goal as Lang.Number,
                             cfg as Lang.Dictionary) as Void {
 
-        var ring = new ActivityRingTick(cx, cy, -45, 225, false, cfg);
+        //var ring = new ActivityRingTick(cx, cy, -45, 225, false, cfg);
+        var ring = new ActivityRingTick(cx, cy, 225, -45, true, cfg);
         ring.setValori(valore, goal);
         ring.draw(dc);
 
@@ -1625,7 +1636,7 @@ class GarminLibTestView extends WatchUi.WatchFace {
 
                 case 4: // Military
                     var love = Application.loadResource(Rez.Drawables.heartsLoveTheme) as BitmapResource;
-                    dc.drawBitmap(200 - love.getWidth() / 2, 210 - love.getHeight() / 2, love);
+                    dc.drawBitmap(225 - love.getWidth() / 2, 170 - love.getHeight() / 2, love);
 
 
                     break;
