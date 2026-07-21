@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   version="1.1"
+   id="Uploaded to svgrepo.com"
+   width="800px"
+   height="800px"
+   viewBox="0 0 32 32"
+   xml:space="preserve"
+   sodipodi:docname="love-svgrepo-com.svg"
+   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs2" /><sodipodi:namedview
+   id="namedview2"
+   pagecolor="#818181"
+   bordercolor="#000000"
+   borderopacity="0.25"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1"
+   inkscape:zoom="1.06375"
+   inkscape:cx="400"
+   inkscape:cy="400"
+   inkscape:window-width="1920"
+   inkscape:window-height="1111"
+   inkscape:window-x="-9"
+   inkscape:window-y="-9"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Uploaded to svgrepo.com" />
+<style
+   type="text/css"
+   id="style1">
+	.duotone_twee{fill:#555D5E;}
+	.duotone_een{fill:#0B1719;}
+</style>
+<g
+   id="g2">
+	<path
+   class="duotone_een"
+   d="M27.735,16.365c-0.16-1.962-1.745-3.517-3.782-3.685c-2.016-0.166-3.268,0.889-3.839,1.539   c-0.195,0.222-0.534,0.222-0.729,0c-0.571-0.65-1.823-1.705-3.839-1.539c-2.037,0.168-3.622,1.723-3.782,3.685   c-0.181,2.226,1.33,4.121,2.779,5.553c1.46,1.443,3.148,2.722,4.972,3.687c0.146,0.077,0.323,0.077,0.469,0   c1.824-0.965,3.512-2.244,4.972-3.687C26.405,20.486,27.916,18.591,27.735,16.365z"
+   id="path1"
+   style="fill:#ff00aa" />
+	<path
+   class="duotone_twee"
+   d="M10.768,16.284c0.2-2.457,2.175-4.392,4.696-4.6c0.172-0.014,0.34-0.021,0.503-0.021   c0.008,0,0.016,0,0.024,0c0.012-0.168,0.012-0.338-0.002-0.511c-0.12-1.472-1.308-2.638-2.836-2.764   c-1.512-0.125-2.451,0.667-2.879,1.154c-0.146,0.167-0.4,0.167-0.547,0C9.299,9.055,8.36,8.263,6.847,8.388   C5.32,8.514,4.131,9.68,4.011,11.152c-0.136,1.669,0.998,3.091,2.084,4.164c1.095,1.082,2.361,2.042,3.729,2.766   c0.109,0.058,0.242,0.058,0.352,0c0.223-0.118,0.443-0.243,0.66-0.373C10.756,17.253,10.728,16.777,10.768,16.284z"
+   id="path2"
+   style="fill:#ffffff" />
+</g>
+</svg>

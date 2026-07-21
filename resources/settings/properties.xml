@@ -39,15 +39,25 @@
     <property id="cerchioGrandeSfondo" type="number">0x333333</property> <!--_circleCntrl-->
     <property id="cerchioGrandeContorno" type="number">0x55FFFF</property> <!--_circleCntrl-->
 
+    
+    <property id="cerchioGrandeMeteoUp" type="number">0</property> 
+    <property id="cerchioGrandeMeteoDown" type="number">1</property>
+
+
     <!-- CERCHIO SINISTRA >>>>>>>>>>>>>>>>>     OK -->
     <property id="cerchioSxSfondo" type="number">0x333333</property> <!--_circleSx-->
     <property id="cerchioSxContorno" type="number">0x55FFFF</property> <!--_circleSx-->
+   
+    <property id="cerchioSinistraItems" type="number">0</property> 
+   
 
     <!-- CERCHIO DESTRA >>>>>>>>>>>>>>>>>     OK -->
     <property id="cerchioDxSfondo" type="number">0x333333</property> <!--_circleDx-->
     <property id="cerchioDxContorno" type="number">0x55FFFF</property> <!--_circleDx-->
-
-    <!-- NOTCH >>>>>>>>>>>>>>>>>     OK -->
+ 
+    <property id="cerchioDestraItems" type="number">0</property> 
+ 
+     <!-- NOTCH >>>>>>>>>>>>>>>>>     OK -->
     <property id="coloreCittaMeteo" type="number">0xFFFFFF</property> <!--_rectNotch-->
     <property id="retMeteoSfondo" type="number">0x333333</property> <!--_rectNotch-->
     

@@ -24,18 +24,18 @@
     <!-- ═══════════════════════════════════════════════════════════ -->
     <!-- TEMI                                                         -->
     <!-- ═══════════════════════════════════════════════════════════ -->
-    <group id="GruppoTemiQuadrante" title="Temi quadrante">
+    <group id="GruppoTemiQuadrante" title="=====TEMI QUADRANTE=====">
         <setting propertyKey="@Properties.temiQuadrante" title="Temi Quadrante">
             <settingConfig type="list">
-                <listEntry value="0">@Strings.Tema0</listEntry>
-                <listEntry value="1">@Strings.Tema1</listEntry>
-                <listEntry value="2">@Strings.Tema2</listEntry>
-                <listEntry value="3">@Strings.Tema3</listEntry>
-                <listEntry value="4">@Strings.Tema4</listEntry>
-                <listEntry value="5">@Strings.Tema5</listEntry>
-                <listEntry value="6">@Strings.Tema6</listEntry>
-                <listEntry value="7">@Strings.Tema7</listEntry>
-                <listEntry value="8">@Strings.Tema8</listEntry>
+                <listEntry value="0">@Strings.Tema0</listEntry> <!--Tema 0 (default)-->
+                <listEntry value="1">@Strings.Tema1</listEntry> <!--Fire-->
+                <listEntry value="2">@Strings.Tema2</listEntry> <!--Forest-->
+                <listEntry value="3">@Strings.Tema3</listEntry> <!--Ice-->
+                <listEntry value="4">@Strings.Tema4</listEntry> <!--Love-->
+                <listEntry value="5">@Strings.Tema5</listEntry> <!--Military DONE-->
+                <listEntry value="6">@Strings.Tema6</listEntry> <!--Max-->
+                <listEntry value="7">@Strings.Tema7</listEntry> <!--Giada-->
+                <listEntry value="8">@Strings.Tema8</listEntry> <!--Alex-->
             </settingConfig>
         </setting>
     </group>
@@ -43,7 +43,7 @@
     <!-- ═══════════════════════════════════════════════════════════ -->
     <!-- GOAL                                                         -->
     <!-- ═══════════════════════════════════════════════════════════ -->
-    <group id="gruppoGOAL" title="GOAL">
+    <group id="gruppoGOAL" title="=====GOAL=====">
         <setting propertyKey="@Properties.goalSTEP" title="@Strings.TitoloGoalSTEP">
             <settingConfig type="numeric" min="0" max="20000" />
         </setting>
@@ -64,7 +64,7 @@
     <!-- ═══════════════════════════════════════════════════════════ -->
     <!-- ATTIVITA 1 — Anello ESTERNO                                  -->
     <!-- ═══════════════════════════════════════════════════════════ -->
-    <group id="gruppoAttivita1" title="Anello ESTERNO">
+    <group id="gruppoAttivita1" title="=====ANELLO ESTERNO=====">
 
         <setting propertyKey="@Properties.monitoringAttivita1" title="Tipologia Attivita 1">
             <settingConfig type="list">
@@ -123,7 +123,7 @@
     <!-- ═══════════════════════════════════════════════════════════ -->
     <!-- ATTIVITA 2 — Anello INTERNO                                  -->
     <!-- ═══════════════════════════════════════════════════════════ -->
-    <group id="gruppoAnello2" title="Anello INTERNO">
+    <group id="gruppoAnello2" title="=====ANELLO INTERNO=====">
 
         <setting propertyKey="@Properties.monitoringAttivita2" title="Tipologia Attivita 2">
             <settingConfig type="list">
@@ -182,9 +182,9 @@
     <!-- ═══════════════════════════════════════════════════════════ -->
     <!-- CERCHIO GRANDE                                               -->
     <!-- ═══════════════════════════════════════════════════════════ -->
-    <group id="cerchioGrande" title="Cerchio Grande">
+    <group id="cerchioGrande" title="=====CERCHIO CENTRALE=====">
 
-        <setting propertyKey="@Properties.cerchioGrandeSfondo" title="Colore Sfondo Cerchio Grande">
+        <setting propertyKey="@Properties.cerchioGrandeSfondo" title="Colore Sfondo">
             <settingConfig type="list">
                 <listEntry value="0x333333">grigio6</listEntry>
                 <listEntry value="0x111111">nero1</listEntry>
@@ -200,7 +200,7 @@
             </settingConfig>
         </setting>
 
-        <setting propertyKey="@Properties.cerchioGrandeContorno" title="Colore Bordo Cerchio Grande">
+        <setting propertyKey="@Properties.cerchioGrandeContorno" title="Colore Bordo">
             <settingConfig type="list">
                 <listEntry value="0xFFFFFF">bianco1</listEntry>
                 <listEntry value="0xFFFF00">giallo3</listEntry>
@@ -215,14 +215,41 @@
             </settingConfig>
         </setting>
 
+          <setting propertyKey="@Properties.cerchioGrandeMeteoUp" title="Item Up">
+                <settingConfig type="list">
+                    <listEntry value="0">Temperatura Percepita</listEntry>
+                    <listEntry value="1">Velocità Vento</listEntry>
+                    <listEntry value="2">Copertura Cielo</listEntry>
+                    <listEntry value="3">Umidità</listEntry>
+                    <listEntry value="4">Probabilità Precipitazione</listEntry>
+                    <listEntry value="5">Indice UV</listEntry>
+                    <listEntry value="6">Livello Pioggia</listEntry>
+                </settingConfig>
+            </setting>
+
+            <setting propertyKey="@Properties.cerchioGrandeMeteoDown" title="Item Down">
+                <settingConfig type="list">
+                    <listEntry value="0">Temperatura Percepita</listEntry>
+                    <listEntry value="1">Velocità Vento</listEntry>
+                    <listEntry value="2">Copertura Cielo</listEntry>
+                    <listEntry value="3">Umidità</listEntry>
+                    <listEntry value="4">Probabilità Precipitazione</listEntry>
+                    <listEntry value="5">Indice UV</listEntry>
+                    <listEntry value="6">Livello Pioggia</listEntry>                
+                </settingConfig>
+            </setting>    
+
     </group>
+
+
+
 
     <!-- ═══════════════════════════════════════════════════════════ -->
     <!-- CERCHIO SINISTRA                                             -->
     <!-- ═══════════════════════════════════════════════════════════ -->
-    <group id="cerchioSinistra" title="Cerchio Sinistra">
+    <group id="cerchioSinistra" title="=====CERCHIO SINISTRA=====">
 
-        <setting propertyKey="@Properties.cerchioSxSfondo" title="Colore Sfondo Cerchio Sinistra">
+        <setting propertyKey="@Properties.cerchioSxSfondo" title="Colore Sfondo">
             <settingConfig type="list">
                 <listEntry value="0x333333">grigio6</listEntry>
                 <listEntry value="0x111111">nero1</listEntry>
@@ -238,7 +265,7 @@
             </settingConfig>
         </setting>
 
-        <setting propertyKey="@Properties.cerchioSxContorno" title="Colore Bordo Cerchio Sinistra">
+        <setting propertyKey="@Properties.cerchioSxContorno" title="Colore Bordo">
             <settingConfig type="list">
                 <listEntry value="0xFFFFFF">bianco1</listEntry>
                 <listEntry value="0xFFFF00">giallo3</listEntry>
@@ -251,6 +278,33 @@
                 <listEntry value="0xDD99FF">viola1</listEntry>
                 <listEntry value="0xFF55AA">rosa2</listEntry>
             </settingConfig>
+</setting>  
+<setting propertyKey="@Properties.cerchioSinistraItems" title="Item">
+                <settingConfig type="list">
+                    <listEntry value="0">Temperatura Percepita</listEntry>
+                    <listEntry value="1">Velocità Vento</listEntry>
+                    <listEntry value="2">Copertura Cielo</listEntry>
+                    <listEntry value="3">Umidità</listEntry>
+                    <listEntry value="4">Probabilità Precipitazione</listEntry>
+                    <listEntry value="5">Indice UV</listEntry>
+                    <listEntry value="6">Livello Pioggia</listEntry>                
+                    
+                    <listEntry value="7">Alba e Tramonto</listEntry>                
+                    
+                    <listEntry value="8">Informazioni Sistema (batteria+bluethoot)</listEntry>                
+
+                    <listEntry value="9">Frequenza Cardiaca</listEntry>                
+
+
+                    <listEntry value="10">Passi</listEntry>
+                    <listEntry value="11">Calorie</listEntry>
+                    <listEntry value="12">Piani Saliti</listEntry>
+                    <listEntry value="13">Minuti Attivita Settimana</listEntry>
+                    <listEntry value="14">Minuti Attivita Giorno</listEntry>
+                    <listEntry value="15">Stress</listEntry>
+                    <listEntry value="16">Body Battery</listEntry>
+                </settingConfig>
+                          
         </setting>
 
     </group>
@@ -258,9 +312,9 @@
     <!-- ═══════════════════════════════════════════════════════════ -->
     <!-- CERCHIO DESTRA                                               -->
     <!-- ═══════════════════════════════════════════════════════════ -->
-    <group id="cerchioDestra" title="Cerchio Destra">
+    <group id="cerchioDestra" title="=====CERCHIO DESTRA=====">
 
-        <setting propertyKey="@Properties.cerchioDxSfondo" title="Colore Sfondo Cerchio Destra">
+        <setting propertyKey="@Properties.cerchioDxSfondo" title="Colore Sfondo">
             <settingConfig type="list">
                 <listEntry value="0x333333">grigio6</listEntry>
                 <listEntry value="0x111111">nero1</listEntry>
@@ -276,7 +330,7 @@
             </settingConfig>
         </setting>
 
-        <setting propertyKey="@Properties.cerchioDxContorno" title="Colore Bordo Cerchio Destra">
+        <setting propertyKey="@Properties.cerchioDxContorno" title="Colore Bordo">
             <settingConfig type="list">
                 <listEntry value="0xFFFFFF">bianco1</listEntry>
                 <listEntry value="0xFFFF00">giallo3</listEntry>
@@ -291,14 +345,42 @@
             </settingConfig>
         </setting>
 
+        <setting propertyKey="@Properties.cerchioDestraItems" title="Item ">
+                <settingConfig type="list">
+                    <listEntry value="0">Temperatura Percepita</listEntry>
+                    <listEntry value="1">Velocità Vento</listEntry>
+                    <listEntry value="2">Copertura Cielo</listEntry>
+                    <listEntry value="3">Umidità</listEntry>
+                    <listEntry value="4">Probabilità Precipitazione</listEntry>
+                    <listEntry value="5">Indice UV</listEntry>
+                    <listEntry value="6">Livello Pioggia</listEntry>                
+                    
+                    <listEntry value="7">Alba e Tramonto</listEntry>                
+                    
+                    <listEntry value="8">Informazioni Sistema (batteria+bluethoot)</listEntry>                
+
+                    <listEntry value="9">Frequenza Cardiaca</listEntry>                
+
+
+                    <listEntry value="10">Passi</listEntry>
+                    <listEntry value="11">Calorie</listEntry>
+                    <listEntry value="12">Piani Saliti</listEntry>
+                    <listEntry value="13">Minuti Attivita Settimana</listEntry>
+                    <listEntry value="14">Minuti Attivita Giorno</listEntry>
+                    <listEntry value="15">Stress</listEntry>
+                    <listEntry value="16">Body Battery</listEntry>
+                </settingConfig>
+            </setting>    
+
     </group>
+
 
     <!-- ═══════════════════════════════════════════════════════════ -->
     <!-- NOTCH                                                        -->
     <!-- ═══════════════════════════════════════════════════════════ -->
-    <group id="gruppoNotch" title="Notch">
+    <group id="gruppoNotch" title="=====COLORE NOTCH=====">
 
-        <setting propertyKey="@Properties.retMeteoSfondo" title="Notch Colore Sfondo">
+        <setting propertyKey="@Properties.retMeteoSfondo" title="Sfondo">
             <settingConfig type="list">
                 <listEntry value="0x333333">grigio6</listEntry>
                 <listEntry value="0x111111">nero1</listEntry>
@@ -314,7 +396,7 @@
             </settingConfig>
         </setting>
 
-        <setting propertyKey="@Properties.coloreCittaMeteo" title="Notch Colore Font">
+        <setting propertyKey="@Properties.coloreCittaMeteo" title="Font">
             <settingConfig type="list">
                 <listEntry value="0xFFFFFF">bianco1</listEntry>
                 <listEntry value="0xFFFF00">giallo3</listEntry>
@@ -331,9 +413,9 @@
     <!-- ═══════════════════════════════════════════════════════════ -->
     <!-- RETTANGOLO CENTRALE                                          -->
     <!-- ═══════════════════════════════════════════════════════════ -->
-    <group id="gruppoRettangoloCentrale" title="Rettangolo Centrale">
+    <group id="gruppoRettangoloCentrale" title="=====COLORE RETTANGOLO CENTRALE=====">
 
-        <setting propertyKey="@Properties.retOreSfondo" title="Colore Sfondo Rettangolo Centrale">
+        <setting propertyKey="@Properties.retOreSfondo" title="Sfondo">
             <settingConfig type="list">
                 <listEntry value="0x333333">grigio6</listEntry>
                 <listEntry value="0x111111">nero1</listEntry>
@@ -349,7 +431,7 @@
             </settingConfig>
         </setting>
 
-        <setting propertyKey="@Properties.coloreOre" title="Colore Font Ore">
+        <setting propertyKey="@Properties.coloreOre" title="Font Ore">
             <settingConfig type="list">
                 <listEntry value="0xFFFFFF">bianco1</listEntry>
                 <listEntry value="0xFFFF00">giallo3</listEntry>
@@ -361,7 +443,7 @@
             </settingConfig>
         </setting>
 
-        <setting propertyKey="@Properties.coloreMinuti" title="Colore Font Minuti">
+        <setting propertyKey="@Properties.coloreMinuti" title="Font Minuti">
             <settingConfig type="list">
                 <listEntry value="0xFFFFFF">bianco1</listEntry>
                 <listEntry value="0xFFFF00">giallo3</listEntry>
@@ -373,7 +455,7 @@
             </settingConfig>
         </setting>
 
-        <setting propertyKey="@Properties.coloreCalendario" title="Colore Font Calendario">
+        <setting propertyKey="@Properties.coloreCalendario" title="Font Calendario">
             <settingConfig type="list">
                 <listEntry value="0xFFFFFF">bianco1</listEntry>
                 <listEntry value="0xFFFF00">giallo3</listEntry>
@@ -390,9 +472,9 @@
     <!-- ═══════════════════════════════════════════════════════════ -->
     <!-- COLORE ICONE                                                 -->
     <!-- ═══════════════════════════════════════════════════════════ -->
-    <group id="gruppoIcone" title="Colore Icone">
+    <group id="gruppoIcone" title="=====COLORE ICONE=====">
 
-        <setting propertyKey="@Properties.coloreIconaAttivita1" title="Colore Icona Arco Esterno">
+        <setting propertyKey="@Properties.coloreIconaAttivita1" title="Arco Esterno">
             <settingConfig type="list">
                 <listEntry value="0">bianco1</listEntry>
                 <listEntry value="1">giallo3</listEntry>
@@ -404,7 +486,7 @@
             </settingConfig>
         </setting>
 
-        <setting propertyKey="@Properties.coloreIconaAttivita2" title="Colore Icona Arco Interno">
+        <setting propertyKey="@Properties.coloreIconaAttivita2" title="Arco Interno">
             <settingConfig type="list">
                 <listEntry value="0">bianco1</listEntry>
                 <listEntry value="1">giallo3</listEntry>

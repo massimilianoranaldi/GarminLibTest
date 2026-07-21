@@ -1,8 +1,8 @@
 <drawables xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
     <bitmap id="LauncherIcon" filename="launcher_icon.png" dithering="none" />
 
-
-    <!-- icone activity bianche default-->
+    <!-- ACTIVITY bianche default (24x24)-->
+    <!-- ==================================================================-->
     <bitmap id="iconCalorie"     filename="icons_activity/CALORIE.png"       dithering="none" />
     <bitmap id="iconMinDay"      filename="icons_activity/MIN_DAY.png"       dithering="none" />
     <bitmap id="iconMinWeek"     filename="icons_activity/MIN_WEEK.png"      dithering="none" />
@@ -10,60 +10,286 @@
     <bitmap id="iconPianiSaliti" filename="icons_activity/PIANI_SALITI.png"  dithering="none" />
     <bitmap id="iconStress"      filename="icons_activity/STRESS.png"        dithering="none" />
     <bitmap id="iconBodyBattery" filename="icons_activity/BODY_BATTERY.png"  dithering="none" />
- 
+
     <!-- giallo3 -->
-    <bitmap id="iconCalorieGiallo3" filename="icons_activity/CALORIE_giallo3.png" dithering="none" />
-    <bitmap id="iconMinDayGiallo3" filename="icons_activity/MIN_DAY_giallo3.png" dithering="none" />
-    <bitmap id="iconMinWeekGiallo3" filename="icons_activity/MIN_WEEK_giallo3.png" dithering="none" />
-    <bitmap id="iconPassiGiallo3" filename="icons_activity/PASSI_giallo3.png" dithering="none" />
+    <bitmap id="iconCalorieGiallo3"     filename="icons_activity/CALORIE_giallo3.png"      dithering="none" />
+    <bitmap id="iconMinDayGiallo3"      filename="icons_activity/MIN_DAY_giallo3.png"      dithering="none" />
+    <bitmap id="iconMinWeekGiallo3"     filename="icons_activity/MIN_WEEK_giallo3.png"     dithering="none" />
+    <bitmap id="iconPassiGiallo3"       filename="icons_activity/PASSI_giallo3.png"        dithering="none" />
     <bitmap id="iconPianiSalitiGiallo3" filename="icons_activity/PIANI_SALITI_giallo3.png" dithering="none" />
-    <bitmap id="iconStressGiallo3" filename="icons_activity/STRESS_giallo3.png" dithering="none" />
+    <bitmap id="iconStressGiallo3"      filename="icons_activity/STRESS_giallo3.png"       dithering="none" />
     <bitmap id="iconBodyBatteryGiallo3" filename="icons_activity/BODY_BATTERY_giallo3.png" dithering="none" />
 
     <!-- arancione3 -->
-    <bitmap id="iconCalorieArancione3" filename="icons_activity/CALORIE_arancione3.png" dithering="none" />
-    <bitmap id="iconMinDayArancione3" filename="icons_activity/MIN_DAY_arancione3.png" dithering="none" />
-    <bitmap id="iconMinWeekArancione3" filename="icons_activity/MIN_WEEK_arancione3.png" dithering="none" />
-    <bitmap id="iconPassiArancione3" filename="icons_activity/PASSI_arancione3.png" dithering="none" />
+    <bitmap id="iconCalorieArancione3"     filename="icons_activity/CALORIE_arancione3.png"      dithering="none" />
+    <bitmap id="iconMinDayArancione3"      filename="icons_activity/MIN_DAY_arancione3.png"      dithering="none" />
+    <bitmap id="iconMinWeekArancione3"     filename="icons_activity/MIN_WEEK_arancione3.png"     dithering="none" />
+    <bitmap id="iconPassiArancione3"       filename="icons_activity/PASSI_arancione3.png"        dithering="none" />
     <bitmap id="iconPianiSalitiArancione3" filename="icons_activity/PIANI_SALITI_arancione3.png" dithering="none" />
-    <bitmap id="iconStressArancione3" filename="icons_activity/STRESS_arancione3.png" dithering="none" />
+    <bitmap id="iconStressArancione3"      filename="icons_activity/STRESS_arancione3.png"       dithering="none" />
     <bitmap id="iconBodyBatteryArancione3" filename="icons_activity/BODY_BATTERY_arancione3.png" dithering="none" />
 
     <!-- ciano2 -->
-    <bitmap id="iconCalorieCiano2" filename="icons_activity/CALORIE_ciano2.png" dithering="none" />
-    <bitmap id="iconMinDayCiano2" filename="icons_activity/MIN_DAY_ciano2.png" dithering="none" />
-    <bitmap id="iconMinWeekCiano2" filename="icons_activity/MIN_WEEK_ciano2.png" dithering="none" />
-    <bitmap id="iconPassiCiano2" filename="icons_activity/PASSI_ciano2.png" dithering="none" />
+    <bitmap id="iconCalorieCiano2"     filename="icons_activity/CALORIE_ciano2.png"      dithering="none" />
+    <bitmap id="iconMinDayCiano2"      filename="icons_activity/MIN_DAY_ciano2.png"      dithering="none" />
+    <bitmap id="iconMinWeekCiano2"     filename="icons_activity/MIN_WEEK_ciano2.png"     dithering="none" />
+    <bitmap id="iconPassiCiano2"       filename="icons_activity/PASSI_ciano2.png"        dithering="none" />
     <bitmap id="iconPianiSalitiCiano2" filename="icons_activity/PIANI_SALITI_ciano2.png" dithering="none" />
-    <bitmap id="iconStressCiano2" filename="icons_activity/STRESS_ciano2.png" dithering="none" />
+    <bitmap id="iconStressCiano2"      filename="icons_activity/STRESS_ciano2.png"       dithering="none" />
     <bitmap id="iconBodyBatteryCiano2" filename="icons_activity/BODY_BATTERY_ciano2.png" dithering="none" />
 
     <!-- rosa3 -->
-    <bitmap id="iconCalorieRosa3" filename="icons_activity/CALORIE_rosa3.png" dithering="none" />
-    <bitmap id="iconMinDayRosa3" filename="icons_activity/MIN_DAY_rosa3.png" dithering="none" />
-    <bitmap id="iconMinWeekRosa3" filename="icons_activity/MIN_WEEK_rosa3.png" dithering="none" />
-    <bitmap id="iconPassiRosa3" filename="icons_activity/PASSI_rosa3.png" dithering="none" />
+    <bitmap id="iconCalorieRosa3"     filename="icons_activity/CALORIE_rosa3.png"      dithering="none" />
+    <bitmap id="iconMinDayRosa3"      filename="icons_activity/MIN_DAY_rosa3.png"      dithering="none" />
+    <bitmap id="iconMinWeekRosa3"     filename="icons_activity/MIN_WEEK_rosa3.png"     dithering="none" />
+    <bitmap id="iconPassiRosa3"       filename="icons_activity/PASSI_rosa3.png"        dithering="none" />
     <bitmap id="iconPianiSalitiRosa3" filename="icons_activity/PIANI_SALITI_rosa3.png" dithering="none" />
-    <bitmap id="iconStressRosa3" filename="icons_activity/STRESS_rosa3.png" dithering="none" />
+    <bitmap id="iconStressRosa3"      filename="icons_activity/STRESS_rosa3.png"       dithering="none" />
     <bitmap id="iconBodyBatteryRosa3" filename="icons_activity/BODY_BATTERY_rosa3.png" dithering="none" />
 
-
     <!-- nero2 -->
-    <bitmap id="iconBodyBatteryNero2"      filename="icons_activity/BODY_BATTERY_nero2.png"      dithering="none" />
-    <bitmap id="iconCalorieNero2"          filename="icons_activity/CALORIE_nero2.png"            dithering="none" />
-    <bitmap id="iconMinDayNero2"           filename="icons_activity/MIN_DAY_nero2.png"            dithering="none" />
-    <bitmap id="iconMinWeekNero2"          filename="icons_activity/MIN_WEEK_nero2.png"           dithering="none" />
-    <bitmap id="iconPassiNero2"            filename="icons_activity/PASSI_nero2.png"              dithering="none" />
-    <bitmap id="iconPianiSalitiNero2"      filename="icons_activity/PIANI_SALITI_nero2.png"       dithering="none" />
-    <bitmap id="iconStressNero2"           filename="icons_activity/STRESS_nero2.png"             dithering="none" />
+    <bitmap id="iconBodyBatteryNero2"   filename="icons_activity/BODY_BATTERY_nero2.png"  dithering="none" />
+    <bitmap id="iconCalorieNero2"       filename="icons_activity/CALORIE_nero2.png"        dithering="none" />
+    <bitmap id="iconMinDayNero2"        filename="icons_activity/MIN_DAY_nero2.png"        dithering="none" />
+    <bitmap id="iconMinWeekNero2"       filename="icons_activity/MIN_WEEK_nero2.png"       dithering="none" />
+    <bitmap id="iconPassiNero2"         filename="icons_activity/PASSI_nero2.png"          dithering="none" />
+    <bitmap id="iconPianiSalitiNero2"   filename="icons_activity/PIANI_SALITI_nero2.png"   dithering="none" />
+    <bitmap id="iconStressNero2"        filename="icons_activity/STRESS_nero2.png"         dithering="none" />
 
     <!-- grigio4 -->
-    <bitmap id="iconBodyBatteryGrigio4"    filename="icons_activity/BODY_BATTERY_grigio4.png"    dithering="none" />
-    <bitmap id="iconCalorieGrigio4"        filename="icons_activity/CALORIE_grigio4.png"          dithering="none" />
-    <bitmap id="iconMinDayGrigio4"         filename="icons_activity/MIN_DAY_grigio4.png"          dithering="none" />
-    <bitmap id="iconMinWeekGrigio4"        filename="icons_activity/MIN_WEEK_grigio4.png"         dithering="none" />
-    <bitmap id="iconPassiGrigio4"          filename="icons_activity/PASSI_grigio4.png"            dithering="none" />
-    <bitmap id="iconPianiSalitiGrigio4"    filename="icons_activity/PIANI_SALITI_grigio4.png"     dithering="none" />
-    <bitmap id="iconStressGrigio4"         filename="icons_activity/STRESS_grigio4.png"           dithering="none" />
+    <bitmap id="iconBodyBatteryGrigio4"  filename="icons_activity/BODY_BATTERY_grigio4.png" dithering="none" />
+    <bitmap id="iconCalorieGrigio4"      filename="icons_activity/CALORIE_grigio4.png"      dithering="none" />
+    <bitmap id="iconMinDayGrigio4"       filename="icons_activity/MIN_DAY_grigio4.png"      dithering="none" />
+    <bitmap id="iconMinWeekGrigio4"      filename="icons_activity/MIN_WEEK_grigio4.png"     dithering="none" />
+    <bitmap id="iconPassiGrigio4"        filename="icons_activity/PASSI_grigio4.png"        dithering="none" />
+    <bitmap id="iconPianiSalitiGrigio4"  filename="icons_activity/PIANI_SALITI_grigio4.png" dithering="none" />
+    <bitmap id="iconStressGrigio4"       filename="icons_activity/STRESS_grigio4.png"       dithering="none" />
+
+    <!--HEART-->
+    <!-- ==================================================================-->
+    <bitmap id="heartSmall"  filename="icons_system/heart2_rosso_16x16.png" dithering="none" />
+    <bitmap id="heartMedium" filename="icons_system/heart2_rosso_20x20.png" dithering="none" />
+    <bitmap id="heartBig"    filename="icons_system/heart2_rosso_24x24.png" dithering="none" />
+
+    <!--METEO DINAMICI (24x24)-->
+    <!-- ==================================================================-->
+    <bitmap id="wiDayRainColored"          filename="icons_meteo/google_wi-day-rain_colored.png"               dithering="none" />
+    <bitmap id="wiDayShowersColored"       filename="icons_meteo/google_wi-day-showers_colored.png"            dithering="none" />
+    <bitmap id="wiDaySnowColored"          filename="icons_meteo/google_wi-day-snow_colored.png"               dithering="none" />
+    <bitmap id="wiDaySprinkleColored"      filename="icons_meteo/google_wi-day-sprinkle_colored.png"           dithering="none" />
+    <bitmap id="wiDaySunnyColored"         filename="icons_meteo/google_wi-day-sunny_colored_new.png"          dithering="none" />
+    <bitmap id="wiDaySunnyOvercastColored" filename="icons_meteo/google_wi-day-sunny-overcast_colored_new.png" dithering="none" />
+    <bitmap id="wiRainColored"             filename="icons_meteo/google_wi-rain_colored.png"                   dithering="none" />
+    <bitmap id="wiRainMixColored"          filename="icons_meteo/google_wi-rain-mix_colored.png"               dithering="none" />
+    <bitmap id="wiRainWindColored"         filename="icons_meteo/google_wi-rain-wind_colored.png"              dithering="none" />
+    <bitmap id="wiShowersColored"          filename="icons_meteo/google_wi-showers_colored.png"                dithering="none" />
+    <bitmap id="wiSnowColored"             filename="icons_meteo/google_wi-snow_colored.png"                   dithering="none" />
+    <bitmap id="wiSnowWindColored"         filename="icons_meteo/google_wi-snow-wind_colored.png"              dithering="none" />
+    <bitmap id="wiSprinkleColored"         filename="icons_meteo/google_wi-sprinkle_colored.png"               dithering="none" />
+    <bitmap id="wiStormShowersColored"     filename="icons_meteo/google_wi-storm-showers_colored.png"          dithering="none" />
+    <bitmap id="wiThunderstormColored"     filename="icons_meteo/google_wi-thunderstorm_colored.png"           dithering="none" />
+    <bitmap id="wiCloudyColored"           filename="icons_meteo/google_wi-cloudy_colored.png"                 dithering="none" />
+    <bitmap id="wiDayCloudyColored"        filename="icons_meteo/google_wi-day-cloudy_colored_new.png"         dithering="none" />
+    <bitmap id="wiDayFogColored"           filename="icons_meteo/google_wi-day-fog_colored.png"                dithering="none" />
+    <bitmap id="wiDayHazeColored"          filename="icons_meteo/google_wi-day-haze_colored.png"               dithering="none" />
+
+    <!--METEO STATICI (16x16)-->
+    <!-- ==================================================================-->
+
+    <!-- umidità -->
+    <bitmap id="rainBianco1_16x16"          filename="icons_meteo/statiche/rain-svgrepo-com_bianco1_16x16.png"              dithering="none" />
+    <bitmap id="rainGiallo3_16x16"          filename="icons_meteo/statiche/rain-svgrepo-com_giallo3_16x16.png"              dithering="none" />
+    <bitmap id="rainArancione3_16x16"       filename="icons_meteo/statiche/rain-svgrepo-com_arancione3_16x16.png"           dithering="none" />
+    <bitmap id="rainCiano2_16x16"           filename="icons_meteo/statiche/rain-svgrepo-com_ciano2_16x16.png"               dithering="none" />
+    <bitmap id="rainRosa3_16x16"            filename="icons_meteo/statiche/rain-svgrepo-com_rosa3_16x16.png"                dithering="none" />
+    <bitmap id="rainGrigio4_16x16"          filename="icons_meteo/statiche/rain-svgrepo-com_grigio4_16x16.png"              dithering="none" />
+    <bitmap id="rainNero2_16x16"            filename="icons_meteo/statiche/rain-svgrepo-com_nero2_16x16.png"                dithering="none" />
+
+    <!-- sunrise sea alba -->
+    <bitmap id="sunriseSeaBianco1_16x16"    filename="icons_meteo/statiche/sunrise-sun-up-sea-svgrepo-com_bianco1_16x16.png"    dithering="none" />
+    <bitmap id="sunriseSeaGiallo3_16x16"    filename="icons_meteo/statiche/sunrise-sun-up-sea-svgrepo-com_giallo3_16x16.png"    dithering="none" />
+    <bitmap id="sunriseSeaArancione3_16x16" filename="icons_meteo/statiche/sunrise-sun-up-sea-svgrepo-com_arancione3_16x16.png" dithering="none" />
+    <bitmap id="sunriseSeaCiano2_16x16"     filename="icons_meteo/statiche/sunrise-sun-up-sea-svgrepo-com_ciano2_16x16.png"     dithering="none" />
+    <bitmap id="sunriseSeaRosa3_16x16"      filename="icons_meteo/statiche/sunrise-sun-up-sea-svgrepo-com_rosa3_16x16.png"      dithering="none" />
+    <bitmap id="sunriseSeaGrigio4_16x16"    filename="icons_meteo/statiche/sunrise-sun-up-sea-svgrepo-com_grigio4_16x16.png"    dithering="none" />
+    <bitmap id="sunriseSeaNero2_16x16"      filename="icons_meteo/statiche/sunrise-sun-up-sea-svgrepo-com_nero2_16x16.png"      dithering="none" />
+
+    <!-- sunset sea tramonto -->
+    <bitmap id="sunsetSeaBianco1_16x16"     filename="icons_meteo/statiche/sunset-sun-down-sea-svgrepo-com_bianco1_16x16.png"    dithering="none" />
+    <bitmap id="sunsetSeaGiallo3_16x16"     filename="icons_meteo/statiche/sunset-sun-down-sea-svgrepo-com_giallo3_16x16.png"    dithering="none" />
+    <bitmap id="sunsetSeaArancione3_16x16"  filename="icons_meteo/statiche/sunset-sun-down-sea-svgrepo-com_arancione3_16x16.png" dithering="none" />
+    <bitmap id="sunsetSeaCiano2_16x16"      filename="icons_meteo/statiche/sunset-sun-down-sea-svgrepo-com_ciano2_16x16.png"     dithering="none" />
+    <bitmap id="sunsetSeaRosa3_16x16"       filename="icons_meteo/statiche/sunset-sun-down-sea-svgrepo-com_rosa3_16x16.png"      dithering="none" />
+    <bitmap id="sunsetSeaGrigio4_16x16"     filename="icons_meteo/statiche/sunset-sun-down-sea-svgrepo-com_grigio4_16x16.png"    dithering="none" />
+    <bitmap id="sunsetSeaNero2_16x16"       filename="icons_meteo/statiche/sunset-sun-down-sea-svgrepo-com_nero2_16x16.png"      dithering="none" />
+
+    <!-- probabilità pioggia -->
+    <bitmap id="umbrellaBianco1_16x16"      filename="icons_meteo/statiche/umbrella-svgrepo-com_bianco1_16x16.png"   dithering="none" />
+    <bitmap id="umbrellaGiallo3_16x16"      filename="icons_meteo/statiche/umbrella-svgrepo-com_giallo3_16x16.png"   dithering="none" />
+    <bitmap id="umbrellaArancione3_16x16"   filename="icons_meteo/statiche/umbrella-svgrepo-com_arancione3_16x16.png" dithering="none" />
+    <bitmap id="umbrellaCiano2_16x16"       filename="icons_meteo/statiche/umbrella-svgrepo-com_ciano2_16x16.png"    dithering="none" />
+    <bitmap id="umbrellaRosa3_16x16"        filename="icons_meteo/statiche/umbrella-svgrepo-com_rosa3_16x16.png"     dithering="none" />
+    <bitmap id="umbrellaGrigio4_16x16"      filename="icons_meteo/statiche/umbrella-svgrepo-com_grigio4_16x16.png"   dithering="none" />
+    <bitmap id="umbrellaNero2_16x16"        filename="icons_meteo/statiche/umbrella-svgrepo-com_nero2_16x16.png"     dithering="none" />
+
+    <!-- UV -->
+    <bitmap id="uvBianco1_16x16"            filename="icons_meteo/statiche/uv-index_bianco1_16x16.png"    dithering="none" />
+    <bitmap id="uvGiallo3_16x16"            filename="icons_meteo/statiche/uv-index_giallo3_16x16.png"    dithering="none" />
+    <bitmap id="uvArancione3_16x16"         filename="icons_meteo/statiche/uv-index_arancione3_16x16.png" dithering="none" />
+    <bitmap id="uvCiano2_16x16"             filename="icons_meteo/statiche/uv-index_ciano2_16x16.png"     dithering="none" />
+    <bitmap id="uvRosa3_16x16"              filename="icons_meteo/statiche/uv-index_rosa3_16x16.png"      dithering="none" />
+    <bitmap id="uvGrigio4_16x16"            filename="icons_meteo/statiche/uv-index_grigio4_16x16.png"    dithering="none" />
+    <bitmap id="uvNero2_16x16"              filename="icons_meteo/statiche/uv-index_nero2_16x16.png"      dithering="none" />
+
+    <!-- vento -->
+    <bitmap id="windBianco1_16x16"          filename="icons_meteo/statiche/wind-svgrepo-com_bianco1_16x16.png"    dithering="none" />
+    <bitmap id="windGiallo3_16x16"          filename="icons_meteo/statiche/wind-svgrepo-com_giallo3_16x16.png"    dithering="none" />
+    <bitmap id="windArancione3_16x16"       filename="icons_meteo/statiche/wind-svgrepo-com_arancione3_16x16.png" dithering="none" />
+    <bitmap id="windCiano2_16x16"           filename="icons_meteo/statiche/wind-svgrepo-com_ciano2_16x16.png"     dithering="none" />
+    <bitmap id="windRosa3_16x16"            filename="icons_meteo/statiche/wind-svgrepo-com_rosa3_16x16.png"      dithering="none" />
+    <bitmap id="windGrigio4_16x16"          filename="icons_meteo/statiche/wind-svgrepo-com_grigio4_16x16.png"    dithering="none" />
+    <bitmap id="windNero2_16x16"            filename="icons_meteo/statiche/wind-svgrepo-com_nero2_16x16.png"      dithering="none" />
+
+    <!-- nuvolosità -->
+    <bitmap id="cloudyBianco1_16x16"        filename="icons_meteo/statiche/cloudy-svgrepo-com_bianco1_16x16.png"    dithering="none" />
+    <bitmap id="cloudyGiallo3_16x16"        filename="icons_meteo/statiche/cloudy-svgrepo-com_giallo3_16x16.png"    dithering="none" />
+    <bitmap id="cloudyArancione3_16x16"     filename="icons_meteo/statiche/cloudy-svgrepo-com_arancione3_16x16.png" dithering="none" />
+    <bitmap id="cloudyCiano2_16x16"         filename="icons_meteo/statiche/cloudy-svgrepo-com_ciano2_16x16.png"     dithering="none" />
+    <bitmap id="cloudyRosa3_16x16"          filename="icons_meteo/statiche/cloudy-svgrepo-com_rosa3_16x16.png"      dithering="none" />
+    <bitmap id="cloudyGrigio4_16x16"        filename="icons_meteo/statiche/cloudy-svgrepo-com_grigio4_16x16.png"    dithering="none" />
+    <bitmap id="cloudyNero2_16x16"          filename="icons_meteo/statiche/cloudy-svgrepo-com_nero2_16x16.png"      dithering="none" />
+
+    <!-- livello pioggia -->
+    <bitmap id="pioggiaBianco1_16x16"       filename="icons_meteo/statiche/livello_pioggia_bianco1_16x16.png"    dithering="none" />
+    <bitmap id="pioggiaGiallo3_16x16"       filename="icons_meteo/statiche/livello_pioggia_giallo3_16x16.png"    dithering="none" />
+    <bitmap id="pioggiaArancione3_16x16"    filename="icons_meteo/statiche/livello_pioggia_arancione3_16x16.png" dithering="none" />
+    <bitmap id="pioggiaCiano2_16x16"        filename="icons_meteo/statiche/livello_pioggia_ciano2_16x16.png"     dithering="none" />
+    <bitmap id="pioggiaRosa3_16x16"         filename="icons_meteo/statiche/livello_pioggia_rosa3_16x16.png"      dithering="none" />
+    <bitmap id="pioggiaGrigio4_16x16"       filename="icons_meteo/statiche/livello_pioggia_grigio4_16x16.png"    dithering="none" />
+    <bitmap id="pioggiaNero2_16x16"         filename="icons_meteo/statiche/livello_pioggia_nero2_16x16.png"      dithering="none" />
+
+    <!-- termometro -->
+    <bitmap id="termometro_bianco1_16x16"    filename="icons_meteo/statiche/termometro_bianco1_16x16.png"    dithering="none" />
+    <bitmap id="termometro_giallo3_16x16"    filename="icons_meteo/statiche/termometro_giallo3_16x16.png"    dithering="none" />
+    <bitmap id="termometro_arancione3_16x16" filename="icons_meteo/statiche/termometro_arancione3_16x16.png" dithering="none" />
+    <bitmap id="termometro_ciano2_16x16"     filename="icons_meteo/statiche/termometro_ciano2_16x16.png"     dithering="none" />
+    <bitmap id="termometro_rosa3_16x16"      filename="icons_meteo/statiche/termometro_rosa3_16x16.png"      dithering="none" />
+    <bitmap id="termometro_grigio4_16x16"    filename="icons_meteo/statiche/termometro_grigio4_16x16.png"    dithering="none" />
+    <bitmap id="termometro_nero2_16x16"      filename="icons_meteo/statiche/termometro_nero2_16x16.png"      dithering="none" />
+
+    <!--METEO STATICI (24x24)-->
+    <!-- ==================================================================-->
+
+    <!-- termometro -->
+    <bitmap id="termometro_bianco1_24x24"    filename="icons_meteo/statiche/termometro_bianco1_24x24.png"    dithering="none" />
+    <bitmap id="termometro_giallo3_24x24"    filename="icons_meteo/statiche/termometro_giallo3_24x24.png"    dithering="none" />
+    <bitmap id="termometro_arancione3_24x24" filename="icons_meteo/statiche/termometro_arancione3_24x24.png" dithering="none" />
+    <bitmap id="termometro_ciano2_24x24"     filename="icons_meteo/statiche/termometro_ciano2_24x24.png"     dithering="none" />
+    <bitmap id="termometro_rosa3_24x24"      filename="icons_meteo/statiche/termometro_rosa3_24x24.png"      dithering="none" />
+    <bitmap id="termometro_grigio4_24x24"    filename="icons_meteo/statiche/termometro_grigio4_24x24.png"    dithering="none" />
+    <bitmap id="termometro_nero2_24x24"      filename="icons_meteo/statiche/termometro_nero2_24x24.png"      dithering="none" />
+
+    <!-- pioggia -->
+    <bitmap id="rainBianco1_24x24"           filename="icons_meteo/statiche/rain-svgrepo-com_bianco1_24x24.png"              dithering="none" />
+    <bitmap id="rainGiallo3_24x24"           filename="icons_meteo/statiche/rain-svgrepo-com_giallo3_24x24.png"              dithering="none" />
+    <bitmap id="rainArancione3_24x24"        filename="icons_meteo/statiche/rain-svgrepo-com_arancione3_24x24.png"           dithering="none" />
+    <bitmap id="rainCiano2_24x24"            filename="icons_meteo/statiche/rain-svgrepo-com_ciano2_24x24.png"               dithering="none" />
+    <bitmap id="rainRosa3_24x24"             filename="icons_meteo/statiche/rain-svgrepo-com_rosa3_24x24.png"                dithering="none" />
+    <bitmap id="rainGrigio4_24x24"           filename="icons_meteo/statiche/rain-svgrepo-com_grigio4_24x24.png"              dithering="none" />
+    <bitmap id="rainNero2_24x24"             filename="icons_meteo/statiche/rain-svgrepo-com_nero2_24x24.png"                dithering="none" />
+
+    <!-- sunrise sea alba -->
+    <bitmap id="sunriseSeaBianco1_24x24"     filename="icons_meteo/statiche/sunrise-sun-up-sea-svgrepo-com_bianco1_24x24.png"    dithering="none" />
+    <bitmap id="sunriseSeaGiallo3_24x24"     filename="icons_meteo/statiche/sunrise-sun-up-sea-svgrepo-com_giallo3_24x24.png"    dithering="none" />
+    <bitmap id="sunriseSeaArancione3_24x24"  filename="icons_meteo/statiche/sunrise-sun-up-sea-svgrepo-com_arancione3_24x24.png" dithering="none" />
+    <bitmap id="sunriseSeaCiano2_24x24"      filename="icons_meteo/statiche/sunrise-sun-up-sea-svgrepo-com_ciano2_24x24.png"     dithering="none" />
+    <bitmap id="sunriseSeaRosa3_24x24"       filename="icons_meteo/statiche/sunrise-sun-up-sea-svgrepo-com_rosa3_24x24.png"      dithering="none" />
+    <bitmap id="sunriseSeaGrigio4_24x24"     filename="icons_meteo/statiche/sunrise-sun-up-sea-svgrepo-com_grigio4_24x24.png"    dithering="none" />
+    <bitmap id="sunriseSeaNero2_24x24"       filename="icons_meteo/statiche/sunrise-sun-up-sea-svgrepo-com_nero2_24x24.png"      dithering="none" />
+
+    <!-- sunset sea tramonto -->
+    <bitmap id="sunsetSeaBianco1_24x24"      filename="icons_meteo/statiche/sunset-sun-down-sea-svgrepo-com_bianco1_24x24.png"    dithering="none" />
+    <bitmap id="sunsetSeaGiallo3_24x24"      filename="icons_meteo/statiche/sunset-sun-down-sea-svgrepo-com_giallo3_24x24.png"    dithering="none" />
+    <bitmap id="sunsetSeaArancione3_24x24"   filename="icons_meteo/statiche/sunset-sun-down-sea-svgrepo-com_arancione3_24x24.png" dithering="none" />
+    <bitmap id="sunsetSeaCiano2_24x24"       filename="icons_meteo/statiche/sunset-sun-down-sea-svgrepo-com_ciano2_24x24.png"     dithering="none" />
+    <bitmap id="sunsetSeaRosa3_24x24"        filename="icons_meteo/statiche/sunset-sun-down-sea-svgrepo-com_rosa3_24x24.png"      dithering="none" />
+    <bitmap id="sunsetSeaGrigio4_24x24"      filename="icons_meteo/statiche/sunset-sun-down-sea-svgrepo-com_grigio4_24x24.png"    dithering="none" />
+    <bitmap id="sunsetSeaNero2_24x24"        filename="icons_meteo/statiche/sunset-sun-down-sea-svgrepo-com_nero2_24x24.png"      dithering="none" />
+
+    <!-- probabilità pioggia -->
+    <bitmap id="umbrellaBianco1_24x24"       filename="icons_meteo/statiche/umbrella-svgrepo-com_bianco1_24x24.png"   dithering="none" />
+    <bitmap id="umbrellaGiallo3_24x24"       filename="icons_meteo/statiche/umbrella-svgrepo-com_giallo3_24x24.png"   dithering="none" />
+    <bitmap id="umbrellaArancione3_24x24"    filename="icons_meteo/statiche/umbrella-svgrepo-com_arancione3_24x24.png" dithering="none" />
+    <bitmap id="umbrellaCiano2_24x24"        filename="icons_meteo/statiche/umbrella-svgrepo-com_ciano2_24x24.png"    dithering="none" />
+    <bitmap id="umbrellaRosa3_24x24"         filename="icons_meteo/statiche/umbrella-svgrepo-com_rosa3_24x24.png"     dithering="none" />
+    <bitmap id="umbrellaGrigio4_24x24"       filename="icons_meteo/statiche/umbrella-svgrepo-com_grigio4_24x24.png"   dithering="none" />
+    <bitmap id="umbrellaNero2_24x24"         filename="icons_meteo/statiche/umbrella-svgrepo-com_nero2_24x24.png"     dithering="none" />
+
+    <!-- UV -->
+    <bitmap id="uvBianco1_24x24"             filename="icons_meteo/statiche/uv-index_bianco1_24x24.png"    dithering="none" />
+    <bitmap id="uvGiallo3_24x24"             filename="icons_meteo/statiche/uv-index_giallo3_24x24.png"    dithering="none" />
+    <bitmap id="uvArancione3_24x24"          filename="icons_meteo/statiche/uv-index_arancione3_24x24.png" dithering="none" />
+    <bitmap id="uvCiano2_24x24"              filename="icons_meteo/statiche/uv-index_ciano2_24x24.png"     dithering="none" />
+    <bitmap id="uvRosa3_24x24"               filename="icons_meteo/statiche/uv-index_rosa3_24x24.png"      dithering="none" />
+    <bitmap id="uvGrigio4_24x24"             filename="icons_meteo/statiche/uv-index_grigio4_24x24.png"    dithering="none" />
+    <bitmap id="uvNero2_24x24"               filename="icons_meteo/statiche/uv-index_nero2_24x24.png"      dithering="none" />
+
+    <!-- vento -->
+    <bitmap id="windBianco1_24x24"           filename="icons_meteo/statiche/wind-svgrepo-com_bianco1_24x24.png"    dithering="none" />
+    <bitmap id="windGiallo3_24x24"           filename="icons_meteo/statiche/wind-svgrepo-com_giallo3_24x24.png"    dithering="none" />
+    <bitmap id="windArancione3_24x24"        filename="icons_meteo/statiche/wind-svgrepo-com_arancione3_24x24.png" dithering="none" />
+    <bitmap id="windCiano2_24x24"            filename="icons_meteo/statiche/wind-svgrepo-com_ciano2_24x24.png"     dithering="none" />
+    <bitmap id="windRosa3_24x24"             filename="icons_meteo/statiche/wind-svgrepo-com_rosa3_24x24.png"      dithering="none" />
+    <bitmap id="windGrigio4_24x24"           filename="icons_meteo/statiche/wind-svgrepo-com_grigio4_24x24.png"    dithering="none" />
+    <bitmap id="windNero2_24x24"             filename="icons_meteo/statiche/wind-svgrepo-com_nero2_24x24.png"      dithering="none" />
+
+    <!-- nuvolosità -->
+    <bitmap id="cloudyBianco1_24x24"         filename="icons_meteo/statiche/cloudy-svgrepo-com_bianco1_24x24.png"    dithering="none" />
+    <bitmap id="cloudyGiallo3_24x24"         filename="icons_meteo/statiche/cloudy-svgrepo-com_giallo3_24x24.png"    dithering="none" />
+    <bitmap id="cloudyArancione3_24x24"      filename="icons_meteo/statiche/cloudy-svgrepo-com_arancione3_24x24.png" dithering="none" />
+    <bitmap id="cloudyCiano2_24x24"          filename="icons_meteo/statiche/cloudy-svgrepo-com_ciano2_24x24.png"     dithering="none" />
+    <bitmap id="cloudyRosa3_24x24"           filename="icons_meteo/statiche/cloudy-svgrepo-com_rosa3_24x24.png"      dithering="none" />
+    <bitmap id="cloudyGrigio4_24x24"         filename="icons_meteo/statiche/cloudy-svgrepo-com_grigio4_24x24.png"    dithering="none" />
+    <bitmap id="cloudyNero2_24x24"           filename="icons_meteo/statiche/cloudy-svgrepo-com_nero2_24x24.png"      dithering="none" />
+
+    <!-- livello pioggia -->
+    <bitmap id="pioggiaBianco1_24x24"        filename="icons_meteo/statiche/livello_pioggia_bianco1_24x24.png"    dithering="none" />
+    <bitmap id="pioggiaGiallo3_24x24"        filename="icons_meteo/statiche/livello_pioggia_giallo3_24x24.png"    dithering="none" />
+    <bitmap id="pioggiaArancione3_24x24"     filename="icons_meteo/statiche/livello_pioggia_arancione3_24x24.png" dithering="none" />
+    <bitmap id="pioggiaCiano2_24x24"         filename="icons_meteo/statiche/livello_pioggia_ciano2_24x24.png"     dithering="none" />
+    <bitmap id="pioggiaRosa3_24x24"          filename="icons_meteo/statiche/livello_pioggia_rosa3_24x24.png"      dithering="none" />
+    <bitmap id="pioggiaGrigio4_24x24"        filename="icons_meteo/statiche/livello_pioggia_grigio4_24x24.png"    dithering="none" />
+    <bitmap id="pioggiaNero2_24x24"          filename="icons_meteo/statiche/livello_pioggia_nero2_24x24.png"      dithering="none" />
+
+    <!--SISTEMA (16x16)-->
+    <!-- ==================================================================-->
+    <!-- bolt -->
+    <bitmap id="boltBianco1"    filename="icons_system/bolt_bianco1.png"    dithering="none" />
+    <bitmap id="boltGiallo3"    filename="icons_system/bolt_giallo3.png"    dithering="none" />
+    <bitmap id="boltArancione3" filename="icons_system/bolt_arancione3.png" dithering="none" />
+    <bitmap id="boltCiano2"     filename="icons_system/bolt_ciano2.png"     dithering="none" />
+    <bitmap id="boltRosa3"      filename="icons_system/bolt_rosa3.png"      dithering="none" />
+    <bitmap id="boltGrigio4"    filename="icons_system/bolt_grigio4.png"    dithering="none" />
+    <bitmap id="boltNero2"      filename="icons_system/bolt_nero2.png"      dithering="none" />
+
+    <!-- bluetooth -->
+    <bitmap id="bluetoothBianco1"    filename="icons_system/bluetooth_bianco1.png"    dithering="none" />
+    <bitmap id="bluetoothGiallo3"    filename="icons_system/bluetooth_giallo3.png"    dithering="none" />
+    <bitmap id="bluetoothArancione3" filename="icons_system/bluetooth_arancione3.png" dithering="none" />
+    <bitmap id="bluetoothCiano2"     filename="icons_system/bluetooth_ciano2.png"     dithering="none" />
+    <bitmap id="bluetoothRosa3"      filename="icons_system/bluetooth_rosa3.png"      dithering="none" />
+    <bitmap id="bluetoothGrigio4"    filename="icons_system/bluetooth_grigio4.png"    dithering="none" />
+    <bitmap id="bluetoothNero2"      filename="icons_system/bluetooth_nero2.png"      dithering="none" />
+
+   
+    <!--ICONE SFONDI-->
+    
+    <bitmap id="fighterMilitaryTheme"      filename="fighter-jet-svgrepo-com_26.png"      dithering="none" /> <!--tema 5 military-->
+    <bitmap id="tankMilitaryTheme"      filename="tank-svgrepo-com_26.png"      dithering="none" /> <!--tema 5 military-->
+
+    <bitmap id="heartsLoveTheme"      filename="love-svgrepo-com_30.png"      dithering="none" /> <!--tema 4 love-->
+
+
+    
 
 </drawables>

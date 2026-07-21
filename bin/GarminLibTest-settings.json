@@ -609,19 +609,91 @@
         "configMin" : null,
         "configMax" : null,
         "configMaxLength" : null
+      }, {
+        "key" : "cerchioGrandeMeteoUp",
+        "valueType" : "number",
+        "defaultValue" : 0,
+        "configTitle" : "$literal47$",
+        "configPrompt" : null,
+        "configType" : "list",
+        "configError" : null,
+        "configHelpUrl" : null,
+        "configReadonly" : false,
+        "configRequired" : false,
+        "configOptions" : [ {
+          "display" : "$literal48$",
+          "value" : 0
+        }, {
+          "display" : "$literal49$",
+          "value" : 1
+        }, {
+          "display" : "$literal50$",
+          "value" : 2
+        }, {
+          "display" : "$literal51$",
+          "value" : 3
+        }, {
+          "display" : "$literal52$",
+          "value" : 4
+        }, {
+          "display" : "$literal53$",
+          "value" : 5
+        }, {
+          "display" : "$literal54$",
+          "value" : 6
+        } ],
+        "configMin" : null,
+        "configMax" : null,
+        "configMaxLength" : null
+      }, {
+        "key" : "cerchioGrandeMeteoDown",
+        "valueType" : "number",
+        "defaultValue" : 1,
+        "configTitle" : "$literal55$",
+        "configPrompt" : null,
+        "configType" : "list",
+        "configError" : null,
+        "configHelpUrl" : null,
+        "configReadonly" : false,
+        "configRequired" : false,
+        "configOptions" : [ {
+          "display" : "$literal48$",
+          "value" : 0
+        }, {
+          "display" : "$literal49$",
+          "value" : 1
+        }, {
+          "display" : "$literal50$",
+          "value" : 2
+        }, {
+          "display" : "$literal51$",
+          "value" : 3
+        }, {
+          "display" : "$literal52$",
+          "value" : 4
+        }, {
+          "display" : "$literal53$",
+          "value" : 5
+        }, {
+          "display" : "$literal54$",
+          "value" : 6
+        } ],
+        "configMin" : null,
+        "configMax" : null,
+        "configMaxLength" : null
       } ]
     }
   }, {
     "group" : {
       "id" : "cerchioSinistra",
-      "title" : "$literal47$",
+      "title" : "$literal56$",
       "description" : null,
       "enableWhenTrue" : null,
       "entries" : [ {
         "key" : "cerchioSxSfondo",
         "valueType" : "number",
         "defaultValue" : 3355443,
-        "configTitle" : "$literal48$",
+        "configTitle" : "$literal40$",
         "configPrompt" : null,
         "configType" : "list",
         "configError" : null,
@@ -669,7 +741,7 @@
         "key" : "cerchioSxContorno",
         "valueType" : "number",
         "defaultValue" : 5636095,
-        "configTitle" : "$literal49$",
+        "configTitle" : "$literal41$",
         "configPrompt" : null,
         "configType" : "list",
         "configError" : null,
@@ -710,19 +782,85 @@
         "configMin" : null,
         "configMax" : null,
         "configMaxLength" : null
+      }, {
+        "key" : "cerchioSinistraItems",
+        "valueType" : "number",
+        "defaultValue" : 0,
+        "configTitle" : "$literal57$",
+        "configPrompt" : null,
+        "configType" : "list",
+        "configError" : null,
+        "configHelpUrl" : null,
+        "configReadonly" : false,
+        "configRequired" : false,
+        "configOptions" : [ {
+          "display" : "$literal48$",
+          "value" : 0
+        }, {
+          "display" : "$literal49$",
+          "value" : 1
+        }, {
+          "display" : "$literal50$",
+          "value" : 2
+        }, {
+          "display" : "$literal51$",
+          "value" : 3
+        }, {
+          "display" : "$literal52$",
+          "value" : 4
+        }, {
+          "display" : "$literal53$",
+          "value" : 5
+        }, {
+          "display" : "$literal54$",
+          "value" : 6
+        }, {
+          "display" : "$literal58$",
+          "value" : 7
+        }, {
+          "display" : "$literal59$",
+          "value" : 8
+        }, {
+          "display" : "$literal60$",
+          "value" : 9
+        }, {
+          "display" : "$literal8$",
+          "value" : 10
+        }, {
+          "display" : "$literal9$",
+          "value" : 11
+        }, {
+          "display" : "$literal10$",
+          "value" : 12
+        }, {
+          "display" : "$literal11$",
+          "value" : 13
+        }, {
+          "display" : "$literal12$",
+          "value" : 14
+        }, {
+          "display" : "$literal13$",
+          "value" : 15
+        }, {
+          "display" : "$literal14$",
+          "value" : 16
+        } ],
+        "configMin" : null,
+        "configMax" : null,
+        "configMaxLength" : null
       } ]
     }
   }, {
     "group" : {
       "id" : "cerchioDestra",
-      "title" : "$literal50$",
+      "title" : "$literal61$",
       "description" : null,
       "enableWhenTrue" : null,
       "entries" : [ {
         "key" : "cerchioDxSfondo",
         "valueType" : "number",
         "defaultValue" : 3355443,
-        "configTitle" : "$literal51$",
+        "configTitle" : "$literal40$",
         "configPrompt" : null,
         "configType" : "list",
         "configError" : null,
@@ -770,7 +908,7 @@
         "key" : "cerchioDxContorno",
         "valueType" : "number",
         "defaultValue" : 5636095,
-        "configTitle" : "$literal52$",
+        "configTitle" : "$literal41$",
         "configPrompt" : null,
         "configType" : "list",
         "configError" : null,
@@ -811,19 +949,85 @@
         "configMin" : null,
         "configMax" : null,
         "configMaxLength" : null
+      }, {
+        "key" : "cerchioDestraItems",
+        "valueType" : "number",
+        "defaultValue" : 0,
+        "configTitle" : "$literal62$",
+        "configPrompt" : null,
+        "configType" : "list",
+        "configError" : null,
+        "configHelpUrl" : null,
+        "configReadonly" : false,
+        "configRequired" : false,
+        "configOptions" : [ {
+          "display" : "$literal48$",
+          "value" : 0
+        }, {
+          "display" : "$literal49$",
+          "value" : 1
+        }, {
+          "display" : "$literal50$",
+          "value" : 2
+        }, {
+          "display" : "$literal51$",
+          "value" : 3
+        }, {
+          "display" : "$literal52$",
+          "value" : 4
+        }, {
+          "display" : "$literal53$",
+          "value" : 5
+        }, {
+          "display" : "$literal54$",
+          "value" : 6
+        }, {
+          "display" : "$literal58$",
+          "value" : 7
+        }, {
+          "display" : "$literal59$",
+          "value" : 8
+        }, {
+          "display" : "$literal60$",
+          "value" : 9
+        }, {
+          "display" : "$literal8$",
+          "value" : 10
+        }, {
+          "display" : "$literal9$",
+          "value" : 11
+        }, {
+          "display" : "$literal10$",
+          "value" : 12
+        }, {
+          "display" : "$literal11$",
+          "value" : 13
+        }, {
+          "display" : "$literal12$",
+          "value" : 14
+        }, {
+          "display" : "$literal13$",
+          "value" : 15
+        }, {
+          "display" : "$literal14$",
+          "value" : 16
+        } ],
+        "configMin" : null,
+        "configMax" : null,
+        "configMaxLength" : null
       } ]
     }
   }, {
     "group" : {
       "id" : "gruppoNotch",
-      "title" : "$literal53$",
+      "title" : "$literal63$",
       "description" : null,
       "enableWhenTrue" : null,
       "entries" : [ {
         "key" : "retMeteoSfondo",
         "valueType" : "number",
         "defaultValue" : 3355443,
-        "configTitle" : "$literal54$",
+        "configTitle" : "$literal64$",
         "configPrompt" : null,
         "configType" : "list",
         "configError" : null,
@@ -871,7 +1075,7 @@
         "key" : "coloreCittaMeteo",
         "valueType" : "number",
         "defaultValue" : 16777215,
-        "configTitle" : "$literal55$",
+        "configTitle" : "$literal65$",
         "configPrompt" : null,
         "configType" : "list",
         "configError" : null,
@@ -908,14 +1112,14 @@
   }, {
     "group" : {
       "id" : "gruppoRettangoloCentrale",
-      "title" : "$literal56$",
+      "title" : "$literal66$",
       "description" : null,
       "enableWhenTrue" : null,
       "entries" : [ {
         "key" : "retOreSfondo",
         "valueType" : "number",
         "defaultValue" : 3355443,
-        "configTitle" : "$literal57$",
+        "configTitle" : "$literal64$",
         "configPrompt" : null,
         "configType" : "list",
         "configError" : null,
@@ -963,7 +1167,7 @@
         "key" : "coloreOre",
         "valueType" : "number",
         "defaultValue" : 5636095,
-        "configTitle" : "$literal58$",
+        "configTitle" : "$literal67$",
         "configPrompt" : null,
         "configType" : "list",
         "configError" : null,
@@ -999,7 +1203,7 @@
         "key" : "coloreMinuti",
         "valueType" : "number",
         "defaultValue" : 16777215,
-        "configTitle" : "$literal59$",
+        "configTitle" : "$literal68$",
         "configPrompt" : null,
         "configType" : "list",
         "configError" : null,
@@ -1035,7 +1239,7 @@
         "key" : "coloreCalendario",
         "valueType" : "number",
         "defaultValue" : 5636095,
-        "configTitle" : "$literal60$",
+        "configTitle" : "$literal69$",
         "configPrompt" : null,
         "configType" : "list",
         "configError" : null,
@@ -1072,14 +1276,14 @@
   }, {
     "group" : {
       "id" : "gruppoIcone",
-      "title" : "$literal61$",
+      "title" : "$literal70$",
       "description" : null,
       "enableWhenTrue" : null,
       "entries" : [ {
         "key" : "coloreIconaAttivita1",
         "valueType" : "number",
         "defaultValue" : 0,
-        "configTitle" : "$literal62$",
+        "configTitle" : "$literal71$",
         "configPrompt" : null,
         "configType" : "list",
         "configError" : null,
@@ -1115,7 +1319,7 @@
         "key" : "coloreIconaAttivita2",
         "valueType" : "number",
         "defaultValue" : 0,
-        "configTitle" : "$literal63$",
+        "configTitle" : "$literal72$",
         "configPrompt" : null,
         "configType" : "list",
         "configError" : null,
@@ -1155,44 +1359,50 @@
     "valyrian" : {
       "TitoloGoalMINWEEK" : "Minuti settimanali",
       "TitoloGoalCALORIE" : "Totale Calorie",
-      "$literal48$" : "Colore Sfondo Cerchio Sinistra",
+      "$literal48$" : "Temperatura Percepita",
       "$literal0$" : "Formato ore Militare",
       "$literal16$" : "grigio6",
       "$literal24$" : "blu6",
+      "$literal68$" : "Font Minuti",
       "$literal36$" : "Colore Sfondo Anello Interno",
       "$literal4$" : "Temi Quadrante",
       "$literal28$" : "giallo3",
-      "$literal40$" : "Colore Sfondo Cerchio Grande",
+      "$literal40$" : "Colore Sfondo",
       "$literal8$" : "Passi",
-      "$literal52$" : "Colore Bordo Cerchio Destra",
-      "$literal60$" : "Colore Font Calendario",
+      "$literal52$" : "Probabilità Precipitazione",
+      "$literal60$" : "Frequenza Cardiaca",
+      "$literal72$" : "Arco Interno",
       "ColorWhite" : "White",
       "$literal44$" : "verde2",
       "$literal12$" : "Minuti Attivita Giorno",
-      "$literal56$" : "Rettangolo Centrale",
+      "$literal56$" : "=====CERCHIO SINISTRA=====",
       "$literal20$" : "ciano5",
+      "$literal64$" : "Sfondo",
       "$literal32$" : "grigio4",
       "Tema4" : "Tema Love",
       "Tema3" : "Tema Ice",
       "Tema2" : "Tema Forest",
       "Tema1" : "Tema Fire",
       "Tema0" : "Tema 0 (default)",
+      "$literal70$" : "=====COLORE ICONE=====",
       "$literal15$" : "Colore Sfondo Anello Esterno",
-      "$literal59$" : "Colore Font Minuti",
+      "$literal59$" : "Informazioni Sistema (batteria+bluethoot)",
       "$literal27$" : "Colore Ripieno Anello Esterno",
-      "$literal3$" : "Temi quadrante",
+      "$literal3$" : "=====TEMI QUADRANTE=====",
       "$literal35$" : "Tipologia Attivita 2",
-      "$literal47$" : "Cerchio Sinistra",
+      "$literal47$" : "Item Up",
       "$literal19$" : "marrone4",
       "$literal7$" : "Tipologia Attivita 1",
-      "$literal39$" : "Cerchio Grande",
-      "$literal51$" : "Colore Sfondo Cerchio Destra",
-      "$literal63$" : "Colore Icona Arco Interno",
+      "$literal39$" : "=====CERCHIO CENTRALE=====",
+      "$literal51$" : "Umidità",
+      "$literal63$" : "=====COLORE NOTCH=====",
+      "$literal71$" : "Arco Esterno",
       "Tema8" : "Tema Alex",
       "$literal11$" : "Minuti Attivita Settimana",
-      "$literal55$" : "Notch Colore Font",
+      "$literal55$" : "Item Down",
       "Tema7" : "Tema Giada",
       "$literal23$" : "verde6",
+      "$literal67$" : "Font Ore",
       "Tema6" : "Tema Max",
       "$literal31$" : "rosa3",
       "Tema5" : "Tema Military",
@@ -1204,38 +1414,41 @@
       "$literal46$" : "rosa2",
       "$literal2$" : "Background Color",
       "$literal14$" : "Body Battery",
-      "$literal58$" : "Colore Font Ore",
-      "$literal6$" : "Anello ESTERNO",
+      "$literal58$" : "Alba e Tramonto",
+      "$literal6$" : "=====ANELLO ESTERNO=====",
       "$literal18$" : "nero2",
-      "$literal62$" : "Colore Icona Arco Esterno",
+      "$literal62$" : "Item ",
       "$literal30$" : "ciano2",
-      "$literal50$" : "Cerchio Destra",
+      "$literal50$" : "Copertura Cielo",
       "$literal22$" : "rosso6",
-      "$literal34$" : "Anello INTERNO",
+      "$literal66$" : "=====COLORE RETTANGOLO CENTRALE=====",
+      "$literal34$" : "=====ANELLO INTERNO=====",
       "$literal42$" : "arancione1",
       "$literal10$" : "Piani Saliti",
-      "$literal54$" : "Notch Colore Sfondo",
+      "$literal54$" : "Livello Pioggia",
       "ColorLightGray" : "Light Gray",
       "ColorDarkGray" : "Dark Gray",
       "ColorBlack" : "Black",
       "TitoloGoalSTEP" : "Numero Passi",
       "$literal1$" : "Sfondo Quadrante",
       "$literal37$" : "Colore Ripieno Anello Interno",
-      "$literal49$" : "Colore Bordo Cerchio Sinistra",
+      "$literal49$" : "Velocità Vento",
       "$literal13$" : "Stress",
-      "$literal57$" : "Colore Sfondo Rettangolo Centrale",
+      "$literal57$" : "Item",
       "TitoloGoalSTAIRS" : "NUmero piani saliti",
       "$literal25$" : "viola5",
-      "$literal5$" : "GOAL",
+      "$literal69$" : "Font Calendario",
+      "$literal5$" : "=====GOAL=====",
       "$literal17$" : "nero1",
       "$literal29$" : "arancione3",
       "$literal9$" : "Calorie",
-      "$literal41$" : "Colore Bordo Cerchio Grande",
-      "$literal61$" : "Colore Icone",
+      "$literal41$" : "Colore Bordo",
+      "$literal61$" : "=====CERCHIO DESTRA=====",
       "$literal33$" : "Colore Font Anello Esterno",
       "$literal45$" : "viola1",
-      "$literal53$" : "Notch",
-      "$literal21$" : "giallo5"
+      "$literal53$" : "Indice UV",
+      "$literal21$" : "giallo5",
+      "$literal65$" : "Font"
     }
   }
 }

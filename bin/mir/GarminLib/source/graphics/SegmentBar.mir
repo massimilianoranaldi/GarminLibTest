@@ -1,0 +1,922 @@
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc"; @line = 23; @symbol_usingdef<0> = [Toybox,23,6,12]; @symbol_usingdef<1> = [Graphics,23,13,21]; ]
+using Toybox.Graphics;
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc"; @line = 24; @symbol_usingdef<0> = [Toybox,24,6,12]; @symbol_usingdef<1> = [Lang,24,13,17]; ]
+using Toybox.Lang;
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc"; @line = 26; @symbol_classdef = [SegmentedBar,26,6,18]; ]
+class SegmentedBar {
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc"; @line = 26; ]
+    <init> {
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc"; @line = 26; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc"; @line = 28; @position = 8; @symbol_vardef = [_cx,28,8,11]; @symbol_type<0> = [Lang,28,22,26]; @symbol_type<1> = [Number,28,27,33]; ]
+    var _cx as Lang.Number;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc"; @line = 29; @position = 8; @symbol_vardef = [_cy,29,8,11]; @symbol_type<0> = [Lang,29,22,26]; @symbol_type<1> = [Number,29,27,33]; ]
+    var _cy as Lang.Number;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc"; @line = 30; @position = 8; @symbol_vardef = [_lunghezza,30,8,18]; @symbol_type<0> = [Lang,30,22,26]; @symbol_type<1> = [Number,30,27,33]; ]
+    var _lunghezza as Lang.Number;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc"; @line = 31; @position = 8; @symbol_vardef = [_orizzontale,31,8,20]; @symbol_type<0> = [Lang,31,24,28]; @symbol_type<1> = [Boolean,31,29,36]; ]
+    var _orizzontale as Lang.Boolean;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc"; @line = 32; @position = 8; @symbol_vardef = [_spessore,32,8,17]; @symbol_type<0> = [Lang,32,22,26]; @symbol_type<1> = [Number,32,27,33]; ]
+    var _spessore as Lang.Number;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc"; @line = 33; @position = 8; @symbol_vardef = [_segmenti,33,8,17]; @symbol_type<0> = [Lang,33,22,26]; @symbol_type<1> = [Array,33,27,32]; ]
+    var _segmenti as Lang.Array;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc"; @line = 34; @position = 8; @symbol_vardef = [_marker,34,8,15]; @symbol_type<0> = [Lang,34,22,26]; @symbol_type<1> = [Dictionary,34,27,37]; ]
+    var _marker as Lang.Dictionary or Null;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc"; @line = 35; @position = 8; @symbol_vardef = [_maxVal,35,8,15]; @symbol_type<0> = [Lang,35,22,26]; @symbol_type<1> = [Number,35,27,33]; ]
+    var _maxVal as Lang.Number;
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc"; @line = 43; @symbol_functiondef = [initialize,43,13,23]; @symbol_param<0> = [cx,43,24,26]; @symbol_param<0>_type<0> = [Lang,43,40,44]; @symbol_param<0>_type<1> = [Number,43,45,51]; @symbol_param<1> = [cy,44,24,26]; @symbol_param<1>_type<0> = [Lang,44,40,44]; @symbol_param<1>_type<1> = [Number,44,45,51]; @symbol_param<2> = [lunghezza,45,24,33]; @symbol_param<2>_type<0> = [Lang,45,40,44]; @symbol_param<2>_type<1> = [Number,45,45,51]; @symbol_param<3> = [orizzontale,46,24,35]; @symbol_param<3>_type<0> = [Lang,46,40,44]; @symbol_param<3>_type<1> = [Boolean,46,45,52]; @symbol_param<4> = [maxVal,47,24,30]; @symbol_param<4>_type<0> = [Lang,47,40,44]; @symbol_param<4>_type<1> = [Number,47,45,51]; ]
+    function initialize(cx as Lang.Number, cy as Lang.Number, lunghezza as Lang.Number, orizzontale as Lang.Boolean, maxVal as Lang.Number) as Void {
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_47_53_55_4_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 48 8 ]
+        %tmp.1 = lgetv %cx;
+        symbol [ cx %tmp.1 48 23 25 ];
+        symbol [ _cx ? 48 8 11 ];
+        putv self :_cx %tmp.1;
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 49 8 ]
+        %tmp.2 = lgetv %cy;
+        symbol [ cy %tmp.2 49 23 25 ];
+        symbol [ _cy ? 49 8 11 ];
+        putv self :_cy %tmp.2;
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 50 8 ]
+        %tmp.3 = lgetv %lunghezza;
+        symbol [ lunghezza %tmp.3 50 23 32 ];
+        symbol [ _lunghezza ? 50 8 18 ];
+        putv self :_lunghezza %tmp.3;
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 51 8 ]
+        %tmp.4 = lgetv %orizzontale;
+        symbol [ orizzontale %tmp.4 51 23 34 ];
+        symbol [ _orizzontale ? 51 8 20 ];
+        putv self :_orizzontale %tmp.4;
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 52 8 ]
+        %tmp.5 = lgetv %maxVal;
+        symbol [ maxVal %tmp.5 52 23 29 ];
+        symbol [ _maxVal ? 52 8 15 ];
+        putv self :_maxVal %tmp.5;
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 53 8 ]
+        %tmp.6 = newa 0 Lang.Array;
+        symbol [ Lang %tmp.6 53 29 33 ];
+        symbol [ Array %tmp.6 53 34 39 ];
+        symbol [ _segmenti ? 53 8 17 ];
+        putv self :_segmenti %tmp.6;
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 54 8 ]
+        %tmp.7 = null;
+        symbol [ _marker ? 54 8 15 ];
+        putv self :_marker %tmp.7;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_47_53_55_4_stop:
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc"; @line = 64; @symbol_functiondef = [addSegmento,64,13,24]; @symbol_param<0> = [startVal,64,25,33]; @symbol_param<0>_type<0> = [Lang,64,37,41]; @symbol_param<0>_type<1> = [Number,64,42,48]; @symbol_param<1> = [endVal,65,25,31]; @symbol_param<1>_type<0> = [Lang,65,37,41]; @symbol_param<1>_type<1> = [Number,65,42,48]; @symbol_param<2> = [spessore,66,25,33]; @symbol_param<2>_type<0> = [Lang,66,37,41]; @symbol_param<2>_type<1> = [Number,66,42,48]; @symbol_param<3> = [colore,67,25,31]; @symbol_param<3>_type<0> = [Lang,67,37,41]; @symbol_param<3>_type<1> = [Number,67,42,48]; @symbol_param<4> = [stondato,68,25,33]; @symbol_param<4>_type<0> = [Lang,68,37,41]; @symbol_param<4>_type<1> = [Boolean,68,42,49]; ]
+    function addSegmento(startVal as Lang.Number, endVal as Lang.Number, spessore as Lang.Number, colore as Lang.Number, stondato as Lang.Boolean) as Void {
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_68_59_76_4_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 69 8 ]
+        symbol [ _segmenti %tmp.2 69 8 17 ];
+        %tmp.2 = getv ? :_segmenti;
+        symbol [ add %tmp.3 69 18 21 ];
+        %tmp.3 = getv function %tmp.2 :add;
+        %tmp.4 = newd 5;
+        %tmp.5 = "startVal";
+        %tmp.6 = lgetv %startVal;
+        symbol [ startVal %tmp.6 70 26 34 ];
+        %tmp.7 = dup %tmp.4;
+        %tmp.8 = aputv %tmp.7 %tmp.5 %tmp.6;
+        %tmp.9 = "endVal";
+        %tmp.10 = lgetv %endVal;
+        symbol [ endVal %tmp.10 71 26 32 ];
+        %tmp.11 = dup %tmp.8;
+        %tmp.12 = aputv %tmp.11 %tmp.9 %tmp.10;
+        %tmp.13 = "spessore";
+        %tmp.14 = lgetv %spessore;
+        symbol [ spessore %tmp.14 72 26 34 ];
+        %tmp.15 = dup %tmp.12;
+        %tmp.16 = aputv %tmp.15 %tmp.13 %tmp.14;
+        %tmp.17 = "colore";
+        %tmp.18 = lgetv %colore;
+        symbol [ colore %tmp.18 73 26 32 ];
+        %tmp.19 = dup %tmp.16;
+        %tmp.20 = aputv %tmp.19 %tmp.17 %tmp.18;
+        %tmp.21 = "stondato";
+        %tmp.22 = lgetv %stondato;
+        symbol [ stondato %tmp.22 74 26 34 ];
+        %tmp.23 = dup %tmp.20;
+        %tmp.24 = aputv %tmp.23 %tmp.21 %tmp.22;
+        invoke %tmp.2 %tmp.3(%tmp.24);
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_68_59_76_4_stop:
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc"; @line = 83; @symbol_functiondef = [setMarker,83,13,22]; @symbol_param<0> = [valore,83,23,29]; @symbol_param<0>_type<0> = [Lang,83,36,40]; @symbol_param<0>_type<1> = [Number,83,41,47]; @symbol_param<1> = [semiLungh,84,23,32]; @symbol_param<1>_type<0> = [Lang,84,36,40]; @symbol_param<1>_type<1> = [Number,84,41,47]; @symbol_param<2> = [colore,85,23,29]; @symbol_param<2>_type<0> = [Lang,85,36,40]; @symbol_param<2>_type<1> = [Number,85,41,47]; ]
+    function setMarker(valore as Lang.Number, semiLungh as Lang.Number, colore as Lang.Number) as Void {
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_85_57_91_4_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 86 8 ]
+        %tmp.1 = newd 3;
+        %tmp.2 = "valore";
+        %tmp.3 = lgetv %valore;
+        symbol [ valore %tmp.3 87 27 33 ];
+        %tmp.4 = dup %tmp.1;
+        %tmp.5 = aputv %tmp.4 %tmp.2 %tmp.3;
+        %tmp.6 = "semiLungh";
+        %tmp.7 = lgetv %semiLungh;
+        symbol [ semiLungh %tmp.7 88 27 36 ];
+        %tmp.8 = dup %tmp.5;
+        %tmp.9 = aputv %tmp.8 %tmp.6 %tmp.7;
+        %tmp.10 = "colore";
+        %tmp.11 = lgetv %colore;
+        symbol [ colore %tmp.11 89 27 33 ];
+        %tmp.12 = dup %tmp.9;
+        %tmp.13 = aputv %tmp.12 %tmp.10 %tmp.11;
+        symbol [ _marker ? 86 8 15 ];
+        putv self :_marker %tmp.13;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_85_57_91_4_stop:
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc"; @line = 96; @symbol_functiondef = [_valToPixel,96,13,24]; @symbol_param<0> = [valore,96,25,31]; @symbol_param<0>_type<0> = [Lang,96,35,39]; @symbol_param<0>_type<1> = [Number,96,40,46]; @symbol_return<0> = [Lang,96,51,55]; @symbol_return<1> = [Number,96,56,62]; ]
+    function _valToPixel(valore as Lang.Number) as Lang.Number {
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_96_63_98_4_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 97 8 ]
+        symbol [ _lunghezza %tmp.2 97 16 26 ];
+        %tmp.2 = getv ? :_lunghezza;
+        %tmp.3 = lgetv %valore;
+        symbol [ valore %tmp.3 97 29 35 ];
+        %tmp.4 = mul %tmp.2 %tmp.3;
+        symbol [ _maxVal %tmp.6 97 38 45 ];
+        %tmp.6 = getv ? :_maxVal;
+        %tmp.7 = div %tmp.4 %tmp.6;
+        symbol [ toNumber %tmp.8 97 47 55 ];
+        %tmp.8 = getv function %tmp.7 :toNumber;
+        %tmp.9 = invoke %tmp.7 %tmp.8();
+        ret %tmp.9;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_96_63_98_4_stop:
+    }
+    [ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc"; @line = 101; @symbol_functiondef = [draw,101,13,17]; @symbol_param<0> = [dc,101,18,20]; @symbol_param<0>_type<0> = [Graphics,101,24,32]; @symbol_param<0>_type<1> = [Dc,101,33,35]; ]
+    function draw(dc as Graphics.Dc) as Void {
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_101_45_173_4_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 102 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_101_45_173_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_101_45_173_4_stop" ]
+        %startX.1 = local;
+        symbol [ startX %startX.1 102 12 18 ];
+        symbol [ _cx %tmp.2 102 21 24 ];
+        %tmp.2 = getv ? :_cx;
+        symbol [ _lunghezza %tmp.4 102 27 37 ];
+        %tmp.4 = getv ? :_lunghezza;
+        %tmp.5 = 2;
+        %tmp.6 = div %tmp.4 %tmp.5;
+        %tmp.7 = sub %tmp.2 %tmp.6;
+        lputv %startX.1 %tmp.7;
+        symbol [ startX %startX.1 102 12 18 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 103 8 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_101_45_173_4_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_101_45_173_4_stop" ]
+        %startY.2 = local;
+        symbol [ startY %startY.2 103 12 18 ];
+        symbol [ _cy %tmp.9 103 21 24 ];
+        %tmp.9 = getv ? :_cy;
+        symbol [ _lunghezza %tmp.11 103 27 37 ];
+        %tmp.11 = getv ? :_lunghezza;
+        %tmp.12 = 2;
+        %tmp.13 = div %tmp.11 %tmp.12;
+        %tmp.14 = sub %tmp.9 %tmp.13;
+        lputv %startY.2 %tmp.14;
+        symbol [ startY %startY.2 103 12 18 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 106 8 ]
+        for @C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_106_8_120_8_for_test @C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_106_8_120_8_for_incr @C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_106_8_120_8_for_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_106_8_120_8_for_init:
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_106_8_120_8_for_begin" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_106_8_120_8_for_end" ]
+        %i.3 = local;
+        symbol [ i %i.3 106 17 18 ];
+        %tmp.15 = 0;
+        lputv %i.3 %tmp.15;
+        symbol [ i %i.3 106 17 18 ];
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_106_8_120_8_for_test:
+        %tmp.16 = lgetv %i.3;
+        symbol [ i %tmp.16 106 24 25 ];
+        symbol [ _segmenti %tmp.18 106 28 37 ];
+        %tmp.18 = getv ? :_segmenti;
+        symbol [ size %tmp.19 106 38 42 ];
+        %tmp.19 = getv function %tmp.18 :size;
+        %tmp.20 = invoke %tmp.18 %tmp.19();
+        %tmp.21 = lt %tmp.16 %tmp.20;
+        bf %tmp.21 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_106_8_120_8_for_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_106_8_120_8_for_begin:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_106_51_120_8_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 107 12 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_106_51_120_8_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_106_51_120_8_stop" ]
+        %seg.4 = local;
+        symbol [ seg %seg.4 107 16 19 ];
+        symbol [ _segmenti %tmp.23 107 22 31 ];
+        %tmp.23 = getv ? :_segmenti;
+        %tmp.24 = lgetv %i.3;
+        symbol [ i %tmp.24 107 32 33 ];
+        %tmp.25 = agetv %tmp.23 %tmp.24;
+        %tmp.26 = as %tmp.25 Lang.Dictionary;
+        symbol [ Lang %tmp.26 107 38 42 ];
+        symbol [ Dictionary %tmp.26 107 43 53 ];
+        lputv %seg.4 %tmp.26;
+        symbol [ seg %seg.4 107 16 19 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 108 12 ]
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_108_12_119_12_if_stmt:
+        %tmp.27 = lgetv %seg.4;
+        symbol [ seg %tmp.27 108 18 21 ];
+        %tmp.28 = "stondato";
+        %tmp.29 = agetv %tmp.27 %tmp.28;
+        %tmp.30 = as %tmp.29 Lang.Boolean;
+        symbol [ Lang %tmp.30 108 37 41 ];
+        symbol [ Boolean %tmp.30 108 42 49 ];
+        %tmp.31 = not %tmp.30;
+        bf %tmp.31 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_108_12_119_12_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_108_12_119_12_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_108_52_119_12_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 109 16 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_108_52_119_12_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_108_52_119_12_stop" ]
+        %s.5 = local;
+        symbol [ s %s.5 109 20 21 ];
+        %tmp.32 = self;
+        symbol [ _valToPixel %tmp.33 109 24 35 ];
+        %tmp.33 = getv function %tmp.32 :_valToPixel;
+        %tmp.34 = lgetv %seg.4;
+        symbol [ seg %tmp.34 109 36 39 ];
+        %tmp.35 = "startVal";
+        %tmp.36 = agetv %tmp.34 %tmp.35;
+        %tmp.37 = as %tmp.36 Lang.Number;
+        symbol [ Lang %tmp.37 109 55 59 ];
+        symbol [ Number %tmp.37 109 60 66 ];
+        %tmp.38 = invoke %tmp.32 %tmp.33(%tmp.37);
+        lputv %s.5 %tmp.38;
+        symbol [ s %s.5 109 20 21 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 110 16 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_108_52_119_12_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_108_52_119_12_stop" ]
+        %e.6 = local;
+        symbol [ e %e.6 110 20 21 ];
+        %tmp.39 = self;
+        symbol [ _valToPixel %tmp.40 110 24 35 ];
+        %tmp.40 = getv function %tmp.39 :_valToPixel;
+        %tmp.41 = lgetv %seg.4;
+        symbol [ seg %tmp.41 110 36 39 ];
+        %tmp.42 = "endVal";
+        %tmp.43 = agetv %tmp.41 %tmp.42;
+        %tmp.44 = as %tmp.43 Lang.Number;
+        symbol [ Lang %tmp.44 110 55 59 ];
+        symbol [ Number %tmp.44 110 60 66 ];
+        %tmp.45 = invoke %tmp.39 %tmp.40(%tmp.44);
+        lputv %e.6 %tmp.45;
+        symbol [ e %e.6 110 20 21 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 111 16 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_108_52_119_12_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_108_52_119_12_stop" ]
+        %sp.7 = local;
+        symbol [ sp %sp.7 111 20 22 ];
+        %tmp.46 = lgetv %seg.4;
+        symbol [ seg %tmp.46 111 25 28 ];
+        %tmp.47 = "spessore";
+        %tmp.48 = agetv %tmp.46 %tmp.47;
+        %tmp.49 = as %tmp.48 Lang.Number;
+        symbol [ Lang %tmp.49 111 44 48 ];
+        symbol [ Number %tmp.49 111 49 55 ];
+        lputv %sp.7 %tmp.49;
+        symbol [ sp %sp.7 111 20 22 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 112 16 ]
+        %tmp.50 = lgetv %dc;
+        symbol [ dc %tmp.50 112 16 18 ];
+        symbol [ setColor %tmp.51 112 19 27 ];
+        %tmp.51 = getv function %tmp.50 :setColor;
+        %tmp.52 = lgetv %seg.4;
+        symbol [ seg %tmp.52 112 28 31 ];
+        %tmp.53 = "colore";
+        %tmp.54 = agetv %tmp.52 %tmp.53;
+        %tmp.55 = as %tmp.54 Lang.Number;
+        symbol [ Lang %tmp.55 112 45 49 ];
+        symbol [ Number %tmp.55 112 50 56 ];
+        symbol [ Graphics %tmp.56 112 58 66 ];
+        %tmp.56 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.57 112 67 84 ];
+        %tmp.57 = getv %tmp.56 :COLOR_TRANSPARENT;
+        invoke %tmp.50 %tmp.51(%tmp.55, %tmp.57);
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 113 16 ]
+        %tmp.58 = lgetv %dc;
+        symbol [ dc %tmp.58 113 16 18 ];
+        symbol [ setPenWidth %tmp.59 113 19 30 ];
+        %tmp.59 = getv function %tmp.58 :setPenWidth;
+        %tmp.60 = lgetv %sp.7;
+        symbol [ sp %tmp.60 113 31 33 ];
+        invoke %tmp.58 %tmp.59(%tmp.60);
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 114 16 ]
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_114_16_118_16_if_stmt:
+        symbol [ _orizzontale %tmp.62 114 20 32 ];
+        %tmp.62 = getv ? :_orizzontale;
+        bf %tmp.62 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_114_16_118_16_if_else_false;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_114_16_118_16_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_114_34_116_16_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 115 20 ]
+        %tmp.63 = lgetv %dc;
+        symbol [ dc %tmp.63 115 20 22 ];
+        symbol [ drawLine %tmp.64 115 23 31 ];
+        %tmp.64 = getv function %tmp.63 :drawLine;
+        %tmp.65 = lgetv %startX.1;
+        symbol [ startX %tmp.65 115 32 38 ];
+        %tmp.66 = lgetv %s.5;
+        symbol [ s %tmp.66 115 41 42 ];
+        %tmp.67 = add %tmp.65 %tmp.66;
+        symbol [ _cy %tmp.69 115 44 47 ];
+        %tmp.69 = getv ? :_cy;
+        %tmp.70 = lgetv %startX.1;
+        symbol [ startX %tmp.70 115 49 55 ];
+        %tmp.71 = lgetv %e.6;
+        symbol [ e %tmp.71 115 58 59 ];
+        %tmp.72 = add %tmp.70 %tmp.71;
+        symbol [ _cy %tmp.74 115 61 64 ];
+        %tmp.74 = getv ? :_cy;
+        invoke %tmp.63 %tmp.64(%tmp.67, %tmp.69, %tmp.72, %tmp.74);
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_114_34_116_16_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_114_16_118_16_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_114_16_118_16_if_else_false:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_116_23_118_16_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 117 20 ]
+        %tmp.75 = lgetv %dc;
+        symbol [ dc %tmp.75 117 20 22 ];
+        symbol [ drawLine %tmp.76 117 23 31 ];
+        %tmp.76 = getv function %tmp.75 :drawLine;
+        symbol [ _cx %tmp.78 117 32 35 ];
+        %tmp.78 = getv ? :_cx;
+        %tmp.79 = lgetv %startY.2;
+        symbol [ startY %tmp.79 117 37 43 ];
+        %tmp.80 = lgetv %s.5;
+        symbol [ s %tmp.80 117 46 47 ];
+        %tmp.81 = add %tmp.79 %tmp.80;
+        symbol [ _cx %tmp.83 117 49 52 ];
+        %tmp.83 = getv ? :_cx;
+        %tmp.84 = lgetv %startY.2;
+        symbol [ startY %tmp.84 117 54 60 ];
+        %tmp.85 = lgetv %e.6;
+        symbol [ e %tmp.85 117 63 64 ];
+        %tmp.86 = add %tmp.84 %tmp.85;
+        invoke %tmp.75 %tmp.76(%tmp.78, %tmp.81, %tmp.83, %tmp.86);
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_116_23_118_16_stop:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_114_16_118_16_if_end:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_108_52_119_12_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_108_12_119_12_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_108_12_119_12_if_end:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_106_51_120_8_stop:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_106_8_120_8_for_incr:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 106 ]
+        %tmp.89 = lgetv %i.3;
+        symbol [ i %tmp.89 106 46 47 ];
+        %tmp.90 = add %tmp.89 1;
+        lputv %i.3 %tmp.90;
+        symbol [ i %i.3 106 46 47 ];
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_106_8_120_8_for_test;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_106_8_120_8_for_end:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 123 8 ]
+        for @C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_123_8_137_8_for_test @C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_123_8_137_8_for_incr @C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_123_8_137_8_for_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_123_8_137_8_for_init:
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_123_8_137_8_for_begin" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_123_8_137_8_for_end" ]
+        %i.8 = local;
+        symbol [ i %i.8 123 17 18 ];
+        %tmp.91 = 0;
+        lputv %i.8 %tmp.91;
+        symbol [ i %i.8 123 17 18 ];
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_123_8_137_8_for_test:
+        %tmp.92 = lgetv %i.8;
+        symbol [ i %tmp.92 123 24 25 ];
+        symbol [ _segmenti %tmp.94 123 28 37 ];
+        %tmp.94 = getv ? :_segmenti;
+        symbol [ size %tmp.95 123 38 42 ];
+        %tmp.95 = getv function %tmp.94 :size;
+        %tmp.96 = invoke %tmp.94 %tmp.95();
+        %tmp.97 = lt %tmp.92 %tmp.96;
+        bf %tmp.97 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_123_8_137_8_for_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_123_8_137_8_for_begin:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_123_51_137_8_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 124 12 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_123_51_137_8_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_123_51_137_8_stop" ]
+        %seg.9 = local;
+        symbol [ seg %seg.9 124 16 19 ];
+        symbol [ _segmenti %tmp.99 124 22 31 ];
+        %tmp.99 = getv ? :_segmenti;
+        %tmp.100 = lgetv %i.8;
+        symbol [ i %tmp.100 124 32 33 ];
+        %tmp.101 = agetv %tmp.99 %tmp.100;
+        %tmp.102 = as %tmp.101 Lang.Dictionary;
+        symbol [ Lang %tmp.102 124 38 42 ];
+        symbol [ Dictionary %tmp.102 124 43 53 ];
+        lputv %seg.9 %tmp.102;
+        symbol [ seg %seg.9 124 16 19 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 125 12 ]
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_125_12_136_12_if_stmt:
+        %tmp.103 = lgetv %seg.9;
+        symbol [ seg %tmp.103 125 16 19 ];
+        %tmp.104 = "stondato";
+        %tmp.105 = agetv %tmp.103 %tmp.104;
+        %tmp.106 = as %tmp.105 Lang.Boolean;
+        symbol [ Lang %tmp.106 125 35 39 ];
+        symbol [ Boolean %tmp.106 125 40 47 ];
+        bf %tmp.106 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_125_12_136_12_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_125_12_136_12_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_125_49_136_12_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 126 16 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_125_49_136_12_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_125_49_136_12_stop" ]
+        %s.10 = local;
+        symbol [ s %s.10 126 20 21 ];
+        %tmp.107 = self;
+        symbol [ _valToPixel %tmp.108 126 24 35 ];
+        %tmp.108 = getv function %tmp.107 :_valToPixel;
+        %tmp.109 = lgetv %seg.9;
+        symbol [ seg %tmp.109 126 36 39 ];
+        %tmp.110 = "startVal";
+        %tmp.111 = agetv %tmp.109 %tmp.110;
+        %tmp.112 = as %tmp.111 Lang.Number;
+        symbol [ Lang %tmp.112 126 55 59 ];
+        symbol [ Number %tmp.112 126 60 66 ];
+        %tmp.113 = invoke %tmp.107 %tmp.108(%tmp.112);
+        lputv %s.10 %tmp.113;
+        symbol [ s %s.10 126 20 21 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 127 16 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_125_49_136_12_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_125_49_136_12_stop" ]
+        %e.11 = local;
+        symbol [ e %e.11 127 20 21 ];
+        %tmp.114 = self;
+        symbol [ _valToPixel %tmp.115 127 24 35 ];
+        %tmp.115 = getv function %tmp.114 :_valToPixel;
+        %tmp.116 = lgetv %seg.9;
+        symbol [ seg %tmp.116 127 36 39 ];
+        %tmp.117 = "endVal";
+        %tmp.118 = agetv %tmp.116 %tmp.117;
+        %tmp.119 = as %tmp.118 Lang.Number;
+        symbol [ Lang %tmp.119 127 55 59 ];
+        symbol [ Number %tmp.119 127 60 66 ];
+        %tmp.120 = invoke %tmp.114 %tmp.115(%tmp.119);
+        lputv %e.11 %tmp.120;
+        symbol [ e %e.11 127 20 21 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 128 16 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_125_49_136_12_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_125_49_136_12_stop" ]
+        %sp.12 = local;
+        symbol [ sp %sp.12 128 20 22 ];
+        %tmp.121 = lgetv %seg.9;
+        symbol [ seg %tmp.121 128 25 28 ];
+        %tmp.122 = "spessore";
+        %tmp.123 = agetv %tmp.121 %tmp.122;
+        %tmp.124 = as %tmp.123 Lang.Number;
+        symbol [ Lang %tmp.124 128 44 48 ];
+        symbol [ Number %tmp.124 128 49 55 ];
+        lputv %sp.12 %tmp.124;
+        symbol [ sp %sp.12 128 20 22 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 129 16 ]
+        %tmp.125 = lgetv %dc;
+        symbol [ dc %tmp.125 129 16 18 ];
+        symbol [ setColor %tmp.126 129 19 27 ];
+        %tmp.126 = getv function %tmp.125 :setColor;
+        %tmp.127 = lgetv %seg.9;
+        symbol [ seg %tmp.127 129 28 31 ];
+        %tmp.128 = "colore";
+        %tmp.129 = agetv %tmp.127 %tmp.128;
+        %tmp.130 = as %tmp.129 Lang.Number;
+        symbol [ Lang %tmp.130 129 45 49 ];
+        symbol [ Number %tmp.130 129 50 56 ];
+        symbol [ Graphics %tmp.131 129 58 66 ];
+        %tmp.131 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.132 129 67 84 ];
+        %tmp.132 = getv %tmp.131 :COLOR_TRANSPARENT;
+        invoke %tmp.125 %tmp.126(%tmp.130, %tmp.132);
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 130 16 ]
+        %tmp.133 = lgetv %dc;
+        symbol [ dc %tmp.133 130 16 18 ];
+        symbol [ setPenWidth %tmp.134 130 19 30 ];
+        %tmp.134 = getv function %tmp.133 :setPenWidth;
+        %tmp.135 = lgetv %sp.12;
+        symbol [ sp %tmp.135 130 31 33 ];
+        invoke %tmp.133 %tmp.134(%tmp.135);
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 131 16 ]
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_131_16_135_16_if_stmt:
+        symbol [ _orizzontale %tmp.137 131 20 32 ];
+        %tmp.137 = getv ? :_orizzontale;
+        bf %tmp.137 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_131_16_135_16_if_else_false;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_131_16_135_16_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_131_34_133_16_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 132 20 ]
+        %tmp.138 = lgetv %dc;
+        symbol [ dc %tmp.138 132 20 22 ];
+        symbol [ drawLine %tmp.139 132 23 31 ];
+        %tmp.139 = getv function %tmp.138 :drawLine;
+        %tmp.140 = lgetv %startX.1;
+        symbol [ startX %tmp.140 132 32 38 ];
+        %tmp.141 = lgetv %s.10;
+        symbol [ s %tmp.141 132 41 42 ];
+        %tmp.142 = add %tmp.140 %tmp.141;
+        symbol [ _cy %tmp.144 132 44 47 ];
+        %tmp.144 = getv ? :_cy;
+        %tmp.145 = lgetv %startX.1;
+        symbol [ startX %tmp.145 132 49 55 ];
+        %tmp.146 = lgetv %e.11;
+        symbol [ e %tmp.146 132 58 59 ];
+        %tmp.147 = add %tmp.145 %tmp.146;
+        symbol [ _cy %tmp.149 132 61 64 ];
+        %tmp.149 = getv ? :_cy;
+        invoke %tmp.138 %tmp.139(%tmp.142, %tmp.144, %tmp.147, %tmp.149);
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_131_34_133_16_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_131_16_135_16_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_131_16_135_16_if_else_false:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_133_23_135_16_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 134 20 ]
+        %tmp.150 = lgetv %dc;
+        symbol [ dc %tmp.150 134 20 22 ];
+        symbol [ drawLine %tmp.151 134 23 31 ];
+        %tmp.151 = getv function %tmp.150 :drawLine;
+        symbol [ _cx %tmp.153 134 32 35 ];
+        %tmp.153 = getv ? :_cx;
+        %tmp.154 = lgetv %startY.2;
+        symbol [ startY %tmp.154 134 37 43 ];
+        %tmp.155 = lgetv %s.10;
+        symbol [ s %tmp.155 134 46 47 ];
+        %tmp.156 = add %tmp.154 %tmp.155;
+        symbol [ _cx %tmp.158 134 49 52 ];
+        %tmp.158 = getv ? :_cx;
+        %tmp.159 = lgetv %startY.2;
+        symbol [ startY %tmp.159 134 54 60 ];
+        %tmp.160 = lgetv %e.11;
+        symbol [ e %tmp.160 134 63 64 ];
+        %tmp.161 = add %tmp.159 %tmp.160;
+        invoke %tmp.150 %tmp.151(%tmp.153, %tmp.156, %tmp.158, %tmp.161);
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_133_23_135_16_stop:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_131_16_135_16_if_end:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_125_49_136_12_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_125_12_136_12_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_125_12_136_12_if_end:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_123_51_137_8_stop:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_123_8_137_8_for_incr:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 123 ]
+        %tmp.164 = lgetv %i.8;
+        symbol [ i %tmp.164 123 46 47 ];
+        %tmp.165 = add %tmp.164 1;
+        lputv %i.8 %tmp.165;
+        symbol [ i %i.8 123 46 47 ];
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_123_8_137_8_for_test;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_123_8_137_8_for_end:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 140 8 ]
+        for @C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_140_8_155_8_for_test @C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_140_8_155_8_for_incr @C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_140_8_155_8_for_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_140_8_155_8_for_init:
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_140_8_155_8_for_begin" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_140_8_155_8_for_end" ]
+        %i.13 = local;
+        symbol [ i %i.13 140 17 18 ];
+        %tmp.166 = 0;
+        lputv %i.13 %tmp.166;
+        symbol [ i %i.13 140 17 18 ];
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_140_8_155_8_for_test:
+        %tmp.167 = lgetv %i.13;
+        symbol [ i %tmp.167 140 24 25 ];
+        symbol [ _segmenti %tmp.169 140 28 37 ];
+        %tmp.169 = getv ? :_segmenti;
+        symbol [ size %tmp.170 140 38 42 ];
+        %tmp.170 = getv function %tmp.169 :size;
+        %tmp.171 = invoke %tmp.169 %tmp.170();
+        %tmp.172 = lt %tmp.167 %tmp.171;
+        bf %tmp.172 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_140_8_155_8_for_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_140_8_155_8_for_begin:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_140_51_155_8_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 141 12 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_140_51_155_8_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_140_51_155_8_stop" ]
+        %seg.14 = local;
+        symbol [ seg %seg.14 141 16 19 ];
+        symbol [ _segmenti %tmp.174 141 22 31 ];
+        %tmp.174 = getv ? :_segmenti;
+        %tmp.175 = lgetv %i.13;
+        symbol [ i %tmp.175 141 32 33 ];
+        %tmp.176 = agetv %tmp.174 %tmp.175;
+        %tmp.177 = as %tmp.176 Lang.Dictionary;
+        symbol [ Lang %tmp.177 141 38 42 ];
+        symbol [ Dictionary %tmp.177 141 43 53 ];
+        lputv %seg.14 %tmp.177;
+        symbol [ seg %seg.14 141 16 19 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 142 12 ]
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_142_12_154_12_if_stmt:
+        %tmp.178 = lgetv %seg.14;
+        symbol [ seg %tmp.178 142 16 19 ];
+        %tmp.179 = "stondato";
+        %tmp.180 = agetv %tmp.178 %tmp.179;
+        %tmp.181 = as %tmp.180 Lang.Boolean;
+        symbol [ Lang %tmp.181 142 35 39 ];
+        symbol [ Boolean %tmp.181 142 40 47 ];
+        bf %tmp.181 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_142_12_154_12_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_142_12_154_12_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_142_49_154_12_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 143 16 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_142_49_154_12_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_142_49_154_12_stop" ]
+        %s.15 = local;
+        symbol [ s %s.15 143 20 21 ];
+        %tmp.182 = self;
+        symbol [ _valToPixel %tmp.183 143 27 38 ];
+        %tmp.183 = getv function %tmp.182 :_valToPixel;
+        %tmp.184 = lgetv %seg.14;
+        symbol [ seg %tmp.184 143 39 42 ];
+        %tmp.185 = "startVal";
+        %tmp.186 = agetv %tmp.184 %tmp.185;
+        %tmp.187 = as %tmp.186 Lang.Number;
+        symbol [ Lang %tmp.187 143 58 62 ];
+        symbol [ Number %tmp.187 143 63 69 ];
+        %tmp.188 = invoke %tmp.182 %tmp.183(%tmp.187);
+        lputv %s.15 %tmp.188;
+        symbol [ s %s.15 143 20 21 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 144 16 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_142_49_154_12_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_142_49_154_12_stop" ]
+        %e.16 = local;
+        symbol [ e %e.16 144 20 21 ];
+        %tmp.189 = self;
+        symbol [ _valToPixel %tmp.190 144 27 38 ];
+        %tmp.190 = getv function %tmp.189 :_valToPixel;
+        %tmp.191 = lgetv %seg.14;
+        symbol [ seg %tmp.191 144 39 42 ];
+        %tmp.192 = "endVal";
+        %tmp.193 = agetv %tmp.191 %tmp.192;
+        %tmp.194 = as %tmp.193 Lang.Number;
+        symbol [ Lang %tmp.194 144 58 62 ];
+        symbol [ Number %tmp.194 144 63 69 ];
+        %tmp.195 = invoke %tmp.189 %tmp.190(%tmp.194);
+        lputv %e.16 %tmp.195;
+        symbol [ e %e.16 144 20 21 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 145 16 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_142_49_154_12_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_142_49_154_12_stop" ]
+        %capR.17 = local;
+        symbol [ capR %capR.17 145 20 24 ];
+        %tmp.196 = lgetv %seg.14;
+        symbol [ seg %tmp.196 145 29 32 ];
+        %tmp.197 = "spessore";
+        %tmp.198 = agetv %tmp.196 %tmp.197;
+        %tmp.199 = as %tmp.198 Lang.Number;
+        symbol [ Lang %tmp.199 145 48 52 ];
+        symbol [ Number %tmp.199 145 53 59 ];
+        %tmp.200 = 1;
+        %tmp.201 = sub %tmp.199 %tmp.200;
+        %tmp.202 = 2;
+        %tmp.203 = div %tmp.201 %tmp.202;
+        lputv %capR.17 %tmp.203;
+        symbol [ capR %capR.17 145 20 24 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 146 16 ]
+        %tmp.204 = lgetv %dc;
+        symbol [ dc %tmp.204 146 16 18 ];
+        symbol [ setColor %tmp.205 146 19 27 ];
+        %tmp.205 = getv function %tmp.204 :setColor;
+        %tmp.206 = lgetv %seg.14;
+        symbol [ seg %tmp.206 146 28 31 ];
+        %tmp.207 = "colore";
+        %tmp.208 = agetv %tmp.206 %tmp.207;
+        %tmp.209 = as %tmp.208 Lang.Number;
+        symbol [ Lang %tmp.209 146 45 49 ];
+        symbol [ Number %tmp.209 146 50 56 ];
+        %tmp.210 = lgetv %seg.14;
+        symbol [ seg %tmp.210 146 58 61 ];
+        %tmp.211 = "colore";
+        %tmp.212 = agetv %tmp.210 %tmp.211;
+        %tmp.213 = as %tmp.212 Lang.Number;
+        symbol [ Lang %tmp.213 146 75 79 ];
+        symbol [ Number %tmp.213 146 80 86 ];
+        invoke %tmp.204 %tmp.205(%tmp.209, %tmp.213);
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 147 16 ]
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_147_16_153_16_if_stmt:
+        symbol [ _orizzontale %tmp.215 147 20 32 ];
+        %tmp.215 = getv ? :_orizzontale;
+        bf %tmp.215 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_147_16_153_16_if_else_false;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_147_16_153_16_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_147_34_150_16_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 148 20 ]
+        %tmp.216 = lgetv %dc;
+        symbol [ dc %tmp.216 148 20 22 ];
+        symbol [ fillCircle %tmp.217 148 23 33 ];
+        %tmp.217 = getv function %tmp.216 :fillCircle;
+        %tmp.218 = lgetv %startX.1;
+        symbol [ startX %tmp.218 148 34 40 ];
+        %tmp.219 = lgetv %s.15;
+        symbol [ s %tmp.219 148 43 44 ];
+        %tmp.220 = add %tmp.218 %tmp.219;
+        symbol [ _cy %tmp.222 148 46 49 ];
+        %tmp.222 = getv ? :_cy;
+        %tmp.223 = lgetv %capR.17;
+        symbol [ capR %tmp.223 148 51 55 ];
+        invoke %tmp.216 %tmp.217(%tmp.220, %tmp.222, %tmp.223);
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 149 20 ]
+        %tmp.224 = lgetv %dc;
+        symbol [ dc %tmp.224 149 20 22 ];
+        symbol [ fillCircle %tmp.225 149 23 33 ];
+        %tmp.225 = getv function %tmp.224 :fillCircle;
+        %tmp.226 = lgetv %startX.1;
+        symbol [ startX %tmp.226 149 34 40 ];
+        %tmp.227 = lgetv %e.16;
+        symbol [ e %tmp.227 149 43 44 ];
+        %tmp.228 = add %tmp.226 %tmp.227;
+        symbol [ _cy %tmp.230 149 46 49 ];
+        %tmp.230 = getv ? :_cy;
+        %tmp.231 = lgetv %capR.17;
+        symbol [ capR %tmp.231 149 51 55 ];
+        invoke %tmp.224 %tmp.225(%tmp.228, %tmp.230, %tmp.231);
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_147_34_150_16_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_147_16_153_16_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_147_16_153_16_if_else_false:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_150_23_153_16_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 151 20 ]
+        %tmp.232 = lgetv %dc;
+        symbol [ dc %tmp.232 151 20 22 ];
+        symbol [ fillCircle %tmp.233 151 23 33 ];
+        %tmp.233 = getv function %tmp.232 :fillCircle;
+        symbol [ _cx %tmp.235 151 34 37 ];
+        %tmp.235 = getv ? :_cx;
+        %tmp.236 = lgetv %startY.2;
+        symbol [ startY %tmp.236 151 39 45 ];
+        %tmp.237 = lgetv %s.15;
+        symbol [ s %tmp.237 151 48 49 ];
+        %tmp.238 = add %tmp.236 %tmp.237;
+        %tmp.239 = lgetv %capR.17;
+        symbol [ capR %tmp.239 151 51 55 ];
+        invoke %tmp.232 %tmp.233(%tmp.235, %tmp.238, %tmp.239);
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 152 20 ]
+        %tmp.240 = lgetv %dc;
+        symbol [ dc %tmp.240 152 20 22 ];
+        symbol [ fillCircle %tmp.241 152 23 33 ];
+        %tmp.241 = getv function %tmp.240 :fillCircle;
+        symbol [ _cx %tmp.243 152 34 37 ];
+        %tmp.243 = getv ? :_cx;
+        %tmp.244 = lgetv %startY.2;
+        symbol [ startY %tmp.244 152 39 45 ];
+        %tmp.245 = lgetv %e.16;
+        symbol [ e %tmp.245 152 48 49 ];
+        %tmp.246 = add %tmp.244 %tmp.245;
+        %tmp.247 = lgetv %capR.17;
+        symbol [ capR %tmp.247 152 51 55 ];
+        invoke %tmp.240 %tmp.241(%tmp.243, %tmp.246, %tmp.247);
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_150_23_153_16_stop:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_147_16_153_16_if_end:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_142_49_154_12_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_142_12_154_12_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_142_12_154_12_if_end:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_140_51_155_8_stop:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_140_8_155_8_for_incr:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 140 ]
+        %tmp.250 = lgetv %i.13;
+        symbol [ i %tmp.250 140 46 47 ];
+        %tmp.251 = add %tmp.250 1;
+        lputv %i.13 %tmp.251;
+        symbol [ i %i.13 140 46 47 ];
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_140_8_155_8_for_test;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_140_8_155_8_for_end:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 158 8 ]
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_158_8_170_8_if_stmt:
+        symbol [ _marker %tmp.253 158 12 19 ];
+        %tmp.253 = getv ? :_marker;
+        %tmp.254 = null;
+        %tmp.255 = ne %tmp.253 %tmp.254;
+        bf %tmp.255 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_158_8_170_8_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_158_8_170_8_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_158_29_170_8_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 159 12 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_158_29_170_8_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_158_29_170_8_stop" ]
+        %pos.18 = local;
+        symbol [ pos %pos.18 159 16 19 ];
+        %tmp.256 = self;
+        symbol [ _valToPixel %tmp.257 159 28 39 ];
+        %tmp.257 = getv function %tmp.256 :_valToPixel;
+        symbol [ _marker %tmp.259 159 40 47 ];
+        %tmp.259 = getv ? :_marker;
+        %tmp.260 = as %tmp.259 { (!Null) };
+        %tmp.261 = "valore";
+        %tmp.262 = agetv %tmp.260 %tmp.261;
+        %tmp.263 = as %tmp.262 Lang.Number;
+        symbol [ Lang %tmp.263 159 64 68 ];
+        symbol [ Number %tmp.263 159 69 75 ];
+        %tmp.264 = invoke %tmp.256 %tmp.257(%tmp.263);
+        lputv %pos.18 %tmp.264;
+        symbol [ pos %pos.18 159 16 19 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 160 12 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_158_29_170_8_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_158_29_170_8_stop" ]
+        %semiLungh.19 = local;
+        symbol [ semiLungh %semiLungh.19 160 16 25 ];
+        symbol [ _marker %tmp.266 160 29 36 ];
+        %tmp.266 = getv ? :_marker;
+        %tmp.267 = "semiLungh";
+        %tmp.268 = agetv %tmp.266 %tmp.267;
+        %tmp.269 = as %tmp.268 Lang.Number;
+        symbol [ Lang %tmp.269 160 53 57 ];
+        symbol [ Number %tmp.269 160 58 64 ];
+        symbol [ toFloat %tmp.270 160 66 73 ];
+        %tmp.270 = getv function %tmp.269 :toFloat;
+        %tmp.271 = invoke %tmp.269 %tmp.270();
+        lputv %semiLungh.19 %tmp.271;
+        symbol [ semiLungh %semiLungh.19 160 16 25 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 161 12 ]
+        %tmp.272 = lgetv %dc;
+        symbol [ dc %tmp.272 161 12 14 ];
+        symbol [ setColor %tmp.273 161 15 23 ];
+        %tmp.273 = getv function %tmp.272 :setColor;
+        symbol [ _marker %tmp.275 161 24 31 ];
+        %tmp.275 = getv ? :_marker;
+        %tmp.276 = "colore";
+        %tmp.277 = agetv %tmp.275 %tmp.276;
+        %tmp.278 = as %tmp.277 Lang.Number;
+        symbol [ Lang %tmp.278 161 45 49 ];
+        symbol [ Number %tmp.278 161 50 56 ];
+        symbol [ Graphics %tmp.279 161 58 66 ];
+        %tmp.279 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.280 161 67 84 ];
+        %tmp.280 = getv %tmp.279 :COLOR_TRANSPARENT;
+        invoke %tmp.272 %tmp.273(%tmp.278, %tmp.280);
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 162 12 ]
+        %tmp.281 = lgetv %dc;
+        symbol [ dc %tmp.281 162 12 14 ];
+        symbol [ setPenWidth %tmp.282 162 15 26 ];
+        %tmp.282 = getv function %tmp.281 :setPenWidth;
+        %tmp.283 = 2;
+        invoke %tmp.281 %tmp.282(%tmp.283);
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 163 12 ]
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_163_12_169_12_if_stmt:
+        symbol [ _orizzontale %tmp.285 163 16 28 ];
+        %tmp.285 = getv ? :_orizzontale;
+        bf %tmp.285 @C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_163_12_169_12_if_else_false;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_163_12_169_12_if_true:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_163_30_166_12_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 164 16 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_163_30_166_12_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_163_30_166_12_stop" ]
+        %mx.20 = local;
+        symbol [ mx %mx.20 164 20 22 ];
+        %tmp.286 = lgetv %startX.1;
+        symbol [ startX %tmp.286 164 25 31 ];
+        %tmp.287 = lgetv %pos.18;
+        symbol [ pos %tmp.287 164 34 37 ];
+        %tmp.288 = add %tmp.286 %tmp.287;
+        lputv %mx.20 %tmp.288;
+        symbol [ mx %mx.20 164 20 22 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 165 16 ]
+        %tmp.289 = lgetv %dc;
+        symbol [ dc %tmp.289 165 16 18 ];
+        symbol [ drawLine %tmp.290 165 19 27 ];
+        %tmp.290 = getv function %tmp.289 :drawLine;
+        %tmp.291 = lgetv %mx.20;
+        symbol [ mx %tmp.291 165 28 30 ];
+        symbol [ _cy %tmp.293 165 33 36 ];
+        %tmp.293 = getv ? :_cy;
+        %tmp.294 = lgetv %semiLungh.19;
+        symbol [ semiLungh %tmp.294 165 39 48 ];
+        %tmp.295 = sub %tmp.293 %tmp.294;
+        symbol [ toNumber %tmp.296 165 50 58 ];
+        %tmp.296 = getv function %tmp.295 :toNumber;
+        %tmp.297 = invoke %tmp.295 %tmp.296();
+        %tmp.298 = lgetv %mx.20;
+        symbol [ mx %tmp.298 165 62 64 ];
+        symbol [ _cy %tmp.300 165 67 70 ];
+        %tmp.300 = getv ? :_cy;
+        %tmp.301 = lgetv %semiLungh.19;
+        symbol [ semiLungh %tmp.301 165 73 82 ];
+        %tmp.302 = add %tmp.300 %tmp.301;
+        symbol [ toNumber %tmp.303 165 84 92 ];
+        %tmp.303 = getv function %tmp.302 :toNumber;
+        %tmp.304 = invoke %tmp.302 %tmp.303();
+        invoke %tmp.289 %tmp.290(%tmp.291, %tmp.297, %tmp.298, %tmp.304);
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_163_30_166_12_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_163_12_169_12_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_163_12_169_12_if_else_false:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_166_19_169_12_start:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 167 16 ]
+        [ "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_166_19_169_12_start" "C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_166_19_169_12_stop" ]
+        %my.21 = local;
+        symbol [ my %my.21 167 20 22 ];
+        %tmp.305 = lgetv %startY.2;
+        symbol [ startY %tmp.305 167 25 31 ];
+        %tmp.306 = lgetv %pos.18;
+        symbol [ pos %tmp.306 167 34 37 ];
+        %tmp.307 = add %tmp.305 %tmp.306;
+        lputv %my.21 %tmp.307;
+        symbol [ my %my.21 167 20 22 ];
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 168 16 ]
+        %tmp.308 = lgetv %dc;
+        symbol [ dc %tmp.308 168 16 18 ];
+        symbol [ drawLine %tmp.309 168 19 27 ];
+        %tmp.309 = getv function %tmp.308 :drawLine;
+        symbol [ _cx %tmp.311 168 29 32 ];
+        %tmp.311 = getv ? :_cx;
+        %tmp.312 = lgetv %semiLungh.19;
+        symbol [ semiLungh %tmp.312 168 35 44 ];
+        %tmp.313 = sub %tmp.311 %tmp.312;
+        symbol [ toNumber %tmp.314 168 46 54 ];
+        %tmp.314 = getv function %tmp.313 :toNumber;
+        %tmp.315 = invoke %tmp.313 %tmp.314();
+        %tmp.316 = lgetv %my.21;
+        symbol [ my %tmp.316 168 58 60 ];
+        symbol [ _cx %tmp.318 168 63 66 ];
+        %tmp.318 = getv ? :_cx;
+        %tmp.319 = lgetv %semiLungh.19;
+        symbol [ semiLungh %tmp.319 168 69 78 ];
+        %tmp.320 = add %tmp.318 %tmp.319;
+        symbol [ toNumber %tmp.321 168 80 88 ];
+        %tmp.321 = getv function %tmp.320 :toNumber;
+        %tmp.322 = invoke %tmp.320 %tmp.321();
+        %tmp.323 = lgetv %my.21;
+        symbol [ my %tmp.323 168 92 94 ];
+        invoke %tmp.308 %tmp.309(%tmp.315, %tmp.316, %tmp.322, %tmp.323);
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_166_19_169_12_stop:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_163_12_169_12_if_end:
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_158_29_170_8_stop:
+        goto @C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_158_8_170_8_if_end;
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_158_8_170_8_if_end:
+[ "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc" 172 8 ]
+        %tmp.324 = lgetv %dc;
+        symbol [ dc %tmp.324 172 8 10 ];
+        symbol [ setPenWidth %tmp.325 172 11 22 ];
+        %tmp.325 = getv function %tmp.324 :setPenWidth;
+        %tmp.326 = 1;
+        invoke %tmp.324 %tmp.325(%tmp.326);
+C__GarminProject_GarminLibTest_GarminLib_source_graphics_SegmentBar_mc_101_45_173_4_stop:
+    }
+}
+[ @file = "C:\GarminProject\GarminLibTest\GarminLib\source\graphics\SegmentBar.mc"; @line = 23; ]
+<init> {
+}
